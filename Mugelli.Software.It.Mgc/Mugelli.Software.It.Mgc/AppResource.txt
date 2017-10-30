@@ -1,0 +1,70 @@
+<forms:Color x:Key="HeaderTextColor">#555555</forms:Color>
+            <!--Davy grey-->
+            <forms:Color x:Key="BodyTextColor">#bababa</forms:Color>
+            <!--Lightgray-->
+
+
+            <!--  Customized font  -->
+            <forms:OnPlatform x:Key="RegularFontFamily" x:TypeArguments="x:String">
+                <forms:On Platform="iOS">HelveticaNeue</forms:On>
+                <forms:On Platform="Android">sans-serif</forms:On>
+            </forms:OnPlatform>
+
+            <forms:OnPlatform x:Key="LightFontFamily" x:TypeArguments="x:String">
+                <forms:On Platform="iOS">HelveticaNeue-Light</forms:On>
+                <forms:On Platform="Android">sans-serif-light</forms:On>
+            </forms:OnPlatform>
+
+            <forms:OnPlatform x:Key="MediumFontFamily" x:TypeArguments="x:String">
+                <forms:On Platform="iOS">HelveticaNeue-Medium</forms:On>
+                <forms:On Platform="Android">sans-serif-medium</forms:On>
+            </forms:OnPlatform>
+
+            <!--  font sizes  -->
+            <x:Double x:Key="TitleFont">20</x:Double>
+            <x:Double x:Key="BodyFont">18</x:Double>
+            <x:Double x:Key="TagTextFont">18</x:Double>
+            <x:Double x:Key="StatsNumberFont">20</x:Double>
+            <x:Double x:Key="StatsCaptionFont">16</x:Double>
+
+
+            <!--  styles  -->
+            <forms:Style x:Key="ProfileNameLabel" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource HeaderTextColor}" />
+                <!--Davy grey-->
+                <forms:Setter Property="FontFamily" Value="{StaticResource MediumFontFamily}" />
+                <!--Medium In Size-->
+                <forms:Setter Property="FontSize" Value="{StaticResource TitleFont}" />
+                <!--20-->
+
+            </forms:Style>
+
+            <forms:Style x:Key="ProfileTagLabel" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+                <!--Lightgray-->
+                <forms:Setter Property="FontFamily" Value="{StaticResource RegularFontFamily}" />
+                <!--Regular-->
+                <forms:Setter Property="FontSize" Value="{StaticResource TagTextFont}" />
+                <!--18-->
+            </forms:Style>
+
+            <forms:Style x:Key="StatsNumberLabel" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource HeaderTextColor}" />
+                <!--Davy grey-->
+                <forms:Setter Property="HorizontalTextAlignment" Value="Center" />
+                <forms:Setter Property="FontFamily" Value="{StaticResource LightFontFamily}" />
+                <!--light-->
+                <forms:Setter Property="FontSize" Value="{StaticResource StatsNumberFont}" />
+                <!--20-->
+            </forms:Style>
+
+            <forms:Style x:Key="StatsCaptionLabel" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+                <!--Lightgray-->
+                <forms:Setter Property="Margin" Value="0,-5,0,0" />
+                <forms:Setter Property="HorizontalTextAlignment" Value="Center" />
+                <forms:Setter Property="FontFamily" Value="{StaticResource LightFontFamily}" />
+                <!--Light-->
+                <forms:Setter Property="FontSize" Value="{StaticResource StatsCaptionFont}" />
+                <!--16-->
+            </forms:Style>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mugelli.Software.It.Mgc.App" xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             d1p1:Ignorable="d" xmlns:d1p1="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:forms="http://xamarin.com/schemas/2014/forms">
+    <Application.Resources>
+        <!-- Application resource dictionary -->
+        <forms:ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+            <vm:ViewModelLocator x:Key="ViewModelLocator" d4p1:Key="Locator" d:IsDataSource="True"
+                                 xmlns:d4p1="http://schemas.microsoft.com/winfx/2006/xaml"
+                                 xmlns:vm="clr-namespace:Mugelli.Software.It.Mgc.ViewModel" />
+
+
+            <forms:Color x:Key="BodyTextColor">#FFFFFF</forms:Color>
+
+
+            <!--  font families  -->
+            <forms:OnPlatform
+                x:Key="RegularFontFamily"
+                x:TypeArguments="x:String"
+                Android="sans-serif"
+                iOS="HelveticaNeue" />
+            <forms:OnPlatform
+                x:Key="LightFontFamily"
+                x:TypeArguments="x:String"
+                Android="sans-serif-light"
+                iOS="HelveticaNeue-Light" />
+            <forms:OnPlatform
+                x:Key="MediumFontFamily"
+                x:TypeArguments="x:String"
+                Android="sans-serif-medium"
+                iOS="HelveticaNeue-Medium" />
+            <forms:OnPlatform
+                x:Key="BoldFontFamily"
+                x:TypeArguments="x:String"
+                Android="sans-serif-medium"
+                iOS="HelveticaNeue-Bold" />
+
+            <!--  fonts  -->
+            <forms:Font
+                x:Key="TitleFont"
+                FontFamily="{StaticResource BoldFontFamily}"
+                FontSize="20" />
+            <forms:Font
+                x:Key="HandleFont"
+                FontFamily="{StaticResource BoldFontFamily}"
+                FontSize="12" />
+            <forms:Font
+                x:Key="BodyFont"
+                FontFamily="{StaticResource LightFontFamily}"
+                FontSize="12" />
+
+
+            <!--  styles  -->
+            <forms:Style x:Key="TitleLabel" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+                <forms:Setter Property="Font" Value="{StaticResource TitleFont}" />
+            </forms:Style>
+
+            <forms:Style x:Key="HandleLabel" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+                <forms:Setter Property="Font" Value="{StaticResource HandleFont}" />
+            </forms:Style>
+
+            <forms:Style x:Key="BodyLabel" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+                <forms:Setter Property="Font" Value="{StaticResource BodyFont}" />
+            </forms:Style>
+
+        </forms:ResourceDictionary>
+    </Application.Resources>
+</Application>

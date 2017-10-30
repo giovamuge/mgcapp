@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mugelli.Software.It.Mgc.Pages.NewsDetailPage"
+             BindingContext="{Binding NewsDetailViewModel, Source={StaticResource ViewModelLocator}}">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Orientation="Vertical">
+            <Image Source="{Binding Article.Image}"></Image>
+            <Label Style="{StaticResource TitleLabel}" Text="{Binding Article.Title}"></Label>
+            <StackLayout Orientation="Horizontal">
+                <Image Source="Clock_50px.png"></Image>
+                <Label Style="{StaticResource HandleLabel}" Text="{Binding Article.DateCreate}"></Label>
+            </StackLayout>
+            <Label Style="{StaticResource BodyLabel}" Text="{Binding Article.Text}"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
