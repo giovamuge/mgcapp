@@ -1,17 +1,57 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mugelli.Software.It.Mgc.Pages.NewsDetailPage"
+             Title="{Binding Article.ShortTitle}"
              BindingContext="{Binding NewsDetailViewModel, Source={StaticResource ViewModelLocator}}">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Orientation="Vertical">
-            <Image Source="{Binding Article.Image}"></Image>
-            <Label Style="{StaticResource TitleLabel}" Text="{Binding Article.Title}"></Label>
-            <StackLayout Orientation="Horizontal">
-                <Image Source="Clock_50px.png"></Image>
-                <Label Style="{StaticResource HandleLabel}" Text="{Binding Article.DateCreate}"></Label>
-            </StackLayout>
-            <Label Style="{StaticResource BodyLabel}" Text="{Binding Article.Text}"></Label>
+        <StackLayout HorizontalOptions="FillAndExpand"
+                     VerticalOptions="FillAndExpand"
+                     Orientation="Vertical">
+
+            <Grid>
+                <!-- Rows -->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <!-- Columns -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Image Source="{Binding Article.HeroImage}"
+                       Aspect="AspectFill"
+                       Grid.Row="0"/>
+
+                <StackLayout HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand"
+                         Orientation="Vertical"
+                         Padding="10"
+                         Grid.Row="1">
+                    <Label Style="{StaticResource TitleLabelPrimary}" Text="{Binding Article.Title}" />
+
+                    <Grid>
+                        <!-- Columns --> 
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        
+                        <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding Article.Author}" Grid.Column="0" />
+
+                        <StackLayout Orientation="Horizontal"
+                                     Grid.Column="1">
+                            <Image Source="Clock_50px.png" />
+                            <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding Article.DateCreate}" />
+                        </StackLayout>
+                    </Grid>
+                    <Label Style="{StaticResource BodyLabelPrimary}" Text="{Binding Article.Text}" />
+                </StackLayout>
+
+            </Grid>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

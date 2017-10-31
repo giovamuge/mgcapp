@@ -3,16 +3,24 @@
 <Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mugelli.Software.It.Mgc.App" xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              d1p1:Ignorable="d" xmlns:d1p1="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:forms="http://xamarin.com/schemas/2014/forms">
+             xmlns:forms="http://xamarin.com/schemas/2014/forms"
+             xmlns:converters="clr-namespace:Mugelli.Software.It.Mgc.Converters;assembly=Mugelli.Software.It.Mgc">
     <Application.Resources>
         <!-- Application resource dictionary -->
         <forms:ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
             <vm:ViewModelLocator x:Key="ViewModelLocator" d4p1:Key="Locator" d:IsDataSource="True"
                                  xmlns:d4p1="http://schemas.microsoft.com/winfx/2006/xaml"
                                  xmlns:vm="clr-namespace:Mugelli.Software.It.Mgc.ViewModel" />
+            
+            <!-- Converters -->
+            <converters:SelectedItemEventArgsToSelectedItemConverter x:Key="SelectedItemEventArgsToSelectedItemConverter" />
 
-
-            <forms:Color x:Key="BodyTextColor">#FFFFFF</forms:Color>
+            <!-- STYLE -->
+            <!---->
+            <!---->
+            <!-- Color -->
+            <forms:Color x:Key="PrimaryTextColor">#333</forms:Color>
+            <forms:Color x:Key="SecondaryTextColor">#FFFFFF</forms:Color>
 
 
             <!--  font families  -->
@@ -53,18 +61,34 @@
 
 
             <!--  styles  -->
-            <forms:Style x:Key="TitleLabel" TargetType="forms:Label">
-                <forms:Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+            <forms:Style x:Key="TitleLabelSecondary" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource SecondaryTextColor}" />
                 <forms:Setter Property="Font" Value="{StaticResource TitleFont}" />
             </forms:Style>
 
-            <forms:Style x:Key="HandleLabel" TargetType="forms:Label">
-                <forms:Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+            <forms:Style x:Key="HandleLabelSecondary" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource SecondaryTextColor}" />
                 <forms:Setter Property="Font" Value="{StaticResource HandleFont}" />
             </forms:Style>
 
-            <forms:Style x:Key="BodyLabel" TargetType="forms:Label">
-                <forms:Setter Property="TextColor" Value="{StaticResource BodyTextColor}" />
+            <forms:Style x:Key="BodyLabelSecondary" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource SecondaryTextColor}" />
+                <forms:Setter Property="Font" Value="{StaticResource BodyFont}" />
+            </forms:Style>
+
+
+            <forms:Style x:Key="TitleLabelPrimary" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
+                <forms:Setter Property="Font" Value="{StaticResource TitleFont}" />
+            </forms:Style>
+
+            <forms:Style x:Key="HandleLabelPrimary" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
+                <forms:Setter Property="Font" Value="{StaticResource HandleFont}" />
+            </forms:Style>
+
+            <forms:Style x:Key="BodyLabelPrimary" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
                 <forms:Setter Property="Font" Value="{StaticResource BodyFont}" />
             </forms:Style>
 

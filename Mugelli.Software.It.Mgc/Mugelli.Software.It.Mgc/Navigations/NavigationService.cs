@@ -73,11 +73,13 @@ namespace Mugelli.Software.It.Mgc.Navigations
                                     return p.Count() == 1
                                            && p[0].ParameterType == parameter.GetType();
                                 });
+                        //constructor = GetConstructor(type, parameter);
 
                         parameters = new[]
                         {
                             parameter
                         };
+                        //parameters = parameter;
                     }
 
                     if (constructor == null)
@@ -86,16 +88,14 @@ namespace Mugelli.Software.It.Mgc.Navigations
                             "No suitable constructor found for page " + pageKey);
                     }
 
-                    var page = constructor.Invoke(parameters) as Xamarin.Forms.Page;
+                    var page = constructor.Invoke(parameters) as Page;
                     _navigation.PushAsync(page);
                 }
                 else
                 {
                     throw new ArgumentException(
-                        string.Format(
-                            "No such page: {0}. Did you forget to call NavigationService.Configure?",
-                            pageKey),
-                        "pageKey");
+                        $"No such page: {pageKey}. Did you forget to call NavigationService.Configure?",
+                        nameof(pageKey));
                 }
             }
         }
@@ -118,6 +118,25 @@ namespace Mugelli.Software.It.Mgc.Navigations
         public void Initialize(NavigationPage navigation)
         {
             _navigation = navigation;
+        }
+
+        private static ConstructorInfo GetConstructor(Type type, IReadOnlyList<object> parameters)
+        {
+            var parameterCount = parameters.Count;
+            ConstructorInfo constructor;
+            if (parameterCount > 0)
+                constructor = type.GetTypeInfo().DeclaredConstructors.SingleOrDefault(
+                    c =>
+                    {
+                        var p = c.GetParameters();
+                        return p.Count() == parameterCount && p[parameterCount - 1].ParameterType ==
+                               parameters[parameterCount - 1].GetType();
+                    });
+            else
+                constructor = type.GetTypeInfo()
+                    .DeclaredConstructors
+                    .FirstOrDefault(c => !c.GetParameters().Any());
+            return constructor;
         }
     }
 
@@ -247,23 +266,5 @@ namespace Mugelli.Software.It.Mgc.Navigations
     //        }
     //    }
 
-    //    private ConstructorInfo GetConstructor(Type type, object[] parameters)
-    //    {
-    //        var parameterCount = parameters.Length;
-    //        ConstructorInfo constructor;
-    //        if (parameterCount > 0)
-    //            constructor = type.GetTypeInfo().DeclaredConstructors.SingleOrDefault(
-    //                c =>
-    //                {
-    //                    var p = c.GetParameters();
-    //                    return p.Count() == parameterCount && p[parameterCount - 1].ParameterType ==
-    //                           parameters[parameterCount - 1].GetType();
-    //                });
-    //        else
-    //            constructor = type.GetTypeInfo()
-    //                .DeclaredConstructors
-    //                .FirstOrDefault(c => !c.GetParameters().Any());
-    //        return constructor;
-    //    }
     //}
 }

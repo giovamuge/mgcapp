@@ -18,10 +18,13 @@
                 SelectedItem="{Binding ReadArticleCommand, Mode=TwoWay}">
 
 
-                <!--<ListView.Behaviors>
-                    <behaviors:ListViewSelectedItemBehavior Command="{Binding ReadArticleCommand}"
-                                                            Converter="{StaticResource SelectedItemConverter}" />
-                </ListView.Behaviors>-->
+                <ListView.Behaviors>
+                    <!--<behaviors:ListViewSelectedItemBehavior Command="{Binding ReadArticleCommand}"
+                                                            Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}" />-->
+                    <behaviors:EventToCommandBehavior Command="{Binding ReadArticleCommand}"
+                                                      EventName="ItemSelected"
+                                                      Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}"/>
+                </ListView.Behaviors>
 
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -47,12 +50,12 @@
                                         <ColumnDefinition Width="AUTO" />
                                     </Grid.ColumnDefinitions>
 
-                                    <Label Text="{Binding Path=Title}" Grid.Row="0" Grid.ColumnSpan="2"
-                                           Style="{StaticResource TitleLabel}" LineBreakMode="NoWrap" />
+                                    <Label Text="{Binding Path=ShortTitle}" Grid.Row="0" Grid.ColumnSpan="2"
+                                           Style="{StaticResource TitleLabelSecondary}" LineBreakMode="NoWrap" />
 
                                     <!--<controls:CircleImage Source="{Binding ProfileImage}" Aspect="AspectFill" Grid.Row="1" Grid.Column="0" WidthRequest="25" HeightRequest="25" />-->
                                     <Label Text="{Binding Path=Subtitle}" Grid.Row="1" Grid.Column="0" FontSize="10"
-                                           VerticalOptions="Center" Style="{StaticResource BodyLabel}" />
+                                           VerticalOptions="Center" Style="{StaticResource BodyLabelSecondary}" />
 
                                     <StackLayout Orientation="Horizontal" VerticalOptions="Center" Grid.Column="1"
                                                  Grid.Row="1" Spacing="5">
@@ -60,7 +63,7 @@
                                         <Image Source="Clock_50px.png" />
                                         <!--<Label Text="pubblicato" Style="{StaticResource BodyLabel}" />-->
                                         <Label Text="{Binding Path=DateCreate}"
-                                               Style="{StaticResource HandleLabel}" />
+                                               Style="{StaticResource HandleLabelSecondary}" />
                                     </StackLayout>
                                 </Grid>
                             </Grid>
