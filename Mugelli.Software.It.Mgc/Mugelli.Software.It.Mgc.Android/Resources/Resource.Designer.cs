@@ -2218,14 +2218,17 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f0200a6
 			public const int News_50px = 2130837670;
 			
-			// aapt resource value: 0x7f0200a9
-			public const int notification_template_icon_bg = 2130837673;
+			// aapt resource value: 0x7f0200aa
+			public const int notification_template_icon_bg = 2130837674;
 			
 			// aapt resource value: 0x7f0200a7
 			public const int PiccoloPrincipe = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
 			public const int Pizzata = 2130837672;
+			
+			// aapt resource value: 0x7f0200a9
+			public const int ViewCellBackground = 2130837673;
 			
 			static Drawable()
 			{
