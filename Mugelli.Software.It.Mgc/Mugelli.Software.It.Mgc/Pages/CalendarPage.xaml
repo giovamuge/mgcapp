@@ -6,8 +6,57 @@
              Icon="{Binding Icon}"
              BindingContext="{Binding CalendarViewModel, Source={StaticResource ViewModelLocator}}">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Calendar!" />
-        </StackLayout>
+        <Grid>
+            <Image Source="ColoredBackground" VerticalOptions="Fill" HorizontalOptions="Fill" Aspect="Fill"/>
+            <ListView BackgroundColor="Transparent"
+                      SeparatorVisibility="None"
+                      RowHeight="100"
+                      ItemsSource="{Binding Appointments}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="70" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <ContentView Grid.Column="0"
+                                             BackgroundColor="Coral"
+                                             VerticalOptions="FillAndExpand">
+
+                                    <Grid VerticalOptions="Center">
+                                        <StackLayout HorizontalOptions="Center"
+                                                     Orientation="Vertical"
+                                                     Padding="15">
+                                            <Label Style="{StaticResource TitleLabelSecondary}" 
+                                                   Text="{Binding Path=Date, StringFormat='{}{0:dd}'}"
+                                                   HorizontalOptions="Center"></Label>
+                                            <Label Style="{StaticResource TitleLabelSecondary}" 
+                                                   Text="{Binding Path=Date, StringFormat='{}{0:MMM}'}"
+                                                   HorizontalOptions="Center"></Label>
+                                        </StackLayout>
+                                    </Grid>
+
+                                </ContentView>
+                                <ContentView Grid.Column="1"
+                                             VerticalOptions="FillAndExpand">
+
+                                    <StackLayout Orientation="Vertical">
+                                        <Label Style="{StaticResource TitleLabelPrimary}" 
+                                               Text="{Binding Path=Title}"></Label>
+                                        <Label Style="{StaticResource HandleLabelPrimary}" 
+                                               Text="{Binding Path=Location}"
+                                               FontSize="11"></Label>
+                                    </StackLayout>
+
+                                </ContentView>
+
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

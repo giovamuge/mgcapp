@@ -46,6 +46,7 @@
     <Compile Include="Extensions\ObservableCollectionExtension.cs" />
     <Compile Include="Extensions\StringExtension.cs" />
     <Compile Include="Helper\OnPlatformHelper.cs" />
+    <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\BaseModel.cs" />
     <Compile Include="Models\NewsDetail.cs" />
     <Compile Include="Models\News.cs" />
