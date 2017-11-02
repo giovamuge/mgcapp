@@ -24,6 +24,7 @@ namespace Mugelli.Software.It.Mgc.Navigations
                 //Registration navigation
                 navigation.Configure(PageStacks.RootPage, typeof(RootPage));
                 navigation.Configure(PageStacks.NewsDetailPage, typeof(NewsDetailPage));
+                navigation.Configure(PageStacks.CalendarDetailPage, typeof(CalendarDetailPage));
 
                 // Register NavigationService in IoC container:
                 SimpleIoc.Default.Register(() => navigation);

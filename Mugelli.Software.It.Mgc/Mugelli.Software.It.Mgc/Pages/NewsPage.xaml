@@ -3,17 +3,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:behaviors="clr-namespace:Mugelli.Software.It.Mgc.Behaviors;assembly=Mugelli.Software.It.Mgc"
-             x:Class="Mugelli.Software.It.Mgc.Pages.NewsPage" 
+             x:Class="Mugelli.Software.It.Mgc.Pages.NewsPage"
              Title="{Binding Title}"
              Icon="{Binding Icon}"
-             BindingContext="{Binding NewsViewModel, Source={StaticResource ViewModelLocator}}">
+             BindingContext="{Binding NewsViewModel, Source={StaticResource ViewModelLocator}}"
+             BackgroundColor="WhiteSmoke">
     <ContentPage.Content>
         <Grid>
-            <Image Source="ColoredBackground" VerticalOptions="Fill" HorizontalOptions="Fill" Aspect="Fill"/>
             <ListView
-                ItemsSource="{Binding NewsList}" 
+                ItemsSource="{Binding NewsList}"
                 BackgroundColor="Transparent"
-                RowHeight="200" 
+                RowHeight="400"
                 SeparatorVisibility="None"
                 SelectedItem="{Binding ReadArticleCommand, Mode=TwoWay}">
 
@@ -23,12 +23,85 @@
                                                             Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}" />-->
                     <behaviors:EventToCommandBehavior Command="{Binding ReadArticleCommand}"
                                                       EventName="ItemSelected"
-                                                      Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}"/>
+                                                      Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}" />
                 </ListView.Behaviors>
 
                 <ListView.ItemTemplate>
                     <DataTemplate>
+
                         <ViewCell>
+                            <ViewCell.View>
+                                <AbsoluteLayout Padding="14">
+
+                                    <StackLayout Orientation="Vertical" 
+                                                 Spacing="0" 
+                                                 VerticalOptions="Fill"
+                                                 AbsoluteLayout.LayoutFlags="All" 
+                                                 AbsoluteLayout.LayoutBounds="0,0,1,1"
+                                                 Padding="30"
+                                                 IsVisible="{Binding Path=Id, Converter={StaticResource IsNullToBoolConverter}}">
+
+                                        <Label Text="Non esiste" 
+                                               FontSize="Large" 
+                                               TextColor="{StaticResource GrayDark}"
+                                               HorizontalTextAlignment="Center" />
+                                    </StackLayout>
+
+                                    <StackLayout Orientation="Vertical"
+                                                 BackgroundColor="{StaticResource SecondaryTextColor}" 
+                                                 Spacing="0"
+                                                 VerticalOptions="FillAndExpand"
+                                                 AbsoluteLayout.LayoutFlags="All" 
+                                                 AbsoluteLayout.LayoutBounds="0,0,1,1"
+                                                 IsVisible="{Binding Path=Id, Converter={StaticResource IsNotNullToBoolConverter}}">
+
+                                        <Image Source="{Binding Path=HeroImage}" 
+                                               Aspect="AspectFill"
+                                               HorizontalOptions="Fill"
+                                               Opacity=".8" />
+
+                                        <StackLayout Padding="16,10" 
+                                                     Spacing="4">
+
+                                            <Label Text="{Binding Path=ShortTitle}" 
+                                                       FontSize="Large"
+                                                       Style="{StaticResource TitleLabelPrimary}"
+                                                       VerticalOptions="CenterAndExpand" />
+
+                                            <Label Text="{Binding Path=Subtitle}"
+                                                   Style="{StaticResource BodyLabelPrimary}"
+                                                   VerticalOptions="CenterAndExpand"></Label>
+
+                                            <Grid Padding="0,10" 
+                                                      MinimumHeightRequest="36" 
+                                                      MinimumWidthRequest="44">
+
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="36" />
+                                                    <ColumnDefinition Width="*" />
+                                                </Grid.ColumnDefinitions>
+
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="36" />
+                                                </Grid.RowDefinitions>
+
+                                                <Image Source="Clock_50px.png"
+                                                           Grid.Column="0"/>
+                                                <Label Grid.Column="1" 
+                                                           Text="{Binding Path=DateCreate}"
+                                                           VerticalOptions="Center"
+                                                           Style="{StaticResource Sub}"
+                                                           IsVisible="true" />
+                                            </Grid>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </AbsoluteLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+
+                        <!-- SOLUZIONE ALTERNATIVA -->
+
+                        <!--<ViewCell>
                             <Grid RowSpacing="5" ColumnSpacing="0" Margin="10,5">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="*" />
@@ -45,7 +118,9 @@
                                         <RowDefinition Height="25" />
                                     </Grid.RowDefinitions>
                                     <Grid.ColumnDefinitions>
-                                        <!--<ColumnDefinition Width="25" />-->
+                                        -->
+                        <!--<ColumnDefinition Width="25" />-->
+                        <!--
                                         <ColumnDefinition Width="*" />
                                         <ColumnDefinition Width="AUTO" />
                                     </Grid.ColumnDefinitions>
@@ -53,21 +128,29 @@
                                     <Label Text="{Binding Path=ShortTitle}" Grid.Row="0" Grid.ColumnSpan="2"
                                            Style="{StaticResource TitleLabelSecondary}" LineBreakMode="NoWrap" />
 
-                                    <!--<controls:CircleImage Source="{Binding ProfileImage}" Aspect="AspectFill" Grid.Row="1" Grid.Column="0" WidthRequest="25" HeightRequest="25" />-->
+                                    -->
+                        <!--<controls:CircleImage Source="{Binding ProfileImage}" Aspect="AspectFill" Grid.Row="1" Grid.Column="0" WidthRequest="25" HeightRequest="25" />-->
+                        <!--
                                     <Label Text="{Binding Path=Subtitle}" Grid.Row="1" Grid.Column="0" FontSize="10"
                                            VerticalOptions="Center" Style="{StaticResource BodyLabelSecondary}" />
 
                                     <StackLayout Orientation="Horizontal" VerticalOptions="Center" Grid.Column="1"
                                                  Grid.Row="1" Spacing="5">
-                                        <!-- TODO:aggiungere icona orologio -->
+                                        -->
+                        <!-- TODO:aggiungere icona orologio -->
+                        <!--
                                         <Image Source="Clock_50px.png" />
-                                        <!--<Label Text="pubblicato" Style="{StaticResource BodyLabel}" />-->
+                                        -->
+                        <!--<Label Text="pubblicato" Style="{StaticResource BodyLabel}" />-->
+                        <!--
                                         <Label Text="{Binding Path=DateCreate}"
                                                Style="{StaticResource HandleLabelSecondary}" />
                                     </StackLayout>
                                 </Grid>
                             </Grid>
-                        </ViewCell>
+                        </ViewCell>-->
+
+
                     </DataTemplate>
                 </ListView.ItemTemplate>
 

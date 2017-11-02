@@ -1,17 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behaviors="clr-namespace:Mugelli.Software.It.Mgc.Behaviors;assembly=Mugelli.Software.It.Mgc"
              x:Class="Mugelli.Software.It.Mgc.Pages.CalendarPage"
              Title="{Binding Title}"
              Icon="{Binding Icon}"
-             BindingContext="{Binding CalendarViewModel, Source={StaticResource ViewModelLocator}}">
+             BindingContext="{Binding CalendarViewModel, Source={StaticResource ViewModelLocator}}"
+             BackgroundColor="WhiteSmoke">
     <ContentPage.Content>
         <Grid>
-            <Image Source="ColoredBackground" VerticalOptions="Fill" HorizontalOptions="Fill" Aspect="Fill"/>
             <ListView BackgroundColor="Transparent"
                       SeparatorVisibility="None"
                       RowHeight="100"
                       ItemsSource="{Binding Appointments}">
+                <ListView.Behaviors>
+                    <behaviors:EventToCommandBehavior Command="{Binding ShowAppointmentCommand}"
+                                                      EventName="ItemSelected"
+                                                      Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}" />
+                </ListView.Behaviors>
+
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -22,7 +29,7 @@
                                 </Grid.ColumnDefinitions>
 
                                 <ContentView Grid.Column="0"
-                                             BackgroundColor="Coral"
+                                             BackgroundColor="{Binding Path=Type, Converter={StaticResource TypeEventColorConverter}}"
                                              VerticalOptions="FillAndExpand">
 
                                     <Grid VerticalOptions="Center">

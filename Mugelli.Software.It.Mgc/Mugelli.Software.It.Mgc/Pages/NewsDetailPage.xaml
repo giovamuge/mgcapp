@@ -6,17 +6,80 @@
              Title="{Binding Article.ShortTitle}"
              BindingContext="{Binding NewsDetailViewModel, Source={StaticResource ViewModelLocator}}">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="FillAndExpand"
+
+        <ScrollView x:Name="ScrollView">
+
+            <Grid VerticalOptions="Fill">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <ContentView Padding="0"
+                             Grid.Row="0">
+                    <Grid>
+                        <Image Source="{Binding Article.HeroImage}"
+                               x:Name="HeroImage"
+                               HorizontalOptions="Fill"
+                               Aspect="AspectFill"
+                               Opacity=".8"
+                               Grid.Row="0"/>
+                    </Grid>
+
+                </ContentView>
+
+                <StackLayout Orientation="Vertical"
+                             HorizontalOptions="Fill"
+                             Grid.Row="1"
+                             Padding="24,0,24,14" 
+                             Spacing="14"
+                             BackgroundColor="WhiteSmoke">
+
+                    <Label Style="{StaticResource TitleLabelPrimary}" Text="{Binding Article.Title}" />
+
+                    <Grid>
+                        <!-- Columns -->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding Article.Author}" Grid.Column="0" />
+
+                        <StackLayout Orientation="Horizontal"
+                                     Grid.Column="1">
+                            <Image Source="Clock_50px.png" />
+                            <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding Article.DateCreate}" />
+                        </StackLayout>
+                    </Grid>
+                    <Label Style="{StaticResource BodyLabelPrimary}" Text="{Binding Article.Text}" FontSize="40" />
+
+                </StackLayout>
+
+            </Grid>
+
+
+
+        </ScrollView>
+
+
+
+
+        <!--<StackLayout HorizontalOptions="FillAndExpand"
                      VerticalOptions="FillAndExpand"
                      Orientation="Vertical">
 
             <Grid>
-                <!-- Rows -->
+                -->
+        <!-- Rows -->
+        <!--
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
-                <!-- Columns -->
+                -->
+        <!-- Columns -->
+        <!--
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
@@ -33,7 +96,9 @@
                     <Label Style="{StaticResource TitleLabelPrimary}" Text="{Binding Article.Title}" />
 
                     <Grid>
-                        <!-- Columns --> 
+                        -->
+        <!-- Columns -->
+        <!-- 
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"></ColumnDefinition>
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
@@ -52,6 +117,6 @@
 
             </Grid>
 
-        </StackLayout>
+        </StackLayout>-->
     </ContentPage.Content>
 </ContentPage>

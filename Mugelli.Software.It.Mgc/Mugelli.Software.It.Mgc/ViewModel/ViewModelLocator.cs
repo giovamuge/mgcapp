@@ -48,6 +48,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             SimpleIoc.Default.Register<CalendarViewModel>();
             SimpleIoc.Default.Register<ComunicationsViewModel>();
             SimpleIoc.Default.Register<NewsDetailViewModel>();
+            SimpleIoc.Default.Register<CalendarDetailViewModel>();
         }
 
         public MainViewModel MainViewModel => ServiceLocator.Current.GetInstance<MainViewModel>();
@@ -61,6 +62,8 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         public ComunicationsViewModel ComunicationsViewModel => ServiceLocator.Current.GetInstance<ComunicationsViewModel>();
 
         public NewsDetailViewModel NewsDetailViewModel => ServiceLocator.Current.GetInstance<NewsDetailViewModel>();
+
+        public CalendarDetailViewModel CalendarDetailViewModel => ServiceLocator.Current.GetInstance<CalendarDetailViewModel>();
 
         public static void Cleanup()
         {
