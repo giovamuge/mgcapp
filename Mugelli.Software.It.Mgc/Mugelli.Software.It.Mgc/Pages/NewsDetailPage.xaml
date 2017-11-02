@@ -4,7 +4,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mugelli.Software.It.Mgc.Pages.NewsDetailPage"
              Title="{Binding Article.ShortTitle}"
-             BindingContext="{Binding NewsDetailViewModel, Source={StaticResource ViewModelLocator}}">
+             BindingContext="{Binding NewsDetailViewModel, Source={StaticResource ViewModelLocator}}"
+             BackgroundColor="WhiteSmoke">
     <ContentPage.Content>
 
         <ScrollView x:Name="ScrollView">
@@ -52,7 +53,7 @@
                             <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding Article.DateCreate}" />
                         </StackLayout>
                     </Grid>
-                    <Label Style="{StaticResource BodyLabelPrimary}" Text="{Binding Article.Text}" FontSize="40" />
+                    <Label Style="{StaticResource BodyLabelPrimary}" Text="{Binding Article.Text}" FontSize="20" />
 
                 </StackLayout>
 

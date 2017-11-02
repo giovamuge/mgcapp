@@ -34,7 +34,11 @@ namespace Mugelli.Software.It.Mgc.Navigations
                 navigation = SimpleIoc.Default.GetInstance<INavigationService>();
             }
 
-            var start = new NavigationPage(new RootPage());
+            var start = new NavigationPage(new RootPage())
+            {
+                 BarBackgroundColor = Color.FromHex("#63388a"),
+                 BarTextColor = Color.White
+            };
             navigation.Initialize(start);
 
             return start;
