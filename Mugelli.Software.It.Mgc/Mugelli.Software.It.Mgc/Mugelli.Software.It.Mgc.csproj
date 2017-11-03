@@ -57,6 +57,7 @@
     <Compile Include="Models\BaseModel.cs" />
     <Compile Include="Models\NewsDetail.cs" />
     <Compile Include="Models\News.cs" />
+    <Compile Include="Models\TimeLineAppointment.cs" />
     <Compile Include="Models\Types\EventType.cs" />
     <Compile Include="Navigations\INavigationService.cs" />
     <Compile Include="MainPage.xaml.cs">

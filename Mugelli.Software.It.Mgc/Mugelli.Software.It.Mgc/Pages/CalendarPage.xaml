@@ -9,15 +9,33 @@
              BackgroundColor="WhiteSmoke">
     <ContentPage.Content>
         <Grid>
+            
             <ListView BackgroundColor="Transparent"
                       SeparatorVisibility="None"
                       RowHeight="100"
-                      ItemsSource="{Binding Appointments}">
+                      ItemsSource="{Binding Appointments}"
+                      IsGroupingEnabled="False">
+                
                 <ListView.Behaviors>
                     <behaviors:EventToCommandBehavior Command="{Binding ShowAppointmentCommand}"
                                                       EventName="ItemSelected"
                                                       Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}" />
                 </ListView.Behaviors>
+                
+                <ListView.Header>
+                    <StackLayout Orientation="Horizontal"
+                                 Padding="20,40,0,30">
+                        <!-- TODO:Da cambiare immagine nera -->
+                        <Image Source="Calendar_50px.png" VerticalOptions="Fill"></Image>
+                        <Label Style="{StaticResource PageHeaderLabel}" Text="Calendario"></Label>
+                    </StackLayout>
+                </ListView.Header>
+
+                <!--<ListView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <Label Text="Novembre" Style="{StaticResource TitleLabelPrimary}"></Label>
+                    </DataTemplate>
+                </ListView.GroupHeaderTemplate>-->
 
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -49,10 +67,12 @@
                                 <ContentView Grid.Column="1"
                                              VerticalOptions="FillAndExpand">
 
-                                    <StackLayout Orientation="Vertical">
-                                        <Label Style="{StaticResource TitleLabelPrimary}" 
+                                    <StackLayout Orientation="Vertical"
+                                                 Padding="20">
+                                        <Label Style="{StaticResource ClassNameLabel}" 
                                                Text="{Binding Path=Title}"></Label>
-                                        <Label Style="{StaticResource HandleLabelPrimary}" 
+                                        <!-- TODO:Aggiungere icona location -->
+                                        <Label Style="{StaticResource ClassInstructorLabel}" 
                                                Text="{Binding Path=Location}"
                                                FontSize="11"></Label>
                                     </StackLayout>

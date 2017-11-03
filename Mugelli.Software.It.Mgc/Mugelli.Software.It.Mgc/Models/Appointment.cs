@@ -15,12 +15,4 @@ namespace Mugelli.Software.It.Mgc.Models
         public EventType Type { get; set; }
         public List<TimeLineAppointment> TimeLine { get; set; }
     }
-
-    public class TimeLineAppointment
-    {
-        public string Time { get; set; }
-        public string Name { get; set; }
-        public string Information { get; set; }
-        public bool IsLast { get; set; }
-    }
 }

@@ -18,6 +18,8 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         public CalendarViewModel(INavigationService navigationService)
         {
             _navigationService = navigationService;
+
+
             Appointments = new List<Appointment>
             {
                 new Appointment
@@ -45,6 +47,13 @@ namespace Mugelli.Software.It.Mgc.ViewModel
                     TimeLine = TimeLineAppointmentTest
                 }
             };
+            
+            AppointmentsGroupped = new List<List<Appointment>>
+            {
+                Appointments,
+                Appointments,
+                Appointments
+            };
 
             ShowAppointmentCommand = new RelayCommand<Appointment>(OnShowAppointment);
         }
@@ -53,6 +62,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         public string Icon { get; set; } = OnPlatformHelper.IconOniOS("Calendar_50px.png");
 
         public List<Appointment> Appointments { get; set; }
+        public List<List<Appointment>> AppointmentsGroupped { get; set; }
         public ICommand ShowAppointmentCommand { get; set; }
 
         private List<TimeLineAppointment> TimeLineAppointmentTest { get; } = new List<TimeLineAppointment>
@@ -79,7 +89,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             {
                 Time = "12:30",
                 Information = "In attesa di iniziare",
-                Name = "Pausa e preparazione tavoli per pranzo"
+                Name = "Pausa e preparazione"
             },
             new TimeLineAppointment
             {
@@ -109,7 +119,8 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             {
                 Time = "17:00",
                 Information = "Salutiamoci",
-                Name = "Messa e saluti"
+                Name = "Messa e saluti",
+                IsLast = true
             }
         };
 

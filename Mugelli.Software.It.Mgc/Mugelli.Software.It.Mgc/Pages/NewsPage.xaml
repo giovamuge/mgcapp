@@ -13,7 +13,7 @@
             <ListView
                 ItemsSource="{Binding NewsList}"
                 BackgroundColor="Transparent"
-                RowHeight="400"
+                RowHeight="300"
                 SeparatorVisibility="None"
                 SelectedItem="{Binding ReadArticleCommand, Mode=TwoWay}">
 
@@ -65,11 +65,11 @@
 
                                             <Label Text="{Binding Path=ShortTitle}" 
                                                        FontSize="Large"
-                                                       Style="{StaticResource TitleLabelPrimary}"
+                                                       Style="{StaticResource ClassNameLabel}"
                                                        VerticalOptions="CenterAndExpand" />
 
                                             <Label Text="{Binding Path=Subtitle}"
-                                                   Style="{StaticResource BodyLabelPrimary}"
+                                                   Style="{StaticResource ClassInstructorLabel}"
                                                    VerticalOptions="CenterAndExpand"></Label>
 
                                             <Grid Padding="0,10" 
