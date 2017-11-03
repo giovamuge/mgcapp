@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "402954439752",
+    "firebase_url": "https://mgc-news.firebaseio.com",
+    "project_id": "mgc-news",
+    "storage_bucket": "mgc-news.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:402954439752:android:2d2810dce428328e",
+        "android_client_info": {
+          "package_name": "com.mugellisoftware.mgc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "402954439752-iuai5advjlnjkpqdis1u44rarsqa9hnt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mugellisoftware.mgc",
+            "certificate_hash": "a9c1ce0209f08e2e747a1307856f18f73c29c62a"
+          }
+        },
+        {
+          "client_id": "402954439752-ej62bb6h0k9t636uasa0epqt0b4jqcj6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDVPwRXP2KQRyGwjB8HA5Zune_20bYv_c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "402954439752-ej62bb6h0k9t636uasa0epqt0b4jqcj6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
