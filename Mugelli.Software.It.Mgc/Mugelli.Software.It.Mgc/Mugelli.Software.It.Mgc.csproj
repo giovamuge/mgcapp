@@ -85,6 +85,7 @@
     <Compile Include="RootPage.xaml.cs">
       <DependentUpon>RootPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Services\IPushNotifications.cs" />
     <Compile Include="Stacks\PageStacks.cs" />
     <Compile Include="UserControls\CustomButton.cs" />
     <Compile Include="UserControls\HtmlFormatLabel.cs" />
