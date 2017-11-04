@@ -32,9 +32,9 @@
                 <StackLayout Orientation="Vertical"
                              HorizontalOptions="Fill"
                              Grid.Row="1"
-                             Padding="24,0,24,14" 
+                             Padding="24,30,24,14" 
                              Spacing="14"
-                             BackgroundColor="WhiteSmoke">
+                             BackgroundColor="{StaticResource GrayUltraLight}">
 
                     <Label Style="{StaticResource TitleLabelPrimary}" Text="{Binding Article.Title}" />
 

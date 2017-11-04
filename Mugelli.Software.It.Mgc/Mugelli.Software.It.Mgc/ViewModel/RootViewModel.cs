@@ -19,6 +19,9 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         public Page Communications { get; set; }
         public Page Calendar { get; set; }
 
+        public Color BarBackgroundColor { get; set; }
+        public Color BarTextColor { get; set; } 
+
         public List<Page> Childrens { get; set; }
         
         public RootViewModel()
@@ -38,6 +41,17 @@ namespace Mugelli.Software.It.Mgc.ViewModel
                 Calendar,
                 Communications
             };
+
+            switch (Device.RuntimePlatform)
+            {
+                case Device.Android:
+                    BarBackgroundColor = (Color) Application.Current.Resources["MgcColor"];
+                    BarTextColor = (Color) Application.Current.Resources["GrayUltraLight"];
+                    break;
+                case Device.iOS:
+                    BarTextColor = (Color)Application.Current.Resources["MgcColor"];
+                    break;
+            }
         }
         
     }

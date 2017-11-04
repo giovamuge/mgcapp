@@ -13,7 +13,7 @@
             <ListView
                 ItemsSource="{Binding NewsList}"
                 BackgroundColor="Transparent"
-                RowHeight="300"
+                HasUnevenRows="True"
                 SeparatorVisibility="None"
                 SelectedItem="{Binding ReadArticleCommand, Mode=TwoWay}">
 
@@ -31,7 +31,8 @@
 
                         <ViewCell>
                             <ViewCell.View>
-                                <AbsoluteLayout Padding="14">
+                                <AbsoluteLayout Padding="14"
+                                                VerticalOptions="FillAndExpand">
 
                                     <StackLayout Orientation="Vertical" 
                                                  Spacing="0" 
@@ -63,7 +64,7 @@
                                         <StackLayout Padding="16,10" 
                                                      Spacing="4">
 
-                                            <Label Text="{Binding Path=ShortTitle}" 
+                                            <Label Text="{Binding Path=Title}" 
                                                        FontSize="Large"
                                                        Style="{StaticResource ClassNameLabel}"
                                                        VerticalOptions="CenterAndExpand" />
@@ -72,7 +73,7 @@
                                                    Style="{StaticResource ClassInstructorLabel}"
                                                    VerticalOptions="CenterAndExpand"></Label>
 
-                                            <Grid Padding="0,10" 
+                                            <!--<Grid Padding="0,10" 
                                                       MinimumHeightRequest="36" 
                                                       MinimumWidthRequest="44">
 
@@ -92,7 +93,7 @@
                                                            VerticalOptions="Center"
                                                            Style="{StaticResource Sub}"
                                                            IsVisible="true" />
-                                            </Grid>
+                                            </Grid>-->
                                         </StackLayout>
                                     </StackLayout>
                                 </AbsoluteLayout>

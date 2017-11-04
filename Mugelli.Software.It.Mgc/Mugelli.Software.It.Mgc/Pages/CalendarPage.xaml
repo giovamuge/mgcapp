@@ -12,7 +12,7 @@
             
             <ListView BackgroundColor="Transparent"
                       SeparatorVisibility="None"
-                      RowHeight="100"
+                      HasUnevenRows="True"
                       ItemsSource="{Binding Appointments}"
                       IsGroupingEnabled="False">
                 
@@ -24,7 +24,7 @@
                 
                 <ListView.Header>
                     <StackLayout Orientation="Horizontal"
-                                 Padding="20,40,0,30">
+                                 Padding="20,30,10,30">
                         <!-- TODO:Da cambiare immagine nera -->
                         <Image Source="Calendar_50px.png" VerticalOptions="Fill"></Image>
                         <Label Style="{StaticResource PageHeaderLabel}" Text="Calendario"></Label>

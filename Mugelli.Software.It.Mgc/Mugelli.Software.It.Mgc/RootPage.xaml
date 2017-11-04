@@ -5,7 +5,9 @@
             x:Class="Mugelli.Software.It.Mgc.RootPage"
             Title="{Binding Title}"
             BindingContext="{Binding RootViewModel, Source={StaticResource ViewModelLocator}}"
-            Children="{Binding Childrens}">
+            Children="{Binding Childrens}"
+            BarTextColor="{Binding BarTextColor}"
+            BarBackgroundColor="{Binding BarBackgroundColor}">
 
     <!--Children="{Binding Tabs}"
             SelectedItem="{Binding CurrentTab, Mode=TwoWay}"-->
