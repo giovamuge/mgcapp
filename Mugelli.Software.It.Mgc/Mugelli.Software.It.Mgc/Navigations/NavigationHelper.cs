@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using GalaSoft.MvvmLight.Ioc;
 using Mugelli.Software.It.Mgc.Pages;
+using Mugelli.Software.It.Mgc.Services;
 using Mugelli.Software.It.Mgc.Stacks;
 using Xamarin.Forms;
 
@@ -28,6 +29,7 @@ namespace Mugelli.Software.It.Mgc.Navigations
 
                 // Register NavigationService in IoC container:
                 SimpleIoc.Default.Register(() => navigation);
+                //SimpleIoc.Default.Register(() => DependencyService.Get<IHttpClientService>());
             }
             else
             {

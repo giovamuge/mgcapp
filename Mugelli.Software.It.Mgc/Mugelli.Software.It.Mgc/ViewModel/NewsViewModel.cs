@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using Mugelli.Software.It.Mgc.Helper;
 using Mugelli.Software.It.Mgc.Models;
 using Mugelli.Software.It.Mgc.Navigations;
+using Mugelli.Software.It.Mgc.Services;
 using Mugelli.Software.It.Mgc.Stacks;
 using Xamarin.Forms;
 
@@ -28,6 +30,7 @@ Aenean cursus tellus est, nec porta mauris porttitor a. Phasellus fringilla rhon
         public NewsViewModel(INavigationService navigationService)
         {
             _navigationService = navigationService;
+
             NewsList = new List<News>
             {
                 new News
@@ -81,8 +84,11 @@ Aenean cursus tellus est, nec porta mauris porttitor a. Phasellus fringilla rhon
                         //ballo, pallaavvelenata, pallavolo, cammino, 2017"
                 }
             };
+            
 
             ReadArticleCommand = new RelayCommand<News>(OnReadArticle);
+
+            var content = RssFeddService.GetRss();
         }
 
         public string Title { get; set; } = "News";

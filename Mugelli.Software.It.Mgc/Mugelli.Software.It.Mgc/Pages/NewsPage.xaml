@@ -31,8 +31,9 @@
 
                         <ViewCell>
                             <ViewCell.View>
-                                <AbsoluteLayout Padding="14"
-                                                VerticalOptions="FillAndExpand">
+                                <Grid Padding="14" 
+                                      VerticalOptions="FillAndExpand"
+                                      BackgroundColor="{StaticResource GrayLight}">
 
                                     <StackLayout Orientation="Vertical" 
                                                  Spacing="0" 
@@ -49,7 +50,6 @@
                                     </StackLayout>
 
                                     <StackLayout Orientation="Vertical"
-                                                 BackgroundColor="{StaticResource SecondaryTextColor}" 
                                                  Spacing="0"
                                                  VerticalOptions="FillAndExpand"
                                                  AbsoluteLayout.LayoutFlags="All" 
@@ -61,17 +61,31 @@
                                                HorizontalOptions="Fill"
                                                Opacity=".8" />
 
-                                        <StackLayout Padding="16,10" 
-                                                     Spacing="4">
+                                        <StackLayout Padding=".5, 0, .5, .5"
+                                                     Spacing="4"
+                                                     BackgroundColor="{StaticResource GrayPrimary}">
 
-                                            <Label Text="{Binding Path=Title}" 
-                                                       FontSize="Large"
+                                            <Grid Padding="16, 10"
+                                                  BackgroundColor="{StaticResource GrayUltraLight}">
+                                                
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                </Grid.RowDefinitions>
+                                                
+                                                <Label Text="{Binding Path=Title}"
                                                        Style="{StaticResource ClassNameLabel}"
-                                                       VerticalOptions="CenterAndExpand" />
+                                                       VerticalOptions="Fill"
+                                                       LineBreakMode="WordWrap"
+                                                       Grid.Row="0"/>
 
-                                            <Label Text="{Binding Path=Subtitle}"
-                                                   Style="{StaticResource ClassInstructorLabel}"
-                                                   VerticalOptions="CenterAndExpand"></Label>
+                                                <Label Text="{Binding Path=Subtitle}"
+                                                       Style="{StaticResource ClassInstructorLabel}"
+                                                       VerticalOptions="Fill"
+                                                       LineBreakMode="TailTruncation"
+                                                       Grid.Row="1"/>
+                                            </Grid>
+
 
                                             <!--<Grid Padding="0,10" 
                                                       MinimumHeightRequest="36" 
@@ -96,7 +110,7 @@
                                             </Grid>-->
                                         </StackLayout>
                                     </StackLayout>
-                                </AbsoluteLayout>
+                                </Grid>
                             </ViewCell.View>
                         </ViewCell>
 
