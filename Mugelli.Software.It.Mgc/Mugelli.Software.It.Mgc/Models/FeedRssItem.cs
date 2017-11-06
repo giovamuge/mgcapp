@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Web;
+using System.Net;
 using Mugelli.Software.It.Mgc.Extensions;
 using Newtonsoft.Json;
 
@@ -13,7 +13,7 @@ namespace Mugelli.Software.It.Mgc.Models
         public string Title
         {
             get => _title;
-            set => _title = value/*HttpUtility.HtmlEncode(value)*/;
+            set => _title = WebUtility.HtmlDecode(value);
         }
 
         public string Url { get; set; }

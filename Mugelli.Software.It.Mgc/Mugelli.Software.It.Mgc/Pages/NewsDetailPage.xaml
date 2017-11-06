@@ -4,7 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:userControls="clr-namespace:Mugelli.Software.It.Mgc.UserControls;assembly=Mugelli.Software.It.Mgc"
              x:Class="Mugelli.Software.It.Mgc.Pages.NewsDetailPage"
-             Title="{Binding Article.ShortTitle}"
+             Title="{Binding Article.Title}"
              BindingContext="{Binding NewsDetailViewModel, Source={StaticResource ViewModelLocator}}"
              BackgroundColor="WhiteSmoke">
     <ContentPage.Content>

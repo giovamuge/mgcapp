@@ -99,6 +99,8 @@ namespace Mugelli.Software.It.Mgc.Behaviors
 
             if (Command.CanExecute(resolvedParameter))
                 Command.Execute(resolvedParameter);
+
+            //if (sender is ListView) ((ListView)sender).SelectedItem = null;
         }
 
         private static void OnEventNameChanged(BindableObject bindable, object oldValue, object newValue)
