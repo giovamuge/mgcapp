@@ -13,7 +13,7 @@ namespace Mugelli.Software.It.Mgc.Models
         public string Title
         {
             get => _title;
-            set => _title =  value/*HttpUtility.HtmlEncode(value)*/;
+            set => _title = value/*HttpUtility.HtmlEncode(value)*/;
         }
 
         public string Url { get; set; }
@@ -29,6 +29,8 @@ namespace Mugelli.Software.It.Mgc.Models
 
         [JsonProperty("date_published")]
         public DateTime DatePublished { get; set; }
+
+        public Author Author { get; set; }
 
         public string HeroImage { get; set; } = "PiccoloPrincipe.jpg";
     }

@@ -2,13 +2,14 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:userControls="clr-namespace:Mugelli.Software.It.Mgc.UserControls;assembly=Mugelli.Software.It.Mgc"
              x:Class="Mugelli.Software.It.Mgc.Pages.NewsDetailPage"
              Title="{Binding Article.ShortTitle}"
              BindingContext="{Binding NewsDetailViewModel, Source={StaticResource ViewModelLocator}}"
              BackgroundColor="WhiteSmoke">
     <ContentPage.Content>
 
-        <ScrollView x:Name="ScrollView">
+        <ScrollView x:Name="ScrollCustom">
 
             <Grid VerticalOptions="Fill">
                 <Grid.RowDefinitions>
@@ -45,15 +46,15 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
 
-                        <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding Article.Author}" Grid.Column="0" />
+                        <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding Article.Author.Name}" Grid.Column="0" />
 
-                        <StackLayout Orientation="Horizontal"
+                        <!--<StackLayout Orientation="Horizontal"
                                      Grid.Column="1">
                             <Image Source="Clock_50px.png" />
-                            <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding Article.DateCreate}" />
-                        </StackLayout>
+                            <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding Article.DatePublished, StringFormat='{}{0:dd MMM yyyy HH:mm}'}" />
+                        </StackLayout>-->
                     </Grid>
-                    <Label Style="{StaticResource BodyLabelPrimary}" Text="{Binding Article.Text}" FontSize="20" />
+                    <userControls:HtmlFormatLabel Style="{StaticResource BodyLabelPrimary}" Text="{Binding Article.ContentHtml}" FontSize="20" />
 
                 </StackLayout>
 

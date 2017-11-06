@@ -55,6 +55,7 @@
     <Compile Include="Extensions\StringExtension.cs" />
     <Compile Include="Helper\OnPlatformHelper.cs" />
     <Compile Include="Models\Appointment.cs" />
+    <Compile Include="Models\Author.cs" />
     <Compile Include="Models\BaseModel.cs" />
     <Compile Include="Models\FeedRss.cs" />
     <Compile Include="Models\FeedRssItem.cs" />

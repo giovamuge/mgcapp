@@ -4,9 +4,9 @@ namespace Mugelli.Software.It.Mgc.ViewModel
 {
     public class NewsDetailViewModel : BaseViewModel
     {
-        private News _article;
+        private FeedRssItem _article;
 
-        public News Article
+        public FeedRssItem Article
         {
             get => _article;
             set

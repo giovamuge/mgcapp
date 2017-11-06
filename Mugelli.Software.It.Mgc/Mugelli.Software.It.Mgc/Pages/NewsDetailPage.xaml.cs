@@ -15,7 +15,7 @@ namespace Mugelli.Software.It.Mgc.Pages
 	{
 	    private double _imageHeight;
 
-	    public NewsDetailPage (News news)
+	    public NewsDetailPage (FeedRssItem news)
         {
             InitializeComponent ();
 
@@ -23,7 +23,7 @@ namespace Mugelli.Software.It.Mgc.Pages
             if (viewModel != null) viewModel.Article = news;
 
 
-            ScrollView.Scrolled += (sender, e) => Parallax();
+            ScrollCustom.Scrolled += (sender, e) => Parallax();
             Parallax();
         }
 
@@ -32,7 +32,7 @@ namespace Mugelli.Software.It.Mgc.Pages
 	        if (_imageHeight <= 0)
 	            _imageHeight = HeroImage.Height;
 
-	        var y = ScrollView.ScrollY * .4;
+	        var y = ScrollCustom.ScrollY * .4;
 	        if (y >= 0)
 	        {
                 //Move the Image's Y coordinate a fraction of the ScrollView's Y position
@@ -42,9 +42,9 @@ namespace Mugelli.Software.It.Mgc.Pages
 	        else
 	        {
 	            //Calculate a scale that equalizes the height vs scroll
-	            var newHeight = _imageHeight + (ScrollView.ScrollY * -1);
+	            var newHeight = _imageHeight + (ScrollCustom.ScrollY * -1);
 	            HeroImage.Scale = newHeight / _imageHeight;
-	            HeroImage.TranslationY = ScrollView.ScrollY / 2;
+	            HeroImage.TranslationY = ScrollCustom.ScrollY / 2;
 	        }
 	    }
     }
