@@ -305,7 +305,7 @@
     <AndroidResource Include="Resources\drawable\footer.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\calendar-filled.png" />
+    <AndroidResource Include="Resources\drawable\calendar_filled.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\calendar_filled.png" />
