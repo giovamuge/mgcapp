@@ -16,7 +16,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             }
         }
 
-        public string Title { get; set; } = "Timeline Event";
+        public string Title { get; set; } = "Programma";
 
         public CalendarDetailViewModel() { }
     }

@@ -22,6 +22,8 @@
             <converters:IsNullToBoolConverter x:Key="IsNullToBoolConverter" />
             <converters:NullIntValueConverter x:Key="NullIntValueConverter" />
             <converters:TypeEventColorConverter x:Key="TypeEventColorConverter" />
+            <converters:TypeEventImageConverter x:Key="TypeEventImageConverter" />
+            <converters:TypeEventTextConverter x:Key="TypeEventTextConverter" />
             <converters:NotBooleanConverter x:Key="NotBooleanConverter" />
 
             <!-- STYLE -->
@@ -133,6 +135,16 @@
 
             <forms:Style x:Key="SubHeaderLabel" TargetType="forms:Label">
                 <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
+                <forms:Setter Property="Font" Value="{StaticResource SubHeaderFont}" />
+            </forms:Style>
+
+            <forms:Style x:Key="SecondaryPageHeaderLabel" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource SecondaryTextColor}" />
+                <forms:Setter Property="Font" Value="{StaticResource HeaderFont}" />
+            </forms:Style>
+
+            <forms:Style x:Key="SecondarySubHeaderLabel" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource SecondaryTextColor}" />
                 <forms:Setter Property="Font" Value="{StaticResource SubHeaderFont}" />
             </forms:Style>
 

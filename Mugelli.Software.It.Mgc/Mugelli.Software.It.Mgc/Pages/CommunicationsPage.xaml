@@ -1,13 +1,103 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behaviors="clr-namespace:Mugelli.Software.It.Mgc.Behaviors;assembly=Mugelli.Software.It.Mgc"
              x:Class="Mugelli.Software.It.Mgc.Pages.CommunicationsPage"
              Title="{Binding Title}"
              Icon="{Binding Icon}"
              BindingContext="{Binding ComunicationsViewModel, Source={StaticResource ViewModelLocator}}">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Communications!" />
-        </StackLayout>
+        <Grid>
+            <ListView
+                ItemsSource="{Binding CommunicationsList}"
+                BackgroundColor="Transparent"
+                HasUnevenRows="True"
+                SeparatorVisibility="None">
+
+
+                <!--<ListView.Behaviors>
+                    -->
+                <!--<behaviors:ListViewSelectedItemBehavior Command="{Binding ReadArticleCommand}"
+                                                            Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}" />-->
+                <!--
+                    <behaviors:EventToCommandBehavior Command="{Binding ReadArticleCommand}"
+                                                      EventName="ItemSelected"
+                                                      Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}" />
+                </ListView.Behaviors>-->
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Grid Padding="14" 
+                                      VerticalOptions="FillAndExpand"
+                                      BackgroundColor="{StaticResource GrayLight}">
+
+                                    <StackLayout Orientation="Vertical"
+                                                 Spacing="0"
+                                                 VerticalOptions="FillAndExpand">
+
+                                        <StackLayout Padding=".5"
+                                                     Spacing="4"
+                                                     BackgroundColor="{StaticResource GrayPrimary}">
+
+                                            <Grid Padding="16, 10"
+                                                  BackgroundColor="{StaticResource GrayUltraLight}">
+
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                </Grid.RowDefinitions>
+
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                                </Grid.ColumnDefinitions>
+
+                                                <Label Text="{Binding Path=Title}"
+                                                       Style="{StaticResource ClassNameLabel}"
+                                                       VerticalOptions="Fill"
+                                                       LineBreakMode="WordWrap"
+                                                       Grid.Row="0"
+                                                       Grid.ColumnSpan="2"/>
+
+                                                <StackLayout Grid.Column="0"
+                                                             Grid.Row="1"
+                                                             BackgroundColor="{Binding Path=Type, Converter={StaticResource TypeEventColorConverter}}"
+                                                             Margin="-16, 0, 0, 0"
+                                                             Padding="18, 4, 8, 4">
+                                                    <Label Text="{Binding Path=Type, Converter={StaticResource TypeEventTextConverter}}"
+                                                           Style="{StaticResource HandleLabelSecondary}"/>
+                                                </StackLayout>
+
+                                                <StackLayout HorizontalOptions="End"
+                                                             Orientation="Horizontal"
+                                                             VerticalOptions="Fill"
+                                                             Grid.Row="1"
+                                                             Grid.Column="1">
+                                                    <Image Source="Black_Clock_50px.png" />
+                                                    <Label Text="{Binding Path=Date, StringFormat='{}{0: dd MMM yyyy}'}"
+                                                           Style="{StaticResource HandleLabelPrimary}"
+                                                           VerticalTextAlignment="Center"></Label>
+                                                </StackLayout>
+
+                                                <Label Text="{Binding Path=Content}"
+                                                       Style="{StaticResource ClassInstructorLabel}"
+                                                       VerticalOptions="Fill"
+                                                       Grid.Row="2"
+                                                       Grid.ColumnSpan="2"/>
+                                            </Grid>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -38,8 +38,6 @@
                                     <StackLayout Orientation="Vertical" 
                                                  Spacing="0" 
                                                  VerticalOptions="Fill"
-                                                 AbsoluteLayout.LayoutFlags="All" 
-                                                 AbsoluteLayout.LayoutBounds="0,0,1,1"
                                                  Padding="30"
                                                  IsVisible="{Binding Path=Title, Converter={StaticResource IsNullToBoolConverter}}">
 
@@ -47,13 +45,12 @@
                                                FontSize="Large" 
                                                TextColor="{StaticResource GrayDark}"
                                                HorizontalTextAlignment="Center" />
+                                        
                                     </StackLayout>
 
                                     <StackLayout Orientation="Vertical"
                                                  Spacing="0"
                                                  VerticalOptions="FillAndExpand"
-                                                 AbsoluteLayout.LayoutFlags="All" 
-                                                 AbsoluteLayout.LayoutBounds="0,0,1,1"
                                                  IsVisible="{Binding Path=Title, Converter={StaticResource IsNotNullToBoolConverter}}">
 
                                         <Image Source="{Binding Path=HeroImage}" 

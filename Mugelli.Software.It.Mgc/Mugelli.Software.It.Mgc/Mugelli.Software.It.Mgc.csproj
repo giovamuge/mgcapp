@@ -50,6 +50,8 @@
     <Compile Include="Converters\NullIntValueConverter.cs" />
     <Compile Include="Converters\SelectedItemEventArgsToSelectedItemConverter.cs" />
     <Compile Include="Converters\TypeEventColorConverter.cs" />
+    <Compile Include="Converters\TypeEventImageConverter.cs" />
+    <Compile Include="Converters\TypeEventTextConverter.cs" />
     <Compile Include="Extensions\CommonExtensions.cs" />
     <Compile Include="Extensions\ObservableCollectionExtension.cs" />
     <Compile Include="Extensions\StringExtension.cs" />
@@ -57,6 +59,7 @@
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Author.cs" />
     <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Models\Communication.cs" />
     <Compile Include="Models\FeedRss.cs" />
     <Compile Include="Models\FeedRssItem.cs" />
     <Compile Include="Models\NewsDetail.cs" />

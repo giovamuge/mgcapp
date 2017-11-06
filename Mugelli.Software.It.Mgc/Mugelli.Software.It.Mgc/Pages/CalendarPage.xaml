@@ -9,19 +9,19 @@
              BackgroundColor="WhiteSmoke">
     <ContentPage.Content>
         <Grid>
-            
+
             <ListView BackgroundColor="Transparent"
                       SeparatorVisibility="None"
                       HasUnevenRows="True"
                       ItemsSource="{Binding Appointments}"
                       IsGroupingEnabled="False">
-                
+
                 <ListView.Behaviors>
                     <behaviors:EventToCommandBehavior Command="{Binding ShowAppointmentCommand}"
                                                       EventName="ItemSelected"
                                                       Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}" />
                 </ListView.Behaviors>
-                
+
                 <ListView.Header>
                     <StackLayout Orientation="Horizontal"
                                  Padding="20,30,10,30">
@@ -71,10 +71,22 @@
                                                  Padding="20">
                                         <Label Style="{StaticResource ClassNameLabel}" 
                                                Text="{Binding Path=Title}"></Label>
-                                        <!-- TODO:Aggiungere icona location -->
-                                        <Label Style="{StaticResource ClassInstructorLabel}" 
-                                               Text="{Binding Path=Location}"
-                                               FontSize="11"></Label>
+                                        
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+                                            
+                                            <Image Source="Marker_50px.png"
+                                                   Grid.Column="0"
+                                                   HorizontalOptions="Start"/>
+                                            <Label Style="{StaticResource ClassInstructorLabel}" 
+                                                   Text="{Binding Path=Location}"
+                                                   FontSize="11"
+                                                   Grid.Column="1"/>
+
+                                        </Grid>
                                     </StackLayout>
 
                                 </ContentView>

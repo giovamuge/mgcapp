@@ -119,8 +119,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             {
                 Time = "17:00",
                 Information = "Salutiamoci",
-                Name = "Messa e saluti",
-                IsLast = true
+                Name = "Messa e saluti"
             }
         };
 

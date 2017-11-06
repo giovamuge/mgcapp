@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mugelli.Software.It.Mgc.Pages.CalendarDetailPage"
@@ -15,9 +16,10 @@
             BackgroundColor="White">
 
             <ListView.Header>
-                <StackLayout Padding="20,40,0,30">
-                    <Label Style="{StaticResource PageHeaderLabel}" x:Name="AppointmentTitle" />
-                    <Label Style="{StaticResource SubHeaderLabel}" x:Name="AppointmentDate" />
+                <StackLayout Padding="20,40,10,30"
+                             BackgroundColor="{Binding Appointment.Type, Converter={StaticResource TypeEventColorConverter}}">
+                    <Label Style="{StaticResource SecondaryPageHeaderLabel}" x:Name="AppointmentTitle" />
+                    <Label Style="{StaticResource SecondarySubHeaderLabel}" x:Name="AppointmentDate" />
                 </StackLayout>
             </ListView.Header>
 
@@ -48,13 +50,13 @@
                             <Label HorizontalOptions="Center"
                                    VerticalOptions="Center"
                                    Style="{StaticResource ClassTimeLabel}"
-                                   Text="{Binding Path=Time}" 
-                                   VerticalTextAlignment="Center"/>
+                                   Text="{Binding Path=Time}"
+                                   VerticalTextAlignment="Center" />
 
                             <Label
                                 Grid.Row="0"
                                 Grid.Column="2"
-                                Margin="20,0"
+                                Margin="20, 20, 10,0"
                                 Style="{StaticResource ClassNameLabel}"
                                 Text="{Binding Path=Name}" />
 
@@ -68,21 +70,20 @@
                             <BoxView
                                 Grid.RowSpan="2"
                                 Grid.Column="1"
-                                BackgroundColor="{StaticResource MgcColor}"
+                                BackgroundColor="{Binding Path=BindingContext.Appointment.Type, Converter={StaticResource TypeEventColorConverter}, Source={x:Reference Name=Root}}"
                                 HorizontalOptions="Center"
                                 IsVisible="{Binding Path=IsLast, Converter={StaticResource NotBooleanConverter}}"
                                 VerticalOptions="Fill"
                                 WidthRequest="3" />
 
-                            <Image Grid.Column="1" Source="Filled_Circle_100px.png" />
+                            <Image Grid.Column="1"
+                                   Source="{Binding Path=BindingContext.Appointment.Type, Converter={StaticResource TypeEventImageConverter}, Source={x:Reference Name=Root}}" />
 
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-
-
 
 
     </ContentPage.Content>
