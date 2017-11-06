@@ -7,6 +7,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using FFImageLoading;
+using FFImageLoading.Forms.Droid;
 using Plugin.FirebasePushNotification;
 
 namespace Mugelli.Software.It.Mgc.Droid
@@ -20,6 +22,17 @@ namespace Mugelli.Software.It.Mgc.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
+            CachedImageRenderer.Init();
+
+            var config = new FFImageLoading.Config.Configuration
+            {
+                VerboseLogging = false,
+                VerbosePerformanceLogging = false,
+                VerboseMemoryCacheLogging = false,
+                VerboseLoadingCancelledLogging = false,
+                Logger = new CustomLogger(),
+            };
+            ImageService.Instance.Initialize(config);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
@@ -72,6 +85,24 @@ namespace Mugelli.Software.It.Mgc.Droid
         //    var notificationManager = NotificationManager.FromContext(this);
         //    notificationManager.Notify(0, notificationBuilder.Build());
         //}
+    }
+
+    public class CustomLogger : FFImageLoading.Helpers.IMiniLogger
+    {
+        public void Debug(string message)
+        {
+            Console.WriteLine(message);
+        }
+
+        public void Error(string errorMessage)
+        {
+            Console.WriteLine(errorMessage);
+        }
+
+        public void Error(string errorMessage, Exception ex)
+        {
+            Error(errorMessage + System.Environment.NewLine + ex);
+        }
     }
 }
 
