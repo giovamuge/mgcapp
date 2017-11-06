@@ -56,6 +56,8 @@
     <Compile Include="Helper\OnPlatformHelper.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Models\FeedRss.cs" />
+    <Compile Include="Models\FeedRssItem.cs" />
     <Compile Include="Models\NewsDetail.cs" />
     <Compile Include="Models\News.cs" />
     <Compile Include="Models\TimeLineAppointment.cs" />
@@ -88,6 +90,7 @@
     </Compile>
     <Compile Include="Services\IHttpClientService.cs" />
     <Compile Include="Services\IPushNotifications.cs" />
+    <Compile Include="Services\IRssFeedService.cs" />
     <Compile Include="Services\RssFeddService.cs" />
     <Compile Include="Stacks\PageStacks.cs" />
     <Compile Include="UserControls\CustomButton.cs" />
@@ -128,6 +131,9 @@
     </Reference>
     <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.10.0.3\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System.Net.Http, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.dll</HintPath>

@@ -41,7 +41,7 @@
                                                  AbsoluteLayout.LayoutFlags="All" 
                                                  AbsoluteLayout.LayoutBounds="0,0,1,1"
                                                  Padding="30"
-                                                 IsVisible="{Binding Path=Id, Converter={StaticResource IsNullToBoolConverter}}">
+                                                 IsVisible="{Binding Path=Title, Converter={StaticResource IsNullToBoolConverter}}">
 
                                         <Label Text="Non esiste" 
                                                FontSize="Large" 
@@ -54,7 +54,7 @@
                                                  VerticalOptions="FillAndExpand"
                                                  AbsoluteLayout.LayoutFlags="All" 
                                                  AbsoluteLayout.LayoutBounds="0,0,1,1"
-                                                 IsVisible="{Binding Path=Id, Converter={StaticResource IsNotNullToBoolConverter}}">
+                                                 IsVisible="{Binding Path=Title, Converter={StaticResource IsNotNullToBoolConverter}}">
 
                                         <Image Source="{Binding Path=HeroImage}" 
                                                Aspect="AspectFill"
@@ -79,7 +79,7 @@
                                                        LineBreakMode="WordWrap"
                                                        Grid.Row="0"/>
 
-                                                <Label Text="{Binding Path=Subtitle}"
+                                                <Label Text="{Binding Path=Content}"
                                                        Style="{StaticResource ClassInstructorLabel}"
                                                        VerticalOptions="Fill"
                                                        LineBreakMode="TailTruncation"

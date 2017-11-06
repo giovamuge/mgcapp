@@ -7,19 +7,28 @@ using System.Threading.Tasks;
 using System.Xml.Serialization;
 using Mugelli.Software.It.Mgc.Commons;
 using Mugelli.Software.It.Mgc.Extensions;
+using Mugelli.Software.It.Mgc.Models;
+using Newtonsoft.Json;
 
 namespace Mugelli.Software.It.Mgc.Services
 {
-    public static class RssFeddService
+    public class RssFeddService : IRssFeedService
     {
-        public static async Task<object> GetRss()
+        public async Task<FeedRss> GetRss()
         {
-            var client = new HttpClient();
-            var response = await client.GetAsync(new Uri(RssFeedCommon.Url));
-            if (!response.IsSuccessStatusCode) return null;
-            var content = await response.Content.ReadAsStringAsync();
-            var data = ConvertXml(content);
-            return data;
+            try
+            {
+                var client = new HttpClient();
+                var response = await client.GetAsync(new Uri(RssFeedCommon.Url));
+                if (!response.IsSuccessStatusCode) return null;
+                var content = await response.Content.ReadAsStringAsync();
+                //var data = ConvertXml(content);
+                return JsonConvert.DeserializeObject<FeedRss>(content);
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
         }
 
 
@@ -45,7 +54,7 @@ namespace Mugelli.Software.It.Mgc.Services
             //}
             //catch (Exception ex)
             //{
-                return null;
+            return null;
             //}
         }
 

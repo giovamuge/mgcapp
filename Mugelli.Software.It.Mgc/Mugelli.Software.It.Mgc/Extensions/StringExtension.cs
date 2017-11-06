@@ -122,5 +122,11 @@ namespace Mugelli.Software.It.Mgc.Extensions
                     ? $"{value.Substring(0, maxLength)}.."
                     : value.Substring(0, maxLength);
         }
+
+        public static string StripHtml(this string input)
+        {
+            //return !string.IsNullOrEmpty(input) ? Regex.Replace(input, "<.*?>", string.Empty) : string.Empty;
+            return Regex.Replace(input, "<.*?>", string.Empty);
+        }
     }
 }

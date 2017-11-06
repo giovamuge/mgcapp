@@ -29,6 +29,7 @@ namespace Mugelli.Software.It.Mgc.Navigations
 
                 // Register NavigationService in IoC container:
                 SimpleIoc.Default.Register(() => navigation);
+                SimpleIoc.Default.Register<IRssFeedService>(() => new RssFeddService());
                 //SimpleIoc.Default.Register(() => DependencyService.Get<IHttpClientService>());
             }
             else
