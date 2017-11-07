@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Threading.Tasks;
 using Android.App;
 using Android.Content;
 using Android.Content.PM;
@@ -9,6 +9,7 @@ using Android.Widget;
 using Android.OS;
 using FFImageLoading;
 using FFImageLoading.Forms.Droid;
+using Firebase.Xamarin.Auth;
 using Plugin.FirebasePushNotification;
 
 namespace Mugelli.Software.It.Mgc.Droid

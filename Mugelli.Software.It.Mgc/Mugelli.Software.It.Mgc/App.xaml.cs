@@ -18,26 +18,10 @@ namespace Mugelli.Software.It.Mgc
         {
             InitializeComponent();
 
+            //Initialize navigation
             var pageStart = NavigationHelper.Init();
-
-            //Task.Factory.StartNew(async () =>
-            //{
-            var email = $"{CrossDeviceInfo.Current.GenerateAppId(true)}@test.com";
-            const string password = "password";
-            // Email/Password Auth
-            var authProvider = new FirebaseAuthProvider(new FirebaseConfig("AIzaSyD2ANVRy4K4md-ASE0jhRbDdJCOoY34p8Y"));
-
-            //var auth = await authProvider.SignInWithEmailAndPasswordAsync(email, password);
-            var auth = authProvider.SignInWithEmailAndPasswordAsync(email, password).Result;
-            if (string.IsNullOrEmpty(auth.FirebaseToken))
-            {
-                //auth = await authProvider.CreateUserWithEmailAndPasswordAsync(email, password).Result;
-                auth = authProvider.CreateUserWithEmailAndPasswordAsync(email, password).Result;
-            }
-
-            // The auth Object will contain auth.User and the Authentication Token from the request
-            System.Diagnostics.Debug.WriteLine(auth.FirebaseToken);
-            //});
+            //Initialize auth
+            AuthorizationHelper.Instance.Init();
 
             MainPage = pageStart;
             //Old code
