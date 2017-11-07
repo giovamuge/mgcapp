@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Text.RegularExpressions;
 using Mugelli.Software.It.Mgc.Extensions;
@@ -48,7 +50,7 @@ namespace Mugelli.Software.It.Mgc.Models
             {
                 var img = m.Groups[0].Value;
                 if (!img.Contains("src")) continue;
-                
+
                 var pattern = new Regex(@"(?<=\bsrc="")[^""]*");
                 var src = pattern.Match(value).Groups[0].Value;
                 return src;
@@ -60,5 +62,15 @@ namespace Mugelli.Software.It.Mgc.Models
             return "PiccoloPrincipe.jpg";
         }
 
+        private static List<string> GetImages(string value)
+        {
+            return (from Match m in new Regex(@"<img (.+?)>").Matches(value)
+                select m.Groups[0].Value
+                into img
+                where img.Contains("src")
+                select new Regex(@"(?<=\bsrc="")[^""]*")
+                into pattern
+                select pattern.Match(value).Groups[0].Value).ToList();
+        }
     }
 }
