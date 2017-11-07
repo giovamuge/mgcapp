@@ -4,6 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:behaviors="clr-namespace:Mugelli.Software.It.Mgc.Behaviors;assembly=Mugelli.Software.It.Mgc"
              xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:userControls="clr-namespace:Mugelli.Software.It.Mgc.UserControls;assembly=Mugelli.Software.It.Mgc"
              x:Class="Mugelli.Software.It.Mgc.Pages.NewsPage"
              Title="{Binding Title}"
              Icon="{Binding Icon}"
@@ -16,7 +17,10 @@
                 BackgroundColor="Transparent"
                 HasUnevenRows="True"
                 SeparatorVisibility="None"
-                SelectedItem="{Binding ReadArticleCommand, Mode=TwoWay}">
+                SelectedItem="{Binding ReadArticleSelected, Mode=TwoWay}"
+                IsPullToRefreshEnabled="True"
+                IsRefreshing="{Binding IsRefreshing}"
+                RefreshCommand="{Binding RefreshCommand}">
 
 
                 <ListView.Behaviors>
@@ -26,6 +30,16 @@
                                                       EventName="ItemSelected"
                                                       Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}" />
                 </ListView.Behaviors>
+                
+                <!--<ListView.FooterTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <userControls:CustomButton Text="Altro"
+                                                       Style="{StaticResource ButtonStyle}"
+                                                       Command="{Binding NavigateMgcSite}"></userControls:CustomButton>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.FooterTemplate>-->
 
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -55,8 +69,15 @@
                                                  IsVisible="{Binding Path=Title, Converter={StaticResource IsNotNullToBoolConverter}}">
 
                                         <forms:CachedImage Source="{Binding Path=HeroImage}" 
+                                                               Aspect="AspectFill"
                                                            HorizontalOptions="Fill"
+                                                           DownsampleToViewSize="true"
+                                                           HeightRequest="150"
                                                            Opacity=".8" />
+                                        <!--<Image Source="{Binding Path=HeroImage}" 
+                                               Aspect="AspectFill"
+                                               HorizontalOptions="Fill"
+                                               Opacity=".8" />-->
 
                                         <StackLayout Padding=".5, 0, .5, .5"
                                                      Spacing="4"

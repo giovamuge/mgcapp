@@ -11,7 +11,7 @@ namespace Mugelli.Software.It.Mgc.Models
     public class FeedRssItem
     {
         private string _content;
-
+        private string _contentHtml;
         private string _heroImage;
         private string _title;
 
@@ -24,11 +24,15 @@ namespace Mugelli.Software.It.Mgc.Models
         public string Url { get; set; }
 
         [JsonProperty("content_html")]
-        public string ContentHtml { get; set; }
+        public string ContentHtml
+        {
+            get => _contentHtml;
+            set => _contentHtml = WebUtility.HtmlDecode(value);
+        }
 
         public string Content
         {
-            get => ContentHtml.StripHtml().Truncate(25);
+            get => ContentHtml.StripHtml();
             set => _content = value;
         }
 
@@ -53,7 +57,7 @@ namespace Mugelli.Software.It.Mgc.Models
 
                 var pattern = new Regex(@"(?<=\bsrc="")[^""]*");
                 var src = pattern.Match(value).Groups[0].Value;
-                return src;
+                return RemoveSize(src);
                 //if (Uri.TryCreate(src, UriKind.RelativeOrAbsolute, out var result))
                 //    return result;
             }
@@ -70,7 +74,16 @@ namespace Mugelli.Software.It.Mgc.Models
                 where img.Contains("src")
                 select new Regex(@"(?<=\bsrc="")[^""]*")
                 into pattern
-                select pattern.Match(value).Groups[0].Value).ToList();
+                select RemoveSize(pattern.Match(value).Groups[0].Value)).ToList();
+        }
+
+        private static string RemoveSize(string value)
+        {
+            var slash = value.Split('/');
+            var name = slash[slash.Length - 1];
+            var namesplit = name.Split('-');
+            var size = namesplit[namesplit.Length - 1];
+            return value.Replace($"-{size}", ".jpg");
         }
     }
 }

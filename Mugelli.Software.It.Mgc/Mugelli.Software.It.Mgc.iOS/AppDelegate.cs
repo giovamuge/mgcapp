@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using FFImageLoading;
 using FFImageLoading.Forms.Touch;
@@ -33,7 +34,8 @@ namespace Mugelli.Software.It.Mgc.iOS
                 VerbosePerformanceLogging = false,
                 VerboseMemoryCacheLogging = false,
                 VerboseLoadingCancelledLogging = false,
-                Logger = new CustomLogger()
+                Logger = new CustomLogger(),
+                DiskCacheDuration = TimeSpan.FromDays(30)
             };
             ImageService.Instance.Initialize(config);
 

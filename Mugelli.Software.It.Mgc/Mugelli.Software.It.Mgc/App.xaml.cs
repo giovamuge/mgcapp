@@ -21,7 +21,7 @@ namespace Mugelli.Software.It.Mgc
             //Initialize navigation
             var pageStart = NavigationHelper.Init();
             //Initialize auth
-            AuthorizationHelper.Instance.Init();
+            //AuthorizationHelper.Instance.Init();
 
             MainPage = pageStart;
             //Old code

@@ -56,8 +56,8 @@
                         </StackLayout>-->
                     </Grid>
                     <!--<userControls:HtmlFormatLabel Style="{StaticResource BodyLabelPrimary}" Text="{Binding Article.ContentHtml}" FontSize="20" />-->
-                    <Label Style="{StaticResource ClassInstructorLabel}" Text="{Binding Article.Content}" />
-
+                    <Label Style="{StaticResource ClassInstructorLabel}" Text="{Binding Article.Content}" FontSize="25" />
+                    
                 </StackLayout>
 
             </Grid>
