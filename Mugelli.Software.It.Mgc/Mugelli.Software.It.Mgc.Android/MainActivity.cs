@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 using Android.App;
 using Android.Content;
 using Android.Content.PM;
@@ -9,7 +9,9 @@ using Android.Widget;
 using Android.OS;
 using FFImageLoading;
 using FFImageLoading.Forms.Droid;
+using Firebase.Messaging;
 using Plugin.FirebasePushNotification;
+using Plugin.FirebasePushNotification.Abstractions;
 
 namespace Mugelli.Software.It.Mgc.Droid
 {
@@ -42,12 +44,40 @@ namespace Mugelli.Software.It.Mgc.Droid
             LoadApplication(new App());
 
             FirebasePushNotificationManager.ProcessIntent(Intent);
+            //FirebaseMessaging.Instance.SubscribeToTopic("news");
+
 
             //If debug you should reset the token each time.
 #if DEBUG
-            FirebasePushNotificationManager.Initialize(this,true);
+            //FirebasePushNotificationManager.Initialize(this,true);
+            FirebasePushNotificationManager.Initialize(this,
+                new[]
+                {
+                    new NotificationUserCategory("message",new List<NotificationUserAction> {
+                        new NotificationUserAction("Reply","Reply", NotificationActionType.Foreground),
+                        new NotificationUserAction("Forward","Forward", NotificationActionType.Foreground)
+
+                    }),
+                    new NotificationUserCategory("alldevices",new List<NotificationUserAction>  {
+                        new NotificationUserAction("Accept","Visualizza", NotificationActionType.Default, "check"),
+                        new NotificationUserAction("Reject","Cancella", NotificationActionType.Default, "cancel")
+                    })
+                }, true);
 #else
-            FirebasePushNotificationManager.Initialize(this, false);
+            //FirebasePushNotificationManager.Initialize(this, false);  
+            FirebasePushNotificationManager.Initialize(this,
+                new NotificationUserCategory[]
+                {
+                    new NotificationUserCategory("message",new List<NotificationUserAction> {
+                        new NotificationUserAction("Reply","Reply", NotificationActionType.Foreground),
+                        new NotificationUserAction("Forward","Forward", NotificationActionType.Foreground)
+
+                    }),
+                    new NotificationUserCategory("alldevices",new List<NotificationUserAction>  {
+                        new NotificationUserAction("Accept","Visualizza", NotificationActionType.Default, "check"),
+                        new NotificationUserAction("Reject","Cancella", NotificationActionType.Default, "cancel")
+                    })
+                }, false);
 #endif
 
             //Handle notification when app is closed here
