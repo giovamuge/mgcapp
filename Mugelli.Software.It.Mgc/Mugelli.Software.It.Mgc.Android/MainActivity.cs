@@ -24,21 +24,19 @@ namespace Mugelli.Software.It.Mgc.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
-            //CachedImageRenderer.Init();
+            CachedImageRenderer.Init();
 
-            //var config = new FFImageLoading.Config.Configuration
-            //{
-            //    VerboseLogging = false,
-            //    VerbosePerformanceLogging = false,
-            //    VerboseMemoryCacheLogging = false,
-            //    VerboseLoadingCancelledLogging = false,
-            //    Logger = new CustomLogger(),
-            //    DiskCacheDuration = TimeSpan.FromDays(30),
-            //    FadeAnimationEnabled = true,
-            //    FadeAnimationDuration = 250
-
-            //};
-            //ImageService.Instance.Initialize(config);
+            var config = new FFImageLoading.Config.Configuration
+            {
+                VerboseLogging = false,
+                VerbosePerformanceLogging = false,
+                VerboseMemoryCacheLogging = false,
+                VerboseLoadingCancelledLogging = false,
+                Logger = new CustomLogger(),
+                DiskCacheDuration = TimeSpan.FromDays(30),
+                FadeAnimationEnabled = true
+            };
+            ImageService.Instance.Initialize(config);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());

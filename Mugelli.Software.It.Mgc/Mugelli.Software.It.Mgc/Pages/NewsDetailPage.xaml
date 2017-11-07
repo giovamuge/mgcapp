@@ -22,6 +22,7 @@
                              Grid.Row="0">
                     <Grid>
                         <forms:CachedImage Source="{Binding Article.HeroImage}"
+                                           HeightRequest="300"
                                            x:Name="HeroImage"
                                            HorizontalOptions="Fill"
                                            Aspect="AspectFill"
@@ -47,7 +48,7 @@
                             <ColumnDefinition Width="Auto"></ColumnDefinition>
                         </Grid.ColumnDefinitions>
 
-                        <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding Article.Author.Name}" Grid.Column="0" />
+                        <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding Article.Author.Name}" Grid.Column="0" FontSize="30" />
 
                         <!--<StackLayout Orientation="Horizontal"
                                      Grid.Column="1">

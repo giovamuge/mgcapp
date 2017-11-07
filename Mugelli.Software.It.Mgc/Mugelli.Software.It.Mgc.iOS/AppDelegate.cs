@@ -35,7 +35,8 @@ namespace Mugelli.Software.It.Mgc.iOS
                 VerboseMemoryCacheLogging = false,
                 VerboseLoadingCancelledLogging = false,
                 Logger = new CustomLogger(),
-                DiskCacheDuration = TimeSpan.FromDays(30)
+                DiskCacheDuration = TimeSpan.FromDays(30),
+                FadeAnimationEnabled = true
             };
             ImageService.Instance.Initialize(config);
 
