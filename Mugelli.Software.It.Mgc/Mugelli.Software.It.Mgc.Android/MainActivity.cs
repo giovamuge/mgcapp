@@ -31,6 +31,10 @@ namespace Mugelli.Software.It.Mgc.Droid
             //    VerboseMemoryCacheLogging = false,
             //    VerboseLoadingCancelledLogging = false,
             //    Logger = new CustomLogger(),
+            //    DiskCacheDuration = TimeSpan.FromDays(30),
+            //    FadeAnimationEnabled = true,
+            //    FadeAnimationDuration = 250
+
             //};
             //ImageService.Instance.Initialize(config);
 
