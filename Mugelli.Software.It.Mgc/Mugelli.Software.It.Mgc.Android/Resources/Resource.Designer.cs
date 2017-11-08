@@ -2234,26 +2234,8 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f020054
 			public const int avd_hide_password = 2130837588;
 			
-			// aapt resource value: 0x7f020132
-			public const int avd_hide_password_1 = 2130837810;
-			
-			// aapt resource value: 0x7f020133
-			public const int avd_hide_password_2 = 2130837811;
-			
-			// aapt resource value: 0x7f020134
-			public const int avd_hide_password_3 = 2130837812;
-			
 			// aapt resource value: 0x7f020055
 			public const int avd_show_password = 2130837589;
-			
-			// aapt resource value: 0x7f020135
-			public const int avd_show_password_1 = 2130837813;
-			
-			// aapt resource value: 0x7f020136
-			public const int avd_show_password_2 = 2130837814;
-			
-			// aapt resource value: 0x7f020137
-			public const int avd_show_password_3 = 2130837815;
 			
 			// aapt resource value: 0x7f020056
 			public const int Black_Clock_50px = 2130837590;
@@ -3883,8 +3865,8 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f0a003f
 			public const int abc_toolbar_collapse_description = 2131361855;
 			
-			// aapt resource value: 0x7f0a0055
-			public const int app_name = 2131361877;
+			// aapt resource value: 0x7f0a004e
+			public const int app_name = 2131361870;
 			
 			// aapt resource value: 0x7f0a0025
 			public const int appbar_scrolling_view_behavior = 2131361829;
@@ -3945,27 +3927,6 @@ namespace Mugelli.Software.It.Mgc.Droid
 			
 			// aapt resource value: 0x7f0a000f
 			public const int common_signin_button_text_long = 2131361807;
-			
-			// aapt resource value: 0x7f0a0050
-			public const int default_web_client_id = 2131361872;
-			
-			// aapt resource value: 0x7f0a0051
-			public const int firebase_database_url = 2131361873;
-			
-			// aapt resource value: 0x7f0a004e
-			public const int gcm_defaultSenderId = 2131361870;
-			
-			// aapt resource value: 0x7f0a0052
-			public const int google_api_key = 2131361874;
-			
-			// aapt resource value: 0x7f0a004f
-			public const int google_app_id = 2131361871;
-			
-			// aapt resource value: 0x7f0a0053
-			public const int google_crash_reporting_api_key = 2131361875;
-			
-			// aapt resource value: 0x7f0a0054
-			public const int google_storage_bucket = 2131361876;
 			
 			// aapt resource value: 0x7f0a0011
 			public const int mr_button_content_description = 2131361809;
