@@ -41,6 +41,7 @@
     <Compile Include="Behaviors\BaseBehavior.cs" />
     <Compile Include="Behaviors\EventToCommandBehavior.cs" />
     <Compile Include="Behaviors\ListViewSelectedItemBehavior.cs" />
+    <Compile Include="Commons\LogicsCommon.cs" />
     <Compile Include="Commons\RssFeedCommon.cs" />
     <Compile Include="Converters\InverseBoolConverter.cs" />
     <Compile Include="Converters\IsEmptyConverter.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="Models\News.cs" />
     <Compile Include="Models\TimeLineAppointment.cs" />
     <Compile Include="Models\Types\EventType.cs" />
+    <Compile Include="Services\FirebaseRestHelper.cs" />
     <Compile Include="Navigations\AuthorizationHelper.cs" />
     <Compile Include="Navigations\INavigationService.cs" />
     <Compile Include="MainPage.xaml.cs">

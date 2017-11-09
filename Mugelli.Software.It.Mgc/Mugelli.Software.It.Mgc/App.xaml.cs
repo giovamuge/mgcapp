@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Firebase.Xamarin.Auth;
 using GalaSoft.MvvmLight.Ioc;
 using Mugelli.Software.It.Mgc.Navigations;
+using Mugelli.Software.It.Mgc.Services;
 using Mugelli.Software.It.Mgc.ViewModel;
 using Plugin.DeviceInfo;
 using Xamarin.Forms;
@@ -20,6 +21,7 @@ namespace Mugelli.Software.It.Mgc
 
             //Initialize navigation
             var pageStart = NavigationHelper.Init();
+            //FirebaseRestHelper.Instance.Init();
             //Initialize auth
             //AuthorizationHelper.Instance.Init();
 

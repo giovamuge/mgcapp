@@ -12,7 +12,10 @@
                 ItemsSource="{Binding CommunicationsList}"
                 BackgroundColor="Transparent"
                 HasUnevenRows="True"
-                SeparatorVisibility="None">
+                SeparatorVisibility="None"
+                IsPullToRefreshEnabled="True"
+                IsRefreshing="{Binding IsRefreshing, Mode=OneWay}"
+                RefreshCommand="{Binding RefreshCommand}">
 
 
                 <!--<ListView.Behaviors>

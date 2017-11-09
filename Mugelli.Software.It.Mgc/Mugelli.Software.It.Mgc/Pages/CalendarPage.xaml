@@ -14,7 +14,10 @@
                       SeparatorVisibility="None"
                       HasUnevenRows="True"
                       ItemsSource="{Binding Appointments}"
-                      IsGroupingEnabled="False">
+                      IsGroupingEnabled="False"
+                      IsPullToRefreshEnabled="True"
+                      IsRefreshing="{Binding IsRefreshing, Mode=OneWay}"
+                      RefreshCommand="{Binding RefreshCommand}">
 
                 <ListView.Behaviors>
                     <behaviors:EventToCommandBehavior Command="{Binding ShowAppointmentCommand}"
