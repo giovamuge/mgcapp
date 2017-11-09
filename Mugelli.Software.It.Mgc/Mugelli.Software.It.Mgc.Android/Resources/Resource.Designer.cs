@@ -2234,26 +2234,26 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f020054
 			public const int avd_hide_password = 2130837588;
 			
-			// aapt resource value: 0x7f020133
-			public const int avd_hide_password_1 = 2130837811;
-			
 			// aapt resource value: 0x7f020134
-			public const int avd_hide_password_2 = 2130837812;
+			public const int avd_hide_password_1 = 2130837812;
 			
 			// aapt resource value: 0x7f020135
-			public const int avd_hide_password_3 = 2130837813;
+			public const int avd_hide_password_2 = 2130837813;
+			
+			// aapt resource value: 0x7f020136
+			public const int avd_hide_password_3 = 2130837814;
 			
 			// aapt resource value: 0x7f020055
 			public const int avd_show_password = 2130837589;
 			
-			// aapt resource value: 0x7f020136
-			public const int avd_show_password_1 = 2130837814;
-			
 			// aapt resource value: 0x7f020137
-			public const int avd_show_password_2 = 2130837815;
+			public const int avd_show_password_1 = 2130837815;
 			
 			// aapt resource value: 0x7f020138
-			public const int avd_show_password_3 = 2130837816;
+			public const int avd_show_password_2 = 2130837816;
+			
+			// aapt resource value: 0x7f020139
+			public const int avd_show_password_3 = 2130837817;
 			
 			// aapt resource value: 0x7f020056
 			public const int Black_Clock_50px = 2130837590;
@@ -2799,7 +2799,7 @@ namespace Mugelli.Software.It.Mgc.Droid
 			public const int Indigo_Filled_Circle_100px = 2130837770;
 			
 			// aapt resource value: 0x7f02010b
-			public const int logo = 2130837771;
+			public const int LaunchView = 2130837771;
 			
 			// aapt resource value: 0x7f02010c
 			public const int Marker_50px = 2130837772;
@@ -2891,11 +2891,11 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f020129
 			public const int notification_icon_background = 2130837801;
 			
-			// aapt resource value: 0x7f020131
-			public const int notification_template_icon_bg = 2130837809;
-			
 			// aapt resource value: 0x7f020132
-			public const int notification_template_icon_low_bg = 2130837810;
+			public const int notification_template_icon_bg = 2130837810;
+			
+			// aapt resource value: 0x7f020133
+			public const int notification_template_icon_low_bg = 2130837811;
 			
 			// aapt resource value: 0x7f02012a
 			public const int notification_tile_bg = 2130837802;
@@ -2916,7 +2916,10 @@ namespace Mugelli.Software.It.Mgc.Droid
 			public const int Purple_Filled_Circle_100px = 2130837807;
 			
 			// aapt resource value: 0x7f020130
-			public const int ViewCellBackground = 2130837808;
+			public const int splashscreen = 2130837808;
+			
+			// aapt resource value: 0x7f020131
+			public const int ViewCellBackground = 2130837809;
 			
 			static Drawable()
 			{
@@ -4058,8 +4061,8 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f070011
 			public const int Animation_Design_BottomSheetDialog = 2131165201;
 			
-			// aapt resource value: 0x7f07018b
-			public const int AppCompatDialogStyle = 2131165579;
+			// aapt resource value: 0x7f07018c
+			public const int AppCompatDialogStyle = 2131165580;
 			
 			// aapt resource value: 0x7f0700cd
 			public const int Base_AlertDialog_AppCompat = 2131165389;
@@ -4534,6 +4537,9 @@ namespace Mugelli.Software.It.Mgc.Droid
 			
 			// aapt resource value: 0x7f070003
 			public const int CardView_Light = 2131165187;
+			
+			// aapt resource value: 0x7f07018b
+			public const int LaunchTheme = 2131165579;
 			
 			// aapt resource value: 0x7f070189
 			public const int MainTheme = 2131165577;
