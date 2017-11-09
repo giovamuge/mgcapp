@@ -5,6 +5,8 @@ using System.Net;
 using System.Text.RegularExpressions;
 using Mugelli.Software.It.Mgc.Extensions;
 using Newtonsoft.Json;
+using Mugelli.Software.It.Mgc.Commons;
+using Mugelli.Software.It.Mgc.Models.Types;
 
 namespace Mugelli.Software.It.Mgc.Models
 {
@@ -14,6 +16,7 @@ namespace Mugelli.Software.It.Mgc.Models
         private string _contentHtml;
         private string _heroImage;
         private string _title;
+        private EventType _type;
 
         public string Title
         {
@@ -40,6 +43,12 @@ namespace Mugelli.Software.It.Mgc.Models
         public DateTime DatePublished { get; set; }
 
         public Author Author { get; set; }
+
+        public EventType Type 
+        { 
+            get => _type; 
+            set => _type = LogicsCommon.GetTypeByDescription($"{Title}"); 
+        }
 
         public string HeroImage
         {

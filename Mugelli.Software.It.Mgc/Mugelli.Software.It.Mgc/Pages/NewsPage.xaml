@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -89,6 +89,7 @@
                                                 <Grid.RowDefinitions>
                                                     <RowDefinition Height="Auto" />
                                                     <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
                                                 </Grid.RowDefinitions>
                                                 
                                                 <Label Text="{Binding Path=Title}"
@@ -96,12 +97,39 @@
                                                        VerticalOptions="Fill"
                                                        LineBreakMode="WordWrap"
                                                        Grid.Row="0"/>
+                                                
+                                                <Grid HorizontalOptions="Fill"
+                                                      Grid.Row="1">
+
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                                    </Grid.ColumnDefinitions>
+
+                                                    <StackLayout Grid.Column="0"
+                                                                 BackgroundColor="{Binding Path=Type, Converter={StaticResource TypeEventColorConverter}}"
+                                                                 Margin="-16, 0, 0, 0"
+                                                                 Padding="18, 4, 8, 4">
+                                                        <Label Text="{Binding Path=Type, Converter={StaticResource TypeEventTextConverter}}"
+                                                               Style="{StaticResource HandleLabelSecondary}"/>
+                                                    </StackLayout>
+
+                                                    <StackLayout HorizontalOptions="End"
+                                                                 Orientation="Horizontal"
+                                                                 VerticalOptions="Fill"
+                                                                 Grid.Column="1">
+                                                        <Image Source="Black_Clock_50px.png" />
+                                                        <Label Text="{Binding Path=DatePublished, StringFormat='{}{0: dd MMM yyyy}'}"
+                                                               Style="{StaticResource HandleLabelPrimary}"
+                                                               VerticalTextAlignment="Center"></Label>
+                                                    </StackLayout>
+                                                </Grid>
 
                                                 <Label Text="{Binding Path=Content}"
                                                        Style="{StaticResource ClassInstructorLabel}"
                                                        VerticalOptions="Fill"
                                                        LineBreakMode="TailTruncation"
-                                                       Grid.Row="1"/>
+                                                       Grid.Row="2"/>
                                             </Grid>
 
 

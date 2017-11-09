@@ -31,16 +31,16 @@ namespace Mugelli.Software.It.Mgc.Commons
 
         public static EventType GetTypeByDescription(string source)
         {
-            if (MgcKeyWords.Any(source.Contains))
+            if (MgcKeyWords.Any(source.Equals))
                 return EventType.Mgc;
 
-            if (AmmiKeyWords.Any(source.Contains))
+            if (AmmiKeyWords.Any(source.Equals))
                 return EventType.Ammi;
 
-            if (GiovanissimiKeyWords.Any(source.Contains))
+            if (GiovanissimiKeyWords.Any(source.Equals))
                 return EventType.Giovanissimi;
 
-            return OblatiKeyWords.Any(source.Contains) 
+            return OblatiKeyWords.Any(source.Equals) 
                 ? EventType.Oblati 
                 : EventType.Mgc;
         }
