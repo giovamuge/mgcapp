@@ -89,6 +89,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         private void OnReadArticle()
         {
             _navigationService.NavigateTo(PageStacks.NewsDetailPage, ReadArticleSelected);
+            ReadArticleSelected = null;
         }
     }
 }

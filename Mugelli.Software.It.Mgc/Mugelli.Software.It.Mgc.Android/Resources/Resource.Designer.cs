@@ -2234,8 +2234,26 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f020054
 			public const int avd_hide_password = 2130837588;
 			
+			// aapt resource value: 0x7f020134
+			public const int avd_hide_password_1 = 2130837812;
+			
+			// aapt resource value: 0x7f020135
+			public const int avd_hide_password_2 = 2130837813;
+			
+			// aapt resource value: 0x7f020136
+			public const int avd_hide_password_3 = 2130837814;
+			
 			// aapt resource value: 0x7f020055
 			public const int avd_show_password = 2130837589;
+			
+			// aapt resource value: 0x7f020137
+			public const int avd_show_password_1 = 2130837815;
+			
+			// aapt resource value: 0x7f020138
+			public const int avd_show_password_2 = 2130837816;
+			
+			// aapt resource value: 0x7f020139
+			public const int avd_show_password_3 = 2130837817;
 			
 			// aapt resource value: 0x7f020056
 			public const int Black_Clock_50px = 2130837590;

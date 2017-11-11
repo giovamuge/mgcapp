@@ -104,6 +104,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         private void OnShowAppointment()
         {
             _navigationService.NavigateTo(PageStacks.CalendarDetailPage, AppointmentSelected);
+            AppointmentSelected = null;
         }
     }
 }

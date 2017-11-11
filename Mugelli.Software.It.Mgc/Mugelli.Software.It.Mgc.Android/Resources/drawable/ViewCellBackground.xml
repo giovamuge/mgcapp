@@ -16,12 +16,12 @@
   <item android:state_pressed="true" >
     <shape android:shape="rectangle">
       <!--Change the selected color by modifying this hex value-->
-      <solid android:color="#FFFFFF" />
+      <solid android:color="#ccc" />
     </shape>
   </item>
   <item>
     <shape android:shape="rectangle">
-      <solid android:color="#FFFFFF" />
+      <solid android:color="#ccc" />
     </shape>
   </item>
 </selector>

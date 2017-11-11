@@ -12,7 +12,7 @@ namespace Mugelli.Software.It.Mgc.iOS.Renders
         {
             var cell = base.GetCell(item, reusableCell, tv);
 
-            cell.SelectionStyle = UITableViewCellSelectionStyle.None;
+            cell.SelectionStyle = UITableViewCellSelectionStyle.Gray;
 
             return cell;
         }
