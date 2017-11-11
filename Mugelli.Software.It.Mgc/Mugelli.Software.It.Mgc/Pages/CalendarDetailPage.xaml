@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -36,12 +36,26 @@
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
-                        <Grid ColumnSpacing="0" RowSpacing="0">
+                        <Grid VerticalOptions="Center"
+                              HorizontalOptions="Center"
+                              IsVisible="{Binding Path=Title, Converter={StaticResource IsNullToBoolConverter}">
+
+                            <Label Text="Nessuna programma"
+                                   Margin="20,0"
+                                   Style="{StaticResource ClassInstructorLabel}"></Label>
+                        </Grid>
+
+                        
+                        <Grid ColumnSpacing="0" 
+                              RowSpacing="0"
+                              IsVisible="{Binding Path=Title, Converter={StaticResource IsNotNullToBoolConverter}">
+                            <!-- Columns -->
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="100" />
                                 <ColumnDefinition Width="30" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
+                            <!-- Rows -->
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto" />
                                 <RowDefinition Height="*" />

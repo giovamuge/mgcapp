@@ -31,15 +31,14 @@
                                                       Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}" />
                 </ListView.Behaviors>
                 
-                <!--<ListView.FooterTemplate>
-                    <DataTemplate>
-                        <Grid>
+                <ListView.Footer>
+                        <Grid Padding="14"
+                              IsVisible="{Binding IsRefreshing, Converter={StaticResource InverseBoolConverter}">
                             <userControls:CustomButton Text="Altro"
                                                        Style="{StaticResource ButtonStyle}"
                                                        Command="{Binding NavigateMgcSite}"></userControls:CustomButton>
                         </Grid>
-                    </DataTemplate>
-                </ListView.FooterTemplate>-->
+                </ListView.Footer>
 
                 <ListView.ItemTemplate>
                     <DataTemplate>

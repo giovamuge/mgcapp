@@ -20,12 +20,30 @@ namespace Mugelli.Software.It.Mgc.ViewModel
 
         public ICommand RefreshCommand { get; set; }
 
-        public List<Communication> CommunicationsList { get; set; }
+        private List<Communication> _communicationList;
+        public List<Communication> CommunicationsList { 
+            get => _communicationList; 
+            set 
+            {
+                RaisePropertyChanged(nameof(CommunicationsList), _communicationList, value);
+                _communicationList = value;
+            }
+        }
 
         public string Title { get; set; } = "Avvisi";
         public string Icon { get; set; } = OnPlatformHelper.IconOniOS("Advertising_50px.png");
 
-        public bool IsRefreshing { get; set; }
+        private bool _isRefreshing;
+
+        public bool IsRefreshing
+        {
+            get => _isRefreshing;
+            set
+            {
+                RaisePropertyChanged(nameof(IsRefreshing), _isRefreshing, value);
+                _isRefreshing = value;
+            }
+        }
 
         private void OnRefresh()
         {

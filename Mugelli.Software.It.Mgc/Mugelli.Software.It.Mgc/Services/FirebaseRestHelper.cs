@@ -3,6 +3,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Firebase.Xamarin.Database;
 using Mugelli.Software.It.Mgc.Models;
+using System.Reflection;
+using Newtonsoft.Json;
 
 namespace Mugelli.Software.It.Mgc.Services
 {
@@ -50,9 +52,7 @@ namespace Mugelli.Software.It.Mgc.Services
                 Init();
             }
 
-            var items = await Client.Child("advertising").OnceAsync<object>();
-            var result = items;
-            return new List<Communication>();
+            return (await Client.Child("advertising").OnceAsync<object>()).Select(x => JsonConvert.DeserializeObject<Communication>(x.Object.ToString())).ToList();
         }
 
         /// <summary>
@@ -66,7 +66,7 @@ namespace Mugelli.Software.It.Mgc.Services
                 Init();
             }
 
-            return (await Client.Child("calendar").OnceAsync<Appointment>()).Select(x => x.Object).ToList();
+            return (await Client.Child("calendar").OnceAsync<object>()).Select(x => JsonConvert.DeserializeObject<Appointment>(x.Object.ToString())).ToList();
         }
     }
 }
