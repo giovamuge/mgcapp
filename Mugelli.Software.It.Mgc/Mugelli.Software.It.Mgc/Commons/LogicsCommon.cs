@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using Mugelli.Software.It.Mgc.Extensions;
 using Mugelli.Software.It.Mgc.Models.Types;
 
 namespace Mugelli.Software.It.Mgc.Commons
@@ -31,17 +32,18 @@ namespace Mugelli.Software.It.Mgc.Commons
 
         public static EventType GetTypeByDescription(string source)
         {
-            if (MgcKeyWords.Any(source.Equals))
+            var sourceParseList = source.ToParseList(new[] {' '});
+            if (MgcKeyWords.Any(x => sourceParseList.Any(y => y.Contains(x))))
                 return EventType.Mgc;
 
-            if (AmmiKeyWords.Any(source.Equals))
+            if (AmmiKeyWords.Any(x => sourceParseList.Any(y => y.Contains(x))))
                 return EventType.Ammi;
 
-            if (GiovanissimiKeyWords.Any(source.Equals))
+            if (GiovanissimiKeyWords.Any(x => sourceParseList.Any(y => y.Contains(x))))
                 return EventType.Giovanissimi;
 
-            return OblatiKeyWords.Any(source.Equals) 
-                ? EventType.Oblati 
+            return OblatiKeyWords.Any(x => sourceParseList.Any(y => y.Contains(x)))
+                ? EventType.Oblati
                 : EventType.Mgc;
         }
     }
