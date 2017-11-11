@@ -46,8 +46,8 @@ namespace Mugelli.Software.It.Mgc.Models
 
         public EventType Type 
         { 
-            get => _type; 
-            set => _type = LogicsCommon.GetTypeByDescription($"{Title}"); 
+            get => LogicsCommon.GetTypeByDescription($"{Title}{Content}");
+            set => _type = value;
         }
 
         public string HeroImage

@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
 
 namespace Mugelli.Software.It.Mgc.Models
 {
@@ -15,16 +17,22 @@ namespace Mugelli.Software.It.Mgc.Models
         public string Name { get; set; }
         public string ShortName { get; set; }
 
-        //public AppointmentsGroupped(string name, string shortname, List<Appointment> items)
-        //{
-         //   Name = name;
-         //   ShortName = shortname;
-         //   foreach (var item in items)
-         //   {
-         //       Items.Add(item);
-        //    }
-        //}
+        public AppointmentsGroupped(string name, string shortname, IEnumerable<Appointment> items)
+        {
+            Name = name;
+            ShortName = shortname;
+            AddRange(items);
+        }
+    }
 
-        //public List<Appointment> List { get; set; }
+    public class ObservableGroupCollection<TS, T> : ObservableCollection<T>
+    {
+        public ObservableGroupCollection(IGrouping<TS, T> group)
+            : base(group)
+        {
+            Key = group.Key;
+        }
+
+        public TS Key { get; }
     }
 }

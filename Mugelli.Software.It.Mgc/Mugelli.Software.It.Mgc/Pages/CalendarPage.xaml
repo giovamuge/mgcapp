@@ -13,8 +13,8 @@
             <ListView BackgroundColor="Transparent"
                       SeparatorVisibility="None"
                       HasUnevenRows="True"
-                      ItemsSource="{Binding Appointments}"
-                      IsGroupingEnabled="False"
+                      ItemsSource="{Binding AppointmentsGroupped}"
+                      IsGroupingEnabled="True"
                       IsPullToRefreshEnabled="True"
                       IsRefreshing="{Binding IsRefreshing, Mode=OneWay}"
                       RefreshCommand="{Binding RefreshCommand}">
@@ -25,6 +25,21 @@
                                                       Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}" />
                 </ListView.Behaviors>
 
+                <ListView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout VerticalOptions="FillAndExpand"
+                                         HorizontalOptions="FillAndExpand" 
+                                         Padding="15">
+
+                                <Label Text="{Binding Path=Name}"
+                                       Style="{StaticResource HandleLabelPrimary}"/>
+                                    
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.GroupHeaderTemplate>
+                
                 <!--<ListView.Header>
                     <StackLayout Orientation="Horizontal"
                                  Padding="20,30,10,30">-->
@@ -33,13 +48,7 @@
                         <Label Style="{StaticResource PageHeaderLabel}" Text="Calendario"></Label>
                     </StackLayout>
                 </ListView.Header>-->
-
-                <!--<ListView.GroupHeaderTemplate>
-                    <DataTemplate>
-                        <Label Text="Novembre" Style="{StaticResource TitleLabelPrimary}"></Label>
-                    </DataTemplate>
-                </ListView.GroupHeaderTemplate>-->
-
+                
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

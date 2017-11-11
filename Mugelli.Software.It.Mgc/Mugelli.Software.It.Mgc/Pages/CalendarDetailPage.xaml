@@ -38,7 +38,7 @@
                     <ViewCell>
                         <Grid VerticalOptions="Center"
                               HorizontalOptions="Center"
-                              IsVisible="{Binding Path=Title, Converter={StaticResource IsNullToBoolConverter}">
+                              IsVisible="{Binding Path=Title, Converter={StaticResource IsNullToBoolConverter}}">
 
                             <Label Text="Nessuna programma"
                                    Margin="20,0"
@@ -48,7 +48,7 @@
                         
                         <Grid ColumnSpacing="0" 
                               RowSpacing="0"
-                              IsVisible="{Binding Path=Title, Converter={StaticResource IsNotNullToBoolConverter}">
+                              IsVisible="{Binding Path=Title, Converter={StaticResource IsNotNullToBoolConverter}}">
                             <!-- Columns -->
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="100" />

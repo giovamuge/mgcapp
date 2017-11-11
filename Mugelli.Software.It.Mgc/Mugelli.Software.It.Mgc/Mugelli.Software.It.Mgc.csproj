@@ -41,6 +41,7 @@
     <Compile Include="Behaviors\BaseBehavior.cs" />
     <Compile Include="Behaviors\EventToCommandBehavior.cs" />
     <Compile Include="Behaviors\ListViewSelectedItemBehavior.cs" />
+    <Compile Include="Commons\ConstantCommon.cs" />
     <Compile Include="Commons\LogicsCommon.cs" />
     <Compile Include="Commons\RssFeedCommon.cs" />
     <Compile Include="Converters\InverseBoolConverter.cs" />

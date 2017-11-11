@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:behaviors="clr-namespace:Mugelli.Software.It.Mgc.Behaviors;assembly=Mugelli.Software.It.Mgc"
+             xmlns:userControls="clr-namespace:Mugelli.Software.It.Mgc.UserControls;assembly=Mugelli.Software.It.Mgc"
              x:Class="Mugelli.Software.It.Mgc.Pages.CommunicationsPage"
              Title="{Binding Title}"
              Icon="{Binding Icon}"
@@ -86,7 +87,7 @@
                                                            VerticalTextAlignment="Center"></Label>
                                                 </StackLayout>
 
-                                                <Label Text="{Binding Path=Content}"
+                                                <userControls:HtmlFormatLabel Text="{Binding Path=Content}"
                                                        Style="{StaticResource ClassInstructorLabel}"
                                                        VerticalOptions="Fill"
                                                        Grid.Row="2"

@@ -15,8 +15,8 @@ namespace Mugelli.Software.It.Mgc.Models
 
         public EventType Type
         {
-            get => _type;
-            set => _type = LogicsCommon.GetTypeByDescription($"{Title}{Description}");
+            get => LogicsCommon.GetTypeByDescription($"{Title}{Description}");
+            set => _type = value;
         }
 
         public List<TimeLineAppointment> TimeLine { get; set; }
