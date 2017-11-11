@@ -19,36 +19,27 @@ namespace Mugelli.Software.It.Mgc.ViewModel
 
         private readonly IRssFeedService _rssFeedService;
 
+        private bool _isRefreshing;
+
         //public List<News> NewsList { get; set; }
         private List<FeedRssItem> _newsList;
+
+        private FeedRssItem _readArticleSelected;
 
         public NewsViewModel(INavigationService navigationService, IRssFeedService rssFeedService)
         {
             _navigationService = navigationService;
             _rssFeedService = rssFeedService;
 
-            ReadArticleCommand = new RelayCommand<FeedRssItem>(OnReadArticle);
+            ReadArticleCommand = new RelayCommand(OnReadArticle);
             NavigateMgcSite = new RelayCommand(() => Device.OpenUri(new Uri("http://www.mgcfirenze.net/it")));
             RefreshCommand = new RelayCommand(OnRefresh);
 
             OnRefresh();
         }
 
-        private void OnRefresh()
-        {
-            IsRefreshing = true;
-            Task.Factory.StartNew(async () =>
-            {
-                var rss = await _rssFeedService.GetRss();
-                NewsList = rss.Items;
-                IsRefreshing = false;
-            });
-        }
-        
         public string Title { get; set; } = "News";
         public string Icon { get; set; } = OnPlatformHelper.IconOniOS("News_50px.png");
-
-        private bool _isRefreshing;
 
         public bool IsRefreshing
         {
@@ -60,7 +51,15 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             }
         }
 
-        public FeedRssItem ReadArticleSelected { get; set; }
+        public FeedRssItem ReadArticleSelected
+        {
+            get => _readArticleSelected;
+            set
+            {
+                RaisePropertyChanged(nameof(ReadArticleSelected), _readArticleSelected, value);
+                _readArticleSelected = value;
+            }
+        }
 
         public List<FeedRssItem> NewsList
         {
@@ -76,12 +75,20 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         public ICommand NavigateMgcSite { get; set; }
         public ICommand RefreshCommand { get; set; }
 
-        private void OnReadArticle(FeedRssItem news)
+        private void OnRefresh()
         {
-            _navigationService.NavigateTo(PageStacks.NewsDetailPage, news);
+            IsRefreshing = true;
+            Task.Factory.StartNew(async () =>
+            {
+                var rss = await _rssFeedService.GetRss();
+                NewsList = rss.Items;
+                IsRefreshing = false;
+            });
+        }
 
-            // imposta selected item a null
-            ReadArticleSelected = null;
+        private void OnReadArticle()
+        {
+            _navigationService.NavigateTo(PageStacks.NewsDetailPage, ReadArticleSelected);
         }
     }
 }

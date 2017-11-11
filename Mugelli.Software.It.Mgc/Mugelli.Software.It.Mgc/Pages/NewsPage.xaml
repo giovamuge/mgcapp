@@ -17,8 +17,8 @@
                 BackgroundColor="Transparent"
                 HasUnevenRows="True"
                 SeparatorVisibility="None"
-                SelectedItem="{Binding ReadArticleSelected, Mode=TwoWay}"
                 IsPullToRefreshEnabled="True"
+                SelectedItem="{Binding ReadArticleSelected, Mode=TwoWay}"
                 IsRefreshing="{Binding IsRefreshing}"
                 RefreshCommand="{Binding RefreshCommand}">
 
@@ -27,7 +27,7 @@
                     <!--<behaviors:ListViewSelectedItemBehavior Command="{Binding ReadArticleCommand}"
                                                             Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}" />-->
                     <behaviors:EventToCommandBehavior Command="{Binding ReadArticleCommand}"
-                                                      EventName="ItemSelected"
+                                                      EventName="ItemTapped"
                                                       Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}" />
                 </ListView.Behaviors>
                 

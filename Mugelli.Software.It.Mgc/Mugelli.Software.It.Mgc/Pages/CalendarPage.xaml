@@ -16,12 +16,13 @@
                       ItemsSource="{Binding AppointmentsGroupped}"
                       IsGroupingEnabled="True"
                       IsPullToRefreshEnabled="True"
+                      SelectedItem="{Binding AppointmentSelected, Mode=TwoWay}"
                       IsRefreshing="{Binding IsRefreshing, Mode=OneWay}"
                       RefreshCommand="{Binding RefreshCommand}">
 
                 <ListView.Behaviors>
                     <behaviors:EventToCommandBehavior Command="{Binding ShowAppointmentCommand}"
-                                                      EventName="ItemSelected"
+                                                      EventName="ItemTapped"
                                                       Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}" />
                 </ListView.Behaviors>
 

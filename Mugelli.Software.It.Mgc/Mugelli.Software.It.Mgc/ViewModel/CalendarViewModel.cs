@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -20,6 +19,8 @@ namespace Mugelli.Software.It.Mgc.ViewModel
 
         private List<Appointment> _appointments;
 
+        private Appointment _appointmentSelected;
+
         private List<AppointmentsGroupped> _appointmentsGroupped;
 
         private bool _isRefreshing;
@@ -28,37 +29,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         {
             _navigationService = navigationService;
 
-
-            //Appointments = new List<Appointment>
-            //{
-            //    new Appointment
-            //    {
-            //        Date = DateTime.Now,
-            //        Location = "Fiesole, Casa Oblata",
-            //        Title = "Giornata Famiglia Obliata",
-            //        Type = EventType.Ammi,
-            //        TimeLine = TimeLineAppointmentTest
-            //    },
-            //    new Appointment
-            //    {
-            //        Location = "Casellina",
-            //        Title = "Giornata Giovanissimi",
-            //        Date = DateTime.Now,
-            //        Type = EventType.Giovanissimi,
-            //        TimeLine = TimeLineAppointmentTest
-            //    },
-            //    new Appointment
-            //    {
-            //        Location = "Fiesole",
-            //        Title = "Giornata MGC",
-            //        Date = DateTime.Now,
-            //        Type = EventType.Mgc,
-            //        TimeLine = TimeLineAppointmentTest
-            //    }
-            //};
-
-
-            ShowAppointmentCommand = new RelayCommand<Appointment>(OnShowAppointment);
+            ShowAppointmentCommand = new RelayCommand(OnShowAppointment);
             RefreshCommand = new RelayCommand(OnRefresh);
 
             OnRefresh();
@@ -91,8 +62,6 @@ namespace Mugelli.Software.It.Mgc.ViewModel
 
         public ICommand ShowAppointmentCommand { get; set; }
 
-        private List<TimeLineAppointment> TimeLineAppointmentTest { get; set; }
-
         public bool IsRefreshing
         {
             get => _isRefreshing;
@@ -103,63 +72,15 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             }
         }
 
-        //private List<TimeLineAppointment> TimeLineAppointmentTest { get; } = new List<TimeLineAppointment>
-        //{
-        //    new TimeLineAppointment
-        //    {
-        //        Time = "9:45",
-        //        Information = "In attesa di iniziare",
-        //        Name = "Arrivi e accoglienza"
-        //    },
-        //    new TimeLineAppointment
-        //    {
-        //        Time = "10:15",
-        //        Information = "Preghiera tutti insieme a seguire tema",
-        //        Name = "Preghiera"
-        //    },
-        //    new TimeLineAppointment
-        //    {
-        //        Time = "11:15",
-        //        Information = "In attesa di iniziare",
-        //        Name = "Condivisione"
-        //    },
-        //    new TimeLineAppointment
-        //    {
-        //        Time = "12:30",
-        //        Information = "In attesa di iniziare",
-        //        Name = "Pausa e preparazione"
-        //    },
-        //    new TimeLineAppointment
-        //    {
-        //        Time = "13:00",
-        //        Information = "In attesa di iniziare",
-        //        Name = "Pranzo"
-        //    },
-        //    new TimeLineAppointment
-        //    {
-        //        Time = "14:30",
-        //        Information = "In attesa di iniziare",
-        //        Name = "Tempo libero di conoscenza"
-        //    },
-        //    new TimeLineAppointment
-        //    {
-        //        Time = "15:30",
-        //        Information = "In attesa di iniziare",
-        //        Name = "Aggiornamenti"
-        //    },
-        //    new TimeLineAppointment
-        //    {
-        //        Time = "16:30",
-        //        Information = "Pausa",
-        //        Name = "Arrivi e accoglienza"
-        //    },
-        //    new TimeLineAppointment
-        //    {
-        //        Time = "17:00",
-        //        Information = "Salutiamoci",
-        //        Name = "Messa e saluti"
-        //    }
-        //};
+        public Appointment AppointmentSelected
+        {
+            get => _appointmentSelected;
+            set
+            {
+                RaisePropertyChanged(nameof(AppointmentSelected), _appointmentSelected, value);
+                _appointmentSelected = value;
+            }
+        }
 
         private void OnRefresh()
         {
@@ -173,16 +94,16 @@ namespace Mugelli.Software.It.Mgc.ViewModel
                         $"{ConstantCommon.Month[x.Key.Month - 1]} {x.Key.Year}",
                         $"{ConstantCommon.ShortMonth[x.Key.Month - 1]} {x.Key.Year}",
                         x)).ToList();
-                
+
                 AppointmentsGroupped = groupped;
 
                 IsRefreshing = false;
             });
         }
 
-        private void OnShowAppointment(Appointment appointment)
+        private void OnShowAppointment()
         {
-            _navigationService.NavigateTo(PageStacks.CalendarDetailPage, appointment);
+            _navigationService.NavigateTo(PageStacks.CalendarDetailPage, AppointmentSelected);
         }
     }
 }
