@@ -40,7 +40,7 @@ namespace Mugelli.Software.It.Mgc.Droid
             ImageService.Instance.Initialize(config);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            CarouselViewRenderer.Init();
+            //CarouselViewRenderer.Init();
             LoadApplication(new App());
 
             FirebasePushNotificationManager.ProcessIntent(Intent);
