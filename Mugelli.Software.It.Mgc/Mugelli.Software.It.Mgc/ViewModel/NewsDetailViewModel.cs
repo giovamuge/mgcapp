@@ -1,19 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Windows.Input;
 using GalaSoft.MvvmLight.Command;
 using Mugelli.Software.It.Mgc.Models;
 using Mugelli.Software.It.Mgc.Navigations;
+using Mugelli.Software.It.Mgc.Services;
 using Mugelli.Software.It.Mgc.Stacks;
-using Mugelli.Software.It.Mgc.UserControls;
-using Xamarin.Forms;
 
 namespace Mugelli.Software.It.Mgc.ViewModel
 {
     public class NewsDetailViewModel : BaseViewModel
     {
         private readonly INavigationService _navigationService;
+        private readonly IStatusBar _statusBar;
         private FeedRssItem _article;
+
+        private List<string> _images;
+
+        public NewsDetailViewModel(INavigationService navigationService, IStatusBar statusBar)
+        {
+            _navigationService = navigationService;
+            _statusBar = statusBar;
+            ShowGalleryImage = new RelayCommand(OnShowGalleryImage);
+        }
 
         public FeedRssItem Article
         {
@@ -23,25 +31,9 @@ namespace Mugelli.Software.It.Mgc.ViewModel
                 RaisePropertyChanged(nameof(Article), _article, value);
                 _article = value;
 
-                var list = new List<string>()
-                {
-                    "PiccoloPrincipe.jpg",
-                    "GiornataSportiva.jpg",
-                    "MensaCaritas.jpg",
-                    "Pizzata.jpg"
-                };
-
                 Images = _article.Images;
-
-                //foreach (var image in list)
-                //{
-                //    var img = new Image {Source = image};
-                //    ChildrenImage.Add(img);
-                //}
             }
         }
-
-        private List<string> _images;
 
         public List<string> Images
         {
@@ -55,14 +47,9 @@ namespace Mugelli.Software.It.Mgc.ViewModel
 
         public ICommand ShowGalleryImage { get; set; }
 
-        public NewsDetailViewModel(INavigationService navigationService)
-        {
-            _navigationService = navigationService;
-            ShowGalleryImage = new RelayCommand(OnShowGalleryImage);
-        }
-
         private void OnShowGalleryImage()
         {
+            _statusBar.HideStatusBar();
             _navigationService.NavigateTo(PageStacks.GalleryImagePage, Images);
         }
     }

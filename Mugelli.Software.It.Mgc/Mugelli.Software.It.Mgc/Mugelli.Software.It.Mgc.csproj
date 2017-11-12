@@ -102,6 +102,7 @@
     <Compile Include="Services\IHttpClientService.cs" />
     <Compile Include="Services\IPushNotifications.cs" />
     <Compile Include="Services\IRssFeedService.cs" />
+    <Compile Include="Services\IStatusBar.cs" />
     <Compile Include="Services\RssFeddService.cs" />
     <Compile Include="Stacks\PageStacks.cs" />
     <Compile Include="UserControls\CustomButton.cs" />

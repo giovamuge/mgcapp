@@ -35,7 +35,7 @@ namespace Mugelli.Software.It.Mgc.Models
 
         public string Content
         {
-            get => ContentHtml.StripHtml();
+            get => ContentHtml.StripHtml().TrimEnd();
             set => _content = value;
         }
 
@@ -57,6 +57,13 @@ namespace Mugelli.Software.It.Mgc.Models
         }
         
         public List<string> Images => GetImages(ContentHtml);
+
+        private static string RemoveA(string value)
+        {
+            var r = new Regex(@"<a (.+?)>\s*(.+?)\s*</p>");
+
+            return r.Replace(value, "");
+        }
 
         private static string GetHeroImage(string value)
         {

@@ -113,6 +113,7 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Providers\HttpClientService.cs" />
+    <Compile Include="Providers\StatusBar.cs" />
     <Compile Include="Renders\HtmlFormatLabelRenderer.cs" />
     <Compile Include="Renders\ViewCellItemSelectedCustomRenderer.cs" />
     <None Include="app.config" />

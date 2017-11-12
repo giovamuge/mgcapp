@@ -32,6 +32,7 @@ namespace Mugelli.Software.It.Mgc.Navigations
                 SimpleIoc.Default.Register(() => navigation);
                 SimpleIoc.Default.Register<IRssFeedService>(() => new RssFeddService());
                 //SimpleIoc.Default.Register(() => DependencyService.Get<IHttpClientService>());
+                SimpleIoc.Default.Register(() => DependencyService.Get<IStatusBar>());
             }
             else
             {

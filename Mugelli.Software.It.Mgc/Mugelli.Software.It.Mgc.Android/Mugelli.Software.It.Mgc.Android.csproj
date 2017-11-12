@@ -196,6 +196,7 @@
     <Compile Include="LaunchActivity.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MainApplication.cs" />
+    <Compile Include="Provider\StatusBar.cs" />
     <Compile Include="Renders\HtmlFormatLabelRenderer.cs" />
     <Compile Include="Renders\ViewCellItemSelectedCustomRenderer.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

@@ -8,34 +8,45 @@
     <ContentPage.Content>
         <Grid VerticalOptions="FillAndExpand"
               HorizontalOptions="FillAndExpand"
-              BackgroundColor="{StaticResource AsphaltDark}">
-            
+              BackgroundColor="Black">
+
             <Grid.RowDefinitions>
-                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
             </Grid.RowDefinitions>
-            
-            <Button Text="Chiudi" 
-                    Command="{Binding GoBack}" 
-                    HorizontalOptions="End"
-                   Grid.Row="0"></Button>
-            
-            <abstractions:CarouselViewControl ItemsSource="{Binding Images}"
-                                              HeightRequest="300"
-                                              VerticalOptions="Center"
-                                              Grid.Row="1">
 
-                <abstractions:CarouselViewControl.ItemTemplate>
-                    <DataTemplate>
-                        <forms:CachedImage Source="{Binding Path=.}"
+            <Grid Padding="10, 10, 10, 0"
+                  HorizontalOptions="FillAndExpand"
+                  Grid.Row="0">
+
+                <Grid HorizontalOptions="End">
+
+                    <Grid.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding GoBack}"/>
+                    </Grid.GestureRecognizers>
+
+                    <Label Text="X" Style="{StaticResource SecondaryPageHeaderLabel}"></Label>
+                </Grid>
+
+            </Grid>
+
+            <Grid VerticalOptions="FillAndExpand"
+                  Grid.Row="1">
+                <abstractions:CarouselViewControl ItemsSource="{Binding Images}"
+                                              HeightRequest="300"
+                                              VerticalOptions="Center">
+
+                    <abstractions:CarouselViewControl.ItemTemplate>
+                        <DataTemplate>
+                            <forms:CachedImage Source="{Binding Path=.}"
                                            Aspect="AspectFill"
                                            HeightRequest="300"
                                            HorizontalOptions="Fill"/>
-                    </DataTemplate>
+                        </DataTemplate>
 
-                </abstractions:CarouselViewControl.ItemTemplate>
-            </abstractions:CarouselViewControl>
-            
+                    </abstractions:CarouselViewControl.ItemTemplate>
+                </abstractions:CarouselViewControl>
+            </Grid>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -22,12 +22,22 @@
                 <ContentView Padding="0"
                              Grid.Row="0">
                     <Grid>
+                        <!-- Gesture image -->
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ShowGalleryImage}"/>
+                        </Grid.GestureRecognizers>
+                        
                         <forms:CachedImage Source="{Binding Article.HeroImage}"
                                            HeightRequest="300"
                                            x:Name="HeroImage"
                                            HorizontalOptions="Fill"
                                            Aspect="AspectFill"
-                                           Grid.Row="0"/>
+                                           Grid.Row="0">
+
+                            <!--<forms:CachedImage.GestureRecognizers>
+                                <PinchGestureRecognizer PinchUpdated="OnPinchUpdated" />
+                            </forms:CachedImage.GestureRecognizers>-->
+                        </forms:CachedImage>
                     </Grid>
 
                 </ContentView>
@@ -35,7 +45,7 @@
                 <StackLayout Orientation="Vertical"
                              HorizontalOptions="Fill"
                              Grid.Row="1"
-                             Padding="24,30,24,24" 
+                             Padding="24,30,24,0" 
                              Spacing="14"
                              BackgroundColor="{StaticResource GrayUltraLight}">
 
@@ -71,9 +81,14 @@
                         <Image Source="Black_Clock_50px.png" />
                         <Label Style="{StaticResource HandleLabelPrimary}" Text="Immagini Gallery" />
                     </StackLayout>
-                    
+
                     <abstractions:CarouselViewControl ItemsSource="{Binding Images}"
-                                                      HeightRequest="300">
+                                                      HeightRequest="300"
+                                                      Margin="-24, 0, -24, 0">
+
+                        <abstractions:CarouselViewControl.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ShowGalleryImage}"/>
+                        </abstractions:CarouselViewControl.GestureRecognizers>
 
                         <abstractions:CarouselViewControl.ItemTemplate>
                             <DataTemplate>
@@ -85,71 +100,11 @@
 
                         </abstractions:CarouselViewControl.ItemTemplate>
                     </abstractions:CarouselViewControl>
-                    <Button Command="{Binding ShowGalleryImage}" Text="Apri"></Button>
 
                 </StackLayout>
 
             </Grid>
-
-
 
         </ScrollView>
-
-
-
-
-        <!--<StackLayout HorizontalOptions="FillAndExpand"
-                     VerticalOptions="FillAndExpand"
-                     Orientation="Vertical">
-
-            <Grid>
-                -->
-        <!-- Rows -->
-        <!--
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"></RowDefinition>
-                    <RowDefinition Height="*"></RowDefinition>
-                </Grid.RowDefinitions>
-                -->
-        <!-- Columns -->
-        <!--
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-
-                <Image Source="{Binding Article.HeroImage}"
-                       Aspect="AspectFill"
-                       Grid.Row="0"/>
-
-                <StackLayout HorizontalOptions="FillAndExpand"
-                         VerticalOptions="FillAndExpand"
-                         Orientation="Vertical"
-                         Padding="10"
-                         Grid.Row="1">
-                    <Label Style="{StaticResource TitleLabelPrimary}" Text="{Binding Article.Title}" />
-
-                    <Grid>
-                        -->
-        <!-- Columns -->
-        <!-- 
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
-                            <ColumnDefinition Width="Auto"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        
-                        <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding Article.Author}" Grid.Column="0" />
-
-                        <StackLayout Orientation="Horizontal"
-                                     Grid.Column="1">
-                            <Image Source="Clock_50px.png" />
-                            <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding Article.DateCreate}" />
-                        </StackLayout>
-                    </Grid>
-                    <Label Style="{StaticResource BodyLabelPrimary}" Text="{Binding Article.Text}" />
-                </StackLayout>
-
-            </Grid>
-
-        </StackLayout>-->
     </ContentPage.Content>
 </ContentPage>
