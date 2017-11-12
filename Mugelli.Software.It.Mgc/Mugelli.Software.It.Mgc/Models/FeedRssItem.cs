@@ -55,6 +55,8 @@ namespace Mugelli.Software.It.Mgc.Models
             get => GetHeroImage(ContentHtml);
             set => _heroImage = value;
         }
+        
+        //public List<string> Images => GetImages(ContentHtml);
 
         private static string GetHeroImage(string value)
         {

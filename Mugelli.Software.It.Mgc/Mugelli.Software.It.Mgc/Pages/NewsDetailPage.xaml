@@ -4,6 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:userControls="clr-namespace:Mugelli.Software.It.Mgc.UserControls;assembly=Mugelli.Software.It.Mgc"
              xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:abstractions="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
              x:Class="Mugelli.Software.It.Mgc.Pages.NewsDetailPage"
              Title="{Binding Article.Title}"
              BindingContext="{Binding NewsDetailViewModel, Source={StaticResource ViewModelLocator}}"
@@ -58,7 +59,39 @@
                     </Grid>
                     <!--<userControls:HtmlFormatLabel Style="{StaticResource BodyLabelPrimary}" Text="{Binding Article.ContentHtml}" FontSize="20" />-->
                     <Label Style="{StaticResource ClassInstructorLabel}" Text="{Binding Article.Content}" FontSize="25" />
-                    
+
+                    <!--<ScrollView Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal"
+                                     HorizontalOptions="FillAndExpand"
+                                     Children="{Binding ChildrenImage}">
+                            
+                        </StackLayout>
+                    </ScrollView>-->
+                    <abstractions:CarouselViewControl ItemsSource="{Binding Images}">
+
+                        <abstractions:CarouselViewControl.ItemTemplate>
+                            <DataTemplate>
+                                <Image Source="{Binding Path=.}"
+                                       Aspect="AspectFill"
+                                       VerticalOptions="Fill"/>
+                            </DataTemplate>
+
+                        </abstractions:CarouselViewControl.ItemTemplate>
+
+                        <!--<abstractions:CarouselViewControl.ItemsSource>
+                            <x:Array Type="{x:Type View}">
+
+                                -->
+                        <!-- Page1 Display Photo -->
+                        <!--
+                                <Image Source="{Binding PhotoUrl}"/>
+
+                            </x:Array>
+                        </abstractions:CarouselViewControl.ItemsSource>-->
+                    </abstractions:CarouselViewControl>
+
+
+
                 </StackLayout>
 
             </Grid>

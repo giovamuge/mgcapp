@@ -7,6 +7,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using CarouselView.FormsPlugin.Android;
 using FFImageLoading;
 using FFImageLoading.Forms.Droid;
 using Firebase.Messaging;
@@ -39,6 +40,7 @@ namespace Mugelli.Software.It.Mgc.Droid
             ImageService.Instance.Initialize(config);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+            CarouselViewRenderer.Init();
             LoadApplication(new App());
 
             FirebasePushNotificationManager.ProcessIntent(Intent);
