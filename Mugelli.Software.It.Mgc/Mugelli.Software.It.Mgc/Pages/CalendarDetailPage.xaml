@@ -21,7 +21,7 @@
                 </StackLayout>
                 
                 <Grid HorizontalOptions="FillAndExpand"
-                      Margin="50,0">
+                      Margin="100,0">
                     <Label Text="Nessuna programma"
                            HorizontalOptions="Center"
                            Style="{StaticResource BodyLabelPrimary}"></Label>

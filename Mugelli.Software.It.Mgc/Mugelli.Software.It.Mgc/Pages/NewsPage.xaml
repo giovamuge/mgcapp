@@ -87,7 +87,7 @@
                                                 <Grid.RowDefinitions>
                                                     <RowDefinition Height="Auto" />
                                                     <RowDefinition Height="Auto" />
-                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" /> 
                                                 </Grid.RowDefinitions>
                                                 
                                                 <Label Text="{Binding Path=Title}"

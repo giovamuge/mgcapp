@@ -89,7 +89,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             {
                 var calendars = await FirebaseRestHelper.Instance.GetCalendar();
 
-                var groupped = calendars.GroupBy(x => new {x.Date.Month, x.Date.Year}).Select(x =>
+                var groupped = calendars.OrderBy(x => x.Date).GroupBy(x => new {x.Date.Month, x.Date.Year}).Select(x =>
                     new AppointmentsGroupped(
                         $"{ConstantCommon.Month[x.Key.Month - 1]} {x.Key.Year}",
                         $"{ConstantCommon.ShortMonth[x.Key.Month - 1]} {x.Key.Year}",
