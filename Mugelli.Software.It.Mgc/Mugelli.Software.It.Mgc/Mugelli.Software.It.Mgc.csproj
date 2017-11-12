@@ -68,6 +68,9 @@
     <Compile Include="Models\News.cs" />
     <Compile Include="Models\TimeLineAppointment.cs" />
     <Compile Include="Models\Types\EventType.cs" />
+    <Compile Include="Pages\GalleryImagePage.xaml.cs">
+      <DependentUpon>GalleryImagePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Services\FirebaseRestHelper.cs" />
     <Compile Include="Navigations\AuthorizationHelper.cs" />
     <Compile Include="Navigations\INavigationService.cs" />
@@ -110,6 +113,7 @@
     <Compile Include="ViewModel\BaseViewModel.cs" />
     <Compile Include="ViewModel\CalendarViewModel.cs" />
     <Compile Include="ViewModel\ComunicationsViewModel.cs" />
+    <Compile Include="ViewModel\ImageGalleryViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\CalendarDetailViewModel.cs" />
     <Compile Include="ViewModel\NewsDetailViewModel.cs" />
@@ -131,6 +135,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="CarouselView.FormsPlugin.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\CarouselView.FormsPlugin.4.4.3\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid10+Xamarin.iOS10\CarouselView.FormsPlugin.Abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="crypto, Version=1.8.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Firebase.Xamarin.0.3.6\lib\crypto.dll</HintPath>
     </Reference>
@@ -249,6 +256,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Pages\CalendarDetailPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\GalleryImagePage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

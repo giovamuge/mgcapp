@@ -4,6 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:userControls="clr-namespace:Mugelli.Software.It.Mgc.UserControls;assembly=Mugelli.Software.It.Mgc"
              xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:abstractions="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
              x:Class="Mugelli.Software.It.Mgc.Pages.NewsDetailPage"
              Title="{Binding Article.Title}"
              BindingContext="{Binding NewsDetailViewModel, Source={StaticResource ViewModelLocator}}"
@@ -15,7 +16,7 @@
             <Grid VerticalOptions="Fill">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
-                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
                 <ContentView Padding="0"
@@ -26,7 +27,6 @@
                                            x:Name="HeroImage"
                                            HorizontalOptions="Fill"
                                            Aspect="AspectFill"
-                                           Opacity=".8"
                                            Grid.Row="0"/>
                     </Grid>
 
@@ -35,7 +35,7 @@
                 <StackLayout Orientation="Vertical"
                              HorizontalOptions="Fill"
                              Grid.Row="1"
-                             Padding="24,30,24,14" 
+                             Padding="24,30,24,24" 
                              Spacing="14"
                              BackgroundColor="{StaticResource GrayUltraLight}">
 
@@ -66,19 +66,26 @@
                             
                         </StackLayout>
                     </ScrollView>-->
-                    <!--<abstractions:CarouselViewControl ItemsSource="{Binding Images}">
+                    <!-- TODO: Cambiare icona con gallery -->
+                    <StackLayout Orientation="Horizontal">
+                        <Image Source="Black_Clock_50px.png" />
+                        <Label Style="{StaticResource HandleLabelPrimary}" Text="Immagini Gallery" />
+                    </StackLayout>
+                    
+                    <abstractions:CarouselViewControl ItemsSource="{Binding Images}"
+                                                      HeightRequest="300">
 
                         <abstractions:CarouselViewControl.ItemTemplate>
                             <DataTemplate>
-                                <Image Source="{Binding Path=.}"
+                                <forms:CachedImage Source="{Binding Path=.}"
                                        Aspect="AspectFill"
-                                       VerticalOptions="Fill"/>
+                                       HeightRequest="300"
+                                       HorizontalOptions="Fill"/>
                             </DataTemplate>
 
                         </abstractions:CarouselViewControl.ItemTemplate>
-                    </abstractions:CarouselViewControl>-->
-
-
+                    </abstractions:CarouselViewControl>
+                    <Button Command="{Binding ShowGalleryImage}" Text="Apri"></Button>
 
                 </StackLayout>
 

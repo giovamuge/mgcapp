@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:abstractions="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             x:Class="Mugelli.Software.It.Mgc.Pages.GalleryImagePage"
+             BindingContext="{Binding ImageGalleryViewModel, Source={StaticResource ViewModelLocator}}">
+    <ContentPage.Content>
+        <Grid VerticalOptions="FillAndExpand"
+              HorizontalOptions="FillAndExpand"
+              BackgroundColor="{StaticResource AsphaltDark}">
+            
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <Button Text="Chiudi" 
+                    Command="{Binding GoBack}" 
+                    HorizontalOptions="End"
+                   Grid.Row="0"></Button>
+            
+            <abstractions:CarouselViewControl ItemsSource="{Binding Images}"
+                                              HeightRequest="300"
+                                              VerticalOptions="Center"
+                                              Grid.Row="1">
+
+                <abstractions:CarouselViewControl.ItemTemplate>
+                    <DataTemplate>
+                        <forms:CachedImage Source="{Binding Path=.}"
+                                           Aspect="AspectFill"
+                                           HeightRequest="300"
+                                           HorizontalOptions="Fill"/>
+                    </DataTemplate>
+
+                </abstractions:CarouselViewControl.ItemTemplate>
+            </abstractions:CarouselViewControl>
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

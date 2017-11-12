@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using CarouselView.FormsPlugin.iOS;
 using FFImageLoading;
 using FFImageLoading.Forms.Touch;
 using Foundation;
@@ -27,7 +28,7 @@ namespace Mugelli.Software.It.Mgc.iOS
             global::Xamarin.Forms.Forms.Init();
 
             CachedImageRenderer.Init();
-            //CarouselViewRenderer.Init();
+            CarouselViewRenderer.Init();
 
             var config = new FFImageLoading.Config.Configuration()
             {

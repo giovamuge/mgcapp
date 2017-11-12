@@ -56,7 +56,7 @@ namespace Mugelli.Software.It.Mgc.Models
             set => _heroImage = value;
         }
         
-        //public List<string> Images => GetImages(ContentHtml);
+        public List<string> Images => GetImages(ContentHtml);
 
         private static string GetHeroImage(string value)
         {
@@ -79,13 +79,25 @@ namespace Mugelli.Software.It.Mgc.Models
 
         private static List<string> GetImages(string value)
         {
-            return (from Match m in new Regex(@"<img (.+?)>").Matches(value)
-                select m.Groups[0].Value
-                into img
-                where img.Contains("src")
-                select new Regex(@"(?<=\bsrc="")[^""]*")
-                into pattern
-                select RemoveSize(pattern.Match(value).Groups[0].Value)).ToList();
+            var result = new List<string>();
+            var r = new Regex(@"<img (.+?)>");
+            foreach (Match m in r.Matches(value))
+            {
+                var img = m.Groups[0].Value;
+                if (!img.Contains("src")) continue;
+
+                var pattern = new Regex(@"(?<=\bsrc="")[^""]*");
+                var src = pattern.Match(img).Groups[0].Value;
+                result.Add(RemoveSize(src));
+            }
+            //return (from Match m in new Regex(@"<img (.+?)>").Matches(value)
+            //    select m.Groups[0].Value
+            //    into img
+            //    where img.Contains("src")
+            //    select new Regex(@"(?<=\bsrc="")[^""]*")
+            //    into pattern
+            //    select RemoveSize(pattern.Match(value).Groups[0].Value)).ToList();
+            return result;
         }
 
         private static string RemoveSize(string value)

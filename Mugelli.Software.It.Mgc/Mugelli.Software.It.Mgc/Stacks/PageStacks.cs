@@ -12,5 +12,6 @@ namespace Mugelli.Software.It.Mgc.Stacks
         public const string NewsDetailPage = "NewsDetailPage";
         public const string CalendarDetailPage = "CalendarDetailPage";
         public const string AdvertisingDetailPage = "AdvertisingDetailPage";
+        public const string GalleryImagePage = "GalleryImagePage";
     }
 }

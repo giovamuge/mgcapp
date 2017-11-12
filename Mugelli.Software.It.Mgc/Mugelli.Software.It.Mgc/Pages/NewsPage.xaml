@@ -71,8 +71,7 @@
                                                                Aspect="AspectFill"
                                                            HorizontalOptions="Fill"
                                                            DownsampleToViewSize="true"
-                                                           HeightRequest="150"
-                                                           Opacity=".8" />
+                                                           HeightRequest="150" />
                                         <!--<Image Source="{Binding Path=HeroImage}" 
                                                Aspect="AspectFill"
                                                HorizontalOptions="Fill"
