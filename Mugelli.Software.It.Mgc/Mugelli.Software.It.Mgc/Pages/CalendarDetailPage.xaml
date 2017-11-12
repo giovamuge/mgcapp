@@ -58,8 +58,7 @@
                         <ViewCell>
 
                             <Grid ColumnSpacing="0" 
-                              RowSpacing="0"
-                              IsVisible="{Binding Path=Name, Converter={StaticResource IsNotNullToBoolConverter}}">
+                              RowSpacing="0">
                                 <!-- Columns -->
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="100" />
