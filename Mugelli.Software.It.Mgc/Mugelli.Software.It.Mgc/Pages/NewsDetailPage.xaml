@@ -84,9 +84,9 @@
 
                     <Grid Margin="-24, 0, -24, 0">
                         <!-- Gesture image -->
-                        <!--<Grid.GestureRecognizers>
+                        <Grid.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding ShowGalleryImage}"/>
-                        </Grid.GestureRecognizers>-->
+                        </Grid.GestureRecognizers>
 
                         <abstractions:CarouselViewControl ItemsSource="{Binding Images}"
                                                           HeightRequest="300"
@@ -105,9 +105,9 @@
                                        LoadingPlaceholder="cloud-computing.png">
 
                                         <!-- Gesture image -->
-                                        <forms:CachedImage.GestureRecognizers>
+                                        <!--<forms:CachedImage.GestureRecognizers>
                                             <TapGestureRecognizer Command="{Binding ShowGalleryImage}"/>
-                                        </forms:CachedImage.GestureRecognizers>
+                                        </forms:CachedImage.GestureRecognizers>-->
                                         
                                     </forms:CachedImage>
                                 </DataTemplate>
