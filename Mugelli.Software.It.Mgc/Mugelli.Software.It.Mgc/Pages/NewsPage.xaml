@@ -87,7 +87,7 @@
                                                 <Grid.RowDefinitions>
                                                     <RowDefinition Height="Auto" />
                                                     <RowDefinition Height="Auto" />
-                                                    <RowDefinition Height="*" /> 
+                                                    <RowDefinition Height="Auto" /> 
                                                 </Grid.RowDefinitions>
                                                 
                                                 <Label Text="{Binding Path=Title}"
@@ -123,11 +123,10 @@
                                                     </StackLayout>
                                                 </Grid>
 
-                                                <Label Text="{Binding Path=Content, StringFormat='{}{0}...'}"
+                                                <Label Text="{Binding Path=ShortTitle}"
                                                        Style="{StaticResource ClassInstructorLabel}"
                                                        VerticalOptions="Fill"
                                                        LineBreakMode="CharacterWrap"
-                                                       HeightRequest="50"
                                                        Grid.Row="2"/>
                                             </Grid>
 

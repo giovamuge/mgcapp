@@ -25,7 +25,7 @@ namespace Mugelli.Software.It.Mgc.Models
 
         public string ShortTitle
         {
-            get => _shortTitle.Truncate(25, true);
+            get => _shortTitle.Truncate(200, true);
             set => _shortTitle = value;
         }
     }

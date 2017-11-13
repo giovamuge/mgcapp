@@ -6,11 +6,11 @@
              Title="{Binding Title}"
              Icon="{Binding Icon}"
              BindingContext="{Binding CalendarViewModel, Source={StaticResource ViewModelLocator}}"
-             BackgroundColor="WhiteSmoke">
+             BackgroundColor="{StaticResource GrayUltraLight}">
     <ContentPage.Content>
         <Grid>
 
-            <ListView BackgroundColor="Transparent"
+            <ListView BackgroundColor="{StaticResource GrayUltraLight}"
                       SeparatorVisibility="None"
                       HasUnevenRows="True"
                       ItemsSource="{Binding AppointmentsGroupped}"
@@ -30,11 +30,12 @@
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout VerticalOptions="FillAndExpand"
-                                         HorizontalOptions="FillAndExpand" 
+                                         HorizontalOptions="FillAndExpand"
+                                         BackgroundColor="{StaticResource MgcColor}"
                                          Padding="15">
 
                                 <Label Text="{Binding Path=Name}"
-                                       Style="{StaticResource HandleLabelPrimary}"/>
+                                       Style="{StaticResource HandleLabelSecondary}"/>
                                     
                             </StackLayout>
                         </ViewCell>
@@ -52,8 +53,8 @@
                 
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell>
-                            <Grid>
+                        <ViewCell >
+                            <Grid BackgroundColor="{StaticResource GrayUltraLight}">
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="70" />
                                     <ColumnDefinition Width="*" />

@@ -44,7 +44,7 @@ namespace Mugelli.Software.It.Mgc.Droid
             LoadApplication(new App());
 
             FirebasePushNotificationManager.ProcessIntent(Intent);
-            FirebaseMessaging.Instance.SubscribeToTopic("alldevices");
+            //FirebaseMessaging.Instance.SubscribeToTopic("alldevices");
 
 
             //If debug you should reset the token each time.

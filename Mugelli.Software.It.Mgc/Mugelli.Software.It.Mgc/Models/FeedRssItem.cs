@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Text.RegularExpressions;
-using Mugelli.Software.It.Mgc.Extensions;
-using Newtonsoft.Json;
 using Mugelli.Software.It.Mgc.Commons;
+using Mugelli.Software.It.Mgc.Extensions;
 using Mugelli.Software.It.Mgc.Models.Types;
+using Newtonsoft.Json;
 
 namespace Mugelli.Software.It.Mgc.Models
 {
@@ -15,6 +14,7 @@ namespace Mugelli.Software.It.Mgc.Models
         private string _content;
         private string _contentHtml;
         private string _heroImage;
+        private string _shortTitle;
         private string _title;
         private EventType _type;
 
@@ -35,7 +35,7 @@ namespace Mugelli.Software.It.Mgc.Models
 
         public string Content
         {
-            get => ContentHtml.StripHtml().TrimEnd();
+            get => _shortTitle = ContentHtml.StripHtml().TrimEnd();
             set => _content = value;
         }
 
@@ -44,8 +44,8 @@ namespace Mugelli.Software.It.Mgc.Models
 
         public Author Author { get; set; }
 
-        public EventType Type 
-        { 
+        public EventType Type
+        {
             get => LogicsCommon.GetTypeByDescription($"{Title}{Content}");
             set => _type = value;
         }
@@ -55,7 +55,13 @@ namespace Mugelli.Software.It.Mgc.Models
             get => GetHeroImage(ContentHtml);
             set => _heroImage = value;
         }
-        
+
+        public string ShortTitle
+        {
+            get => _shortTitle.Truncate(200, true);
+            set => _shortTitle = value;
+        }
+
         public List<string> Images => GetImages(ContentHtml);
 
         private static string RemoveA(string value)
