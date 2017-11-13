@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -8,7 +8,7 @@
              x:Class="Mugelli.Software.It.Mgc.Pages.NewsDetailPage"
              Title="{Binding Article.Title}"
              BindingContext="{Binding NewsDetailViewModel, Source={StaticResource ViewModelLocator}}"
-             BackgroundColor="WhiteSmoke">
+             BackgroundColor="{StaticResource GrayUltraLight}">
     <ContentPage.Content>
 
         <ScrollView x:Name="ScrollCustom">
