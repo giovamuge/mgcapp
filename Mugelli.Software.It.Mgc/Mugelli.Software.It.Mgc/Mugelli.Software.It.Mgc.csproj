@@ -55,6 +55,7 @@
     <Compile Include="Converters\TypeEventImageConverter.cs" />
     <Compile Include="Converters\TypeEventTextConverter.cs" />
     <Compile Include="Extensions\CommonExtensions.cs" />
+    <Compile Include="Extensions\DoubleExtension.cs" />
     <Compile Include="Extensions\ObservableCollectionExtension.cs" />
     <Compile Include="Extensions\StringExtension.cs" />
     <Compile Include="Helper\OnPlatformHelper.cs" />
