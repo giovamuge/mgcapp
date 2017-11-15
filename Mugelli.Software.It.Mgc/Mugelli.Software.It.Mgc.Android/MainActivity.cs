@@ -43,7 +43,8 @@ namespace Mugelli.Software.It.Mgc.Droid
             CarouselViewRenderer.Init();
             LoadApplication(new App());
 
-            FirebasePushNotificationManager.ProcessIntent(Intent);
+            FirebasePushNotificationManager.ProcessIntent(Intent);//Subscribing to single topic
+            CrossFirebasePushNotification.Current.Subscribe("alldevices");
             //FirebaseMessaging.Instance.SubscribeToTopic("alldevices");
 
 

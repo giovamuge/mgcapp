@@ -33,16 +33,20 @@
             <Grid VerticalOptions="FillAndExpand"
                   Grid.Row="1">
                 <abstractions:CarouselViewControl ItemsSource="{Binding Images}"
-                                              HeightRequest="300"
                                               VerticalOptions="Center">
 
                     <abstractions:CarouselViewControl.ItemTemplate>
                         <DataTemplate>
                             <forms:CachedImage Source="{Binding Path=.}"
                                            Aspect="AspectFill"
-                                           HeightRequest="300"
                                            LoadingPlaceholder="cloud-computing.png"
-                                           HorizontalOptions="Fill"/>
+                                           HorizontalOptions="Fill"
+                                               x:Name="ImageGallery">
+                                <forms:CachedImage.GestureRecognizers>
+                                    <PanGestureRecognizer PanUpdated="OnPanUpdated"></PanGestureRecognizer>
+                                    <PinchGestureRecognizer PinchUpdated="OnPinchUpdated"></PinchGestureRecognizer>
+                                </forms:CachedImage.GestureRecognizers>
+                                </forms:CachedImage>
                         </DataTemplate>
 
                     </abstractions:CarouselViewControl.ItemTemplate>

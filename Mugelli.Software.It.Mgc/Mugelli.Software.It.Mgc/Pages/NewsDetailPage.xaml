@@ -101,8 +101,7 @@
                                     <forms:CachedImage Source="{Binding Path=.}"
                                        Aspect="AspectFill"
                                        HeightRequest="300"
-                                       HorizontalOptions="Fill"
-                                       LoadingPlaceholder="cloud-computing.png">
+                                       HorizontalOptions="Fill">
 
                                         <!-- Gesture image -->
                                         <!--<forms:CachedImage.GestureRecognizers>

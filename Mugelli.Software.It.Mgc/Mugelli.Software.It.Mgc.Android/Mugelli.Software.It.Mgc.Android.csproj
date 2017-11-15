@@ -49,6 +49,12 @@
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Badge.Plugin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugin.Badge.1.0.0.0\lib\MonoAndroid10\Badge.Plugin.dll</HintPath>
+    </Reference>
+    <Reference Include="Badge.Plugin.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugin.Badge.1.0.0.0\lib\MonoAndroid10\Badge.Plugin.Abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="CarouselView.FormsPlugin.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\CarouselView.FormsPlugin.4.4.3\lib\MonoAndroid\CarouselView.FormsPlugin.Abstractions.dll</HintPath>
     </Reference>
@@ -455,7 +461,7 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\cloud_computing.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\cloud-computing.png" />
+    <AndroidResource Include="Resources\drawable\cloud_computing.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
