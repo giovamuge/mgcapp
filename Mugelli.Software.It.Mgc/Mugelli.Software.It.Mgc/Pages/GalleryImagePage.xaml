@@ -34,19 +34,21 @@
             <Grid VerticalOptions="FillAndExpand"
                   Grid.Row="1">
                 <abstractions:CarouselViewControl ItemsSource="{Binding Images}"
-                                                  VerticalOptions="Center"
+                                                  VerticalOptions="Fill"
                                                   ShowIndicators="True"
                                                   IndicatorsTintColor="{StaticResource GrayUltraLight}">
 
                     <abstractions:CarouselViewControl.ItemTemplate>
                         <DataTemplate>
-                            <userControls:ZoomContentView>
-                                <userControls:ZoomContentView.Content>
+                            <userControls:ZoomContentView VerticalOptions="Center">
+                                <!--<AbsoluteLayout VerticalOptions="FillAndExpand">-->
                                     <forms:CachedImage Source="{Binding Path=.}"
                                            Aspect="AspectFill"
                                            LoadingPlaceholder="cloud-computing.png"
-                                           HorizontalOptions="Fill"/>
-                                </userControls:ZoomContentView.Content>
+                                           HeightRequest="300"
+                                           HorizontalOptions="Fill"
+                                           VerticalOptions="Center"/>
+                                <!--</AbsoluteLayout>-->
                             </userControls:ZoomContentView>
                         </DataTemplate>
 

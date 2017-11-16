@@ -1,5 +1,6 @@
 ﻿using System;
 using Xamarin.Forms;
+using Mugelli.Software.It.Mgc.Extensions;
 
 namespace Mugelli.Software.It.Mgc.UserControls
 {
@@ -11,7 +12,7 @@ namespace Mugelli.Software.It.Mgc.UserControls
 
         public ZoomContentView()
         {
-            GestureRecognizers.Add(GetPan());
+            //GestureRecognizers.Add(GetPan());
             GestureRecognizers.Add(GetPinch());
         }
 
@@ -22,20 +23,34 @@ namespace Mugelli.Software.It.Mgc.UserControls
             {
                 switch (e.StatusType)
                 {
-                    case GestureStatus.Started:
-                        Content.TranslationX = _x;
-                        Content.TranslationY = _y;
-                        break;
+                    //case GestureStatus.Started:
+                    //    Content.TranslationX = _x;
+                    //    Content.TranslationY = _y;
+                    //    break;
+                    //case GestureStatus.Running:
+                    //    //needs to not let you pan outside the bounds of the container.
+                    //    Content.TranslationX = _x + e.TotalX;
+                    //    Content.TranslationY = _y + e.TotalY;
+                    //    break;
+                    //case GestureStatus.Completed:
+                    //    _x = Content.TranslationX;
+                    //    _y = Content.TranslationY;
+                    //    PanCompleted?.Invoke(s, EventArgs.Empty);
+                    //    break;
                     case GestureStatus.Running:
-                        //needs to not let you pan outside the bounds of the container.
-                        Content.TranslationX = _x + e.TotalX;
-                        Content.TranslationY = _y + e.TotalY;
+                        // Translate and ensure we don't pan beyond the wrapped user interface element bounds.
+                        Content.TranslationX =
+                            Math.Max(Math.Min(0, _x + e.TotalX), -Math.Abs(Content.Width - Application.Current.MainPage.Width));
+                        Content.TranslationY =
+                                   Math.Max(Math.Min(0, _y + e.TotalY), -Math.Abs(Content.Height - Application.Current.MainPage.Height));
                         break;
+
                     case GestureStatus.Completed:
+                        // Store the translation applied during the pan
                         _x = Content.TranslationX;
                         _y = Content.TranslationY;
-                        PanCompleted?.Invoke(s, EventArgs.Empty);
                         break;
+                
                 }
             };
             return pan;
@@ -56,6 +71,7 @@ namespace Mugelli.Software.It.Mgc.UserControls
                         startScale = Content.Scale;
                         Content.AnchorX = e.ScaleOrigin.X;
                         Content.AnchorY = e.ScaleOrigin.Y;
+                        GestureRecognizers.Add(GetPan());
                     }
                         break;
                     case GestureStatus.Running:
@@ -76,8 +92,8 @@ namespace Mugelli.Software.It.Mgc.UserControls
                         var targetX = xOffset - originX * Content.Width * (_currentScale - startScale);
                         var targetY = yOffset - originY * Content.Height * (_currentScale - startScale);
 
-                        //Content.TranslationX = Clamp(targetX, -Content.Width * (_currentScale - 1), 0);
-                        //Content.TranslationY = Clamp(targetY, -Content.Height * (_currentScale - 1), 0);
+                            Content.TranslationX = targetX.Clamp(-Content.Width * (_currentScale - 1), 0);
+                            Content.TranslationY = targetY.Clamp(-Content.Height * (_currentScale - 1), 0);
 
                         Content.Scale = _currentScale;
                     }

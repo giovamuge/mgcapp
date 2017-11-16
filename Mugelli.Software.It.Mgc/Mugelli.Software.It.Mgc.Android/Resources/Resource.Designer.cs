@@ -740,13 +740,7 @@ namespace Mugelli.Software.It.Mgc.Droid
 			global::CarouselView.FormsPlugin.Android.Resource.Drawable.abc_textfield_search_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_textfield_search_material;
 			global::CarouselView.FormsPlugin.Android.Resource.Drawable.abc_vector_test = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_vector_test;
 			global::CarouselView.FormsPlugin.Android.Resource.Drawable.avd_hide_password = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.avd_hide_password;
-			global::CarouselView.FormsPlugin.Android.Resource.Drawable.avd_hide_password_1 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.avd_hide_password_1;
-			global::CarouselView.FormsPlugin.Android.Resource.Drawable.avd_hide_password_2 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.avd_hide_password_2;
-			global::CarouselView.FormsPlugin.Android.Resource.Drawable.avd_hide_password_3 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.avd_hide_password_3;
 			global::CarouselView.FormsPlugin.Android.Resource.Drawable.avd_show_password = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.avd_show_password;
-			global::CarouselView.FormsPlugin.Android.Resource.Drawable.avd_show_password_1 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.avd_show_password_1;
-			global::CarouselView.FormsPlugin.Android.Resource.Drawable.avd_show_password_2 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.avd_show_password_2;
-			global::CarouselView.FormsPlugin.Android.Resource.Drawable.avd_show_password_3 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.avd_show_password_3;
 			global::CarouselView.FormsPlugin.Android.Resource.Drawable.design_bottom_navigation_item_background = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.design_bottom_navigation_item_background;
 			global::CarouselView.FormsPlugin.Android.Resource.Drawable.design_fab_background = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.design_fab_background;
 			global::CarouselView.FormsPlugin.Android.Resource.Drawable.design_ic_visibility = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.design_ic_visibility;
@@ -4455,26 +4449,8 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f020054
 			public const int avd_hide_password = 2130837588;
 			
-			// aapt resource value: 0x7f020135
-			public const int avd_hide_password_1 = 2130837813;
-			
-			// aapt resource value: 0x7f020136
-			public const int avd_hide_password_2 = 2130837814;
-			
-			// aapt resource value: 0x7f020137
-			public const int avd_hide_password_3 = 2130837815;
-			
 			// aapt resource value: 0x7f020055
 			public const int avd_show_password = 2130837589;
-			
-			// aapt resource value: 0x7f020138
-			public const int avd_show_password_1 = 2130837816;
-			
-			// aapt resource value: 0x7f020139
-			public const int avd_show_password_2 = 2130837817;
-			
-			// aapt resource value: 0x7f02013a
-			public const int avd_show_password_3 = 2130837818;
 			
 			// aapt resource value: 0x7f020056
 			public const int Black_Clock_50px = 2130837590;
