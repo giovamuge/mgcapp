@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              xmlns:abstractions="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             xmlns:userControls="clr-namespace:Mugelli.Software.It.Mgc.UserControls;assembly=Mugelli.Software.It.Mgc"
              x:Class="Mugelli.Software.It.Mgc.Pages.GalleryImagePage"
              BindingContext="{Binding ImageGalleryViewModel, Source={StaticResource ViewModelLocator}}">
     <ContentPage.Content>
@@ -33,20 +34,20 @@
             <Grid VerticalOptions="FillAndExpand"
                   Grid.Row="1">
                 <abstractions:CarouselViewControl ItemsSource="{Binding Images}"
-                                              VerticalOptions="Center">
+                                                  VerticalOptions="Center"
+                                                  ShowIndicators="True"
+                                                  IndicatorsTintColor="{StaticResource GrayUltraLight}">
 
                     <abstractions:CarouselViewControl.ItemTemplate>
                         <DataTemplate>
-                            <forms:CachedImage Source="{Binding Path=.}"
+                            <userControls:ZoomContentView>
+                                <userControls:ZoomContentView.Content>
+                                    <forms:CachedImage Source="{Binding Path=.}"
                                            Aspect="AspectFill"
                                            LoadingPlaceholder="cloud-computing.png"
-                                           HorizontalOptions="Fill"
-                                               x:Name="ImageGallery">
-                                <forms:CachedImage.GestureRecognizers>
-                                    <PanGestureRecognizer PanUpdated="OnPanUpdated"></PanGestureRecognizer>
-                                    <PinchGestureRecognizer PinchUpdated="OnPinchUpdated"></PinchGestureRecognizer>
-                                </forms:CachedImage.GestureRecognizers>
-                                </forms:CachedImage>
+                                           HorizontalOptions="Fill"/>
+                                </userControls:ZoomContentView.Content>
+                            </userControls:ZoomContentView>
                         </DataTemplate>
 
                     </abstractions:CarouselViewControl.ItemTemplate>

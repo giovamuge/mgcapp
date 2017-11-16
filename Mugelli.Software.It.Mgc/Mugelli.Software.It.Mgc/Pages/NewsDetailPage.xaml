@@ -90,7 +90,9 @@
 
                         <abstractions:CarouselViewControl ItemsSource="{Binding Images}"
                                                           HeightRequest="300"
-                                                          HorizontalOptions="Fill">
+                                                          HorizontalOptions="Fill"
+                                                          ShowIndicators="True"
+                                                          IndicatorsTintColor="{StaticResource GrayUltraLight}">
 
                             <!--<abstractions:CarouselViewControl.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding ShowGalleryImage}"/>
