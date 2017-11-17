@@ -5,9 +5,11 @@
              xmlns:abstractions="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
              xmlns:userControls="clr-namespace:Mugelli.Software.It.Mgc.UserControls;assembly=Mugelli.Software.It.Mgc"
              x:Class="Mugelli.Software.It.Mgc.Pages.GalleryImagePage"
-             BindingContext="{Binding ImageGalleryViewModel, Source={StaticResource ViewModelLocator}}">
+             BindingContext="{Binding ImageGalleryViewModel, Source={StaticResource ViewModelLocator}}"
+             Title="Galleria Immagini"
+             x:Name="Root">
     <ContentPage.Content>
-        <Grid VerticalOptions="FillAndExpand"
+        <!--<Grid VerticalOptions="FillAndExpand"
               HorizontalOptions="FillAndExpand"
               BackgroundColor="Black">
 
@@ -29,18 +31,22 @@
                     <Label Text="x" Style="{StaticResource SecondaryPageHeaderLabel}"></Label>
                 </Grid>
 
-            </Grid>
+            </Grid>-->
 
             <Grid VerticalOptions="FillAndExpand"
-                  Grid.Row="1">
+                  HorizontalOptions="FillAndExpand"
+                  BackgroundColor="Black">
+            
                 <abstractions:CarouselViewControl ItemsSource="{Binding Images}"
                                                   VerticalOptions="Fill"
                                                   ShowIndicators="True"
-                                                  IndicatorsTintColor="{StaticResource GrayUltraLight}">
+                                                  IndicatorsTintColor="{StaticResource GrayUltraLight}"
+                                                  IsSwipingEnabled="{Binding IsZooming, Converter={StaticResource InverseBoolConverter}}">
 
                     <abstractions:CarouselViewControl.ItemTemplate>
                         <DataTemplate>
-                            <userControls:ZoomContentView VerticalOptions="Center">
+                            <userControls:ZoomContentView VerticalOptions="Center"
+                                                          IsZooming="{Binding Path=BindingContext.IsZooming, Source={x:Reference Name=Root}">
                                 <!--<AbsoluteLayout VerticalOptions="FillAndExpand">-->
                                     <forms:CachedImage Source="{Binding Path=.}"
                                            Aspect="AspectFill"
@@ -55,6 +61,6 @@
                     </abstractions:CarouselViewControl.ItemTemplate>
                 </abstractions:CarouselViewControl>
             </Grid>
-        </Grid>
+        <!--</Grid>-->
     </ContentPage.Content>
 </ContentPage>

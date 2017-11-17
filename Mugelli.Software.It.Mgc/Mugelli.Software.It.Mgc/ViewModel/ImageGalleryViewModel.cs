@@ -4,6 +4,7 @@ using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using Mugelli.Software.It.Mgc.Navigations;
 using Mugelli.Software.It.Mgc.Services;
+using Xamarin.Forms;
 
 namespace Mugelli.Software.It.Mgc.ViewModel
 {
@@ -32,6 +33,17 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         }
 
         public ICommand GoBack { get; set; }
+
+        private bool _isZooming;
+        public bool IsZooming 
+        { 
+            get => _isZooming; 
+            set
+            {
+                RaisePropertyChanged(nameof(IsZooming), _isZooming, value);
+                _isZooming = value;
+            } 
+        }
 
         private void OnToBack()
         {

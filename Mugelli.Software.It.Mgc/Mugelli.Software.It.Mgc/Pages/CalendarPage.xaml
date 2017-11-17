@@ -32,7 +32,8 @@
                             <StackLayout VerticalOptions="FillAndExpand"
                                          HorizontalOptions="FillAndExpand"
                                          BackgroundColor="{StaticResource MgcColor}"
-                                         Padding="15">
+                                         Padding="15"
+                                         Margin="0, 0, 0, -1">
 
                                 <Label Text="{Binding Path=Name}"
                                        Style="{StaticResource HandleLabelSecondary}"/>

@@ -49,7 +49,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
 
         private void OnShowGalleryImage()
         {
-            _statusBar.HideStatusBar();
+            //_statusBar.HideStatusBar();
             _navigationService.NavigateTo(PageStacks.GalleryImagePage, Images);
         }
     }
