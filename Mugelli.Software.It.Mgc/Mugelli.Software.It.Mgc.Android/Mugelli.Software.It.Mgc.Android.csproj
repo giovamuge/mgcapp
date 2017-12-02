@@ -211,6 +211,7 @@
   <ItemGroup>
     <GoogleServicesJson Include="google-services.json" />
     <None Include="app.config" />
+    <AndroidAsset Include="Assets\fontawesome.ttf" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />

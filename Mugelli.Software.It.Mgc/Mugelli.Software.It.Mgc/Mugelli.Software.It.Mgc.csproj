@@ -58,6 +58,8 @@
     <Compile Include="Extensions\DoubleExtension.cs" />
     <Compile Include="Extensions\ObservableCollectionExtension.cs" />
     <Compile Include="Extensions\StringExtension.cs" />
+    <Compile Include="Fonts\FontAwesomeIcons.cs" />
+    <Compile Include="Fonts\Fonts.cs" />
     <Compile Include="Helper\OnPlatformHelper.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Author.cs" />

@@ -40,5 +40,9 @@
 	<string>LaunchScreen</string>
 	<key>XSLaunchImageAssets</key>
 	<string>Assets.xcassets/LaunchImage.launchimage</string>
+  <key>UIAppFonts</key>
+  <array>
+    <string>fontawesome.ttf</string>
+  </array>
 </dict>
 </plist>
