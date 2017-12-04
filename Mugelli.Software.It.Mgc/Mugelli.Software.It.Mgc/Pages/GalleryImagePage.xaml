@@ -51,7 +51,6 @@
                                     <forms:CachedImage Source="{Binding Path=.}"
                                            Aspect="AspectFill"
                                            LoadingPlaceholder="cloud-computing.png"
-                                           HeightRequest="300"
                                            HorizontalOptions="Fill"
                                            VerticalOptions="Center"/>
                                 <!--</AbsoluteLayout>-->
