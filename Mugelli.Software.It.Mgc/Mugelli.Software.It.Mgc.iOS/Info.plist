@@ -41,5 +41,9 @@
 	<string>Assets.xcassets/LaunchImage.launchimage</string>
 	<key>UIRequiresFullScreen</key>
 	<true/>
+  <key>UIAppFonts</key>
+  <array>
+    <string>fontawesome.ttf</string>
+  </array>
 </dict>
 </plist>

@@ -5,6 +5,7 @@
              xmlns:behaviors="clr-namespace:Mugelli.Software.It.Mgc.Behaviors;assembly=Mugelli.Software.It.Mgc"
              xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              xmlns:userControls="clr-namespace:Mugelli.Software.It.Mgc.UserControls;assembly=Mugelli.Software.It.Mgc"
+             xmlns:fonts="clr-namespace:Mugelli.Software.It.Mgc.Fonts;assembly=Mugelli.Software.It.Mgc"
              x:Class="Mugelli.Software.It.Mgc.Pages.NewsPage"
              Title="{Binding Title}"
              Icon="{Binding Icon}"
@@ -33,7 +34,7 @@
                 
                 <ListView.Footer>
                         <Grid Padding="14"
-                              IsVisible="{Binding IsRefreshing, Converter={StaticResource InverseBoolConverter}">
+                              IsVisible="{Binding IsRefreshing, Converter={StaticResource InverseBoolConverter}}">
                             <userControls:CustomButton Text="Altro"
                                                        Style="{StaticResource ButtonStyle}"
                                                        Command="{Binding NavigateMgcSite}"></userControls:CustomButton>
@@ -116,7 +117,10 @@
                                                                  Orientation="Horizontal"
                                                                  VerticalOptions="Fill"
                                                                  Grid.Column="1">
-                                                        <Image Source="Black_Clock_50px.png" />
+                                                        <!--<Image Source="Black_Clock_50px.png" />-->
+                                                        <Label  Text="{x:Static fonts:FontAwesomeIcons.ClockO}"
+                                                                FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                                                                Style="{StaticResource HandleLabelPrimary}"/>
                                                         <Label Text="{Binding Path=DatePublished, StringFormat='{}{0: dd MMM yyyy}'}"
                                                                Style="{StaticResource HandleLabelPrimary}"
                                                                VerticalTextAlignment="Center"></Label>
