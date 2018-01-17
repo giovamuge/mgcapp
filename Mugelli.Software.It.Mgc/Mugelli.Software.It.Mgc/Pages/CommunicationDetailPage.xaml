@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Mugelli.Software.It.Mgc.Pages.CommunicationDetailPage"
+    xmlns:behaviors="clr-namespace:Mugelli.Software.It.Mgc.Behaviors;assembly=Mugelli.Software.It.Mgc"
+    xmlns:userControls="clr-namespace:Mugelli.Software.It.Mgc.UserControls;assembly=Mugelli.Software.It.Mgc"       
+    Title="{Binding Comm.Title}"
+    BindingContext="{Binding CommunicationDetailViewModel, Source={StaticResource ViewModelLocator}}"
+    BackgroundColor="{StaticResource GrayUltraLight}">
+	<ContentPage.Content>
+
+        <ScrollView>
+            
+            <StackLayout Orientation="Vertical"
+                         Spacing="0"
+                         VerticalOptions="FillAndExpand">
+
+                <StackLayout Padding=".5"
+                             Spacing="4"
+                             BackgroundColor="{StaticResource GrayPrimary}">
+
+                    <Grid Padding="16, 10"
+                          BackgroundColor="{StaticResource GrayUltraLight}">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Label Text="{Binding Comm.Title}"
+                               Style="{StaticResource TitleLabelPrimary}"
+                               VerticalOptions="Fill"
+                               LineBreakMode="WordWrap"
+                               Grid.Row="0"
+                               Grid.ColumnSpan="2"/>
+
+                        <StackLayout Grid.Column="0"
+                                     Grid.Row="1"
+                                     BackgroundColor="{Binding Path=Type, Converter={StaticResource TypeEventColorConverter}}"
+                                     Margin="-16, 0, 0, 0"
+                                     Padding="18, 4, 8, 4">
+                            <Label Text="{Binding Path=Type, Converter={StaticResource TypeEventTextConverter}}"
+                                   Style="{StaticResource HandleLabelSecondary}"/>
+                        </StackLayout>
+
+                        <StackLayout HorizontalOptions="End"
+                                     Orientation="Horizontal"
+                                     VerticalOptions="Fill"
+                                     Grid.Row="1"
+                                     Grid.Column="1">
+                            <Image Source="Black_Clock_50px.png" />
+                            <Label Text="{Binding Comm.Date, StringFormat='{}{0: dd MMM yyyy}'}"
+                                   Style="{StaticResource HandleLabelPrimary}"
+                                   VerticalTextAlignment="Center"></Label>
+                        </StackLayout>
+
+                        <userControls:HtmlFormatLabel Text="{Binding Comm.Content}"
+                               Style="{StaticResource ClassInstructorLabel}"
+                               VerticalOptions="Fill"
+                               Grid.Row="2"
+                               Grid.ColumnSpan="2"/>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+	</ContentPage.Content>
+</ContentPage>

@@ -16,7 +16,7 @@ namespace Mugelli.Software.It.Mgc.Droid.Renders
             base.OnElementChanged(e);
 
             var view = (HtmlFormatLabel) Element;
-            if (view == null) return;
+            if (view == null || string.IsNullOrEmpty(view.Text)) return;
 
             Control.SetText(Html.FromHtml(view.Text), TextView.BufferType.Spannable);
         }

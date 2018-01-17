@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Mugelli.Software.It.Mgc.Navigations
@@ -98,6 +99,79 @@ namespace Mugelli.Software.It.Mgc.Navigations
                         nameof(pageKey));
                 }
             }
+        }
+
+        public async Task PushModal(string pageKey, object parameter)
+        {
+            if (_pagesByKey.ContainsKey(pageKey))
+            {
+
+                var type = _pagesByKey[pageKey];
+                ConstructorInfo constructor;
+                object[] parameters;
+
+                if (parameter == null)
+                {
+                    constructor = type.GetTypeInfo()
+                        .DeclaredConstructors
+                        .FirstOrDefault(c => !c.GetParameters().Any());
+
+                    parameters = new object[]
+                    {
+                    };
+                }
+                else
+                {
+                    constructor = type.GetTypeInfo()
+                        .DeclaredConstructors
+                        .FirstOrDefault(
+                            c =>
+                            {
+                                var p = c.GetParameters();
+                                return p.Count() == 1
+                                       && p[0].ParameterType == parameter.GetType();
+                            });
+
+                    parameters = new[]
+                    {
+                        parameter
+                    };
+                }
+
+                if (constructor == null)
+                {
+                    throw new InvalidOperationException(
+                        "No suitable constructor found for page " + pageKey);
+                }
+
+                var page = constructor.Invoke(parameters) as Page;
+                await Application.Current.MainPage.Navigation.PushModalAsync(page);
+
+            }
+            else
+            {
+                throw new ArgumentException(
+                    $"No such page: {pageKey}. Did you forget to call NavigationService.Configure?",
+                    nameof(pageKey));
+            }
+        }
+
+        public async Task PopModal()
+        {
+            var modalPage = Application.Current.MainPage.Navigation.ModalStack.Last();
+
+            if (!Equals(modalPage, null))
+            {
+
+                //var cleanup = modalPage as IPageLifetime;
+                //if (cleanup != null)
+                //{
+                //    // Unregister vm of page, message listener etc
+                //    cleanup.CleanupPage();
+                //}
+            }
+
+            await Application.Current.MainPage.Navigation.PopModalAsync();
         }
 
         public void Configure(string pageKey, Type pageType)

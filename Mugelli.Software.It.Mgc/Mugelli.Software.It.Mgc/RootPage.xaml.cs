@@ -17,6 +17,8 @@ namespace Mugelli.Software.It.Mgc
         public RootPage()
         {
             InitializeComponent();
+
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
 

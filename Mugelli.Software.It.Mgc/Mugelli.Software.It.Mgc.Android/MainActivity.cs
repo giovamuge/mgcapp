@@ -36,7 +36,8 @@ namespace Mugelli.Software.It.Mgc.Droid
                 VerboseLoadingCancelledLogging = false,
                 Logger = new CustomLogger(),
                 DiskCacheDuration = TimeSpan.FromDays(30),
-                FadeAnimationEnabled = true
+                FadeAnimationEnabled = true,
+                FadeAnimationForCachedImages = false
             };
             ImageService.Instance.Initialize(config);
 
@@ -50,7 +51,7 @@ namespace Mugelli.Software.It.Mgc.Droid
                                  .SetDatabaseUrl("https://mgc-news.firebaseio.com/")
                                  .Build();
             
-            var firebaseApp = FirebaseApp.InitializeApp(this, options);
+            var fire = FirebaseApp.InitializeApp(this, options, "mgc");
 
             FirebasePushNotificationManager.ProcessIntent(Intent);//Subscribing to single topic
             //CrossFirebasePushNotification.Current.Subscribe("alldevices");

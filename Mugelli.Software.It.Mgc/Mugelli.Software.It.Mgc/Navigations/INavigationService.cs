@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace Mugelli.Software.It.Mgc.Navigations
@@ -14,5 +15,9 @@ namespace Mugelli.Software.It.Mgc.Navigations
         void Configure(string pageKey, Type pageType);
 
         void Initialize(NavigationPage navigation);
+
+        Task PushModal(string pageKey, object paramter);
+
+        Task PopModal();
     }
 }

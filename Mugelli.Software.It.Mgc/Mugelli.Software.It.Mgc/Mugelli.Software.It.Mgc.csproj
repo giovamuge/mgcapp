@@ -128,6 +128,11 @@
     <Compile Include="Views\CardNewsView.xaml.cs">
       <DependentUpon>CardNewsView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Stacks\ModalStacks.cs" />
+    <Compile Include="Pages\CommunicationDetailPage.xaml.cs">
+      <DependentUpon>CommunicationDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\CommunicationDetailViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainPage.xaml">
@@ -135,6 +140,10 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\CommunicationDetailPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
