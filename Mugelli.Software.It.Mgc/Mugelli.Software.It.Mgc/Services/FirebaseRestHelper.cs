@@ -5,6 +5,7 @@ using Firebase.Xamarin.Database;
 using Mugelli.Software.It.Mgc.Models;
 using System.Reflection;
 using Newtonsoft.Json;
+using System;
 
 namespace Mugelli.Software.It.Mgc.Services
 {
@@ -52,7 +53,8 @@ namespace Mugelli.Software.It.Mgc.Services
                 Init();
             }
 
-            return (await Client.Child("advertising").OnceAsync<object>()).Select(x => JsonConvert.DeserializeObject<Communication>(x.Object.ToString())).ToList();
+            return (await Client.Child("advertising").OnceAsync<object>()).Select(
+                x => JsonConvert.DeserializeObject<Communication>(x.Object.ToString())).Where(x => x.Date >= DateTime.Now).OrderBy(x => x.Date).ToList();
         }
 
         /// <summary>
@@ -66,7 +68,8 @@ namespace Mugelli.Software.It.Mgc.Services
                 Init();
             }
 
-            return (await Client.Child("calendar").OnceAsync<object>()).Select(x => JsonConvert.DeserializeObject<Appointment>(x.Object.ToString())).ToList();
+            return (await Client.Child("calendar").OnceAsync<object>()).Select(
+                x => JsonConvert.DeserializeObject<Appointment>(x.Object.ToString())).Where(x => x.Date >= DateTime.Now).OrderBy(x => x.Date).ToList();
         }
     }
 }
