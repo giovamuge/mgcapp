@@ -13,6 +13,7 @@ using FFImageLoading.Forms.Droid;
 using Firebase.Messaging;
 using Plugin.FirebasePushNotification;
 using Plugin.FirebasePushNotification.Abstractions;
+using Firebase;
 
 namespace Mugelli.Software.It.Mgc.Droid
 {
@@ -43,9 +44,17 @@ namespace Mugelli.Software.It.Mgc.Droid
             CarouselViewRenderer.Init();
             LoadApplication(new App());
 
+            var options = new FirebaseOptions.Builder()
+                                 .SetApplicationId("1:402954439752:android:2d2810dce428328e")
+                                 .SetApiKey("AIzaSyD2ANVRy4K4md-ASE0jhRbDdJCOoY34p8Y")
+                                 .SetDatabaseUrl("https://mgc-news.firebaseio.com/")
+                                 .Build();
+            
+            var firebaseApp = FirebaseApp.InitializeApp(this, options);
+
             FirebasePushNotificationManager.ProcessIntent(Intent);//Subscribing to single topic
-            CrossFirebasePushNotification.Current.Subscribe("alldevices");
-            //FirebaseMessaging.Instance.SubscribeToTopic("alldevices");
+            //CrossFirebasePushNotification.Current.Subscribe("alldevices");
+            FirebaseMessaging.Instance.SubscribeToTopic("alldevices");
 
 
             //If debug you should reset the token each time.
