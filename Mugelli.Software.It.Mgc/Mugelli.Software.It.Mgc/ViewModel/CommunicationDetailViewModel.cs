@@ -1,19 +1,20 @@
 ﻿using System;
+using GalaSoft.MvvmLight;
 using Mugelli.Software.It.Mgc.Models;
 
 namespace Mugelli.Software.It.Mgc.ViewModel
 {
-    public class CommunicationDetailViewModel: BaseViewModel
+    public class CommunicationDetailViewModel : ViewModelBase
     {
-        private Communication _comm;
+        private Communication _communication;
 
-        public Communication Comm
+        public Communication Communication
         {
-            get => _comm;
+            get => _communication;
             set
             {
-                RaisePropertyChanged(nameof(Communication), _comm, value);
-                _comm = value;
+                RaisePropertyChanged(nameof(Communication), _communication, value);
+                _communication = value;
             }
         }
 

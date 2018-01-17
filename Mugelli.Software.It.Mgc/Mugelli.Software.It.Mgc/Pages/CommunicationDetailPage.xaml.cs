@@ -8,12 +8,12 @@ namespace Mugelli.Software.It.Mgc.Pages
 {
     public partial class CommunicationDetailPage : ContentPage
     {
-        public CommunicationDetailPage(Communication comm)
+        public CommunicationDetailPage(Communication communication)
         {
             InitializeComponent();
 
             var viewModel = BindingContext as CommunicationDetailViewModel;
-            if (viewModel != null) viewModel.Comm = comm;
+            if (viewModel != null) viewModel.Communication = communication;
         }
     }
 }
