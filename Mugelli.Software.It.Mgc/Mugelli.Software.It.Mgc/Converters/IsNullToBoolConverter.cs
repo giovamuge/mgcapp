@@ -1,6 +1,9 @@
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Globalization;
 using Xamarin.Forms;
+using System.Linq;
 
 namespace Mugelli.Software.It.Mgc.Converters
 {
@@ -12,6 +15,9 @@ namespace Mugelli.Software.It.Mgc.Converters
         {
             if (value is string)
                 return string.IsNullOrEmpty((string) value);
+
+            if (value is IList)
+                return ((IList)value)?.Count <= 0;
             
             return value == null;
         }
@@ -20,6 +26,9 @@ namespace Mugelli.Software.It.Mgc.Converters
         {
             if (value is string)
                 return string.IsNullOrEmpty((string) value);
+
+            if (value is IList)
+                return ((IList)value)?.Count <= 0;
             
             return value == null;
         }

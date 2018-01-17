@@ -37,7 +37,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
 
         public ICommand RefreshCommand { get; set; }
 
-        public string Title { get; set; } = "Calendario";
+        public string Title { get; set; } = "Calendar";
         public string Icon { get; set; } = OnPlatformHelper.IconOniOS("Calendar_50px.png");
 
         public List<Appointment> Appointments

@@ -14,6 +14,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         public string TitleNews { get; set; }
         public string TitleCommunications { get; set; }
         public string TitleCalendar { get; set; }
+        public string TitleInfo { get; set; }
 
         public Page News { get; set; }
         public Page Communications { get; set; }
@@ -28,8 +29,9 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         {
             Title = "MGC";
             TitleCommunications = "Communicazioni";
-            TitleCalendar = "Calendario";
+            TitleCalendar = "Calendar";
             TitleNews = "Notizie";
+            TitleInfo = "Info";
 
             Communications = new CommunicationsPage();
             Calendar = new CalendarPage();
@@ -47,6 +49,8 @@ namespace Mugelli.Software.It.Mgc.ViewModel
                 case Device.Android:
                     BarBackgroundColor = (Color) Application.Current.Resources["MgcColor"];
                     BarTextColor = (Color) Application.Current.Resources["GrayUltraLight"];
+
+                    Childrens.Add(new InfoPage());
                     break;
                 case Device.iOS:
                     BarTextColor = (Color)Application.Current.Resources["MgcColor"];
