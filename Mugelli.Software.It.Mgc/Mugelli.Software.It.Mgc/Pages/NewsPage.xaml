@@ -120,6 +120,7 @@
                                                         <!--<Image Source="Black_Clock_50px.png" />-->
                                                         <Label  Text="{x:Static fonts:FontAwesomeIcons.ClockO}"
                                                                 FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                                                                VerticalOptions="Center"
                                                                 Style="{StaticResource HandleLabelPrimary}"/>
                                                         <Label Text="{Binding Path=DatePublished, StringFormat='{}{0: dd MMM yyyy}'}"
                                                                Style="{StaticResource HandleLabelPrimary}"
