@@ -18,7 +18,10 @@ namespace Mugelli.Software.It.Mgc
         {
             InitializeComponent();
 
-            NavigationPage.SetHasNavigationBar(this, false);
+            if(Device.RuntimePlatform == Device.Android)
+            {
+                NavigationPage.SetHasNavigationBar(this, false);
+            }
         }
 
 

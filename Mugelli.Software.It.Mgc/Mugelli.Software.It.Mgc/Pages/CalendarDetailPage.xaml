@@ -75,6 +75,7 @@
                                    VerticalOptions="Center"
                                    Style="{StaticResource ClassTimeLabel}"
                                    Text="{Binding Path=Time}"
+                                   Grid.RowSpan="2"
                                    VerticalTextAlignment="Center" />
 
                                 <Label
@@ -101,6 +102,8 @@
                                 WidthRequest="3" />
 
                                 <Image Grid.Column="1"
+                                Grid.RowSpan="2"
+                                    VerticalOptions="Center"
                                    Source="{Binding Path=BindingContext.Appointment.Type, Converter={StaticResource TypeEventImageConverter}, Source={x:Reference Name=Root}}" />
 
                             </Grid>
