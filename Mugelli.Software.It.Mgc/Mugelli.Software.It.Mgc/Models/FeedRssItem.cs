@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Net;
 using System.Text.RegularExpressions;
 using Mugelli.Software.It.Mgc.Commons;
@@ -119,7 +120,8 @@ namespace Mugelli.Software.It.Mgc.Models
             var name = slash[slash.Length - 1];
             var namesplit = name.Split('-');
             var size = namesplit[namesplit.Length - 1];
-            return value.Replace($"-{size}", ".jpg");
+            var format = Path.GetExtension(size);
+            return value.Replace($"-{size}", $"{format}");
         }
     }
 }
