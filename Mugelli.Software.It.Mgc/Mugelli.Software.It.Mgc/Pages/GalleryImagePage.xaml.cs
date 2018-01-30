@@ -15,7 +15,10 @@ namespace Mugelli.Software.It.Mgc.Pages
         {
             InitializeComponent();
 
-            NavigationPage.SetHasNavigationBar(this, false);
+            if(Device.RuntimePlatform == Device.Android)
+            {
+                NavigationPage.SetHasNavigationBar(this, false);
+            }
 
             var viewModel = (ImageGalleryViewModel) BindingContext;
             viewModel.Images = param;
