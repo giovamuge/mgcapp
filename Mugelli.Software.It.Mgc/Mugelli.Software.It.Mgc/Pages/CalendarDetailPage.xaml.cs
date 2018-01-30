@@ -17,6 +17,11 @@ namespace Mugelli.Software.It.Mgc.Pages
 		{
 			InitializeComponent ();
 
+            if (Device.RuntimePlatform == Device.Android)
+            {
+                NavigationPage.SetHasNavigationBar(this, false);
+            }
+
 		    var viewModel = BindingContext as CalendarDetailViewModel;
 		    if (viewModel != null) viewModel.Appointment = appointment;
 

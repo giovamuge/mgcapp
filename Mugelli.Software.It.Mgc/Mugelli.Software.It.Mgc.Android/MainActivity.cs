@@ -55,7 +55,7 @@ namespace Mugelli.Software.It.Mgc.Droid
 
             FirebasePushNotificationManager.ProcessIntent(Intent);//Subscribing to single topic
             //CrossFirebasePushNotification.Current.Subscribe("alldevices");
-            //FirebaseMessaging.Instance.SubscribeToTopic("alldevices");
+            FirebaseMessaging.Instance.SubscribeToTopic("alldevices");
 
 
             //If debug you should reset the token each time.

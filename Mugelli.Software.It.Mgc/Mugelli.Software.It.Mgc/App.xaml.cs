@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Globalization;
 using System.Threading.Tasks;
 using Firebase.Xamarin.Auth;
 using GalaSoft.MvvmLight.Ioc;
@@ -17,6 +18,9 @@ namespace Mugelli.Software.It.Mgc
 
         public App()
         {
+            CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("it-IT");
+            CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("it-IT");
+
             InitializeComponent();
 
             //Initialize navigation
