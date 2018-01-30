@@ -48,7 +48,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         private void OnToBack()
         {
             _navigationService.GoBack();
-            _statusBar.ShowStatusBar();
+            //_statusBar.ShowStatusBar();
         }
     }
 }

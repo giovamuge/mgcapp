@@ -61,28 +61,28 @@ namespace Mugelli.Software.It.Mgc.UserControls
 
         private void OnTapped(object sender, EventArgs e)
         {
-            if (Scale > MIN_SCALE)
-            {
-                this.ScaleTo(MIN_SCALE, 250, Easing.CubicInOut);
-                this.TranslateTo(0, 0, 250, Easing.CubicInOut);
+            //if (Scale > MIN_SCALE)
+            //{
+            //    this.ScaleTo(MIN_SCALE, 250, Easing.CubicInOut);
+            //    this.TranslateTo(0, 0, 250, Easing.CubicInOut);
 
-                if (GestureRecognizers.IndexOf(pan) < 0)
-                {
-                    GestureRecognizers.Add(pan);
-                    IsZooming = true;
-                }
-            }
-            else
-            {
-                AnchorX = AnchorY = 0.5; //TODO tapped position
-                this.ScaleTo(MAX_SCALE, 250, Easing.CubicInOut);
+            //    if (GestureRecognizers.IndexOf(pan) < 0)
+            //    {
+            //        GestureRecognizers.Add(pan);
+            //        IsZooming = true;
+            //    }
+            //}
+            //else
+            //{
+            //    AnchorX = AnchorY = 0.5; //TODO tapped position
+            //    this.ScaleTo(MAX_SCALE, 250, Easing.CubicInOut);
 
-                if (GestureRecognizers.IndexOf(pan) > -1)
-                {
-                    GestureRecognizers.Remove(pan);
-                    IsZooming = false;
-                }
-            }
+            //    if (GestureRecognizers.IndexOf(pan) > -1)
+            //    {
+            //        GestureRecognizers.Remove(pan);
+            //        IsZooming = false;
+            //    }
+            //}
         }
 
         private void OnPanUpdated(object sender, PanUpdatedEventArgs e)

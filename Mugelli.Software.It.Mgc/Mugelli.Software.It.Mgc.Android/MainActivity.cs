@@ -55,25 +55,25 @@ namespace Mugelli.Software.It.Mgc.Droid
 
             FirebasePushNotificationManager.ProcessIntent(Intent);//Subscribing to single topic
             //CrossFirebasePushNotification.Current.Subscribe("alldevices");
-            FirebaseMessaging.Instance.SubscribeToTopic("alldevices");
+            //FirebaseMessaging.Instance.SubscribeToTopic("alldevices");
 
 
             //If debug you should reset the token each time.
 #if DEBUG
             //FirebasePushNotificationManager.Initialize(this,true);
-            FirebasePushNotificationManager.Initialize(this,
-                new[]
-                {
-                    new NotificationUserCategory("message",new List<NotificationUserAction> {
-                        new NotificationUserAction("Reply","Reply", NotificationActionType.Foreground),
-                        new NotificationUserAction("Forward","Forward", NotificationActionType.Foreground)
+            //FirebasePushNotificationManager.Initialize(this,
+                //new[]
+                //{
+                //    new NotificationUserCategory("message",new List<NotificationUserAction> {
+                //        new NotificationUserAction("Reply","Reply", NotificationActionType.Foreground),
+                //        new NotificationUserAction("Forward","Forward", NotificationActionType.Foreground)
 
-                    }),
-                    new NotificationUserCategory("alldevices",new List<NotificationUserAction>  {
-                        new NotificationUserAction("Accept","Visualizza", NotificationActionType.Default, "check"),
-                        new NotificationUserAction("Reject","Cancella", NotificationActionType.Default, "cancel")
-                    })
-                }, true);
+                //    }),
+                //    new NotificationUserCategory("alldevices",new List<NotificationUserAction>  {
+                //        new NotificationUserAction("Accept","Visualizza", NotificationActionType.Default, "check"),
+                //        new NotificationUserAction("Reject","Cancella", NotificationActionType.Default, "cancel")
+                //    })
+                //}, true);
 #else
             //FirebasePushNotificationManager.Initialize(this, false);  
             FirebasePushNotificationManager.Initialize(this,

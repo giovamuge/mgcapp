@@ -4,6 +4,7 @@
              xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              xmlns:abstractions="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
              xmlns:userControls="clr-namespace:Mugelli.Software.It.Mgc.UserControls;assembly=Mugelli.Software.It.Mgc"
+             xmlns:fonts="clr-namespace:Mugelli.Software.It.Mgc.Fonts;assembly=Mugelli.Software.It.Mgc"     
              x:Class="Mugelli.Software.It.Mgc.Pages.GalleryImagePage"
              BindingContext="{Binding ImageGalleryViewModel, Source={StaticResource ViewModelLocator}}"
              Title="Galleria Immagini"
@@ -59,6 +60,20 @@
 
                     </abstractions:CarouselViewControl.ItemTemplate>
                 </abstractions:CarouselViewControl>
+
+
+                <!-- Non abilitare bottone per back di android -->
+                <!--<Button Text="{x:Static fonts:FontAwesomeIcons.ArrowLeft}"
+                        FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                        Command="{Binding GoBack}"
+                        FontSize="25"
+                        HeightRequest="50"
+                        WidthRequest="50"
+                        VerticalOptions="Start"
+                        HorizontalOptions="Start"
+                        Margin="5"
+                        TextColor="White"
+                        BackgroundColor="Transparent"/>-->
             </Grid>
         <!--</Grid>-->
     </ContentPage.Content>

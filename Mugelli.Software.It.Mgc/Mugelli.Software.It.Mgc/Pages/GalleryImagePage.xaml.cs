@@ -15,7 +15,7 @@ namespace Mugelli.Software.It.Mgc.Pages
         {
             InitializeComponent();
 
-            //NavigationPage.SetHasNavigationBar(this, false);
+            NavigationPage.SetHasNavigationBar(this, false);
 
             var viewModel = (ImageGalleryViewModel) BindingContext;
             viewModel.Images = param;

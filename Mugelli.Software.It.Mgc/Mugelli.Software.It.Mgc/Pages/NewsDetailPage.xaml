@@ -19,6 +19,7 @@
                     <RowDefinition Height="Auto" />
                 </Grid.RowDefinitions>
 
+                
                 <ContentView Padding="0"
                              Grid.Row="0">
                     <Grid>
@@ -41,6 +42,19 @@
                     </Grid>
 
                 </ContentView>
+
+                <Button Text="{x:Static fonts:FontAwesomeIcons.ArrowLeft}"
+                        FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                        Command="{Binding GoBack}"
+                        FontSize="25"
+                        HeightRequest="50"
+                        WidthRequest="50"
+                        VerticalOptions="Start"
+                        HorizontalOptions="Start"
+                        Margin="5"
+                        TextColor="White"
+                        BackgroundColor="Transparent"
+                        Grid.Row="0"/>
 
                 <StackLayout Orientation="Vertical"
                              HorizontalOptions="Fill"

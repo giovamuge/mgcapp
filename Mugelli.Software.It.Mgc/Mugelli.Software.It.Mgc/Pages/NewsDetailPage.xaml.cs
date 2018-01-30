@@ -20,6 +20,11 @@ namespace Mugelli.Software.It.Mgc.Pages
         {
             InitializeComponent();
 
+            if (Device.RuntimePlatform == Device.Android)
+            {
+                NavigationPage.SetHasNavigationBar(this, false);
+            }
+
             var viewModel = BindingContext as NewsDetailViewModel;
             if (viewModel != null) viewModel.Article = news;
 

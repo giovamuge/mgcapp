@@ -21,6 +21,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             _navigationService = navigationService;
             _statusBar = statusBar;
             ShowGalleryImage = new RelayCommand(OnShowGalleryImage);
+            GoBack = new RelayCommand(OnBack);
         }
 
         public FeedRssItem Article
@@ -46,11 +47,17 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         }
 
         public ICommand ShowGalleryImage { get; set; }
+        public ICommand GoBack { get; set; }
 
         private void OnShowGalleryImage()
         {
             //_statusBar.HideStatusBar();
             _navigationService.NavigateTo(PageStacks.GalleryImagePage, Images);
+        }
+
+        private void OnBack()
+        {
+            _navigationService.GoBack();
         }
     }
 }
