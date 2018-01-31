@@ -45,15 +45,6 @@ namespace Mugelli.Software.It.Mgc.Droid
             CarouselViewRenderer.Init();
             LoadApplication(new App());
 
-            var options = new FirebaseOptions.Builder()
-                                 .SetApplicationId("1:402954439752:android:2d2810dce428328e")
-                                 .SetApiKey("AIzaSyD2ANVRy4K4md-ASE0jhRbDdJCOoY34p8Y")
-                                 .SetDatabaseUrl("https://mgc-news.firebaseio.com/")
-                                 .Build();
-            
-            var fire = FirebaseApp.InitializeApp(this, options, "mgc");
-
-            FirebasePushNotificationManager.ProcessIntent(Intent);//Subscribing to single topic
 
 
             //If debug you should reset the token each time.
@@ -73,6 +64,15 @@ namespace Mugelli.Software.It.Mgc.Droid
                 //    })
                 //}, tru
 #else
+            var options = new FirebaseOptions.Builder()
+                                 .SetApplicationId("1:402954439752:android:2d2810dce428328e")
+                                 .SetApiKey("AIzaSyD2ANVRy4K4md-ASE0jhRbDdJCOoY34p8Y")
+                                 .SetDatabaseUrl("https://mgc-news.firebaseio.com/")
+                                 .Build();
+            
+            var fire = FirebaseApp.InitializeApp(this, options, "mgc");
+
+            FirebasePushNotificationManager.ProcessIntent(Intent);//Subscribing to single topic
             //CrossFirebasePushNotification.Current.Subscribe("alldevices");
             FirebaseMessaging.Instance.SubscribeToTopic("alldevices");
             //FirebasePushNotificationManager.Initialize(this, false);  

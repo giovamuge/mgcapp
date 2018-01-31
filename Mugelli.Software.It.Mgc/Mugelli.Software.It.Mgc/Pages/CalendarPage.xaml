@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:behaviors="clr-namespace:Mugelli.Software.It.Mgc.Behaviors;assembly=Mugelli.Software.It.Mgc"
+             xmlns:fonts="clr-namespace:Mugelli.Software.It.Mgc.Fonts;assembly=Mugelli.Software.It.Mgc"
              x:Class="Mugelli.Software.It.Mgc.Pages.CalendarPage"
              Title="{Binding Title}"
              Icon="{Binding Icon}"
@@ -93,10 +94,17 @@
                                                 <ColumnDefinition Width="Auto"></ColumnDefinition>
                                             </Grid.ColumnDefinitions>
                                             
-                                            <Image Source="Marker_50px.png"
+                                           <!-- <Image Source="Marker_50px.png"
                                                    Grid.Column="0"
                                                    HorizontalOptions="Start"
-                                                   IsVisible="{Binding Path=Location, Converter={StaticResource IsNotNullToBoolConverter}}"/>
+                                                   IsVisible="{Binding Path=Location, Converter={StaticResource IsNotNullToBoolConverter}}"/>-->
+
+                                            <Label  Text="{x:Static fonts:FontAwesomeIcons.MapMarker}"
+                                                   FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                                                   Grid.Column="0"
+                                                   IsVisible="{Binding Path=Location, Converter={StaticResource IsNotNullToBoolConverter}}"
+                                                   Style="{StaticResource ClassInstructorLabel}"/>
+                                            
                                             <Label Style="{StaticResource ClassInstructorLabel}" 
                                                    Text="{Binding Path=Location}"
                                                    FontSize="11"
