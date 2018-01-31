@@ -54,8 +54,6 @@ namespace Mugelli.Software.It.Mgc.Droid
             var fire = FirebaseApp.InitializeApp(this, options, "mgc");
 
             FirebasePushNotificationManager.ProcessIntent(Intent);//Subscribing to single topic
-            //CrossFirebasePushNotification.Current.Subscribe("alldevices");
-            FirebaseMessaging.Instance.SubscribeToTopic("alldevices");
 
 
             //If debug you should reset the token each time.
@@ -73,8 +71,10 @@ namespace Mugelli.Software.It.Mgc.Droid
                 //        new NotificationUserAction("Accept","Visualizza", NotificationActionType.Default, "check"),
                 //        new NotificationUserAction("Reject","Cancella", NotificationActionType.Default, "cancel")
                 //    })
-                //}, true);
+                //}, tru
 #else
+            //CrossFirebasePushNotification.Current.Subscribe("alldevices");
+            FirebaseMessaging.Instance.SubscribeToTopic("alldevices");
             //FirebasePushNotificationManager.Initialize(this, false);  
             FirebasePushNotificationManager.Initialize(this,
                 new NotificationUserCategory[]
