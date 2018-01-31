@@ -12,6 +12,11 @@ namespace Mugelli.Software.It.Mgc.Pages
         {
             InitializeComponent();
 
+            if(Device.RuntimePlatform == Device.Android)
+            {
+                NavigationPage.SetHasNavigationBar(this, false);
+            }
+
             var viewModel = BindingContext as CommunicationDetailViewModel;
             if (viewModel != null) viewModel.Communication = communication;
         }
