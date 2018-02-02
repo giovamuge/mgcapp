@@ -6,18 +6,18 @@ namespace Mugelli.Software.It.Mgc.UserControls
 {
     public class ZoomContentView : ContentView
     {
-        private const double MIN_SCALE = 1;
-        private const double MAX_SCALE = 4;
-        private const double OVERSHOOT = 0.15;
-        private double StartScale;
-        private double LastX, LastY;
+        //private const double MIN_SCALE = 1;
+        //private const double MAX_SCALE = 4;
+        //private const double OVERSHOOT = 0.15;
+        //private double StartScale;
+        //private double LastX, LastY;
 
-        private PanGestureRecognizer pan;
+        //private PanGestureRecognizer pan;
 
         //private bool _isZooming;
 
         public static readonly BindableProperty IsZoomingProperty =
-            BindableProperty.CreateAttached("IsZomming", typeof(bool), typeof(ZoomContentView), defaultBindingMode: BindingMode.TwoWay, propertyChanging: OnZoomChanging, defaultValue: false);
+            BindableProperty.CreateAttached("IsZomming", typeof(bool), typeof(ZoomContentView), defaultBindingMode: BindingMode.TwoWay, propertyChanging: OnZoomChanging, defaultValue: true);
 
         public bool IsZooming
         {
@@ -30,19 +30,25 @@ namespace Mugelli.Software.It.Mgc.UserControls
             //scrivere zoom 
         }
 
-        public EventHandler PanCompleted;
+        //public EventHandler PanCompleted;
+
+        private const double MIN_SCALE = 1;
+        private const double MAX_SCALE = 4;
+        private double startScale, currentScale;
+        private double startX, startY;
+        private double xOffset, yOffset;
 
         public ZoomContentView()
-        {
-            var pinch = new PinchGestureRecognizer();
-            pinch.PinchUpdated += OnPinchUpdated;
-            GestureRecognizers.Add(pinch);
+        {            
+            var pinchGesture = new PinchGestureRecognizer();
+            pinchGesture.PinchUpdated += OnPinchUpdated;
+            GestureRecognizers.Add(pinchGesture);
 
-            pan = new PanGestureRecognizer();
+            var pan = new PanGestureRecognizer();            
             pan.PanUpdated += OnPanUpdated;
-            //GestureRecognizers.Add(pan);
+            GestureRecognizers.Add(pan);
 
-            var tap = new TapGestureRecognizer { NumberOfTapsRequired = 2 };
+            TapGestureRecognizer tap = new TapGestureRecognizer { NumberOfTapsRequired = 2 };
             tap.Tapped += OnTapped;
             GestureRecognizers.Add(tap);
 
@@ -51,104 +57,121 @@ namespace Mugelli.Software.It.Mgc.UserControls
             AnchorX = AnchorY = 0;
         }
 
-        protected override SizeRequest OnMeasure(double widthConstraint, double heightConstraint)
-        {
-            Scale = MIN_SCALE;
-            TranslationX = TranslationY = 0;
-            AnchorX = AnchorY = 0;
-            return base.OnMeasure(widthConstraint, heightConstraint);
-        }
-
         private void OnTapped(object sender, EventArgs e)
         {
-            //if (Scale > MIN_SCALE)
-            //{
-            //    this.ScaleTo(MIN_SCALE, 250, Easing.CubicInOut);
-            //    this.TranslateTo(0, 0, 250, Easing.CubicInOut);
-
-            //    if (GestureRecognizers.IndexOf(pan) < 0)
-            //    {
-            //        GestureRecognizers.Add(pan);
-            //        IsZooming = true;
-            //    }
-            //}
-            //else
-            //{
-            //    AnchorX = AnchorY = 0.5; //TODO tapped position
-            //    this.ScaleTo(MAX_SCALE, 250, Easing.CubicInOut);
-
-            //    if (GestureRecognizers.IndexOf(pan) > -1)
-            //    {
-            //        GestureRecognizers.Remove(pan);
-            //        IsZooming = false;
-            //    }
-            //}
-        }
-
-        private void OnPanUpdated(object sender, PanUpdatedEventArgs e)
-        {
-            if (Scale > MIN_SCALE)
-                switch (e.StatusType)
-                {
-                    case GestureStatus.Started:
-                        LastX = TranslationX;
-                        LastY = TranslationY;
-                        break;
-                    case GestureStatus.Running:
-                        TranslationX = Clamp(LastX + e.TotalX * Scale, -Width / 2, Width / 2);
-                        TranslationY = Clamp(LastY + e.TotalY * Scale, -Height / 2, Height / 2);
-                        break;
-                }
-        }
-
-        private void OnPinchUpdated(object sender, PinchGestureUpdatedEventArgs e)
-        {
-            switch (e.Status)
+            if (Content.Scale > MIN_SCALE)
             {
-                case GestureStatus.Started:
-                    StartScale = Scale;
-                    AnchorX = e.ScaleOrigin.X;
-                    AnchorY = e.ScaleOrigin.Y;
-                    break;
-                case GestureStatus.Running:
-                    double current = Scale + (e.Scale - 1) * StartScale;
-                    Scale = Clamp(current, MIN_SCALE * (1 - OVERSHOOT), MAX_SCALE * (1 + OVERSHOOT));
-                    break;
-                case GestureStatus.Completed:
-                    if(Scale > MIN_SCALE) 
-                    {
-                        if (GestureRecognizers.IndexOf(pan) < 0)
-                        {
-                            GestureRecognizers.Add(pan);
-                            IsZooming = true;
-                        }
-                    } 
-                    else 
-                    {   
-                        if (GestureRecognizers.IndexOf(pan) > -1)
-                        {
-                            GestureRecognizers.Remove(pan);
-                            IsZooming = false;
-                        }
-                    }
+                RestoreScaleValues();
+                IsZooming = false;
+            }
+            else
+            {
+                Content.AnchorX = Content.AnchorY = 0.5;
+                Content.ScaleTo(MAX_SCALE, 250, Easing.CubicInOut);
+                IsZooming = true;
+            }
+        }
+        void RestoreScaleValues()
+        {
+            Content.ScaleTo(MIN_SCALE, 250, Easing.CubicInOut);
+            Content.TranslateTo(0.5, 0.5, 250, Easing.CubicInOut);
 
-                    if (Scale > MAX_SCALE) 
-                        this.ScaleTo(MAX_SCALE, 250, Easing.SpringOut);
-                    else if (Scale < MIN_SCALE)
-                        this.ScaleTo(MIN_SCALE, 250, Easing.SpringOut);
-            
-                    break;
+            currentScale = 1;
+
+            Content.TranslationX = 0.5;
+            Content.TranslationY = 0.5;
+
+            xOffset = Content.TranslationX;
+            yOffset = Content.TranslationY;
+        }
+
+        void OnPinchUpdated(object sender, PinchGestureUpdatedEventArgs e)
+        {
+            if (e.Status == GestureStatus.Started)
+            {
+                startScale = Content.Scale;
+                Content.AnchorX = 0;
+                Content.AnchorY = 0;
+                IsZooming = false;
+            }
+            if (e.Status == GestureStatus.Running)
+            {
+                // Calculate the scale factor to be applied.
+                currentScale += (e.Scale - 1) * startScale;
+                currentScale = Math.Max(1, currentScale);
+
+                // The ScaleOrigin is in relative coordinates to the wrapped user interface element,
+                // so get the X pixel coordinate.
+                double renderedX = Content.X + xOffset;
+                double deltaX = renderedX / Width;
+                double deltaWidth = Width / (Content.Width * startScale);
+                double originX = (e.ScaleOrigin.X - deltaX) * deltaWidth;
+
+                // The ScaleOrigin is in relative coordinates to the wrapped user interface element,
+                // so get the Y pixel coordinate.
+                double renderedY = Content.Y + yOffset;
+                double deltaY = renderedY / Height;
+                double deltaHeight = Height / (Content.Height * startScale);
+                double originY = (e.ScaleOrigin.Y - deltaY) * deltaHeight;
+
+                // Calculate the transformed element pixel coordinates.
+                double targetX = xOffset - (originX * Content.Width) * (currentScale - startScale);
+                double targetY = yOffset - (originY * Content.Height) * (currentScale - startScale);
+
+                // Apply translation based on the change in origin.
+                Content.TranslationX = targetX.Clamp(-Content.Width * (currentScale - 1), 0);
+                Content.TranslationY = targetY.Clamp(-Content.Height * (currentScale - 1), 0);
+
+                // Apply scale factor.
+                Content.Scale = currentScale;
+            }
+            if (e.Status == GestureStatus.Completed)
+            {
+                // Store the translation delta's of the wrapped user interface element.
+                xOffset = Content.TranslationX;
+                yOffset = Content.TranslationY;
             }
         }
 
-        private T Clamp<T>(T value, T minimum, T maximum) where T : IComparable
+        double maxTranslationX, maxTranslationY;
+
+        void OnPanUpdated(object sender, PanUpdatedEventArgs e)
         {
-            if (value.CompareTo(minimum) < 0)
-                return minimum;
-            else if (value.CompareTo(maximum) > 0)
-                return maximum;
-            else
-                return value;
+
+            switch (e.StatusType)
+            {
+                case GestureStatus.Started:
+                    startX = e.TotalX;
+                    startY = e.TotalY;
+                    Content.AnchorX = 0;
+                    Content.AnchorY = 0;
+                    break;
+
+                case GestureStatus.Running:
+                    maxTranslationX = Content.Scale * Content.Width - Content.Width;
+                    Content.TranslationX = Math.Min(0, Math.Max(-maxTranslationX, xOffset + e.TotalX - startX));
+
+                    maxTranslationY = Content.Scale * Content.Height - Content.Height;
+                    Content.TranslationY = Math.Min(0, Math.Max(-maxTranslationY, yOffset + e.TotalY - startY));
+
+                    //IsZooming = !((Content.TranslationX < 0 ? maxTranslationX + Content.TranslationX : maxTranslationX - Content.TranslationX).Equals(0) || Content.TranslationX.Equals(0));
+
+                    break;
+
+                case GestureStatus.Completed:
+                    xOffset = Content.TranslationX;
+                    yOffset = Content.TranslationY;
+
+                    IsZooming = !((Content.TranslationX < 0 ? maxTranslationX + Content.TranslationX : maxTranslationX - Content.TranslationX).Equals(0) || Content.TranslationX.Equals(0));
+
+                    break;                   
+            }
+        }
+
+        protected override void OnParentSet()
+        {
+            Content.TranslationX = Content.TranslationY = 0;
+            base.OnParentSet();
         }
     }
 }
