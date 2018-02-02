@@ -16,6 +16,11 @@ namespace Mugelli.Software.It.Mgc.UserControls
 
         //private bool _isZooming;
 
+
+        public static readonly BindableProperty PositionImageProperty =
+            BindableProperty.CreateAttached("PositionImage", typeof(int), typeof(ZoomContentView), defaultBindingMode: BindingMode.TwoWay, propertyChanging: OnPositionChanging, defaultValue: 0);
+
+
         public static readonly BindableProperty IsZoomingProperty =
             BindableProperty.CreateAttached("IsZomming", typeof(bool), typeof(ZoomContentView), defaultBindingMode: BindingMode.TwoWay, propertyChanging: OnZoomChanging, defaultValue: true);
 
@@ -25,9 +30,29 @@ namespace Mugelli.Software.It.Mgc.UserControls
             set { SetValue(IsZoomingProperty, value); }
         }
 
+        public int PositionImage
+        {
+            get 
+            { 
+
+                if (Content != null)
+                {
+                    Content.TranslationX = 0.5;
+                    Content.TranslationY = 0.5;
+                }
+                return (int)GetValue(PositionImageProperty);
+            }
+            set { SetValue(PositionImageProperty, value); }
+        }
+
         private static void OnZoomChanging(BindableObject bindable, object oldValue, object newValue)
         {
             //scrivere zoom 
+        }
+
+        private static void OnPositionChanging(BindableObject bindable, object oldValue, object newValue)
+        {
+            
         }
 
         //public EventHandler PanCompleted;
@@ -55,6 +80,8 @@ namespace Mugelli.Software.It.Mgc.UserControls
             Scale = MIN_SCALE;
             TranslationX = TranslationY = 0;
             AnchorX = AnchorY = 0;
+
+            
         }
 
         private void OnTapped(object sender, EventArgs e)

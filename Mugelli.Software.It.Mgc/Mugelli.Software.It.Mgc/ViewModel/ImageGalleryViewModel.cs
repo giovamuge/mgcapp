@@ -45,6 +45,18 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             } 
         }
 
+
+        private int _positionImage;
+        public int PositionImage
+        {
+            get => _positionImage;
+            set
+            {
+                RaisePropertyChanged(nameof(PositionImage), _positionImage, value);
+                _positionImage = value;
+            }
+        }
+
         private void OnToBack()
         {
             _navigationService.GoBack();

@@ -42,13 +42,14 @@
                                                   VerticalOptions="Fill"
                                                   ShowIndicators="True"
                                                   IndicatorsTintColor="{StaticResource GrayUltraLight}"
+                                                  Position="{Binding PositionImage, Mode=TwoWay}"
                                                   IsSwipingEnabled="{Binding IsZooming, Converter={StaticResource InverseBoolConverter}}">
 
                     <abstractions:CarouselViewControl.ItemTemplate>
                         <DataTemplate>
                             <userControls:ZoomContentView VerticalOptions="Center"
-                                                          Unfocused="{Binding Path=BindingContext.UnFocused, Source={x:Reference Name=Root}"
-                                                          IsZooming="{Binding Path=BindingContext.IsZooming, Source={x:Reference Name=Root}">
+                                                          PositionImage="{Binding Path=BindingContext.PositionImage, Source={x:Reference Name=Root}}"
+                                                          IsZooming="{Binding Path=BindingContext.IsZooming, Source={x:Reference Name=Root}}">
                                 <!--<AbsoluteLayout VerticalOptions="FillAndExpand">-->
                                     <forms:CachedImage Source="{Binding Path=.}"
                                            Aspect="AspectFill"
