@@ -3,7 +3,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-             xmlns:abstractions="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
              xmlns:fonts="clr-namespace:Mugelli.Software.It.Mgc.Fonts;assembly=Mugelli.Software.It.Mgc"
              x:Class="Mugelli.Software.It.Mgc.Pages.NewsDetailPage"
              Title="{Binding Article.Title}"
@@ -114,17 +114,17 @@
                             <TapGestureRecognizer Command="{Binding ShowGalleryImage}"/>
                         </Grid.GestureRecognizers>
 
-                        <abstractions:CarouselViewControl ItemsSource="{Binding Images}"
+                        <controls:CarouselViewControl ItemsSource="{Binding Images}"
                                                           HeightRequest="300"
                                                           HorizontalOptions="Fill"
                                                           ShowIndicators="True"
                                                           IndicatorsTintColor="{StaticResource GrayUltraLight}">
 
-                            <!--<abstractions:CarouselViewControl.GestureRecognizers>
+                            <!--<controls:CarouselViewControl.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding ShowGalleryImage}"/>
-                        </abstractions:CarouselViewControl.GestureRecognizers>-->
+                        </controls:CarouselViewControl.GestureRecognizers>-->
 
-                            <abstractions:CarouselViewControl.ItemTemplate>
+                            <controls:CarouselViewControl.ItemTemplate>
                                 <DataTemplate>
                                     <forms:CachedImage Source="{Binding Path=.}"
                                        Aspect="AspectFill"
@@ -139,8 +139,8 @@
                                     </forms:CachedImage>
                                 </DataTemplate>
 
-                            </abstractions:CarouselViewControl.ItemTemplate>
-                        </abstractions:CarouselViewControl>
+                            </controls:CarouselViewControl.ItemTemplate>
+                        </controls:CarouselViewControl>
                     </Grid>
 
                 </StackLayout>

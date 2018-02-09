@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-             xmlns:abstractions="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
              xmlns:userControls="clr-namespace:Mugelli.Software.It.Mgc.UserControls;assembly=Mugelli.Software.It.Mgc"
              xmlns:fonts="clr-namespace:Mugelli.Software.It.Mgc.Fonts;assembly=Mugelli.Software.It.Mgc"     
              x:Class="Mugelli.Software.It.Mgc.Pages.GalleryImagePage"
@@ -38,14 +38,14 @@
                   HorizontalOptions="FillAndExpand"
                   BackgroundColor="Black">
             
-                <abstractions:CarouselViewControl ItemsSource="{Binding Images}"
+                <controls:CarouselViewControl ItemsSource="{Binding Images}"
                                                   VerticalOptions="Fill"
                                                   ShowIndicators="True"
                                                   IndicatorsTintColor="{StaticResource GrayUltraLight}"
                                                   Position="{Binding PositionImage, Mode=TwoWay}"
                                                   IsSwipingEnabled="{Binding IsZooming, Converter={StaticResource InverseBoolConverter}}">
 
-                    <abstractions:CarouselViewControl.ItemTemplate>
+                    <controls:CarouselViewControl.ItemTemplate>
                         <DataTemplate>
                             <userControls:ZoomContentView VerticalOptions="Center"
                                                           PositionImage="{Binding Path=BindingContext.PositionImage, Source={x:Reference Name=Root}}"
@@ -60,8 +60,8 @@
                             </userControls:ZoomContentView>
                         </DataTemplate>
 
-                    </abstractions:CarouselViewControl.ItemTemplate>
-                </abstractions:CarouselViewControl>
+                    </controls:CarouselViewControl.ItemTemplate>
+                </controls:CarouselViewControl>
 
 
                 <!-- Non abilitare bottone per back di android -->
