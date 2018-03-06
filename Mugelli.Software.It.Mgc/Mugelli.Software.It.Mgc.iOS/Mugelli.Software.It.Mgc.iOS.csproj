@@ -201,6 +201,21 @@
       <HintPath>..\..\packages\Xamarin.Forms.2.3.4.247\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.iOS" />
+    <Reference Include="Ricardo.MBProgressHUD.iOS">
+      <HintPath>..\..\packages\Ricardo.MBProgressHUD.iOS.1.1.0\lib\Xamarin.iOS10\Ricardo.MBProgressHUD.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Ricardo.SDWebImage.iOS">
+      <HintPath>..\..\packages\Ricardo.SDWebImage.iOS.4.2.2.1\lib\Xamarin.iOS10\Ricardo.SDWebImage.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Ricardo.MWPhotoBrowser.iOS">
+      <HintPath>..\..\packages\Ricardo.MWPhotoBrowser.iOS.2.1.4.1\lib\Xamarin.iOS10\Ricardo.MWPhotoBrowser.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Stormlion.PhotoBrowser">
+      <HintPath>..\..\packages\PhotoBrowser.Forms.0.1.1\lib\Xamarin.iOS10\Stormlion.PhotoBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="Stormlion.PhotoBrowser.iOS">
+      <HintPath>..\..\packages\PhotoBrowser.Forms.0.1.1\lib\Xamarin.iOS10\Stormlion.PhotoBrowser.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Mugelli.Software.It.Mgc\Mugelli.Software.It.Mgc.csproj">
