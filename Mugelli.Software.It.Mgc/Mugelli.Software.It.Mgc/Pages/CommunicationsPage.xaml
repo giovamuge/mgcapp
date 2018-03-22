@@ -25,9 +25,10 @@
                 HasUnevenRows="True"
                 SeparatorVisibility="None"
                 IsPullToRefreshEnabled="True"
-                SelectedItem="{Binding ReadCommSelected, Mode=TwoWay}"
                 RefreshCommand="{Binding RefreshCommand}"
-                IsVisible="{Binding CommunicationsList, Converter={StaticResource IsNotNullToBoolConverter}}">
+                IsRefreshing="{Binding IsRefreshing}"
+                IsVisible="{Binding CommunicationsList, Converter={StaticResource IsNotNullToBoolConverter}}"
+                SelectedItem="{Binding ReadCommSelected, Mode=TwoWay}">
 
                 <ListView.Behaviors>
                     <behaviors:EventToCommandBehavior Command="{Binding ReadCommCommand}"
@@ -93,11 +94,18 @@
                                                            VerticalTextAlignment="Center"></Label>
                                                 </StackLayout>
 
-                                                <userControls:HtmlFormatLabel Text="{Binding Path=ShortContent}"
+                                                <ContentView HeightRequest="50" Grid.Row="2" Grid.ColumnSpan="2">
+                                                    <userControls:HtmlFormatLabel Text="{Binding Path=ShortContent}"
+                                                           Style="{StaticResource ClassInstructorLabel}"
+                                                           VerticalOptions="Fill"
+                                                           LineBreakMode="WordWrap"/>
+                                                </ContentView>
+                                                <!--<Label Text="{Binding Path=ShortContent}"
                                                        Style="{StaticResource ClassInstructorLabel}"
                                                        VerticalOptions="Fill"
+                                                       LineBreakMode="WordWrap"
                                                        Grid.Row="2"
-                                                       Grid.ColumnSpan="2"/>
+                                                       Grid.ColumnSpan="2"/>-->
                                             </Grid>
                                         </StackLayout>
                                     </StackLayout>

@@ -78,19 +78,26 @@
                              Spacing="14"
                              BackgroundColor="{StaticResource GrayUltraLight}">
 
-                    <Button Text="{x:Static fonts:FontAwesomeIcons.ArrowLeft}"
-                            FontFamily="{x:Static fonts:Fonts.FontAwesome}"
-                            Command="{Binding GoBack}"
-                            FontSize="25"
-                            HeightRequest="50"
-                            WidthRequest="50"
-                            VerticalOptions="Start"
-                            HorizontalOptions="Start"
-                            Margin="-10,0,0,5"
-                            BackgroundColor="Transparent"
-                            TextColor="{StaticResource PrimaryTextColor}"
-                            Grid.Row="0"/>
-
+                     <ContentView>
+                        <OnPlatform x:TypeArguments="View">
+                            <OnPlatform.iOS>
+                            </OnPlatform.iOS>
+                            <OnPlatform.Android>
+                                    <Button Text="{x:Static fonts:FontAwesomeIcons.ArrowLeft}"
+                                            FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                                            Command="{Binding GoBack}"
+                                            FontSize="25"
+                                            HeightRequest="50"
+                                            WidthRequest="50"
+                                            VerticalOptions="Start"
+                                            HorizontalOptions="Start"
+                                            Margin="-10,0,0,5"
+                                            BackgroundColor="Transparent"
+                                            TextColor="{StaticResource PrimaryTextColor}"
+                                            Grid.Row="0"/>
+                            </OnPlatform.Android>
+                        </OnPlatform>
+                    </ContentView>
 
                     <Label Style="{StaticResource TitleLabelPrimary}" Text="{Binding Communication.Title}" FontSize="30" />
 

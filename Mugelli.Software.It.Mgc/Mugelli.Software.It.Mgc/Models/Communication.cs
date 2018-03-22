@@ -28,7 +28,7 @@ namespace Mugelli.Software.It.Mgc.Models
 
         public string ShortContent
         {
-            get => Content.Truncate(500, true);
+            get => Content.Truncate(200, true).StripHtml().TrimEnd();
             set => Content = value;
         }
     }

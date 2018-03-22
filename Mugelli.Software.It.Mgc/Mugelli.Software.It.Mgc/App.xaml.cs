@@ -3,6 +3,7 @@ using System.Globalization;
 using System.Threading.Tasks;
 using Firebase.Xamarin.Auth;
 using GalaSoft.MvvmLight.Ioc;
+using Mugelli.Software.It.Mgc.MessagingCenters;
 using Mugelli.Software.It.Mgc.Navigations;
 using Mugelli.Software.It.Mgc.Services;
 using Mugelli.Software.It.Mgc.ViewModel;

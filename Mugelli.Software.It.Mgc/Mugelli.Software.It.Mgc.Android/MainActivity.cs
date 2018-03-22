@@ -14,6 +14,9 @@ using Firebase.Messaging;
 using Plugin.FirebasePushNotification;
 using Plugin.FirebasePushNotification.Abstractions;
 using Firebase;
+using Xamarin.Forms;
+using Stormlion.PhotoBrowser;
+using Mugelli.Software.It.Mgc.MessagingCenters;
 
 namespace Mugelli.Software.It.Mgc.Droid
 {
@@ -130,6 +133,38 @@ namespace Mugelli.Software.It.Mgc.Droid
         //    var notificationManager = NotificationManager.FromContext(this);
         //    notificationManager.Notify(0, notificationBuilder.Build());
         //}
+
+        //    MessagingCenter.Subscribe<BrowserPhotosMessage>(this, nameof(BrowserPhotosMessage), (sender) => {
+
+        //    var pb = new PhotoBrowser
+        //    {
+        //        Photos = new List<Photo>
+        //        {
+        //                new Photo
+        //                {
+        //                    URL = "https://raw.githubusercontent.com/stfalcon-studio/FrescoImageViewer/v.0.5.0/images/posters/Vincent.jpg",
+        //                    Title = "Vincent"
+        //                },
+        //                new Photo
+        //                {
+        //                    URL = "https://raw.githubusercontent.com/stfalcon-studio/FrescoImageViewer/v.0.5.0/images/posters/Jules.jpg",
+        //                    Title = "Jules"
+        //                },
+        //                new Photo
+        //                {
+        //                    URL = "https://raw.githubusercontent.com/stfalcon-studio/FrescoImageViewer/v.0.5.0/images/posters/Korben.jpg",
+        //                    Title = "Korben"
+        //                }
+        //        },
+        //        ActionButtonPressed = (index) =>
+        //        {
+        //            //Debug.WriteLine($"Clicked {index}");
+        //        }
+        //    };
+
+
+        //    pb.Show();
+        //});
     }
 
     public class CustomLogger : FFImageLoading.Helpers.IMiniLogger

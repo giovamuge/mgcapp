@@ -6,7 +6,10 @@ using FFImageLoading;
 using FFImageLoading.Forms.Touch;
 using Foundation;
 using Mugelli.Software.It.Mgc.iOS.Providers;
+using Mugelli.Software.It.Mgc.MessagingCenters;
+using Stormlion.PhotoBrowser;
 using UIKit;
+using Xamarin.Forms;
 
 namespace Mugelli.Software.It.Mgc.iOS
 {
@@ -41,6 +44,38 @@ namespace Mugelli.Software.It.Mgc.iOS
                 FadeAnimationEnabled = true
             };
             ImageService.Instance.Initialize(config);
+
+            MessagingCenter.Subscribe<BrowserPhotosMessage>(this, nameof(BrowserPhotosMessage), (sender) =>
+            {
+
+                var pb = new PhotoBrowser
+                {
+                    Photos = new List<Photo>
+                    {
+                        new Photo
+                        {
+                            URL = "https://raw.githubusercontent.com/stfalcon-studio/FrescoImageViewer/v.0.5.0/images/posters/Vincent.jpg",
+                            Title = "Vincent"
+                        },
+                        new Photo
+                        {
+                            URL = "https://raw.githubusercontent.com/stfalcon-studio/FrescoImageViewer/v.0.5.0/images/posters/Jules.jpg",
+                            Title = "Jules"
+                        },
+                        new Photo
+                        {
+                            URL = "https://raw.githubusercontent.com/stfalcon-studio/FrescoImageViewer/v.0.5.0/images/posters/Korben.jpg",
+                            Title = "Korben"
+                        }
+                    },
+                    ActionButtonPressed = (index) =>
+                    {
+                            //Debug.WriteLine($"Clicked {index}");
+                    }
+                };
+
+                pb.Show();
+            });
 
             LoadApplication(new App());
 

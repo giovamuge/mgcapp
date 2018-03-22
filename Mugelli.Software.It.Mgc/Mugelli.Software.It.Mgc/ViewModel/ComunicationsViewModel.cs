@@ -8,6 +8,7 @@ using Mugelli.Software.It.Mgc.Models;
 using Mugelli.Software.It.Mgc.Navigations;
 using Mugelli.Software.It.Mgc.Services;
 using Mugelli.Software.It.Mgc.Stacks;
+using Xamarin.Forms;
 
 namespace Mugelli.Software.It.Mgc.ViewModel
 {
@@ -20,7 +21,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             _navigationService = navigationService;
 
             RefreshCommand = new RelayCommand(OnRefresh);
-            ReadCommCommand = new RelayCommand(OnReadCommCommand);
+            ReadCommCommand = new RelayCommand<object>(OnReadCommCommand);
 
             OnRefresh();
         }
@@ -76,10 +77,26 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             });
         }
 
-        private void OnReadCommCommand()
+        private void OnReadCommCommand(object data)
         {
-            _navigationService.NavigateTo(PageStacks.CommunicationDetailPage, ReadCommSelected);
-            ReadCommSelected = null;
+            Communication comm;
+            if(data is Communication)
+            {
+                comm = (Communication)data;
+            }
+            else if (data is ItemTappedEventArgs item)
+            {
+                if (item.Item is Communication)
+                {
+                    comm = (Communication)item.Item;
+                    _navigationService.NavigateTo(PageStacks.CommunicationDetailPage, comm);
+                    ReadCommSelected = null;
+                    return;
+                }
+            }
+
+            //_navigationService.NavigateTo(PageStacks.CommunicationDetailPage, ReadCommSelected);
+            //ReadCommSelected = null;
         }
     }
 }

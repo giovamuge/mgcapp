@@ -43,18 +43,26 @@
 
                 </ContentView>
 
-                <Button Text="{x:Static fonts:FontAwesomeIcons.ArrowLeft}"
-                        FontFamily="{x:Static fonts:Fonts.FontAwesome}"
-                        Command="{Binding GoBack}"
-                        FontSize="25"
-                        HeightRequest="50"
-                        WidthRequest="50"
-                        VerticalOptions="Start"
-                        HorizontalOptions="Start"
-                        Margin="5"
-                        TextColor="White"
-                        BackgroundColor="Transparent"
-                        Grid.Row="0"/>
+                 <ContentView>
+                    <OnPlatform x:TypeArguments="View">
+                        <OnPlatform.iOS>
+                        </OnPlatform.iOS>
+                        <OnPlatform.Android>
+                                <Button Text="{x:Static fonts:FontAwesomeIcons.ArrowLeft}"
+                                    FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                                    Command="{Binding GoBack}"
+                                    FontSize="25"
+                                    HeightRequest="50"
+                                    WidthRequest="50"
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="Start"
+                                    Margin="5"
+                                    TextColor="White"
+                                    BackgroundColor="Transparent"
+                                    Grid.Row="0"/>
+                        </OnPlatform.Android>
+                    </OnPlatform>
+                </ContentView>
 
                 <StackLayout Orientation="Vertical"
                              HorizontalOptions="Fill"
