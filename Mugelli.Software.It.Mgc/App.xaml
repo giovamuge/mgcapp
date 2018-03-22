@@ -9,12 +9,12 @@
     <Application.Resources>
         <!-- Application resource dictionary -->
         <forms:ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-            <vm:ViewModelLocator x:Key="ViewModelLocator" d4p1:Key="Locator" d:IsDataSource="True"
+            <!--<vm:ViewModelLocator x:Key="ViewModelLocator" d4p1:Key="Locator" d:IsDataSource="True"
                                  xmlns:d4p1="http://schemas.microsoft.com/winfx/2006/xaml"
-                                 xmlns:vm="clr-namespace:Mugelli.Software.It.Mgc.ViewModel" />
+                                 xmlns:vm="clr-namespace:Mugelli.Software.It.Mgc.ViewModel" />-->
 
             <!-- Converters -->
-            <converters:SelectedItemEventArgsToSelectedItemConverter
+            <!--<converters:SelectedItemEventArgsToSelectedItemConverter
                 x:Key="SelectedItemEventArgsToSelectedItemConverter" />
             <converters:InverseBoolConverter x:Key="InverseBoolConverter" />
             <converters:IsEmptyConverter x:Key="IsEmptyConverter" />
@@ -24,20 +24,32 @@
             <converters:TypeEventColorConverter x:Key="TypeEventColorConverter" />
             <converters:TypeEventImageConverter x:Key="TypeEventImageConverter" />
             <converters:TypeEventTextConverter x:Key="TypeEventTextConverter" />
-            <converters:NotBooleanConverter x:Key="NotBooleanConverter" />
+            <converters:NotBooleanConverter x:Key="NotBooleanConverter" />-->
 
             <!-- STYLE -->
             <!---->
             <!---->
             <!-- Color -->
-            <forms:OnPlatform 
+            <!--<forms:OnPlatform 
                 x:TypeArguments="x:String" 
-                x:Key="PrimoTextColor">
-                    <forms:On>#333</forms:On>
+                x:Key="PrimaryTextColor">
+                <forms:On>#333</forms:On>
             </forms:OnPlatform>
-            <forms:OnPlatform x:TypeArguments="x:String" x:Key="SecondaryTextColor"> <forms:On>#FFFFFF</forms:On></forms:OnPlatform>
-            <forms:OnPlatform x:TypeArguments="x:String" x:Key="MgcColor"> <forms:On>#63388a</forms:On></forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="SecondaryTextColor">
+                <forms:On>#FFFFFF</forms:On>
+            </forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="MgcColor">
+                <forms:On>#63388a</forms:On>
+            </forms:OnPlatform>
 
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="AsphaltPrimary">
+                <forms:On>#5c7d90</forms:On>
+            </forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="RedPrimary">
+                <forms:On>#F56D50</forms:On>
+            </forms:OnPlatform>-->
+            
+            
             <!--<forms:OnPlatform x:TypeArguments="x:String" x:Key="OrangeLight">#f76d45</forms:OnPlatform>
             <forms:OnPlatform x:TypeArguments="x:String" x:Key="OrangePrimary">#FF5722</forms:OnPlatform>
             <forms:OnPlatform x:TypeArguments="x:String" x:Key="OrangeDark">#E64A19</forms:OnPlatform>
@@ -45,7 +57,6 @@
             <forms:OnPlatform x:TypeArguments="x:String" x:Key="PinkPrimary">#E91E63</forms:OnPlatform>
             <forms:OnPlatform x:TypeArguments="x:String" x:Key="PinkDark">#9C0A3C</forms:OnPlatform>
             <forms:OnPlatform x:TypeArguments="x:String" x:Key="AsphaltLight">#6D8491</forms:OnPlatform>-->
-            <forms:OnPlatform x:TypeArguments="x:String" x:Key="AsphaltPrimary"><forms:On>#5c7d90</forms:On></forms:OnPlatform>
             <!--<forms:OnPlatform x:TypeArguments="x:String" x:Key="AsphaltDark">#233743</forms:OnPlatform>
             <forms:OnPlatform x:TypeArguments="x:String" x:Key="BlueLight">#71E5FF</forms:OnPlatform>
             <forms:OnPlatform x:TypeArguments="x:String" x:Key="BluePrimary">#4FCAE6</forms:OnPlatform>
@@ -64,18 +75,29 @@
             <forms:OnPlatform x:TypeArguments="x:String" x:Key="GreenDark">#579325</forms:OnPlatform>-->
 
             <!--<forms:OnPlatform x:TypeArguments="x:String" x:Key="RedLight">#FF866D</forms:OnPlatform>-->
-            <forms:OnPlatform x:TypeArguments="x:String" x:Key="RedPrimary"><forms:On>#F56D50</forms:On></forms:OnPlatform>
             <!--<forms:OnPlatform x:TypeArguments="x:String" x:Key="RedDark">#A83D26</forms:OnPlatform>-->
 
             <!--<forms:OnPlatform x:TypeArguments="x:String" x:Key="YellowLight">#FFE45C</forms:OnPlatform>
             <forms:OnPlatform x:TypeArguments="x:String" x:Key="YellowPrimary">#F5D740</forms:OnPlatform>
             <forms:OnPlatform x:TypeArguments="x:String" x:Key="YellowDark">#D1B941</forms:OnPlatform>-->
 
-            <forms:OnPlatform x:TypeArguments="x:String" x:Key="GrayUltraLight"> <forms:On>#FFFFFF</forms:On></forms:OnPlatform>
-            <forms:OnPlatform x:TypeArguments="x:String" x:Key="GrayLight"> <forms:On>#F2F2F2</forms:On></forms:OnPlatform>
-            <forms:OnPlatform x:TypeArguments="x:String" x:Key="GrayPrimary"> <forms:On>#B9B9B9</forms:On></forms:OnPlatform>
-            <forms:OnPlatform x:TypeArguments="x:String" x:Key="GrayDark"> <forms:On>#959595</forms:On></forms:OnPlatform>
-            <forms:OnPlatform x:TypeArguments="x:String" x:Key="GrayMedium"> <forms:On>#B9B9B9</forms:On></forms:OnPlatform>
+            
+            
+            <!--<forms:OnPlatform x:TypeArguments="x:String" x:Key="GrayUltraLight">
+                <forms:On>#FFFFFF</forms:On>
+            </forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="GrayLight">
+                <forms:On>#F2F2F2</forms:On>
+            </forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="GrayPrimary">
+                <forms:On>#B9B9B9</forms:On>
+            </forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="GrayDark">
+                <forms:On>#959595</forms:On>
+            </forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="GrayMedium">
+                <forms:On>#B9B9B9</forms:On>
+            </forms:OnPlatform>-->
 
 
             <!--  font families  -->
@@ -130,7 +152,8 @@
                 FontFamily="{StaticResource RegularFontFamily}"
                 FontSize="18" />-->
 
-            <forms:OnPlatform 
+            <!-- Da scommentare -->
+            <!--<forms:OnPlatform 
                 x:Key="TitleFont"
                 x:TypeArguments="x:Double"
                 Android="20"
@@ -164,17 +187,17 @@
                 x:Key="BodyMediumFont"
                 x:TypeArguments="x:Double"
                 Android="18"
-                iOS="18"/>
+                iOS="18"/>-->
 
 
             <!--  styles  -->
             <forms:Style x:Key="PageHeaderLabel" TargetType="forms:Label">
-                <forms:Setter Property="TextColor" Value="{StaticResource PrimoTextColor}" />
+                <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
                 <forms:Setter Property="FontSize" Value="{StaticResource HeaderFont}" />
             </forms:Style>
 
             <forms:Style x:Key="SubHeaderLabel" TargetType="forms:Label">
-                <forms:Setter Property="TextColor" Value="{StaticResource PrimoTextColor}" />
+                <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
                 <forms:Setter Property="FontSize" Value="{StaticResource SubHeaderFont}" />
             </forms:Style>
 
@@ -189,20 +212,20 @@
             </forms:Style>
 
             <forms:Style x:Key="ClassTimeLabel" TargetType="forms:Label">
-                <forms:Setter Property="TextColor" Value="{StaticResource PrimoTextColor}" />
+                <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
                 <forms:Setter Property="FontSize" Value="{StaticResource TitleFont}" />
             </forms:Style>
 
             <forms:Style x:Key="ClassNameLabel" TargetType="forms:Label">
-                <forms:Setter Property="TextColor" Value="{StaticResource PrimoTextColor}" />
+                <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
                 <forms:Setter Property="FontSize" Value="{StaticResource TitleFont}" />
             </forms:Style>
 
             <forms:Style x:Key="ClassInstructorLabel" TargetType="forms:Label">
-                <forms:Setter Property="TextColor" Value="{StaticResource PrimoTextColor}" />
+                <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
                 <forms:Setter Property="FontSize" Value="{StaticResource BodyFont}" />
             </forms:Style>
-            
+
             <forms:Style x:Key="TitleLabelSecondary" TargetType="forms:Label">
                 <forms:Setter Property="TextColor" Value="{StaticResource SecondaryTextColor}" />
                 <forms:Setter Property="FontSize" Value="{StaticResource TitleFont}" />
@@ -220,17 +243,17 @@
 
 
             <forms:Style x:Key="TitleLabelPrimary" TargetType="forms:Label">
-                <forms:Setter Property="TextColor" Value="{StaticResource PrimoTextColor}" />
+                <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
                 <forms:Setter Property="FontSize" Value="{StaticResource TitleFont}" />
             </forms:Style>
 
             <forms:Style x:Key="HandleLabelPrimary" TargetType="forms:Label">
-                <forms:Setter Property="TextColor" Value="{StaticResource PrimoTextColor}" />
+                <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
                 <forms:Setter Property="FontSize" Value="{StaticResource HandleFont}" />
             </forms:Style>
 
             <forms:Style x:Key="BodyLabelPrimary" TargetType="forms:Label">
-                <forms:Setter Property="TextColor" Value="{StaticResource PrimoTextColor}" />
+                <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
                 <forms:Setter Property="FontSize" Value="{StaticResource BodyFont}" />
             </forms:Style>
 
@@ -245,7 +268,7 @@
                     </forms:Setter.Value>
                 </forms:Setter>
             </forms:Style>-->
-           <!-- <forms:Style x:Key="ActivityStyle" TargetType="forms:ActivityIndicator"
+            <!-- <forms:Style x:Key="ActivityStyle" TargetType="forms:ActivityIndicator"
                          BasedOn="{StaticResource DefaultActivity}" />-->
             <forms:Style x:Key="LabelStyle" TargetType="forms:Label">
                 <forms:Setter Property="TextColor" Value="{StaticResource AsphaltPrimary}" />
