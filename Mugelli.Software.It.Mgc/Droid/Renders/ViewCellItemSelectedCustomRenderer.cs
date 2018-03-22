@@ -1,7 +1,7 @@
 ﻿using Mugelli.Software.It.Mgc.Droid.Renders;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
-using Resource = Mugelli.Software.It.Mgc.Droid.Resources.Resource;
+using Resource = Mugelli.Software.It.Mgc.Droid.Resource;
 
 [assembly: ExportRenderer(typeof(ViewCell), typeof(ViewCellItemSelectedCustomRenderer))]
 namespace Mugelli.Software.It.Mgc.Droid.Renders

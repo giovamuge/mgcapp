@@ -24,7 +24,7 @@ namespace Mugelli.Software.It.Mgc.Droid
 
             base.OnCreate(bundle);
 
-            CachedImageRenderer.Init();
+            CachedImageRenderer.Init(true);
 
             var config = new FFImageLoading.Config.Configuration
             {
