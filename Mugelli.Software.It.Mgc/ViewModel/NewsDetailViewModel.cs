@@ -25,7 +25,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             ShowGalleryImage = new RelayCommand<object>(OnShowGalleryImage);
             GoBack = new RelayCommand(OnBack);
 
-            MessagingCenter.Subscribe<BrowserPhotosMessage>(this, nameof(BrowserPhotosMessage), (sender) => {});
+            MessagingCenter.Subscribe<BrowserPhotosMessage>(this, nameof(BrowserPhotosMessage), (sender) => { });
         }
 
         public FeedRssItem Article
@@ -55,34 +55,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
 
         private void OnShowGalleryImage(object sender)
         {
-            MessagingCenter.Send(new BrowserPhotosMessage(), nameof(BrowserPhotosMessage));
-            //_statusBar.HideStatusBar();
-            //_navigationService.NavigateTo(PageStacks.GalleryImagePage, Images);
-        //    new PhotoBrowser
-        //    {
-        //        Photos = new List<Photo>
-        //{
-        //    new Photo
-        //    {
-        //        URL = "https://raw.githubusercontent.com/stfalcon-studio/FrescoImageViewer/v.0.5.0/images/posters/Vincent.jpg",
-        //        Title = "Vincent"
-        //    },
-        //    new Photo
-        //    {
-        //        URL = "https://raw.githubusercontent.com/stfalcon-studio/FrescoImageViewer/v.0.5.0/images/posters/Jules.jpg",
-        //        Title = "Jules"
-        //    },
-        //    new Photo
-        //    {
-        //        URL = "https://raw.githubusercontent.com/stfalcon-studio/FrescoImageViewer/v.0.5.0/images/posters/Korben.jpg",
-        //        Title = "Korben"
-        //    }
-        //},
-            //    ActionButtonPressed = (index) =>
-            //    {
-            //        Debug.WriteLine($"Clicked {index}");
-            //    }
-            //}.Show();
+            MessagingCenter.Send(new BrowserPhotosMessage { Images = Images }, nameof(BrowserPhotosMessage));
         }
 
         private void OnBack()

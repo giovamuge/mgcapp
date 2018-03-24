@@ -5,7 +5,12 @@ using CarouselView.FormsPlugin.iOS;
 using FFImageLoading;
 using FFImageLoading.Forms.Touch;
 using Foundation;
+using Mugelli.Software.It.Mgc.iOS.MessaggingCenters;
+using Mugelli.Software.It.Mgc.MessagingCenters;
+using Stormlion.PhotoBrowser;
+using Stormlion.PhotoBrowser.iOS;
 using UIKit;
+using Xamarin.Forms;
 
 namespace Mugelli.Software.It.Mgc.iOS
 {
@@ -34,6 +39,9 @@ namespace Mugelli.Software.It.Mgc.iOS
 #if DEBUG
 			Xamarin.Calabash.Start();
 #endif
+
+            Platform.Init();
+            PhotoBrowseriOSMessage.Subscribe(this);
 
             LoadApplication(new App());
 

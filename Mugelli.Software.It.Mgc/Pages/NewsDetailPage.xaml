@@ -128,9 +128,9 @@
                                                           ShowIndicators="True"
                                                           IndicatorsTintColor="{StaticResource GrayUltraLight}">
 
-                            <!--<controls:CarouselViewControl.GestureRecognizers>
+                        <controls:CarouselViewControl.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding ShowGalleryImage}"/>
-                        </controls:CarouselViewControl.GestureRecognizers>-->
+                        </controls:CarouselViewControl.GestureRecognizers>
 
                             <controls:CarouselViewControl.ItemTemplate>
                                 <DataTemplate>

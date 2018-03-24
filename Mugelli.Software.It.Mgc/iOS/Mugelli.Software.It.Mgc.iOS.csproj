@@ -137,6 +137,21 @@
     <Reference Include="Calabash">
       <HintPath>..\packages\Xamarin.TestCloud.Agent.0.21.4\lib\Xamarin.iOS\Calabash.dll</HintPath>
     </Reference>
+    <Reference Include="Ricardo.MBProgressHUD.iOS">
+      <HintPath>..\packages\Ricardo.MBProgressHUD.iOS.1.1.0\lib\Xamarin.iOS10\Ricardo.MBProgressHUD.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Ricardo.SDWebImage.iOS">
+      <HintPath>..\packages\Ricardo.SDWebImage.iOS.4.2.2.1\lib\Xamarin.iOS10\Ricardo.SDWebImage.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Ricardo.MWPhotoBrowser.iOS">
+      <HintPath>..\packages\Ricardo.MWPhotoBrowser.iOS.2.1.4.1\lib\Xamarin.iOS10\Ricardo.MWPhotoBrowser.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Stormlion.PhotoBrowser">
+      <HintPath>..\packages\PhotoBrowser.Forms.0.1.2\lib\Xamarin.iOS10\Stormlion.PhotoBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="Stormlion.PhotoBrowser.iOS">
+      <HintPath>..\packages\PhotoBrowser.Forms.0.1.2\lib\Xamarin.iOS10\Stormlion.PhotoBrowser.iOS.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Mugelli.Software.It.Mgc.csproj">
@@ -162,6 +177,7 @@
     <Folder Include="Resources\" />
     <Folder Include="Providers\" />
     <Folder Include="Renders\" />
+    <Folder Include="MessaggingCenters\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -179,6 +195,7 @@
     <Compile Include="Providers\StatusBar.cs" />
     <Compile Include="Renders\HtmlFormatLabelRenderer.cs" />
     <Compile Include="Renders\ViewCellItemSelectedCustomRenderer.cs" />
+    <Compile Include="MessaggingCenters\PhotoBrowseriOSMessage.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Advertising_50px.png" />

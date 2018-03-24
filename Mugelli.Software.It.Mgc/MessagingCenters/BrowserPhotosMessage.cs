@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace Mugelli.Software.It.Mgc.MessagingCenters
 {
     public class BrowserPhotosMessage
@@ -6,5 +8,7 @@ namespace Mugelli.Software.It.Mgc.MessagingCenters
         public BrowserPhotosMessage()
         {
         }
+
+        public List<string> Images { get; set; }
     }
 }
