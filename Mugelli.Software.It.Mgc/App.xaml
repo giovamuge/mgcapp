@@ -101,7 +101,7 @@
 
 
             <!--  font families  -->
-            <forms:OnPlatform
+     <!--       <forms:OnPlatform
                 x:Key="RegularFontFamily"
                 x:TypeArguments="x:String"
                 Android="sans-serif"
@@ -120,7 +120,7 @@
                 x:Key="BoldFontFamily"
                 x:TypeArguments="x:String"
                 Android="sans-serif-medium"
-                iOS="HelveticaNeue-Bold" />
+                iOS="HelveticaNeue-Bold" />-->
 
             <!--  fonts  -->
             <!--<forms:Font
@@ -190,8 +190,9 @@
                 iOS="18"/>-->
 
 
+            <!-- Code xaml to cs -->
             <!--  styles  -->
-            <forms:Style x:Key="PageHeaderLabel" TargetType="forms:Label">
+            <!--<forms:Style x:Key="PageHeaderLabel" TargetType="forms:Label">
                 <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
                 <forms:Setter Property="FontSize" Value="{StaticResource HeaderFont}" />
             </forms:Style>
@@ -255,43 +256,9 @@
             <forms:Style x:Key="BodyLabelPrimary" TargetType="forms:Label">
                 <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
                 <forms:Setter Property="FontSize" Value="{StaticResource BodyFont}" />
-            </forms:Style>
-
-
-            <!-- TODO:refactor style-->
-
-
-            <!--<forms:Style x:Key="DefaultActivity" TargetType="forms:ActivityIndicator">
-                <forms:Setter Property="Scale">
-                    <forms:Setter.Value>
-                        <forms:OnPlatform x:TypeArguments="x:Double" iOS="2" Android="1" />
-                    </forms:Setter.Value>
-                </forms:Setter>
             </forms:Style>-->
-            <!-- <forms:Style x:Key="ActivityStyle" TargetType="forms:ActivityIndicator"
-                         BasedOn="{StaticResource DefaultActivity}" />-->
-            <forms:Style x:Key="LabelStyle" TargetType="forms:Label">
-                <forms:Setter Property="TextColor" Value="{StaticResource AsphaltPrimary}" />
-                <forms:Setter Property="FontSize">
-                    <forms:Setter.Value>
-                        <forms:OnPlatform x:TypeArguments="x:Double" iOS="14" Android="12" />
-                    </forms:Setter.Value>
-                </forms:Setter>
-                <forms:Setter Property="FontFamily" Value="SegoeUI" />
-            </forms:Style>
-            <forms:Style x:Key="Header" TargetType="forms:Label" BasedOn="{StaticResource LabelStyle}">
-                <forms:Setter Property="FontFamily" Value="SegoeUI" />
-                <forms:Setter Property="TextColor" Value="{StaticResource GrayLight}" />
-            </forms:Style>
-            <!--<forms:Style x:Key="LabelStyle" TargetType="forms:Label" BasedOn="{StaticResource LabelStyle}" />-->
-            <forms:Style x:Key="WhiteLabelStyle" TargetType="forms:Label" BasedOn="{StaticResource LabelStyle}">
-                <forms:Setter Property="TextColor" Value="#FFFFFF" />
-            </forms:Style>
-            <forms:Style x:Key="Sub" TargetType="forms:Label" BasedOn="{StaticResource LabelStyle}">
-                <forms:Setter Property="TextColor" Value="{StaticResource GrayDark}" />
-                <forms:Setter Property="FontSize" Value="Small" />
-            </forms:Style>
-            <forms:Style x:Key="ButtonStyle" TargetType="forms:Button">
+
+      <!--      <forms:Style x:Key="ButtonStyle" TargetType="forms:Button">
                 <forms:Setter Property="TextColor" Value="White" />
                 <forms:Setter Property="BorderRadius" Value="4" />
                 <forms:Setter Property="FontSize" Value="Medium" />
@@ -301,9 +268,11 @@
                         <forms:OnPlatform x:TypeArguments="x:Double" iOS="40" Android="50" />
                     </forms:Setter.Value>
                 </forms:Setter>
-            </forms:Style>
+            </forms:Style>-->
+
+            
             <!--<forms:Style x:Key="ButtonStyle" TargetType="forms:Button" BasedOn="{StaticResource ButtonStyle}" />-->
-            <forms:Style x:Key="CustomButtonStyle" TargetType="userControls:CustomButton"
+            <!--<forms:Style x:Key="CustomButtonStyle" TargetType="userControls:CustomButton"
                          BasedOn="{StaticResource ButtonStyle}" />
             <forms:Style x:Key="DeleteButtonStyle" TargetType="forms:Button" BasedOn="{StaticResource ButtonStyle}">
                 <forms:Setter Property="TextColor" Value="White" />
@@ -315,16 +284,44 @@
                 <forms:Setter Property="BorderColor" Value="#AFFF" />
                 <forms:Setter Property="TextColor" Value="#CFFF" />
                 <forms:Setter Property="BorderWidth" Value=".5" />
-            </forms:Style>
-            <forms:Style x:Key="ImageButtonStyle" TargetType="userControls:ImageButton">
+            </forms:Style>-->
+            <!--<forms:Style x:Key="ImageButtonStyle" TargetType="userControls:ImageButton">
                 <forms:Setter Property="HeightRequest">
                     <forms:Setter.Value>
                         <forms:OnPlatform x:TypeArguments="x:Double" iOS="40" Android="50" />
                     </forms:Setter.Value>
                 </forms:Setter>
-            </forms:Style>
+            </forms:Style>-->
+
+            
             <!--<forms:Style TargetType="local:ImageButton" BasedOn="{StaticResource imageButtonStyle}" />-->
 
+
+            <!-- Style never used -->
+            <!--<forms:Style x:Key="LabelStyle" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource AsphaltPrimary}" />
+                <forms:Setter Property="FontSize">
+                    <forms:Setter.Value>
+                        <forms:OnPlatform x:TypeArguments="x:Double" iOS="14" Android="12" />
+                    </forms:Setter.Value>
+                </forms:Setter>
+                <forms:Setter Property="FontFamily" Value="SegoeUI" />
+            </forms:Style>-->
+
+            <!--<forms:Style x:Key="Header" TargetType="forms:Label" BasedOn="{StaticResource LabelStyle}">
+                <forms:Setter Property="FontFamily" Value="SegoeUI" />
+                <forms:Setter Property="TextColor" Value="{StaticResource GrayLight}" />
+            </forms:Style>-->
+
+            <!--<forms:Style x:Key="WhiteLabelStyle" TargetType="forms:Label" BasedOn="{StaticResource LabelStyle}">
+                <forms:Setter Property="TextColor" Value="#FFFFFF" />
+            </forms:Style>
+            <forms:Style x:Key="Sub" TargetType="forms:Label" BasedOn="{StaticResource LabelStyle}">
+                <forms:Setter Property="TextColor" Value="{StaticResource GrayDark}" />
+                <forms:Setter Property="FontSize" Value="Small" />
+            </forms:Style>-->
+
+            
         </forms:ResourceDictionary>
     </Application.Resources>
 </Application>

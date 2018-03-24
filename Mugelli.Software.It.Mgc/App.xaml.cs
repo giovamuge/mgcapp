@@ -16,9 +16,9 @@ namespace Mugelli.Software.It.Mgc
             CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("it-IT");
             CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("it-IT");
 
-            CreateResourceDictionary();
-
             InitializeComponent();
+
+            CreateResourceDictionary();
 
             //Initialize navigation
             var pageStart = NavigationHelper.Init();
@@ -171,13 +171,264 @@ namespace Mugelli.Software.It.Mgc
             }
 
 
+            //
+            //
+            // Font
+            //
+            //
+
             if (!Resources.ContainsKey("RegularFontFamily"))
             {
-                Resources.Add("RegularFontFamily", new
+                switch (Device.RuntimePlatform)
                 {
-                    Android = "sans-serif",
-                    iOS = "HelveticaNeue"
-                });
+                    case Device.iOS:
+                        Resources.Add("RegularFontFamily", "HelveticaNeue");
+                        break;
+                    case Device.Android:
+                        Resources.Add("RegularFontFamily", "sans-serif");
+                        break;
+                }
+            }
+
+            if (!Resources.ContainsKey("LightFontFamily"))
+            {
+                switch (Device.RuntimePlatform)
+                {
+                    case Device.iOS:
+                        Resources.Add("LightFontFamily", "HelveticaNeue-Light");
+                        break;
+                    case Device.Android:
+                        Resources.Add("LightFontFamily", "sans-serif-light");
+                        break;
+                }
+            }
+
+            if (!Resources.ContainsKey("MediumFontFamily"))
+            {
+                switch (Device.RuntimePlatform)
+                {
+                    case Device.iOS:
+                        Resources.Add("MediumFontFamily", "HelveticaNeue-Medium");
+                        break;
+                    case Device.Android:
+                        Resources.Add("MediumFontFamily", "sans-serif-medium");
+                        break;
+                }
+            }
+
+            if (!Resources.ContainsKey("BoldFontFamily"))
+            {
+                switch (Device.RuntimePlatform)
+                {
+                    case Device.iOS:
+                        Resources.Add("BoldFontFamily", "HelveticaNeue-Bold");
+                        break;
+                    case Device.Android:
+                        Resources.Add("BoldFontFamily", "sans-serif-bold");
+                        break;
+                }
+            }
+
+            //
+            //
+            // Style
+            //
+            //
+
+            if (!Resources.ContainsKey("PageHeaderLabel"))
+            {
+                var stylee = new Style(typeof(Label))
+                {
+                    Setters =
+                    {
+                        new Setter { Property = Label.TextColorProperty, Value = Resources["PrimaryTextColor"] },
+                        new Setter { Property = Label.FontSizeProperty, Value = Resources["HeaderFont"]},
+                        new Setter { Property = Label.FontFamilyProperty, Value = Resources["MediumFontFamily"]}
+                    }
+                };
+                Resources.Add("PageHeaderLabel", stylee);
+            }
+
+            if (!Resources.ContainsKey("SubHeaderLabel"))
+            {
+                var stylee = new Style(typeof(Label))
+                {
+                    Setters =
+                    {
+                        new Setter { Property = Label.TextColorProperty, Value = Resources["PrimaryTextColor"] },
+                        new Setter { Property = Label.FontSizeProperty, Value = Resources["SubHeaderFont"]},
+                        new Setter { Property = Label.FontFamilyProperty, Value = Resources["MediumFontFamily"]}
+                    }
+                };
+                Resources.Add("SubHeaderLabel", stylee);
+            }
+
+            if (!Resources.ContainsKey("SecondaryPageHeaderLabel"))
+            {
+                var stylee = new Style(typeof(Label))
+                {
+                    Setters =
+                    {
+                        new Setter { Property = Label.TextColorProperty, Value = Resources["SecondaryTextColor"] },
+                        new Setter { Property = Label.FontSizeProperty, Value = Resources["HeaderFont"]},
+                        new Setter { Property = Label.FontFamilyProperty, Value = Resources["MediumFontFamily"]}
+                    }
+                };
+                Resources.Add("SecondaryPageHeaderLabel", stylee);
+            }
+
+            if (!Resources.ContainsKey("SecondarySubHeaderLabel"))
+            {
+                var stylee = new Style(typeof(Label))
+                {
+                    Setters =
+                    {
+                        new Setter { Property = Label.TextColorProperty, Value = Resources["SecondaryTextColor"] },
+                        new Setter { Property = Label.FontSizeProperty, Value = Resources["SubHeaderFont"]},
+                        new Setter { Property = Label.FontFamilyProperty, Value = Resources["MediumFontFamily"]}
+                    }
+                };
+                Resources.Add("SecondarySubHeaderLabel", stylee);
+            }
+
+            if (!Resources.ContainsKey("ClassTimeLabel"))
+            {
+                var stylee = new Style(typeof(Label))
+                {
+                    Setters =
+                    {
+                        new Setter { Property = Label.TextColorProperty, Value = Resources["PrimaryTextColor"] },
+                        new Setter { Property = Label.FontSizeProperty, Value = Resources["TitleFont"]},
+                        new Setter { Property = Label.FontFamilyProperty, Value = Resources["BoldFontFamily"]}
+                    }
+                };
+                Resources.Add("ClassTimeLabel", stylee);
+            }
+
+            if (!Resources.ContainsKey("ClassNameLabel"))
+            {
+                var stylee = new Style(typeof(Label))
+                {
+                    Setters =
+                    {
+                        new Setter { Property = Label.TextColorProperty, Value = Resources["PrimaryTextColor"] },
+                        new Setter { Property = Label.FontSizeProperty, Value = Resources["TitleFont"]},
+                        new Setter { Property = Label.FontFamilyProperty, Value = Resources["BoldFontFamily"]}
+                    }
+                };
+                Resources.Add("ClassNameLabel", stylee);
+            }
+
+            if (!Resources.ContainsKey("ClassInstructorLabel"))
+            {
+                var stylee = new Style(typeof(Label))
+                {
+                    Setters =
+                    {
+                        new Setter { Property = Label.TextColorProperty, Value = Resources["PrimaryTextColor"] },
+                        new Setter { Property = Label.FontSizeProperty, Value = Resources["BodyFont"]},
+                        new Setter { Property = Label.FontFamilyProperty, Value = Resources["LightFontFamily"]}
+                    }
+                };
+                Resources.Add("ClassInstructorLabel", stylee);
+            }
+
+            if (!Resources.ContainsKey("HandleLabelSecondary"))
+            {
+                var stylee = new Style(typeof(Label))
+                {
+                    Setters =
+                    {
+                        new Setter { Property = Label.TextColorProperty, Value = Resources["SecondaryTextColor"] },
+                        new Setter { Property = Label.FontSizeProperty, Value = Resources["HandleFont"]},
+                        new Setter { Property = Label.FontFamilyProperty, Value = Resources["MediumFontFamily"]}
+                    }
+                };
+                Resources.Add("HandleLabelSecondary", stylee);
+            }
+
+            if (!Resources.ContainsKey("PageHeaderLabel"))
+            {
+                var stylee = new Style(typeof(Label))
+                {
+                    Setters =
+                    {
+                        new Setter { Property = Label.TextColorProperty, Value = Resources["PrimaryTextColor"] },
+                        new Setter { Property = Label.FontSizeProperty, Value = Resources["HeaderFont"]},
+                        new Setter { Property = Label.FontFamilyProperty, Value = Resources["MediumFontFamily"]}
+                    }
+                };
+                Resources.Add("PageHeaderLabel", stylee);
+            }
+
+            if (!Resources.ContainsKey("BodyLabelSecondary"))
+            {
+                var stylee = new Style(typeof(Label))
+                {
+                    Setters =
+                    {
+                        new Setter { Property = Label.TextColorProperty, Value = Resources["SecondaryTextColor"] },
+                        new Setter { Property = Label.FontSizeProperty, Value = Resources["BodyFont"]},
+                        new Setter { Property = Label.FontFamilyProperty, Value = Resources["LightFontFamily"]}
+                    }
+                };
+                Resources.Add("BodyLabelSecondary", stylee);
+            }
+
+            if (!Resources.ContainsKey("TitleLabelPrimary"))
+            {
+                var stylee = new Style(typeof(Label))
+                {
+                    Setters =
+                    {
+                        new Setter { Property = Label.TextColorProperty, Value = Resources["PrimaryTextColor"] },
+                        new Setter { Property = Label.FontSizeProperty, Value = Resources["TitleFont"]},
+                        new Setter { Property = Label.FontFamilyProperty, Value = Resources["BoldFontFamily"]}
+                    }
+                };
+                Resources.Add("TitleLabelPrimary", stylee);
+            }
+
+            if (!Resources.ContainsKey("TitleLabelSecondary"))
+            {
+                var stylee = new Style(typeof(Label))
+                {
+                    Setters =
+                    {
+                        new Setter { Property = Label.TextColorProperty, Value = Resources["SecondaryTextColor"] },
+                        new Setter { Property = Label.FontSizeProperty, Value = Resources["TitleFont"]},
+                        new Setter { Property = Label.FontFamilyProperty, Value = Resources["BoldFontFamily"]}
+                    }
+                };
+                Resources.Add("TitleLabelSecondary", stylee);
+            }
+
+            if (!Resources.ContainsKey("HandleLabelPrimary"))
+            {
+                var stylee = new Style(typeof(Label))
+                {
+                    Setters =
+                    {
+                        new Setter { Property = Label.TextColorProperty, Value = Resources["PrimaryTextColor"] },
+                        new Setter { Property = Label.FontSizeProperty, Value = Resources["HandleFont"]},
+                        new Setter { Property = Label.FontFamilyProperty, Value = Resources["MediumFontFamily"]}
+                    }
+                };
+                Resources.Add("HandleLabelPrimary", stylee);
+            }
+
+            if (!Resources.ContainsKey("BodyLabelPrimary"))
+            {
+                var stylee = new Style(typeof(Label))
+                {
+                    Setters =
+                    {
+                        new Setter { Property = Label.TextColorProperty, Value = Resources["PrimaryTextColor"] },
+                        new Setter { Property = Label.FontSizeProperty, Value = Resources["BodyFont"]},
+                        new Setter { Property = Label.FontFamilyProperty, Value = Resources["LightFontFamily"]}
+                    }
+                };
+                Resources.Add("BodyLabelPrimary", stylee);
             }
         }
     }
