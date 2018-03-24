@@ -103,7 +103,7 @@
                                                    FontFamily="{x:Static fonts:Fonts.FontAwesome}"
                                                    Grid.Column="0"
                                                    IsVisible="{Binding Path=Location, Converter={StaticResource IsNotNullToBoolConverter}}"
-                                                   Style="{StaticResource ClassInstructorLabel}"/>
+                                                   Style="{StaticResource ClassInstructorLabelFont}"/>
                                             
                                             <Label Style="{StaticResource ClassInstructorLabel}" 
                                                    Text="{Binding Path=Location}"

@@ -121,7 +121,7 @@
                                      Grid.Column="0">
                             <Label  Text="{x:Static fonts:FontAwesomeIcons.User}"
                                     FontFamily="{x:Static fonts:Fonts.FontAwesome}"
-                                    Style="{StaticResource HandleLabelPrimary}"/>
+                                    Style="{StaticResource HandleLabelPrimaryFont}"/>
                             <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding Communication.Author}" />
                         </StackLayout>
                         
@@ -130,7 +130,7 @@
                             <!--<Image Source="Black_Clock_50px.png" />-->
                             <Label  Text="{x:Static fonts:FontAwesomeIcons.ClockO}"
                                     FontFamily="{x:Static fonts:Fonts.FontAwesome}"
-                                    Style="{StaticResource HandleLabelPrimary}"/>
+                                    Style="{StaticResource HandleLabelPrimaryFont}"/>
                             <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding Communication.Date, StringFormat='{}{0:dd MMM yyyy HH:mm}'}" />
                         </StackLayout>
                     </Grid>
