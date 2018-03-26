@@ -178,6 +178,7 @@
     <Compile Include="Resources\Colors.cs" />
     <Compile Include="Resources\Labels.cs" />
     <Compile Include="Resources\Converters.cs" />
+    <Compile Include="ViewModel\InfoViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="CarouselView.FormsPlugin.Abstractions">

@@ -103,56 +103,66 @@ namespace Mugelli.Software.It.Mgc.Navigations
 
         public async Task PushModal(string pageKey, object parameter)
         {
-            if (_pagesByKey.ContainsKey(pageKey))
+            try
             {
-
-                var type = _pagesByKey[pageKey];
-                ConstructorInfo constructor;
-                object[] parameters;
-
-                if (parameter == null)
+                
+                if (_pagesByKey.ContainsKey(pageKey))
                 {
-                    constructor = type.GetTypeInfo()
-                        .DeclaredConstructors
-                        .FirstOrDefault(c => !c.GetParameters().Any());
 
-                    parameters = new object[]
+                    var type = _pagesByKey[pageKey];
+                    ConstructorInfo constructor;
+                    object[] parameters;
+
+                    if (parameter == null)
                     {
-                    };
+                        constructor = type.GetTypeInfo()
+                            .DeclaredConstructors
+                            .FirstOrDefault(c => !c.GetParameters().Any());
+
+                        parameters = new object[]
+                        {
+                        };
+                    }
+                    else
+                    {
+                        constructor = type.GetTypeInfo()
+                            .DeclaredConstructors
+                            .FirstOrDefault(
+                                c =>
+                                {
+                                    var p = c.GetParameters();
+                                    return p.Count() == 1
+                                           && p[0].ParameterType == parameter.GetType();
+                                });
+
+                        parameters = new[]
+                        {
+                            parameter
+                        };
+                    }
+
+                    if (constructor == null)
+                    {
+                        throw new InvalidOperationException(
+                            "No suitable constructor found for page " + pageKey);
+                    }
+
+                    var page = constructor.Invoke(parameters) as Page;
+                    await Application.Current.MainPage.Navigation.PushModalAsync(page);
+
                 }
                 else
                 {
-                    constructor = type.GetTypeInfo()
-                        .DeclaredConstructors
-                        .FirstOrDefault(
-                            c =>
-                            {
-                                var p = c.GetParameters();
-                                return p.Count() == 1
-                                       && p[0].ParameterType == parameter.GetType();
-                            });
-
-                    parameters = new[]
-                    {
-                        parameter
-                    };
+                    throw new ArgumentException(
+                        $"No such page: {pageKey}. Did you forget to call NavigationService.Configure?",
+                        nameof(pageKey));
                 }
-
-                if (constructor == null)
-                {
-                    throw new InvalidOperationException(
-                        "No suitable constructor found for page " + pageKey);
-                }
-
-                var page = constructor.Invoke(parameters) as Page;
-                await Application.Current.MainPage.Navigation.PushModalAsync(page);
-
+            
             }
-            else
+            catch(Exception ex)
             {
                 throw new ArgumentException(
-                    $"No such page: {pageKey}. Did you forget to call NavigationService.Configure?",
-                    nameof(pageKey));
+                    ex.Message);
             }
         }
 
@@ -168,7 +178,10 @@ namespace Mugelli.Software.It.Mgc.Navigations
                 //{
                 //    // Unregister vm of page, message listener etc
                 //    cleanup.CleanupPage();
-                //}
+                //} 
+
+                await Application.Current.MainPage.Navigation.PopModalAsync();
+                return;
             }
 
             await Application.Current.MainPage.Navigation.PopModalAsync();

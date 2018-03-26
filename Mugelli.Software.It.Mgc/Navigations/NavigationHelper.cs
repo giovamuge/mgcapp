@@ -29,6 +29,9 @@ namespace Mugelli.Software.It.Mgc.Navigations
                 navigation.Configure(PageStacks.GalleryImagePage, typeof(GalleryImagePage));
                 navigation.Configure(PageStacks.CommunicationDetailPage, typeof(CommunicationDetailPage));
 
+                //Registration modals
+                navigation.Configure(ModalStacks.InfoModal, typeof(InfoPage));
+
                 // Register NavigationService in IoC container:
                 SimpleIoc.Default.Register(() => navigation);
                 SimpleIoc.Default.Register<IRssFeedService>(() => new RssFeddService());
