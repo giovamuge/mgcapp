@@ -31,10 +31,10 @@
                                             HorizontalOptions="End"
                                             Margin="21,25,0,0"
                                             BackgroundColor="Transparent"
-                                            TextColor="{StaticResource SecondaryTextColor}"
-                                            Grid.Row="0"/>
+                                            TextColor="{StaticResource SecondaryTextColor}"/>
                             </OnPlatform.iOS>
                             <OnPlatform.Android>
+                                <Label></Label>
                             </OnPlatform.Android>
                         </OnPlatform>
             </StackLayout>

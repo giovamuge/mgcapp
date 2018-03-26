@@ -56,11 +56,10 @@ namespace Mugelli.Software.It.Mgc.ViewModel
                     {
                         News,
                         Calendar,
-                        Communications,
-                        new InfoPage()
+                        Communications
                     };
 
-                    //Childrens.Add(new InfoPage());
+                    listpages.Add(new InfoPage());
                     break;
                 case Device.iOS:
                     BarTextColor = (Color)Application.Current.Resources["MgcColor"];
