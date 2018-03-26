@@ -11,6 +11,10 @@ using FFImageLoading;
 using CarouselView.FormsPlugin.Android;
 using Plugin.FirebasePushNotification;
 using FFImageLoading.Forms.Droid;
+using Xamarin.Forms;
+using Xamarin.Forms.Platform.Android;
+using Stormlion.PhotoBrowser;
+using Mugelli.Software.It.Mgc.Droid.MessagingCenters;
 
 namespace Mugelli.Software.It.Mgc.Droid
 {
@@ -40,8 +44,11 @@ namespace Mugelli.Software.It.Mgc.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             CarouselViewRenderer.Init();
-            LoadApplication(new App());
 
+            Stormlion.PhotoBrowser.Droid.Platform.Init(this);
+            PhotoBrowserDroidMessage.Subscribe(this);
+
+            LoadApplication(new App());
 
             //If debug you should reset the token each time.
 #if DEBUG
@@ -88,26 +95,26 @@ namespace Mugelli.Software.It.Mgc.Droid
 #endif
 
             //Handle notification when app is closed here
-            CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
-            {
-                System.Diagnostics.Debug.WriteLine("Received");
-                //SendNotification(p.Data["body"]);
-            };
+            //CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
+            //{
+            //    System.Diagnostics.Debug.WriteLine("Received");
+            //    //SendNotification(p.Data["body"]);
+            //};
 
-            CrossFirebasePushNotification.Current.OnNotificationOpened += (s, p) =>
-            {
-                System.Diagnostics.Debug.WriteLine("Opened");
-                foreach (var data in p.Data)
-                {
-                    System.Diagnostics.Debug.WriteLine($"{data.Key} : {data.Value}");
-                }
+            //CrossFirebasePushNotification.Current.OnNotificationOpened += (s, p) =>
+            //{
+            //    System.Diagnostics.Debug.WriteLine("Opened");
+            //    foreach (var data in p.Data)
+            //    {
+            //        System.Diagnostics.Debug.WriteLine($"{data.Key} : {data.Value}");
+            //    }
 
-                if (!string.IsNullOrEmpty(p.Identifier))
-                {
-                    System.Diagnostics.Debug.WriteLine($"ActionId: {p.Identifier}");
-                }
+            //    if (!string.IsNullOrEmpty(p.Identifier))
+            //    {
+            //        System.Diagnostics.Debug.WriteLine($"ActionId: {p.Identifier}");
+            //    }
 
-            };
+            //};
         }
     }
 }

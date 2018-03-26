@@ -2236,6 +2236,2203 @@ namespace Mugelli.Software.It.Mgc.Droid
 			global::Com.ViewPagerIndicator.Resource.Styleable.CirclePageIndicator_vpiStrokeWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CirclePageIndicator_vpiStrokeWidth;
 			global::Com.ViewPagerIndicator.Resource.Styleable.ViewPagerIndicator = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ViewPagerIndicator;
 			global::Com.ViewPagerIndicator.Resource.Styleable.ViewPagerIndicator_vpiCirclePageIndicatorStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ViewPagerIndicator_vpiCirclePageIndicatorStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Animation.abc_fade_in = global::Mugelli.Software.It.Mgc.Droid.Resource.Animation.abc_fade_in;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Animation.abc_fade_out = global::Mugelli.Software.It.Mgc.Droid.Resource.Animation.abc_fade_out;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Animation.abc_grow_fade_in_from_bottom = global::Mugelli.Software.It.Mgc.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Animation.abc_popup_enter = global::Mugelli.Software.It.Mgc.Droid.Resource.Animation.abc_popup_enter;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Animation.abc_popup_exit = global::Mugelli.Software.It.Mgc.Droid.Resource.Animation.abc_popup_exit;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom = global::Mugelli.Software.It.Mgc.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Animation.abc_slide_in_bottom = global::Mugelli.Software.It.Mgc.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Animation.abc_slide_in_top = global::Mugelli.Software.It.Mgc.Droid.Resource.Animation.abc_slide_in_top;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Animation.abc_slide_out_bottom = global::Mugelli.Software.It.Mgc.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Animation.abc_slide_out_top = global::Mugelli.Software.It.Mgc.Droid.Resource.Animation.abc_slide_out_top;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Animation.design_bottom_sheet_slide_in = global::Mugelli.Software.It.Mgc.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Animation.design_bottom_sheet_slide_out = global::Mugelli.Software.It.Mgc.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Animation.design_snackbar_in = global::Mugelli.Software.It.Mgc.Droid.Resource.Animation.design_snackbar_in;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Animation.design_snackbar_out = global::Mugelli.Software.It.Mgc.Droid.Resource.Animation.design_snackbar_out;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Animator.design_appbar_state_list_animator = global::Mugelli.Software.It.Mgc.Droid.Resource.Animator.design_appbar_state_list_animator;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionBarDivider = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionBarDivider;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionBarItemBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionBarPopupTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionBarSize = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionBarSize;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionBarSplitStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionBarStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionBarStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionBarTabBarStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionBarTabStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionBarTabTextStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionBarTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionBarTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionBarWidgetTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionDropDownStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionMenuTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionMenuTextColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionModeBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionModeBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionModeCloseButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionModeCloseDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionModeCopyDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionModeCutDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionModeFindDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionModePasteDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionModePopupWindowStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionModeSelectAllDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionModeShareDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionModeSplitBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionModeStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionModeStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionModeWebSearchDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionOverflowButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionOverflowMenuStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionProviderClass = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionProviderClass;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actionViewClass = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionViewClass;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.activityChooserViewStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actualImageResource = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actualImageResource;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actualImageScaleType = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actualImageScaleType;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.actualImageUri = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actualImageUri;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.alertDialogButtonGroupStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.alertDialogCenterButtons = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.alertDialogStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.alertDialogStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.alertDialogTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.alertDialogTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.allowStacking = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.allowStacking;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.arrowHeadLength = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.arrowHeadLength;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.arrowShaftLength = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.arrowShaftLength;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.autoCompleteTextViewStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.background = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.background;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.backgroundImage = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.backgroundImage;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.backgroundSplit = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.backgroundSplit;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.backgroundStacked = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.backgroundStacked;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.backgroundTint = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.backgroundTint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.backgroundTintMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.backgroundTintMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.barLength = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.barLength;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.behavior_autoHide = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.behavior_autoHide;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.behavior_hideable = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.behavior_hideable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.behavior_overlapTop = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.behavior_overlapTop;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.behavior_peekHeight = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.behavior_peekHeight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.behavior_skipCollapsed = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.behavior_skipCollapsed;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.borderWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.borderWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.borderlessButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.bottomSheetDialogTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.bottomSheetStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.bottomSheetStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.buttonBarButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.buttonBarNegativeButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.buttonBarNeutralButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.buttonBarPositiveButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.buttonBarStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.buttonBarStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.buttonGravity = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.buttonGravity;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.buttonPanelSideLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.buttonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.buttonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.buttonStyleSmall = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.buttonTint = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.buttonTint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.buttonTintMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.buttonTintMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.cardBackgroundColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.cardBackgroundColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.cardCornerRadius = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.cardCornerRadius;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.cardElevation = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.cardElevation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.cardMaxElevation = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.cardMaxElevation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.cardPreventCornerOverlap = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.cardPreventCornerOverlap;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.cardUseCompatPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.cardUseCompatPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.checkboxStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.checkboxStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.checkedTextViewStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.closeIcon = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.closeIcon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.closeItemLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.closeItemLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.collapseContentDescription = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.collapseContentDescription;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.collapseIcon = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.collapseIcon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.collapsedTitleGravity = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.collapsedTitleTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.color = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.color;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.colorAccent = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.colorAccent;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.colorBackgroundFloating = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.colorButtonNormal = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.colorButtonNormal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.colorControlActivated = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.colorControlActivated;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.colorControlHighlight = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.colorControlHighlight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.colorControlNormal = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.colorControlNormal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.colorPrimary = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.colorPrimary;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.colorPrimaryDark = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.colorSwitchThumbNormal = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.commitIcon = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.commitIcon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.contentInsetEnd = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.contentInsetEnd;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.contentInsetEndWithActions = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.contentInsetLeft = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.contentInsetLeft;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.contentInsetRight = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.contentInsetRight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.contentInsetStart = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.contentInsetStart;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.contentInsetStartWithNavigation = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.contentPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.contentPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.contentPaddingBottom = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.contentPaddingBottom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.contentPaddingLeft = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.contentPaddingLeft;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.contentPaddingRight = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.contentPaddingRight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.contentPaddingTop = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.contentPaddingTop;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.contentScrim = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.contentScrim;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.controlBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.controlBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.counterEnabled = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.counterEnabled;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.counterMaxLength = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.counterMaxLength;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.counterOverflowTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.counterTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.counterTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.customNavigationLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.customNavigationLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.defaultQueryHint = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.defaultQueryHint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.dialogPreferredPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.dialogTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.dialogTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.displayOptions = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.displayOptions;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.divider = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.divider;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.dividerHorizontal = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.dividerHorizontal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.dividerPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.dividerPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.dividerVertical = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.dividerVertical;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.drawableSize = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.drawableSize;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.drawerArrowStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.dropDownListViewStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.dropdownListPreferredItemHeight = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.editTextBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.editTextBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.editTextColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.editTextColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.editTextStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.editTextStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.elevation = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.elevation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.errorEnabled = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.errorEnabled;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.errorTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.errorTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.expanded = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.expanded;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.expandedTitleGravity = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.expandedTitleGravity;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.expandedTitleMargin = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.expandedTitleMargin;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.expandedTitleMarginBottom = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.expandedTitleMarginEnd = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.expandedTitleMarginStart = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.expandedTitleMarginTop = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.expandedTitleTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.externalRouteEnabledDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.externalRouteEnabledDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.fabSize = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.fabSize;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.fadeDuration = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.fadeDuration;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.failureImage = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.failureImage;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.failureImageScaleType = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.failureImageScaleType;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.foregroundInsidePadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.gapBetweenBars = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.gapBetweenBars;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.goIcon = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.goIcon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.headerLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.headerLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.height = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.height;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.hideOnContentScroll = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.hintAnimationEnabled = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.hintEnabled = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.hintEnabled;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.hintTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.hintTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.homeAsUpIndicator = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.homeLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.homeLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.icon = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.icon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.iconifiedByDefault = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.imageButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.imageButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.indeterminateProgressStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.initialActivityCount = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.initialActivityCount;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.insetForeground = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.insetForeground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.isLightTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.isLightTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.itemBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.itemBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.itemIconTint = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.itemIconTint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.itemPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.itemPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.itemTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.itemTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.itemTextColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.itemTextColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.keylines = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.keylines;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.layout = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.layout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.layoutManager = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.layoutManager;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.layout_anchor = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.layout_anchor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.layout_anchorGravity = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.layout_behavior = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.layout_behavior;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.layout_collapseMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.layout_collapseMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.layout_collapseParallaxMultiplier = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.layout_dodgeInsetEdges = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.layout_dodgeInsetEdges;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.layout_insetEdge = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.layout_insetEdge;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.layout_keyline = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.layout_keyline;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.layout_scrollFlags = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.layout_scrollFlags;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.layout_scrollInterpolator = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.listChoiceBackgroundIndicator = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.listDividerAlertDialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.listItemLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.listItemLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.listLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.listLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.listMenuViewStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.listMenuViewStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.listPopupWindowStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.listPreferredItemHeight = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.listPreferredItemHeightLarge = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.listPreferredItemHeightSmall = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.listPreferredItemPaddingLeft = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.listPreferredItemPaddingRight = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.logo = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.logo;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.logoDescription = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.logoDescription;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.maxActionInlineWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.maxButtonHeight = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.maxButtonHeight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.measureWithLargestChild = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.mediaRouteAudioTrackDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.mediaRouteButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.mediaRouteButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.mediaRouteCloseDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.mediaRouteCloseDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.mediaRouteControlPanelThemeOverlay = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.mediaRouteControlPanelThemeOverlay;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.mediaRouteDefaultIconDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.mediaRoutePauseDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.mediaRoutePauseDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.mediaRoutePlayDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.mediaRoutePlayDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.mediaRouteSpeakerGroupIconDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.mediaRouteSpeakerIconDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.mediaRouteStopDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.mediaRouteStopDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.mediaRouteTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.mediaRouteTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.mediaRouteTvIconDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.mediaRouteTvIconDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.menu = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.menu;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.multiChoiceItemLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.navigationContentDescription = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.navigationContentDescription;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.navigationIcon = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.navigationIcon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.navigationMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.navigationMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.overlapAnchor = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.overlapAnchor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.overlayImage = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.overlayImage;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.paddingBottomNoButtons = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.paddingEnd = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.paddingEnd;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.paddingStart = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.paddingStart;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.paddingTopNoTitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.panelBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.panelBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.panelMenuListTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.panelMenuListWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.passwordToggleContentDescription = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.passwordToggleContentDescription;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.passwordToggleDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.passwordToggleDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.passwordToggleEnabled = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.passwordToggleEnabled;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.passwordToggleTint = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.passwordToggleTint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.passwordToggleTintMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.passwordToggleTintMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.placeholderImage = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.placeholderImage;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.placeholderImageScaleType = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.placeholderImageScaleType;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.popupMenuStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.popupMenuStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.popupTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.popupTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.popupWindowStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.popupWindowStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.preserveIconSpacing = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.pressedStateOverlayImage = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.pressedStateOverlayImage;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.pressedTranslationZ = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.pressedTranslationZ;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.progressBarAutoRotateInterval = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.progressBarAutoRotateInterval;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.progressBarImage = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.progressBarImage;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.progressBarImageScaleType = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.progressBarImageScaleType;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.progressBarPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.progressBarPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.progressBarStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.progressBarStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.queryBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.queryBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.queryHint = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.queryHint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.radioButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.radioButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.ratingBarStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.ratingBarStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.ratingBarStyleIndicator = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.ratingBarStyleSmall = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.retryImage = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.retryImage;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.retryImageScaleType = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.retryImageScaleType;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.reverseLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.reverseLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.rippleColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.rippleColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.roundAsCircle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.roundAsCircle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.roundBottomLeft = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.roundBottomLeft;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.roundBottomRight = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.roundBottomRight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.roundTopLeft = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.roundTopLeft;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.roundTopRight = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.roundTopRight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.roundWithOverlayColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.roundWithOverlayColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.roundedCornerRadius = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.roundedCornerRadius;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.roundingBorderColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.roundingBorderColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.roundingBorderPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.roundingBorderPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.roundingBorderWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.roundingBorderWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.scrimAnimationDuration = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.scrimAnimationDuration;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.scrimVisibleHeightTrigger = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.scrimVisibleHeightTrigger;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.searchHintIcon = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.searchHintIcon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.searchIcon = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.searchIcon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.searchViewStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.searchViewStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.seekBarStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.seekBarStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.selectableItemBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.selectableItemBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.selectableItemBackgroundBorderless = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.showAsAction = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.showAsAction;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.showDividers = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.showDividers;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.showText = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.showText;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.showTitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.showTitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.singleChoiceItemLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.spanCount = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.spanCount;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.spinBars = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.spinBars;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.spinnerDropDownItemStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.spinnerStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.spinnerStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.splitTrack = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.splitTrack;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.srcCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.srcCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.stackFromEnd = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.stackFromEnd;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.state_above_anchor = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.state_above_anchor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.state_collapsed = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.state_collapsed;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.state_collapsible = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.state_collapsible;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.statusBarBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.statusBarBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.statusBarScrim = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.statusBarScrim;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.subMenuArrow = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.subMenuArrow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.submitBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.submitBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.subtitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.subtitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.subtitleTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.subtitleTextColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.subtitleTextColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.subtitleTextStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.suggestionRowLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.switchMinWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.switchMinWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.switchPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.switchPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.switchStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.switchStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.switchTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.switchTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.tabBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.tabBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.tabContentStart = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.tabContentStart;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.tabGravity = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.tabGravity;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.tabIndicatorColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.tabIndicatorColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.tabIndicatorHeight = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.tabMaxWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.tabMaxWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.tabMinWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.tabMinWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.tabMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.tabMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.tabPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.tabPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.tabPaddingBottom = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.tabPaddingBottom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.tabPaddingEnd = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.tabPaddingEnd;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.tabPaddingStart = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.tabPaddingStart;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.tabPaddingTop = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.tabPaddingTop;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.tabSelectedTextColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.tabTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.tabTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.tabTextColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.tabTextColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.textAllCaps = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.textAllCaps;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.textAppearanceLargePopupMenu = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.textAppearanceListItem = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.textAppearanceListItemSecondary = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.textAppearanceListItemSmall = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.textAppearancePopupMenuHeader = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.textAppearanceSearchResultTitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.textAppearanceSmallPopupMenu = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.textColorAlertDialogListItem = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.textColorError = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.textColorError;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.textColorSearchUrl = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.theme = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.theme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.thickness = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.thickness;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.thumbTextPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.thumbTextPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.thumbTint = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.thumbTint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.thumbTintMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.thumbTintMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.tickMark = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.tickMark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.tickMarkTint = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.tickMarkTint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.tickMarkTintMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.tickMarkTintMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.tint = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.tint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.tintMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.tintMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.title = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.titleEnabled = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.titleEnabled;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.titleMargin = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.titleMargin;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.titleMarginBottom = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.titleMarginBottom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.titleMarginEnd = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.titleMarginEnd;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.titleMarginStart = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.titleMarginStart;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.titleMarginTop = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.titleMarginTop;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.titleMargins = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.titleMargins;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.titleTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.titleTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.titleTextColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.titleTextColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.titleTextStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.titleTextStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.toolbarId = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.toolbarId;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.toolbarNavigationButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.toolbarStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.toolbarStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.track = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.track;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.trackTint = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.trackTint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.trackTintMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.trackTintMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.useCompatPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.useCompatPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.viewAspectRatio = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.viewAspectRatio;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.voiceIcon = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.voiceIcon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.windowActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.windowActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.windowActionBarOverlay = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.windowActionModeOverlay = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.windowFixedHeightMajor = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.windowFixedHeightMinor = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.windowFixedWidthMajor = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.windowFixedWidthMinor = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.windowMinWidthMajor = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.windowMinWidthMinor = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Attribute.windowNoTitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.windowNoTitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Boolean.abc_action_bar_embed_tabs = global::Mugelli.Software.It.Mgc.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Boolean.abc_allow_stacked_button_bar = global::Mugelli.Software.It.Mgc.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::Mugelli.Software.It.Mgc.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::Mugelli.Software.It.Mgc.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::Mugelli.Software.It.Mgc.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_background_cache_hint_selector_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_btn_colored_borderless_text_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_btn_colored_text_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_color_highlight_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_color_highlight_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_hint_foreground_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_hint_foreground_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_input_method_navigation_guard = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_primary_text_disable_only_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_primary_text_disable_only_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_primary_text_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_primary_text_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_search_url_text = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_search_url_text;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_search_url_text_normal = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_search_url_text_pressed = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_search_url_text_selected = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_secondary_text_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_secondary_text_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_tint_btn_checkable = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_tint_default = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_tint_default;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_tint_edittext = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_tint_edittext;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_tint_seek_thumb = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_tint_spinner = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_tint_spinner;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.abc_tint_switch_track = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.abc_tint_switch_track;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.accent_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.accent_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.accent_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.accent_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.background_floating_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.background_floating_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.background_floating_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.background_floating_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.background_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.background_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.background_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.background_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.bright_foreground_disabled_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.bright_foreground_disabled_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.bright_foreground_inverse_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.bright_foreground_inverse_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.bright_foreground_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.bright_foreground_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.bright_foreground_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.button_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.button_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.button_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.button_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.cardview_dark_background = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.cardview_dark_background;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.cardview_light_background = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.cardview_light_background;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.cardview_shadow_end_color = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.cardview_shadow_end_color;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.cardview_shadow_start_color = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.cardview_shadow_start_color;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.design_bottom_navigation_shadow_color = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.design_bottom_navigation_shadow_color;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.design_error = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.design_error;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.design_fab_shadow_end_color = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.design_fab_shadow_mid_color = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.design_fab_shadow_start_color = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.design_fab_stroke_end_inner_color = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.design_fab_stroke_end_outer_color = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.design_fab_stroke_top_inner_color = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.design_fab_stroke_top_outer_color = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.design_snackbar_background_color = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.design_snackbar_background_color;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.design_tint_password_toggle = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.design_tint_password_toggle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.dim_foreground_disabled_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.dim_foreground_disabled_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.dim_foreground_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.dim_foreground_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.dim_foreground_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.foreground_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.foreground_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.foreground_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.foreground_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.highlighted_text_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.highlighted_text_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.highlighted_text_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.material_blue_grey_800 = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.material_blue_grey_800;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.material_blue_grey_900 = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.material_blue_grey_900;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.material_blue_grey_950 = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.material_blue_grey_950;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.material_deep_teal_200 = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.material_deep_teal_200;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.material_deep_teal_500 = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.material_deep_teal_500;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.material_grey_100 = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.material_grey_100;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.material_grey_300 = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.material_grey_300;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.material_grey_50 = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.material_grey_50;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.material_grey_600 = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.material_grey_600;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.material_grey_800 = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.material_grey_800;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.material_grey_850 = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.material_grey_850;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.material_grey_900 = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.material_grey_900;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.notification_action_color_filter = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.notification_action_color_filter;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.notification_icon_bg_color = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.notification_icon_bg_color;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.notification_material_background_media_default_color = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.primary_dark_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.primary_dark_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.primary_dark_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.primary_dark_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.primary_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.primary_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.primary_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.primary_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.primary_text_default_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.primary_text_default_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.primary_text_default_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.primary_text_disabled_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.primary_text_disabled_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.ripple_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.ripple_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.ripple_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.ripple_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.secondary_text_default_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.secondary_text_default_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.secondary_text_disabled_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.secondary_text_disabled_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.switch_thumb_disabled_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.switch_thumb_disabled_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.switch_thumb_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.switch_thumb_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.switch_thumb_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.switch_thumb_normal_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Color.switch_thumb_normal_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_action_bar_content_inset_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_action_bar_default_height_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_action_bar_elevation_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_action_bar_progress_bar_size = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_action_bar_stacked_max_height = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_action_button_min_height_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_action_button_min_width_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_button_inset_horizontal_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_button_inset_vertical_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_button_padding_horizontal_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_button_padding_vertical_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_config_prefDialogWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_control_corner_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_control_inset_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_control_padding_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_dialog_fixed_height_major = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_dialog_fixed_height_minor = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_dialog_fixed_width_major = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_dialog_fixed_width_minor = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_dialog_min_width_major = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_dialog_min_width_minor = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_dialog_padding_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_dialog_padding_top_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_dialog_title_divider_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_disabled_alpha_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_disabled_alpha_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_dropdownitem_icon_width = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_edit_text_inset_top_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_floating_window_z = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_panel_menu_list_width = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_progress_bar_height_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_search_view_preferred_height = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_search_view_preferred_width = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_seekbar_track_background_height_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_select_dialog_padding_start_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_switch_padding = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_switch_padding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_text_size_body_1_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_text_size_body_2_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_text_size_button_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_text_size_caption_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_text_size_display_1_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_text_size_display_2_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_text_size_display_3_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_text_size_display_4_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_text_size_headline_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_text_size_large_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_text_size_medium_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_text_size_menu_header_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_text_size_menu_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_text_size_small_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_text_size_subhead_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_text_size_title_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.abc_text_size_title_material_toolbar = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.cardview_compat_inset_shadow = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.cardview_compat_inset_shadow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.cardview_default_elevation = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.cardview_default_elevation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.cardview_default_radius = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.cardview_default_radius;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_appbar_elevation = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_appbar_elevation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_bottom_navigation_active_item_max_width;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_bottom_navigation_active_text_size = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_bottom_navigation_active_text_size;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_bottom_navigation_elevation = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_bottom_navigation_elevation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_bottom_navigation_height = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_bottom_navigation_height;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_bottom_navigation_item_max_width = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_bottom_navigation_item_max_width;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_bottom_navigation_item_min_width = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_bottom_navigation_item_min_width;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_bottom_navigation_margin = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_bottom_navigation_margin;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_bottom_navigation_shadow_height = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_bottom_navigation_shadow_height;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_bottom_navigation_text_size = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_bottom_navigation_text_size;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_bottom_sheet_peek_height_min;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_fab_border_width = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_fab_border_width;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_fab_elevation = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_fab_elevation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_fab_image_size = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_fab_image_size;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_fab_size_mini = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_fab_size_mini;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_fab_size_normal = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_fab_size_normal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_fab_translation_z_pressed = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_navigation_elevation = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_navigation_elevation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_navigation_icon_padding = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_navigation_icon_size = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_navigation_max_width = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_navigation_max_width;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_navigation_padding_bottom = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_navigation_separator_vertical_padding = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_snackbar_action_inline_max_width = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_snackbar_background_corner_radius = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_snackbar_elevation = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_snackbar_max_width = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_snackbar_min_width = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_snackbar_padding_horizontal = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_snackbar_padding_vertical = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_snackbar_text_size = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_tab_max_width = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_tab_max_width;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_tab_scrollable_min_width = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_tab_text_size = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_tab_text_size;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.design_tab_text_size_2line = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.disabled_alpha_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.disabled_alpha_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.highlight_alpha_material_colored = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.highlight_alpha_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.highlight_alpha_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.hint_alpha_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.hint_alpha_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.hint_pressed_alpha_material_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.hint_pressed_alpha_material_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.mr_controller_volume_group_list_item_height;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.mr_controller_volume_group_list_item_icon_size;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.mr_controller_volume_group_list_max_height;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.mr_controller_volume_group_list_padding_top;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.mr_dialog_fixed_width_major = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.mr_dialog_fixed_width_major;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.mr_dialog_fixed_width_minor = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.mr_dialog_fixed_width_minor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.notification_action_icon_size = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.notification_action_text_size = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.notification_action_text_size;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.notification_big_circle_margin = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.notification_content_margin_start = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.notification_large_icon_height = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.notification_large_icon_width = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.notification_main_column_padding_top = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.notification_media_narrow_margin = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.notification_right_icon_size = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.notification_right_side_padding_top = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.notification_small_icon_background_padding = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.notification_small_icon_size_as_large = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.notification_subtext_size = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.notification_subtext_size;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.notification_top_pad = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.notification_top_pad;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Dimension.notification_top_pad_large_text = global::Mugelli.Software.It.Mgc.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_action_bar_item_background_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_btn_borderless_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_btn_check_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_btn_colored_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_btn_default_mtrl_shape = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_btn_radio_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_cab_background_internal_bg = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_cab_background_top_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_control_background_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_control_background_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_dialog_material_background = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_edit_text_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ic_ab_back_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ic_clear_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ic_go_search_api_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ic_menu_overflow_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ic_search_api_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ic_star_black_16dp = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ic_star_black_36dp = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ic_star_black_48dp = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ic_star_half_black_16dp = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ic_star_half_black_36dp = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ic_star_half_black_48dp = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ic_voice_search_api_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_item_background_holo_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_item_background_holo_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_list_focused_holo = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_list_longpressed_holo = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_list_pressed_holo_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_list_pressed_holo_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_list_selector_holo_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_list_selector_holo_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_popup_background_mtrl_mult = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ratingbar_indicator_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ratingbar_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_ratingbar_small_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_seekbar_thumb_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_seekbar_tick_mark_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_seekbar_track_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_spinner_textfield_background_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_switch_thumb_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_tab_indicator_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_text_cursor_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_textfield_search_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.abc_vector_test = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.abc_vector_test;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.avd_hide_password = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.avd_hide_password;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.avd_show_password = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.avd_show_password;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.btn_action_photobrowser_overlay = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.btn_action_photobrowser_overlay;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.design_bottom_navigation_item_background = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.design_bottom_navigation_item_background;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.design_fab_background = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.design_fab_background;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.design_ic_visibility = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.design_ic_visibility;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.design_ic_visibility_off = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.design_ic_visibility_off;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.design_password_eye = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.design_password_eye;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.design_snackbar_background = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.design_snackbar_background;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_audiotrack_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_audiotrack_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_audiotrack_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_audiotrack_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_dialog_close_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_dialog_close_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_dialog_close_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_dialog_close_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_collapse_00 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_collapse_00;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_collapse_01 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_collapse_01;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_collapse_02 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_collapse_02;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_collapse_03 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_collapse_03;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_collapse_04 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_collapse_04;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_collapse_05 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_collapse_05;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_collapse_06 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_collapse_06;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_collapse_07 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_collapse_07;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_collapse_08 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_collapse_08;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_collapse_09 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_collapse_09;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_collapse_10 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_collapse_10;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_collapse_11 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_collapse_11;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_collapse_12 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_collapse_12;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_collapse_13 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_collapse_13;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_collapse_14 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_collapse_14;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_collapse_15 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_collapse_15;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_expand_00 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_expand_00;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_expand_01 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_expand_01;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_expand_02 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_expand_02;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_expand_03 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_expand_03;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_expand_04 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_expand_04;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_expand_05 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_expand_05;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_expand_06 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_expand_06;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_expand_07 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_expand_07;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_expand_08 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_expand_08;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_expand_09 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_expand_09;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_expand_10 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_expand_10;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_expand_11 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_expand_11;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_expand_12 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_expand_12;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_expand_13 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_expand_13;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_expand_14 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_expand_14;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_group_expand_15 = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_group_expand_15;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_media_pause_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_media_pause_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_media_pause_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_media_pause_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_media_play_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_media_play_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_media_play_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_media_play_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_media_stop_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_media_stop_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_media_stop_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_media_stop_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_00_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_00_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_00_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_00_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_01_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_01_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_01_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_01_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_02_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_02_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_02_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_02_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_03_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_03_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_03_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_03_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_04_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_04_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_04_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_04_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_05_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_05_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_05_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_05_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_06_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_06_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_06_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_06_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_07_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_07_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_07_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_07_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_08_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_08_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_08_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_08_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_09_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_09_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_09_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_09_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_10_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_10_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_10_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_10_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_11_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_11_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_11_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_11_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_12_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_12_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_12_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_12_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_13_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_13_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_13_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_13_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_14_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_14_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_14_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_14_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_15_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_15_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_15_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_15_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_16_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_16_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_16_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_16_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_17_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_17_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_17_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_17_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_18_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_18_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_18_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_18_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_19_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_19_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_19_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_19_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_20_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_20_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_20_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_20_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_21_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_21_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_21_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_21_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_22_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_22_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connected_22_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connected_22_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_00_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_00_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_00_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_01_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_01_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_01_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_02_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_02_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_02_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_03_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_03_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_03_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_04_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_04_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_04_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_05_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_05_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_05_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_06_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_06_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_06_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_07_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_07_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_07_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_08_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_08_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_08_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_09_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_09_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_09_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_10_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_10_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_10_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_11_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_11_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_11_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_12_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_12_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_12_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_13_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_13_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_13_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_14_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_14_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_14_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_15_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_15_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_15_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_16_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_16_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_16_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_17_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_17_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_17_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_18_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_18_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_18_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_19_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_19_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_19_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_20_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_20_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_20_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_21_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_21_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_21_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_22_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_connecting_22_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_connecting_22_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_disabled_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_disabled_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_disabled_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_disabled_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_disconnected_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_disconnected_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_disconnected_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_disconnected_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_mr_button_grey = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_mr_button_grey;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_vol_type_speaker_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_vol_type_speaker_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_vol_type_speaker_group_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_vol_type_speaker_group_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_vol_type_speaker_group_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_vol_type_speaker_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_vol_type_speaker_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_vol_type_tv_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_vol_type_tv_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.ic_vol_type_tv_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.ic_vol_type_tv_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.mr_button_connected_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.mr_button_connected_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.mr_button_connected_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.mr_button_connected_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.mr_button_connecting_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.mr_button_connecting_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.mr_button_connecting_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.mr_button_connecting_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.mr_button_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.mr_button_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.mr_button_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.mr_button_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.mr_dialog_close_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.mr_dialog_close_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.mr_dialog_close_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.mr_dialog_close_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.mr_dialog_material_background_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.mr_dialog_material_background_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.mr_dialog_material_background_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.mr_dialog_material_background_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.mr_group_collapse = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.mr_group_collapse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.mr_group_expand = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.mr_group_expand;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.mr_media_pause_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.mr_media_pause_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.mr_media_pause_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.mr_media_pause_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.mr_media_play_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.mr_media_play_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.mr_media_play_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.mr_media_play_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.mr_media_stop_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.mr_media_stop_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.mr_media_stop_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.mr_media_stop_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.mr_vol_type_audiotrack_dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.mr_vol_type_audiotrack_light = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.mr_vol_type_audiotrack_light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.navigation_empty_icon = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.navigation_empty_icon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.notification_action_background = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.notification_action_background;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.notification_bg = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.notification_bg;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.notification_bg_low = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.notification_bg_low;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.notification_bg_low_normal = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.notification_bg_low_pressed = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.notification_bg_normal = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.notification_bg_normal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.notification_bg_normal_pressed = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.notification_icon_background = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.notification_icon_background;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.notification_template_icon_bg = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.notification_template_icon_low_bg = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.notification_tile_bg = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.notification_tile_bg;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Drawable.notify_panel_notification_icon_bg = global::Mugelli.Software.It.Mgc.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.action0 = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.action0;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.action_bar = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.action_bar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.action_bar_activity_content = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.action_bar_activity_content;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.action_bar_container = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.action_bar_container;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.action_bar_root = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.action_bar_root;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.action_bar_spinner = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.action_bar_spinner;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.action_bar_subtitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.action_bar_subtitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.action_bar_title = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.action_bar_title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.action_container = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.action_container;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.action_context_bar = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.action_context_bar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.action_divider = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.action_divider;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.action_image = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.action_image;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.action_menu_divider = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.action_menu_divider;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.action_menu_presenter = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.action_menu_presenter;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.action_mode_bar = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.action_mode_bar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.action_mode_bar_stub = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.action_mode_bar_stub;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.action_mode_close_button = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.action_mode_close_button;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.action_text = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.action_text;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.actions = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.actions;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.activity_chooser_view_content = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.activity_chooser_view_content;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.add = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.add;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.alertTitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.alertTitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.all = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.all;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.always = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.always;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.auto = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.auto;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.backgroundView = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.backgroundView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.beginning = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.beginning;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.bottom = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.bottom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.btnShare = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.btnShare;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.buttonPanel = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.buttonPanel;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.cancel_action = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.cancel_action;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.center = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.center;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.centerCrop = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.centerCrop;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.centerInside = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.centerInside;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.center_horizontal = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.center_horizontal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.center_vertical = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.center_vertical;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.checkbox = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.checkbox;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.chronometer = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.chronometer;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.clip_horizontal = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.clip_horizontal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.clip_vertical = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.clip_vertical;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.collapseActionView = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.collapseActionView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.container = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.container;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.contentPanel = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.contentPanel;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.coordinator = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.coordinator;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.custom = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.custom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.customPanel = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.customPanel;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.decor_content_parent = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.decor_content_parent;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.default_activity_button = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.default_activity_button;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.design_bottom_sheet = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.design_bottom_sheet;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.design_menu_item_action_area = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.design_menu_item_action_area;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.design_menu_item_action_area_stub = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.design_menu_item_text = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.design_menu_item_text;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.design_navigation_view = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.design_navigation_view;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.disableHome = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.disableHome;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.dismissView = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.dismissView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.edit_query = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.edit_query;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.end = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.end;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.end_padder = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.end_padder;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.enterAlways = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.enterAlways;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.enterAlwaysCollapsed = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.exitUntilCollapsed = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.exitUntilCollapsed;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.expand_activities_button = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.expand_activities_button;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.expanded_menu = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.expanded_menu;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.fill = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.fill;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.fill_horizontal = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.fill_horizontal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.fill_vertical = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.fill_vertical;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.fitBottomStart = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.fitBottomStart;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.fitCenter = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.fitCenter;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.fitEnd = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.fitEnd;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.fitStart = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.fitStart;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.fitXY = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.fitXY;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.@fixed = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.@fixed;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.focusCrop = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.focusCrop;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.home = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.home;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.homeAsUp = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.homeAsUp;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.icon = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.icon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.icon_group = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.icon_group;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.ifRoom = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.ifRoom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.image = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.image;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.info = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.info;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.item_touch_helper_previous_elevation = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.largeLabel = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.largeLabel;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.left = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.left;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.line1 = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.line1;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.line3 = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.line3;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.listMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.listMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.list_item = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.list_item;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.masked = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.masked;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.media_actions = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.media_actions;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.middle = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.middle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mini = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mini;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_art = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_art;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_chooser_list = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_chooser_list;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_chooser_route_desc = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_chooser_route_desc;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_chooser_route_icon = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_chooser_route_icon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_chooser_route_name = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_chooser_route_name;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_chooser_title = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_chooser_title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_close = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_close;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_control_divider = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_control_divider;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_control_playback_ctrl = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_control_playback_ctrl;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_control_subtitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_control_subtitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_control_title = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_control_title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_control_title_container = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_control_title_container;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_custom_control = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_custom_control;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_default_control = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_default_control;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_dialog_area = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_dialog_area;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_expandable_area = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_expandable_area;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_group_expand_collapse = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_group_expand_collapse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_media_main_control = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_media_main_control;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_name = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_name;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_playback_control = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_playback_control;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_title_bar = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_title_bar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_volume_control = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_volume_control;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_volume_group_list = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_volume_group_list;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_volume_item_icon = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_volume_item_icon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.mr_volume_slider = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.mr_volume_slider;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.multiply = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.multiply;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.navigation_header_container = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.navigation_header_container;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.never = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.never;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.none = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.none;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.normal = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.normal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.notification_background = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.notification_background;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.notification_main_column = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.notification_main_column;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.notification_main_column_container = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.notification_main_column_container;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.pager = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.pager;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.parallax = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.parallax;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.parentPanel = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.parentPanel;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.pin = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.pin;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.progress_circular = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.progress_circular;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.progress_horizontal = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.progress_horizontal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.radio = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.radio;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.right = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.right;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.right_icon = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.right_icon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.right_side = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.right_side;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.screen = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.screen;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.scroll = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.scroll;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.scrollIndicatorDown = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.scrollIndicatorDown;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.scrollIndicatorUp = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.scrollIndicatorUp;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.scrollView = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.scrollView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.scrollable = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.scrollable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.search_badge = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.search_badge;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.search_bar = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.search_bar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.search_button = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.search_button;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.search_close_btn = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.search_close_btn;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.search_edit_frame = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.search_edit_frame;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.search_go_btn = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.search_go_btn;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.search_mag_icon = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.search_mag_icon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.search_plate = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.search_plate;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.search_src_text = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.search_src_text;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.search_voice_btn = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.search_voice_btn;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.select_dialog_listview = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.select_dialog_listview;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.shortcut = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.shortcut;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.showCustom = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.showCustom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.showHome = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.showHome;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.showTitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.showTitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.smallLabel = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.smallLabel;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.snackbar_action = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.snackbar_action;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.snackbar_text = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.snackbar_text;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.snap = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.snap;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.spacer = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.spacer;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.split_action_bar = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.split_action_bar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.src_atop = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.src_atop;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.src_in = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.src_in;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.src_over = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.src_over;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.start = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.start;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.status_bar_latest_event_content = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.submenuarrow = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.submenuarrow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.submit_area = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.submit_area;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.tabMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.tabMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.text = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.text;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.text2 = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.text2;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.textSpacerNoButtons = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.textSpacerNoButtons;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.textSpacerNoTitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.textSpacerNoTitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.text_input_password_toggle = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.text_input_password_toggle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.textinput_counter = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.textinput_counter;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.textinput_error = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.textinput_error;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.time = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.time;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.title = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.titleDividerNoCustom = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.titleDividerNoCustom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.title_template = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.title_template;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.top = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.top;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.topPanel = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.topPanel;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.touch_outside = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.touch_outside;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.transition_current_scene = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.transition_current_scene;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.transition_scene_layoutid_cache = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.transition_scene_layoutid_cache;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.tvDescription = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.tvDescription;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.up = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.up;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.useLogo = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.useLogo;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.view_offset_helper = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.view_offset_helper;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.visible = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.visible;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.volume_item_container = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.volume_item_container;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.withText = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.withText;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Id.wrap_content = global::Mugelli.Software.It.Mgc.Droid.Resource.Id.wrap_content;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Integer.abc_config_activityDefaultDur = global::Mugelli.Software.It.Mgc.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Integer.abc_config_activityShortDur = global::Mugelli.Software.It.Mgc.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Integer.app_bar_elevation_anim_duration = global::Mugelli.Software.It.Mgc.Droid.Resource.Integer.app_bar_elevation_anim_duration;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Integer.bottom_sheet_slide_duration = global::Mugelli.Software.It.Mgc.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Integer.cancel_button_image_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Integer.design_snackbar_text_max_lines = global::Mugelli.Software.It.Mgc.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Integer.hide_password_duration = global::Mugelli.Software.It.Mgc.Droid.Resource.Integer.hide_password_duration;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms = global::Mugelli.Software.It.Mgc.Droid.Resource.Integer.mr_controller_volume_group_list_animation_duration_ms;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms = global::Mugelli.Software.It.Mgc.Droid.Resource.Integer.mr_controller_volume_group_list_fade_in_duration_ms;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms = global::Mugelli.Software.It.Mgc.Droid.Resource.Integer.mr_controller_volume_group_list_fade_out_duration_ms;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Integer.show_password_duration = global::Mugelli.Software.It.Mgc.Droid.Resource.Integer.show_password_duration;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Integer.status_bar_notification_info_maxnum = global::Mugelli.Software.It.Mgc.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Interpolator.mr_fast_out_slow_in = global::Mugelli.Software.It.Mgc.Droid.Resource.Interpolator.mr_fast_out_slow_in;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Interpolator.mr_linear_out_slow_in = global::Mugelli.Software.It.Mgc.Droid.Resource.Interpolator.mr_linear_out_slow_in;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_action_bar_title_item = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_action_bar_up_container = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_action_bar_view_list_nav_layout = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_action_bar_view_list_nav_layout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_action_menu_item_layout = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_action_menu_layout = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_action_mode_bar = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_action_mode_close_item_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_activity_chooser_view = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_activity_chooser_view_list_item = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_alert_dialog_button_bar_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_alert_dialog_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_alert_dialog_title_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_dialog_title_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_expanded_menu_layout = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_list_menu_item_checkbox = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_list_menu_item_icon = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_list_menu_item_layout = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_list_menu_item_radio = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_popup_menu_header_item_layout = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_popup_menu_item_layout = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_screen_content_include = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_screen_content_include;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_screen_simple = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_screen_simple;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_screen_toolbar = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_search_view = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_search_view;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.abc_select_dialog_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.design_bottom_navigation_item = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.design_bottom_navigation_item;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.design_bottom_sheet_dialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.design_layout_snackbar = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.design_layout_snackbar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.design_layout_snackbar_include = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.design_layout_tab_icon = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.design_layout_tab_icon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.design_layout_tab_text = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.design_layout_tab_text;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.design_menu_item_action_area = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.design_menu_item_action_area;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.design_navigation_item = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.design_navigation_item;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.design_navigation_item_header = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.design_navigation_item_header;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.design_navigation_item_separator = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.design_navigation_item_separator;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.design_navigation_item_subheader = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.design_navigation_menu = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.design_navigation_menu;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.design_navigation_menu_item = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.design_navigation_menu_item;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.design_text_input_password_icon = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.design_text_input_password_icon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.image_viewer = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.image_viewer;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.mr_chooser_dialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.mr_chooser_dialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.mr_chooser_list_item = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.mr_chooser_list_item;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.mr_controller_material_dialog_b = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.mr_controller_material_dialog_b;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.mr_controller_volume_item = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.mr_controller_volume_item;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.mr_playback_control = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.mr_playback_control;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.mr_volume_control = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.mr_volume_control;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.notification_action = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.notification_action;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.notification_action_tombstone = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.notification_action_tombstone;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.notification_media_action = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.notification_media_action;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.notification_media_cancel_action = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.notification_template_big_media = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.notification_template_big_media;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.notification_template_big_media_custom = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.notification_template_big_media_narrow = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.notification_template_big_media_narrow_custom = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.notification_template_custom_big = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.notification_template_custom_big;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.notification_template_icon_group = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.notification_template_icon_group;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.notification_template_lines_media = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.notification_template_lines_media;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.notification_template_media = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.notification_template_media;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.notification_template_media_custom = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.notification_template_media_custom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.notification_template_part_chronometer = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.notification_template_part_time = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.notification_template_part_time;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.photo_browser_overlay = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.photo_browser_overlay;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.select_dialog_item_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.select_dialog_item_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.select_dialog_multichoice_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.select_dialog_singlechoice_material = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Layout.support_simple_spinner_dropdown_item = global::Mugelli.Software.It.Mgc.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_action_bar_home_description = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_action_bar_home_description;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_action_bar_home_description_format = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_action_bar_home_description_format;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_action_bar_home_subtitle_description_format = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_action_bar_home_subtitle_description_format;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_action_bar_up_description = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_action_bar_up_description;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_action_menu_overflow_description = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_action_mode_done = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_action_mode_done;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_activity_chooser_view_see_all = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_activitychooserview_choose_application = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_capital_off = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_capital_off;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_capital_on = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_capital_on;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_font_family_body_1_material = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_font_family_body_1_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_font_family_body_2_material = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_font_family_body_2_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_font_family_button_material = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_font_family_button_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_font_family_caption_material = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_font_family_caption_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_font_family_display_1_material = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_font_family_display_1_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_font_family_display_2_material = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_font_family_display_2_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_font_family_display_3_material = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_font_family_display_3_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_font_family_display_4_material = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_font_family_display_4_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_font_family_headline_material = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_font_family_headline_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_font_family_menu_material = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_font_family_menu_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_font_family_subhead_material = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_font_family_subhead_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_font_family_title_material = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_font_family_title_material;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_search_hint = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_search_hint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_searchview_description_clear = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_searchview_description_clear;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_searchview_description_query = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_searchview_description_query;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_searchview_description_search = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_searchview_description_search;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_searchview_description_submit = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_searchview_description_submit;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_searchview_description_voice = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_searchview_description_voice;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_shareactionprovider_share_with = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_shareactionprovider_share_with_application = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.abc_toolbar_collapse_description = global::Mugelli.Software.It.Mgc.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.appbar_scrolling_view_behavior = global::Mugelli.Software.It.Mgc.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.bottom_sheet_behavior = global::Mugelli.Software.It.Mgc.Droid.Resource.String.bottom_sheet_behavior;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.character_counter_pattern = global::Mugelli.Software.It.Mgc.Droid.Resource.String.character_counter_pattern;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.mr_button_content_description = global::Mugelli.Software.It.Mgc.Droid.Resource.String.mr_button_content_description;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.mr_cast_button_connected = global::Mugelli.Software.It.Mgc.Droid.Resource.String.mr_cast_button_connected;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.mr_cast_button_connecting = global::Mugelli.Software.It.Mgc.Droid.Resource.String.mr_cast_button_connecting;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.mr_cast_button_disconnected = global::Mugelli.Software.It.Mgc.Droid.Resource.String.mr_cast_button_disconnected;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.mr_chooser_searching = global::Mugelli.Software.It.Mgc.Droid.Resource.String.mr_chooser_searching;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.mr_chooser_title = global::Mugelli.Software.It.Mgc.Droid.Resource.String.mr_chooser_title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.mr_controller_album_art = global::Mugelli.Software.It.Mgc.Droid.Resource.String.mr_controller_album_art;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.mr_controller_casting_screen = global::Mugelli.Software.It.Mgc.Droid.Resource.String.mr_controller_casting_screen;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.mr_controller_close_description = global::Mugelli.Software.It.Mgc.Droid.Resource.String.mr_controller_close_description;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.mr_controller_collapse_group = global::Mugelli.Software.It.Mgc.Droid.Resource.String.mr_controller_collapse_group;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.mr_controller_disconnect = global::Mugelli.Software.It.Mgc.Droid.Resource.String.mr_controller_disconnect;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.mr_controller_expand_group = global::Mugelli.Software.It.Mgc.Droid.Resource.String.mr_controller_expand_group;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.mr_controller_no_info_available = global::Mugelli.Software.It.Mgc.Droid.Resource.String.mr_controller_no_info_available;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.mr_controller_no_media_selected = global::Mugelli.Software.It.Mgc.Droid.Resource.String.mr_controller_no_media_selected;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.mr_controller_pause = global::Mugelli.Software.It.Mgc.Droid.Resource.String.mr_controller_pause;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.mr_controller_play = global::Mugelli.Software.It.Mgc.Droid.Resource.String.mr_controller_play;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.mr_controller_stop = global::Mugelli.Software.It.Mgc.Droid.Resource.String.mr_controller_stop;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.mr_controller_stop_casting = global::Mugelli.Software.It.Mgc.Droid.Resource.String.mr_controller_stop_casting;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.mr_controller_volume_slider = global::Mugelli.Software.It.Mgc.Droid.Resource.String.mr_controller_volume_slider;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.mr_system_route_name = global::Mugelli.Software.It.Mgc.Droid.Resource.String.mr_system_route_name;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.mr_user_route_category_name = global::Mugelli.Software.It.Mgc.Droid.Resource.String.mr_user_route_category_name;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.password_toggle_content_description = global::Mugelli.Software.It.Mgc.Droid.Resource.String.password_toggle_content_description;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.path_password_eye = global::Mugelli.Software.It.Mgc.Droid.Resource.String.path_password_eye;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.path_password_eye_mask_strike_through = global::Mugelli.Software.It.Mgc.Droid.Resource.String.path_password_eye_mask_strike_through;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.path_password_eye_mask_visible = global::Mugelli.Software.It.Mgc.Droid.Resource.String.path_password_eye_mask_visible;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.path_password_strike_through = global::Mugelli.Software.It.Mgc.Droid.Resource.String.path_password_strike_through;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.search_menu_title = global::Mugelli.Software.It.Mgc.Droid.Resource.String.search_menu_title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.String.status_bar_notification_info_overflow = global::Mugelli.Software.It.Mgc.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.AlertDialog_AppCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.AlertDialog_AppCompat_Light = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Animation_AppCompat_Dialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Animation_AppCompat_DropDownUp = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Animation_Design_BottomSheetDialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_AlertDialog_AppCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Animation_AppCompat_Dialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_CardView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_CardView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Theme_AppCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Theme_AppCompat_Dialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Theme_AppCompat_Light = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_ThemeOverlay_AppCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_V21_Theme_AppCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_V22_Theme_AppCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_V23_Theme_AppCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_V7_Theme_AppCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_Button = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_EditText = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_ListView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_SearchView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_Spinner = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_Design_AppBarLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_Design_AppBarLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Base_Widget_Design_TabLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.CardView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.CardView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.CardView_Dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.CardView_Dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.CardView_Light = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.CardView_Light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Platform_AppCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Platform_AppCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Platform_AppCompat_Light = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Platform_V11_AppCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Platform_V11_AppCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Platform_V11_AppCompat_Light = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Platform_V11_AppCompat_Light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Platform_V14_AppCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Platform_V14_AppCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Platform_V14_AppCompat_Light = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Platform_V14_AppCompat_Light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Platform_V21_AppCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Platform_V21_AppCompat_Light = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Platform_V25_AppCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Platform_V25_AppCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Platform_V25_AppCompat_Light = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Body1 = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Body2 = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Button = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Caption = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Display1 = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Display2 = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Display3 = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Display4 = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Headline = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Large = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Medium = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Menu = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Notification = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Notification;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Info = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Info;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Info_Media = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Info_Media;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Line2 = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Line2;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Line2_Media = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Line2_Media;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Media = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Media;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Time = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Time;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Time_Media = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Time_Media;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Title = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Title_Media = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Title_Media;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Small = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Subhead = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Title = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_Design_Counter = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_Design_Error = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_Design_Hint = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_Design_Tab = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_MediaRouter_PrimaryText = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_MediaRouter_PrimaryText;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_MediaRouter_SecondaryText = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_MediaRouter_SecondaryText;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_MediaRouter_Title = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_MediaRouter_Title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_AppCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_AppCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_AppCompat_CompactMenu = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_AppCompat_DayNight = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_AppCompat_Dialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_AppCompat_Light = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_AppCompat_Light_Dialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_AppCompat_NoActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_Design = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_Design;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_Design_BottomSheetDialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_Design_Light = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_Design_Light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_Design_Light_NoActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_Design_NoActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_MediaRouter = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_MediaRouter;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_MediaRouter_Light = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_MediaRouter_Light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_MediaRouter_Light_DarkControlPanel;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Theme_MediaRouter_LightControlPanel;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.ThemeOverlay_AppCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.ThemeOverlay_AppCompat_Light = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.ThemeOverlay_MediaRouter_Dark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.ThemeOverlay_MediaRouter_Light;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_ActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_ActionButton = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_ActionMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Button = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Button_Borderless = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Button_Colored = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Button_Small = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_ButtonBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_EditText = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_ImageButton = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_SearchView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_ListMenuView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_ListView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_ListView_Menu = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_PopupMenu = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_PopupWindow = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_ProgressBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_RatingBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_SearchView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_SeekBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Spinner = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Toolbar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_Design_AppBarLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_Design_BottomNavigationView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_Design_BottomNavigationView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_Design_BottomSheet_Modal = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_Design_CollapsingToolbar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_Design_CoordinatorLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_Design_CoordinatorLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_Design_FloatingActionButton = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_Design_NavigationView = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_Design_Snackbar = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_Design_TabLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_Design_TextInputLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_MediaRouter_Light_MediaRouteButton;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton = global::Mugelli.Software.It.Mgc.Droid.Resource.Style.Widget_MediaRouter_MediaRouteButton;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_background = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_background;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_backgroundSplit = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_backgroundStacked = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_contentInsetEnd = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_contentInsetLeft = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_contentInsetRight = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_contentInsetStart = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_customNavigationLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_displayOptions = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_divider = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_divider;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_elevation = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_height = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_height;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_hideOnContentScroll = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_homeLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_icon = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_icon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_itemPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_logo = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_logo;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_navigationMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_popupTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_progressBarPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_progressBarStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_subtitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_subtitleTextStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_title = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBar_titleTextStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBarLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBarLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionMenuItemView = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionMenuView = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionMenuView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionMode_background = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionMode_background;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionMode_backgroundSplit = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionMode_closeItemLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionMode_height = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionMode_height;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionMode_subtitleTextStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActionMode_titleTextStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActivityChooserView = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActivityChooserView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AlertDialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AlertDialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AlertDialog_android_layout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AlertDialog_listItemLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AlertDialog_listLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AlertDialog_showTitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppBarLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppBarLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppBarLayout_android_background = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppBarLayout_elevation = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppBarLayout_expanded = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppBarLayoutStates = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppBarLayoutStates;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsed;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppBarLayoutStates_state_collapsible;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppBarLayout_Layout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppBarLayout_Layout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollFlags;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppBarLayout_Layout_layout_scrollInterpolator;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatImageView = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatImageView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatImageView_android_src = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatImageView_srcCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatImageView_tint = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatImageView_tint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatImageView_tintMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatSeekBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatSeekBar_tickMark = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTextHelper = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTextView = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTextView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTextView_textAllCaps = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionBarSize = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_buttonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_colorAccent = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_colorPrimary = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_controlBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_dialogTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_dividerVertical = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_editTextBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_editTextColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_editTextStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_panelBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_switchStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_windowActionBar = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.BottomNavigationView = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.BottomNavigationView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.BottomNavigationView_elevation = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.BottomNavigationView_elevation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.BottomNavigationView_itemBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.BottomNavigationView_itemBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.BottomNavigationView_itemIconTint = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.BottomNavigationView_itemIconTint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.BottomNavigationView_itemTextColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.BottomNavigationView_itemTextColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.BottomNavigationView_menu = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.BottomNavigationView_menu;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.BottomSheetBehavior_Layout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.BottomSheetBehavior_Layout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_hideable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_peekHeight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.BottomSheetBehavior_Layout_behavior_skipCollapsed;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ButtonBarLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ButtonBarLayout_allowStacking = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CardView = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CardView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CardView_android_minHeight = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CardView_android_minHeight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CardView_android_minWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CardView_android_minWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CardView_cardBackgroundColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CardView_cardBackgroundColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CardView_cardCornerRadius = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CardView_cardCornerRadius;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CardView_cardElevation = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CardView_cardElevation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CardView_cardMaxElevation = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CardView_cardMaxElevation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CardView_cardPreventCornerOverlap;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CardView_cardUseCompatPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CardView_cardUseCompatPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CardView_contentPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CardView_contentPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CardView_contentPaddingBottom = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CardView_contentPaddingBottom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CardView_contentPaddingLeft = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CardView_contentPaddingLeft;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CardView_contentPaddingRight = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CardView_contentPaddingRight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CardView_contentPaddingTop = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CardView_contentPaddingTop;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CollapsingToolbarLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimAnimationDuration;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CollapsingToolbarLayout_scrimVisibleHeightTrigger;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CollapsingToolbarLayout_title = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ColorStateListItem = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ColorStateListItem;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ColorStateListItem_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ColorStateListItem_android_alpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ColorStateListItem_android_color = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CompoundButton = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CompoundButton;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CompoundButton_android_button = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CompoundButton_buttonTint = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CompoundButton_buttonTintMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CoordinatorLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CoordinatorLayout_keylines = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CoordinatorLayout_Layout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CoordinatorLayout_Layout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CoordinatorLayout_Layout_android_layout_gravity;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_anchorGravity;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_behavior;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_insetEdge;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.CoordinatorLayout_Layout_layout_keyline;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.DesignTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.DesignTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.DesignTheme_textColorError = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.DesignTheme_textColorError;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.DrawerArrowToggle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.DrawerArrowToggle_barLength = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.DrawerArrowToggle_color = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.DrawerArrowToggle_spinBars = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.DrawerArrowToggle_thickness = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.FloatingActionButton = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.FloatingActionButton;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.FloatingActionButton_backgroundTint = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.FloatingActionButton_borderWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.FloatingActionButton_elevation = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.FloatingActionButton_fabSize = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.FloatingActionButton_rippleColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.FloatingActionButton_Behavior_Layout_behavior_autoHide;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ForegroundLinearLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_actualImageScaleType = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_actualImageScaleType;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_backgroundImage = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_backgroundImage;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_fadeDuration = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_fadeDuration;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_failureImage = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_failureImage;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_failureImageScaleType = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_failureImageScaleType;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_overlayImage = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_overlayImage;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_placeholderImage = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_placeholderImage;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_placeholderImageScaleType = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_placeholderImageScaleType;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_pressedStateOverlayImage = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_pressedStateOverlayImage;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_progressBarAutoRotateInterval = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_progressBarAutoRotateInterval;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_progressBarImage = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_progressBarImage;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_progressBarImageScaleType = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_progressBarImageScaleType;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_retryImage = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_retryImage;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_retryImageScaleType = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_retryImageScaleType;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_roundAsCircle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_roundAsCircle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_roundBottomLeft = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_roundBottomLeft;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_roundBottomRight = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_roundBottomRight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_roundTopLeft = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_roundTopLeft;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_roundTopRight = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_roundTopRight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_roundWithOverlayColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_roundWithOverlayColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_roundedCornerRadius = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_roundedCornerRadius;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_roundingBorderColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_roundingBorderColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_roundingBorderPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_roundingBorderPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_roundingBorderWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_roundingBorderWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.GenericDraweeHierarchy_viewAspectRatio = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.GenericDraweeHierarchy_viewAspectRatio;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.LinearLayoutCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.LinearLayoutCompat_divider = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.LinearLayoutCompat_showDividers = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.LinearLayoutCompat_Layout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ListPopupWindow = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ListPopupWindow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MediaRouteButton = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MediaRouteButton;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MediaRouteButton_android_minHeight = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MediaRouteButton_android_minHeight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MediaRouteButton_android_minWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MediaRouteButton_android_minWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MediaRouteButton_externalRouteEnabledDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuGroup = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuGroup;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuGroup_android_enabled = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuGroup_android_id = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuGroup_android_menuCategory = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuGroup_android_orderInCategory = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuGroup_android_visible = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuItem = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuItem;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuItem_actionLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuItem_actionProviderClass = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuItem_actionViewClass = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuItem_android_checkable = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuItem_android_checked = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuItem_android_enabled = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuItem_android_icon = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuItem_android_id = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuItem_android_menuCategory = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuItem_android_numericShortcut = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuItem_android_onClick = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuItem_android_orderInCategory = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuItem_android_title = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuItem_android_titleCondensed = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuItem_android_visible = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuItem_showAsAction = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuView = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuView_android_headerBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuView_android_horizontalDivider = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuView_android_itemBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuView_android_itemTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuView_android_verticalDivider = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuView_preserveIconSpacing = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.MenuView_subMenuArrow = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.NavigationView = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.NavigationView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.NavigationView_android_background = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.NavigationView_android_background;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.NavigationView_android_maxWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.NavigationView_elevation = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.NavigationView_elevation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.NavigationView_headerLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.NavigationView_itemBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.NavigationView_itemIconTint = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.NavigationView_itemTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.NavigationView_itemTextColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.NavigationView_menu = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.NavigationView_menu;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.PopupWindow = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.PopupWindow;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.PopupWindow_android_popupBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.PopupWindow_overlapAnchor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.PopupWindowBackgroundState = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.RecycleListView = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.RecycleListView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.RecyclerView = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.RecyclerView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.RecyclerView_android_descendantFocusability;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.RecyclerView_android_orientation = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.RecyclerView_layoutManager = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.RecyclerView_reverseLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.RecyclerView_spanCount = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.RecyclerView_stackFromEnd = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ScrimInsetsFrameLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ScrollingViewBehavior_Layout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ScrollingViewBehavior_Layout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ScrollingViewBehavior_Layout_behavior_overlapTop;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SearchView = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SearchView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SearchView_android_focusable = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SearchView_android_imeOptions = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SearchView_android_inputType = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SearchView_android_maxWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SearchView_closeIcon = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SearchView_commitIcon = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SearchView_defaultQueryHint = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SearchView_goIcon = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SearchView_iconifiedByDefault = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SearchView_layout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SearchView_layout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SearchView_queryBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SearchView_queryHint = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SearchView_searchHintIcon = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SearchView_searchIcon = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SearchView_submitBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SearchView_suggestionRowLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SearchView_voiceIcon = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_actualImageResource = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_actualImageResource;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_actualImageScaleType = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_actualImageScaleType;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_actualImageUri = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_actualImageUri;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_backgroundImage = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_backgroundImage;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_fadeDuration = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_fadeDuration;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_failureImage = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_failureImage;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_failureImageScaleType = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_failureImageScaleType;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_overlayImage = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_overlayImage;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_placeholderImage = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_placeholderImage;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_placeholderImageScaleType = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_placeholderImageScaleType;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_pressedStateOverlayImage = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_pressedStateOverlayImage;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_progressBarAutoRotateInterval = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_progressBarAutoRotateInterval;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_progressBarImage = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_progressBarImage;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_progressBarImageScaleType = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_progressBarImageScaleType;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_retryImage = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_retryImage;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_retryImageScaleType = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_retryImageScaleType;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_roundAsCircle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_roundAsCircle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_roundBottomLeft = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_roundBottomLeft;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_roundBottomRight = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_roundBottomRight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_roundTopLeft = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_roundTopLeft;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_roundTopRight = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_roundTopRight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_roundWithOverlayColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_roundWithOverlayColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_roundedCornerRadius = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_roundedCornerRadius;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_roundingBorderColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_roundingBorderColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_roundingBorderPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_roundingBorderPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_roundingBorderWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_roundingBorderWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SimpleDraweeView_viewAspectRatio = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SimpleDraweeView_viewAspectRatio;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SnackbarLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SnackbarLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SnackbarLayout_elevation = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Spinner = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Spinner;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Spinner_android_dropDownWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Spinner_android_entries = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Spinner_android_popupBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Spinner_android_prompt = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Spinner_popupTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SwitchCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SwitchCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SwitchCompat_android_textOff = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SwitchCompat_android_textOn = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SwitchCompat_android_thumb = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SwitchCompat_showText = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SwitchCompat_splitTrack = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SwitchCompat_switchMinWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SwitchCompat_switchPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SwitchCompat_thumbTint = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SwitchCompat_thumbTintMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SwitchCompat_track = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SwitchCompat_trackTint = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.SwitchCompat_trackTintMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TabItem = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TabItem;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TabItem_android_icon = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TabItem_android_icon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TabItem_android_layout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TabItem_android_layout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TabItem_android_text = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TabItem_android_text;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TabLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TabLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TabLayout_tabBackground = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TabLayout_tabContentStart = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TabLayout_tabGravity = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TabLayout_tabIndicatorColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TabLayout_tabMaxWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TabLayout_tabMinWidth = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TabLayout_tabMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TabLayout_tabPadding = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TabLayout_tabPaddingBottom = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TabLayout_tabPaddingEnd = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TabLayout_tabPaddingStart = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TabLayout_tabPaddingTop = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TabLayout_tabTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TabLayout_tabTextColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextAppearance_android_shadowColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextAppearance_android_shadowDx = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextAppearance_android_shadowDy = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextAppearance_android_shadowRadius = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextAppearance_android_textColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextAppearance_android_textColorHint = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextAppearance_android_textSize = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextAppearance_android_textStyle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextAppearance_android_typeface = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextAppearance_textAllCaps = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextInputLayout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextInputLayout;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextInputLayout_android_hint = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextInputLayout_android_textColorHint = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextInputLayout_counterEnabled = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextInputLayout_counterMaxLength = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextInputLayout_errorEnabled = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextInputLayout_hintEnabled = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextInputLayout_passwordToggleContentDescription;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextInputLayout_passwordToggleDrawable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextInputLayout_passwordToggleEnabled;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextInputLayout_passwordToggleTint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.TextInputLayout_passwordToggleTintMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_android_gravity = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_android_minHeight = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_buttonGravity = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_collapseContentDescription = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_collapseIcon = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_contentInsetEnd = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_contentInsetLeft = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_contentInsetRight = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_contentInsetStart = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_logo = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_logo;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_logoDescription = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_maxButtonHeight = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_navigationContentDescription = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_navigationIcon = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_popupTheme = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_subtitle = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_subtitleTextColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_title = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_title;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_titleMargin = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_titleMarginBottom = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_titleMarginEnd = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_titleMarginStart = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_titleMarginTop = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_titleMargins = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_titleTextAppearance = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.Toolbar_titleTextColor = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.View = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.View;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.View_android_focusable = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.View_android_focusable;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.View_android_theme = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.View_android_theme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.View_paddingEnd = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.View_paddingEnd;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.View_paddingStart = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.View_paddingStart;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.View_theme = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.View_theme;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ViewBackgroundHelper = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ViewBackgroundHelper_android_background = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ViewStubCompat = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ViewStubCompat;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ViewStubCompat_android_id = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Stormlion.PhotoBrowser.Droid.Resource.Styleable.ViewStubCompat_android_layout = global::Mugelli.Software.It.Mgc.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Mugelli.Software.It.Mgc.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -2421,6 +4618,15 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f010082
 			public const int activityChooserViewStyle = 2130772098;
 			
+			// aapt resource value: 0x7f01016f
+			public const int actualImageResource = 2130772335;
+			
+			// aapt resource value: 0x7f010160
+			public const int actualImageScaleType = 2130772320;
+			
+			// aapt resource value: 0x7f01016e
+			public const int actualImageUri = 2130772334;
+			
 			// aapt resource value: 0x7f0100a7
 			public const int alertDialogButtonGroupStyle = 2130772135;
 			
@@ -2450,6 +4656,9 @@ namespace Mugelli.Software.It.Mgc.Droid
 			
 			// aapt resource value: 0x7f010028
 			public const int background = 2130772008;
+			
+			// aapt resource value: 0x7f010161
+			public const int backgroundImage = 2130772321;
 			
 			// aapt resource value: 0x7f01002a
 			public const int backgroundSplit = 2130772010;
@@ -2742,6 +4951,15 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f010128
 			public const int fabSize = 2130772264;
 			
+			// aapt resource value: 0x7f010155
+			public const int fadeDuration = 2130772309;
+			
+			// aapt resource value: 0x7f01015b
+			public const int failureImage = 2130772315;
+			
+			// aapt resource value: 0x7f01015c
+			public const int failureImageScaleType = 2130772316;
+			
 			// aapt resource value: 0x7f01012d
 			public const int foregroundInsidePadding = 2130772269;
 			
@@ -2952,6 +5170,9 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f0100d1
 			public const int overlapAnchor = 2130772177;
 			
+			// aapt resource value: 0x7f010162
+			public const int overlayImage = 2130772322;
+			
 			// aapt resource value: 0x7f0100d3
 			public const int paddingBottomNoButtons = 2130772179;
 			
@@ -2988,6 +5209,12 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f010154
 			public const int passwordToggleTintMode = 2130772308;
 			
+			// aapt resource value: 0x7f010157
+			public const int placeholderImage = 2130772311;
+			
+			// aapt resource value: 0x7f010158
+			public const int placeholderImageScaleType = 2130772312;
+			
 			// aapt resource value: 0x7f010085
 			public const int popupMenuStyle = 2130772101;
 			
@@ -3000,8 +5227,20 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f0100cf
 			public const int preserveIconSpacing = 2130772175;
 			
+			// aapt resource value: 0x7f010163
+			public const int pressedStateOverlayImage = 2130772323;
+			
 			// aapt resource value: 0x7f010129
 			public const int pressedTranslationZ = 2130772265;
+			
+			// aapt resource value: 0x7f01015f
+			public const int progressBarAutoRotateInterval = 2130772319;
+			
+			// aapt resource value: 0x7f01015d
+			public const int progressBarImage = 2130772317;
+			
+			// aapt resource value: 0x7f01015e
+			public const int progressBarImageScaleType = 2130772318;
 			
 			// aapt resource value: 0x7f01002f
 			public const int progressBarPadding = 2130772015;
@@ -3027,11 +5266,47 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f0100b7
 			public const int ratingBarStyleSmall = 2130772151;
 			
+			// aapt resource value: 0x7f010159
+			public const int retryImage = 2130772313;
+			
+			// aapt resource value: 0x7f01015a
+			public const int retryImageScaleType = 2130772314;
+			
 			// aapt resource value: 0x7f010002
 			public const int reverseLayout = 2130771970;
 			
 			// aapt resource value: 0x7f010127
 			public const int rippleColor = 2130772263;
+			
+			// aapt resource value: 0x7f010164
+			public const int roundAsCircle = 2130772324;
+			
+			// aapt resource value: 0x7f010169
+			public const int roundBottomLeft = 2130772329;
+			
+			// aapt resource value: 0x7f010168
+			public const int roundBottomRight = 2130772328;
+			
+			// aapt resource value: 0x7f010166
+			public const int roundTopLeft = 2130772326;
+			
+			// aapt resource value: 0x7f010167
+			public const int roundTopRight = 2130772327;
+			
+			// aapt resource value: 0x7f01016a
+			public const int roundWithOverlayColor = 2130772330;
+			
+			// aapt resource value: 0x7f010165
+			public const int roundedCornerRadius = 2130772325;
+			
+			// aapt resource value: 0x7f01016c
+			public const int roundingBorderColor = 2130772332;
+			
+			// aapt resource value: 0x7f01016d
+			public const int roundingBorderPadding = 2130772333;
+			
+			// aapt resource value: 0x7f01016b
+			public const int roundingBorderWidth = 2130772331;
 			
 			// aapt resource value: 0x7f010116
 			public const int scrimAnimationDuration = 2130772246;
@@ -3309,35 +5584,38 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f01012b
 			public const int useCompatPadding = 2130772267;
 			
+			// aapt resource value: 0x7f010156
+			public const int viewAspectRatio = 2130772310;
+			
 			// aapt resource value: 0x7f0100dd
 			public const int voiceIcon = 2130772189;
 			
-			// aapt resource value: 0x7f010156
-			public const int vpiCentered = 2130772310;
+			// aapt resource value: 0x7f010171
+			public const int vpiCentered = 2130772337;
 			
-			// aapt resource value: 0x7f010155
-			public const int vpiCirclePageIndicatorStyle = 2130772309;
+			// aapt resource value: 0x7f010170
+			public const int vpiCirclePageIndicatorStyle = 2130772336;
 			
-			// aapt resource value: 0x7f01015b
-			public const int vpiFillColor = 2130772315;
+			// aapt resource value: 0x7f010176
+			public const int vpiFillColor = 2130772342;
 			
-			// aapt resource value: 0x7f010158
-			public const int vpiOrientation = 2130772312;
+			// aapt resource value: 0x7f010173
+			public const int vpiOrientation = 2130772339;
 			
-			// aapt resource value: 0x7f010157
-			public const int vpiPageColor = 2130772311;
+			// aapt resource value: 0x7f010172
+			public const int vpiPageColor = 2130772338;
 			
-			// aapt resource value: 0x7f01015a
-			public const int vpiRadius = 2130772314;
+			// aapt resource value: 0x7f010175
+			public const int vpiRadius = 2130772341;
 			
-			// aapt resource value: 0x7f010159
-			public const int vpiSnap = 2130772313;
+			// aapt resource value: 0x7f010174
+			public const int vpiSnap = 2130772340;
 			
-			// aapt resource value: 0x7f01015c
-			public const int vpiStrokeColor = 2130772316;
+			// aapt resource value: 0x7f010177
+			public const int vpiStrokeColor = 2130772343;
 			
-			// aapt resource value: 0x7f01015d
-			public const int vpiStrokeWidth = 2130772317;
+			// aapt resource value: 0x7f010178
+			public const int vpiStrokeWidth = 2130772344;
 			
 			// aapt resource value: 0x7f01004a
 			public const int windowActionBar = 2130772042;
@@ -4487,607 +6765,610 @@ namespace Mugelli.Software.It.Mgc.Droid
 			public const int Blue_Filled_Circle_100px = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int Calendar_50px = 2130837592;
+			public const int btn_action_photobrowser_overlay = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int Circle_100px = 2130837593;
+			public const int Calendar_50px = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int design_bottom_navigation_item_background = 2130837594;
+			public const int Circle_100px = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int design_fab_background = 2130837595;
+			public const int design_bottom_navigation_item_background = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int design_ic_visibility = 2130837596;
+			public const int design_fab_background = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int design_ic_visibility_off = 2130837597;
+			public const int design_ic_visibility = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int design_password_eye = 2130837598;
+			public const int design_ic_visibility_off = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int design_snackbar_background = 2130837599;
+			public const int design_password_eye = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int Down = 2130837600;
+			public const int design_snackbar_background = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int Filled_Circle_100px = 2130837601;
+			public const int Down = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int footer = 2130837602;
+			public const int Filled_Circle_100px = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int ic_audiotrack_dark = 2130837603;
+			public const int footer = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int ic_audiotrack_light = 2130837604;
+			public const int ic_audiotrack_dark = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int ic_dialog_close_dark = 2130837605;
+			public const int ic_audiotrack_light = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int ic_dialog_close_light = 2130837606;
+			public const int ic_dialog_close_dark = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int ic_group_collapse_00 = 2130837607;
+			public const int ic_dialog_close_light = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int ic_group_collapse_01 = 2130837608;
+			public const int ic_group_collapse_00 = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int ic_group_collapse_02 = 2130837609;
+			public const int ic_group_collapse_01 = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int ic_group_collapse_03 = 2130837610;
+			public const int ic_group_collapse_02 = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int ic_group_collapse_04 = 2130837611;
+			public const int ic_group_collapse_03 = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int ic_group_collapse_05 = 2130837612;
+			public const int ic_group_collapse_04 = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int ic_group_collapse_06 = 2130837613;
+			public const int ic_group_collapse_05 = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int ic_group_collapse_07 = 2130837614;
+			public const int ic_group_collapse_06 = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int ic_group_collapse_08 = 2130837615;
+			public const int ic_group_collapse_07 = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int ic_group_collapse_09 = 2130837616;
+			public const int ic_group_collapse_08 = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int ic_group_collapse_10 = 2130837617;
+			public const int ic_group_collapse_09 = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int ic_group_collapse_11 = 2130837618;
+			public const int ic_group_collapse_10 = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int ic_group_collapse_12 = 2130837619;
+			public const int ic_group_collapse_11 = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int ic_group_collapse_13 = 2130837620;
+			public const int ic_group_collapse_12 = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int ic_group_collapse_14 = 2130837621;
+			public const int ic_group_collapse_13 = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int ic_group_collapse_15 = 2130837622;
+			public const int ic_group_collapse_14 = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int ic_group_expand_00 = 2130837623;
+			public const int ic_group_collapse_15 = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int ic_group_expand_01 = 2130837624;
+			public const int ic_group_expand_00 = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int ic_group_expand_02 = 2130837625;
+			public const int ic_group_expand_01 = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int ic_group_expand_03 = 2130837626;
+			public const int ic_group_expand_02 = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int ic_group_expand_04 = 2130837627;
+			public const int ic_group_expand_03 = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int ic_group_expand_05 = 2130837628;
+			public const int ic_group_expand_04 = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int ic_group_expand_06 = 2130837629;
+			public const int ic_group_expand_05 = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_group_expand_07 = 2130837630;
+			public const int ic_group_expand_06 = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int ic_group_expand_08 = 2130837631;
+			public const int ic_group_expand_07 = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_group_expand_09 = 2130837632;
+			public const int ic_group_expand_08 = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ic_group_expand_10 = 2130837633;
+			public const int ic_group_expand_09 = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int ic_group_expand_11 = 2130837634;
+			public const int ic_group_expand_10 = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int ic_group_expand_12 = 2130837635;
+			public const int ic_group_expand_11 = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int ic_group_expand_13 = 2130837636;
+			public const int ic_group_expand_12 = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int ic_group_expand_14 = 2130837637;
+			public const int ic_group_expand_13 = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int ic_group_expand_15 = 2130837638;
+			public const int ic_group_expand_14 = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int ic_media_pause_dark = 2130837639;
+			public const int ic_group_expand_15 = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int ic_media_pause_light = 2130837640;
+			public const int ic_media_pause_dark = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int ic_media_play_dark = 2130837641;
+			public const int ic_media_pause_light = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int ic_media_play_light = 2130837642;
+			public const int ic_media_play_dark = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int ic_media_stop_dark = 2130837643;
+			public const int ic_media_play_light = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int ic_media_stop_light = 2130837644;
+			public const int ic_media_stop_dark = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int ic_mr_button_connected_00_dark = 2130837645;
+			public const int ic_media_stop_light = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int ic_mr_button_connected_00_light = 2130837646;
+			public const int ic_mr_button_connected_00_dark = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int ic_mr_button_connected_01_dark = 2130837647;
+			public const int ic_mr_button_connected_00_light = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int ic_mr_button_connected_01_light = 2130837648;
+			public const int ic_mr_button_connected_01_dark = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int ic_mr_button_connected_02_dark = 2130837649;
+			public const int ic_mr_button_connected_01_light = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int ic_mr_button_connected_02_light = 2130837650;
+			public const int ic_mr_button_connected_02_dark = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int ic_mr_button_connected_03_dark = 2130837651;
+			public const int ic_mr_button_connected_02_light = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int ic_mr_button_connected_03_light = 2130837652;
+			public const int ic_mr_button_connected_03_dark = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int ic_mr_button_connected_04_dark = 2130837653;
+			public const int ic_mr_button_connected_03_light = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int ic_mr_button_connected_04_light = 2130837654;
+			public const int ic_mr_button_connected_04_dark = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int ic_mr_button_connected_05_dark = 2130837655;
+			public const int ic_mr_button_connected_04_light = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int ic_mr_button_connected_05_light = 2130837656;
+			public const int ic_mr_button_connected_05_dark = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int ic_mr_button_connected_06_dark = 2130837657;
+			public const int ic_mr_button_connected_05_light = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int ic_mr_button_connected_06_light = 2130837658;
+			public const int ic_mr_button_connected_06_dark = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int ic_mr_button_connected_07_dark = 2130837659;
+			public const int ic_mr_button_connected_06_light = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int ic_mr_button_connected_07_light = 2130837660;
+			public const int ic_mr_button_connected_07_dark = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int ic_mr_button_connected_08_dark = 2130837661;
+			public const int ic_mr_button_connected_07_light = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int ic_mr_button_connected_08_light = 2130837662;
+			public const int ic_mr_button_connected_08_dark = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int ic_mr_button_connected_09_dark = 2130837663;
+			public const int ic_mr_button_connected_08_light = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int ic_mr_button_connected_09_light = 2130837664;
+			public const int ic_mr_button_connected_09_dark = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int ic_mr_button_connected_10_dark = 2130837665;
+			public const int ic_mr_button_connected_09_light = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int ic_mr_button_connected_10_light = 2130837666;
+			public const int ic_mr_button_connected_10_dark = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int ic_mr_button_connected_11_dark = 2130837667;
+			public const int ic_mr_button_connected_10_light = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int ic_mr_button_connected_11_light = 2130837668;
+			public const int ic_mr_button_connected_11_dark = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int ic_mr_button_connected_12_dark = 2130837669;
+			public const int ic_mr_button_connected_11_light = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int ic_mr_button_connected_12_light = 2130837670;
+			public const int ic_mr_button_connected_12_dark = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int ic_mr_button_connected_13_dark = 2130837671;
+			public const int ic_mr_button_connected_12_light = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int ic_mr_button_connected_13_light = 2130837672;
+			public const int ic_mr_button_connected_13_dark = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int ic_mr_button_connected_14_dark = 2130837673;
+			public const int ic_mr_button_connected_13_light = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int ic_mr_button_connected_14_light = 2130837674;
+			public const int ic_mr_button_connected_14_dark = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int ic_mr_button_connected_15_dark = 2130837675;
+			public const int ic_mr_button_connected_14_light = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int ic_mr_button_connected_15_light = 2130837676;
+			public const int ic_mr_button_connected_15_dark = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int ic_mr_button_connected_16_dark = 2130837677;
+			public const int ic_mr_button_connected_15_light = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int ic_mr_button_connected_16_light = 2130837678;
+			public const int ic_mr_button_connected_16_dark = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int ic_mr_button_connected_17_dark = 2130837679;
+			public const int ic_mr_button_connected_16_light = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int ic_mr_button_connected_17_light = 2130837680;
+			public const int ic_mr_button_connected_17_dark = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int ic_mr_button_connected_18_dark = 2130837681;
+			public const int ic_mr_button_connected_17_light = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int ic_mr_button_connected_18_light = 2130837682;
+			public const int ic_mr_button_connected_18_dark = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int ic_mr_button_connected_19_dark = 2130837683;
+			public const int ic_mr_button_connected_18_light = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int ic_mr_button_connected_19_light = 2130837684;
+			public const int ic_mr_button_connected_19_dark = 2130837684;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int ic_mr_button_connected_20_dark = 2130837685;
+			public const int ic_mr_button_connected_19_light = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int ic_mr_button_connected_20_light = 2130837686;
+			public const int ic_mr_button_connected_20_dark = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int ic_mr_button_connected_21_dark = 2130837687;
+			public const int ic_mr_button_connected_20_light = 2130837687;
 			
 			// aapt resource value: 0x7f0200b8
-			public const int ic_mr_button_connected_21_light = 2130837688;
+			public const int ic_mr_button_connected_21_dark = 2130837688;
 			
 			// aapt resource value: 0x7f0200b9
-			public const int ic_mr_button_connected_22_dark = 2130837689;
+			public const int ic_mr_button_connected_21_light = 2130837689;
 			
 			// aapt resource value: 0x7f0200ba
-			public const int ic_mr_button_connected_22_light = 2130837690;
+			public const int ic_mr_button_connected_22_dark = 2130837690;
 			
 			// aapt resource value: 0x7f0200bb
-			public const int ic_mr_button_connecting_00_dark = 2130837691;
+			public const int ic_mr_button_connected_22_light = 2130837691;
 			
 			// aapt resource value: 0x7f0200bc
-			public const int ic_mr_button_connecting_00_light = 2130837692;
+			public const int ic_mr_button_connecting_00_dark = 2130837692;
 			
 			// aapt resource value: 0x7f0200bd
-			public const int ic_mr_button_connecting_01_dark = 2130837693;
+			public const int ic_mr_button_connecting_00_light = 2130837693;
 			
 			// aapt resource value: 0x7f0200be
-			public const int ic_mr_button_connecting_01_light = 2130837694;
+			public const int ic_mr_button_connecting_01_dark = 2130837694;
 			
 			// aapt resource value: 0x7f0200bf
-			public const int ic_mr_button_connecting_02_dark = 2130837695;
+			public const int ic_mr_button_connecting_01_light = 2130837695;
 			
 			// aapt resource value: 0x7f0200c0
-			public const int ic_mr_button_connecting_02_light = 2130837696;
+			public const int ic_mr_button_connecting_02_dark = 2130837696;
 			
 			// aapt resource value: 0x7f0200c1
-			public const int ic_mr_button_connecting_03_dark = 2130837697;
+			public const int ic_mr_button_connecting_02_light = 2130837697;
 			
 			// aapt resource value: 0x7f0200c2
-			public const int ic_mr_button_connecting_03_light = 2130837698;
+			public const int ic_mr_button_connecting_03_dark = 2130837698;
 			
 			// aapt resource value: 0x7f0200c3
-			public const int ic_mr_button_connecting_04_dark = 2130837699;
+			public const int ic_mr_button_connecting_03_light = 2130837699;
 			
 			// aapt resource value: 0x7f0200c4
-			public const int ic_mr_button_connecting_04_light = 2130837700;
+			public const int ic_mr_button_connecting_04_dark = 2130837700;
 			
 			// aapt resource value: 0x7f0200c5
-			public const int ic_mr_button_connecting_05_dark = 2130837701;
+			public const int ic_mr_button_connecting_04_light = 2130837701;
 			
 			// aapt resource value: 0x7f0200c6
-			public const int ic_mr_button_connecting_05_light = 2130837702;
+			public const int ic_mr_button_connecting_05_dark = 2130837702;
 			
 			// aapt resource value: 0x7f0200c7
-			public const int ic_mr_button_connecting_06_dark = 2130837703;
+			public const int ic_mr_button_connecting_05_light = 2130837703;
 			
 			// aapt resource value: 0x7f0200c8
-			public const int ic_mr_button_connecting_06_light = 2130837704;
+			public const int ic_mr_button_connecting_06_dark = 2130837704;
 			
 			// aapt resource value: 0x7f0200c9
-			public const int ic_mr_button_connecting_07_dark = 2130837705;
+			public const int ic_mr_button_connecting_06_light = 2130837705;
 			
 			// aapt resource value: 0x7f0200ca
-			public const int ic_mr_button_connecting_07_light = 2130837706;
+			public const int ic_mr_button_connecting_07_dark = 2130837706;
 			
 			// aapt resource value: 0x7f0200cb
-			public const int ic_mr_button_connecting_08_dark = 2130837707;
+			public const int ic_mr_button_connecting_07_light = 2130837707;
 			
 			// aapt resource value: 0x7f0200cc
-			public const int ic_mr_button_connecting_08_light = 2130837708;
+			public const int ic_mr_button_connecting_08_dark = 2130837708;
 			
 			// aapt resource value: 0x7f0200cd
-			public const int ic_mr_button_connecting_09_dark = 2130837709;
+			public const int ic_mr_button_connecting_08_light = 2130837709;
 			
 			// aapt resource value: 0x7f0200ce
-			public const int ic_mr_button_connecting_09_light = 2130837710;
+			public const int ic_mr_button_connecting_09_dark = 2130837710;
 			
 			// aapt resource value: 0x7f0200cf
-			public const int ic_mr_button_connecting_10_dark = 2130837711;
+			public const int ic_mr_button_connecting_09_light = 2130837711;
 			
 			// aapt resource value: 0x7f0200d0
-			public const int ic_mr_button_connecting_10_light = 2130837712;
+			public const int ic_mr_button_connecting_10_dark = 2130837712;
 			
 			// aapt resource value: 0x7f0200d1
-			public const int ic_mr_button_connecting_11_dark = 2130837713;
+			public const int ic_mr_button_connecting_10_light = 2130837713;
 			
 			// aapt resource value: 0x7f0200d2
-			public const int ic_mr_button_connecting_11_light = 2130837714;
+			public const int ic_mr_button_connecting_11_dark = 2130837714;
 			
 			// aapt resource value: 0x7f0200d3
-			public const int ic_mr_button_connecting_12_dark = 2130837715;
+			public const int ic_mr_button_connecting_11_light = 2130837715;
 			
 			// aapt resource value: 0x7f0200d4
-			public const int ic_mr_button_connecting_12_light = 2130837716;
+			public const int ic_mr_button_connecting_12_dark = 2130837716;
 			
 			// aapt resource value: 0x7f0200d5
-			public const int ic_mr_button_connecting_13_dark = 2130837717;
+			public const int ic_mr_button_connecting_12_light = 2130837717;
 			
 			// aapt resource value: 0x7f0200d6
-			public const int ic_mr_button_connecting_13_light = 2130837718;
+			public const int ic_mr_button_connecting_13_dark = 2130837718;
 			
 			// aapt resource value: 0x7f0200d7
-			public const int ic_mr_button_connecting_14_dark = 2130837719;
+			public const int ic_mr_button_connecting_13_light = 2130837719;
 			
 			// aapt resource value: 0x7f0200d8
-			public const int ic_mr_button_connecting_14_light = 2130837720;
+			public const int ic_mr_button_connecting_14_dark = 2130837720;
 			
 			// aapt resource value: 0x7f0200d9
-			public const int ic_mr_button_connecting_15_dark = 2130837721;
+			public const int ic_mr_button_connecting_14_light = 2130837721;
 			
 			// aapt resource value: 0x7f0200da
-			public const int ic_mr_button_connecting_15_light = 2130837722;
+			public const int ic_mr_button_connecting_15_dark = 2130837722;
 			
 			// aapt resource value: 0x7f0200db
-			public const int ic_mr_button_connecting_16_dark = 2130837723;
+			public const int ic_mr_button_connecting_15_light = 2130837723;
 			
 			// aapt resource value: 0x7f0200dc
-			public const int ic_mr_button_connecting_16_light = 2130837724;
+			public const int ic_mr_button_connecting_16_dark = 2130837724;
 			
 			// aapt resource value: 0x7f0200dd
-			public const int ic_mr_button_connecting_17_dark = 2130837725;
+			public const int ic_mr_button_connecting_16_light = 2130837725;
 			
 			// aapt resource value: 0x7f0200de
-			public const int ic_mr_button_connecting_17_light = 2130837726;
+			public const int ic_mr_button_connecting_17_dark = 2130837726;
 			
 			// aapt resource value: 0x7f0200df
-			public const int ic_mr_button_connecting_18_dark = 2130837727;
+			public const int ic_mr_button_connecting_17_light = 2130837727;
 			
 			// aapt resource value: 0x7f0200e0
-			public const int ic_mr_button_connecting_18_light = 2130837728;
+			public const int ic_mr_button_connecting_18_dark = 2130837728;
 			
 			// aapt resource value: 0x7f0200e1
-			public const int ic_mr_button_connecting_19_dark = 2130837729;
+			public const int ic_mr_button_connecting_18_light = 2130837729;
 			
 			// aapt resource value: 0x7f0200e2
-			public const int ic_mr_button_connecting_19_light = 2130837730;
+			public const int ic_mr_button_connecting_19_dark = 2130837730;
 			
 			// aapt resource value: 0x7f0200e3
-			public const int ic_mr_button_connecting_20_dark = 2130837731;
+			public const int ic_mr_button_connecting_19_light = 2130837731;
 			
 			// aapt resource value: 0x7f0200e4
-			public const int ic_mr_button_connecting_20_light = 2130837732;
+			public const int ic_mr_button_connecting_20_dark = 2130837732;
 			
 			// aapt resource value: 0x7f0200e5
-			public const int ic_mr_button_connecting_21_dark = 2130837733;
+			public const int ic_mr_button_connecting_20_light = 2130837733;
 			
 			// aapt resource value: 0x7f0200e6
-			public const int ic_mr_button_connecting_21_light = 2130837734;
+			public const int ic_mr_button_connecting_21_dark = 2130837734;
 			
 			// aapt resource value: 0x7f0200e7
-			public const int ic_mr_button_connecting_22_dark = 2130837735;
+			public const int ic_mr_button_connecting_21_light = 2130837735;
 			
 			// aapt resource value: 0x7f0200e8
-			public const int ic_mr_button_connecting_22_light = 2130837736;
+			public const int ic_mr_button_connecting_22_dark = 2130837736;
 			
 			// aapt resource value: 0x7f0200e9
-			public const int ic_mr_button_disabled_dark = 2130837737;
+			public const int ic_mr_button_connecting_22_light = 2130837737;
 			
 			// aapt resource value: 0x7f0200ea
-			public const int ic_mr_button_disabled_light = 2130837738;
+			public const int ic_mr_button_disabled_dark = 2130837738;
 			
 			// aapt resource value: 0x7f0200eb
-			public const int ic_mr_button_disconnected_dark = 2130837739;
+			public const int ic_mr_button_disabled_light = 2130837739;
 			
 			// aapt resource value: 0x7f0200ec
-			public const int ic_mr_button_disconnected_light = 2130837740;
+			public const int ic_mr_button_disconnected_dark = 2130837740;
 			
 			// aapt resource value: 0x7f0200ed
-			public const int ic_mr_button_grey = 2130837741;
+			public const int ic_mr_button_disconnected_light = 2130837741;
 			
 			// aapt resource value: 0x7f0200ee
-			public const int ic_vol_type_speaker_dark = 2130837742;
+			public const int ic_mr_button_grey = 2130837742;
 			
 			// aapt resource value: 0x7f0200ef
-			public const int ic_vol_type_speaker_group_dark = 2130837743;
+			public const int ic_vol_type_speaker_dark = 2130837743;
 			
 			// aapt resource value: 0x7f0200f0
-			public const int ic_vol_type_speaker_group_light = 2130837744;
+			public const int ic_vol_type_speaker_group_dark = 2130837744;
 			
 			// aapt resource value: 0x7f0200f1
-			public const int ic_vol_type_speaker_light = 2130837745;
+			public const int ic_vol_type_speaker_group_light = 2130837745;
 			
 			// aapt resource value: 0x7f0200f2
-			public const int ic_vol_type_tv_dark = 2130837746;
+			public const int ic_vol_type_speaker_light = 2130837746;
 			
 			// aapt resource value: 0x7f0200f3
-			public const int ic_vol_type_tv_light = 2130837747;
+			public const int ic_vol_type_tv_dark = 2130837747;
 			
 			// aapt resource value: 0x7f0200f4
-			public const int icon = 2130837748;
+			public const int ic_vol_type_tv_light = 2130837748;
 			
 			// aapt resource value: 0x7f0200f5
-			public const int Indigo_Filled_Circle_100px = 2130837749;
+			public const int icon = 2130837749;
 			
 			// aapt resource value: 0x7f0200f6
-			public const int LaunchView = 2130837750;
+			public const int Indigo_Filled_Circle_100px = 2130837750;
 			
 			// aapt resource value: 0x7f0200f7
-			public const int logo = 2130837751;
+			public const int LaunchView = 2130837751;
 			
 			// aapt resource value: 0x7f0200f8
-			public const int mr_button_connected_dark = 2130837752;
+			public const int logo = 2130837752;
 			
 			// aapt resource value: 0x7f0200f9
-			public const int mr_button_connected_light = 2130837753;
+			public const int mr_button_connected_dark = 2130837753;
 			
 			// aapt resource value: 0x7f0200fa
-			public const int mr_button_connecting_dark = 2130837754;
+			public const int mr_button_connected_light = 2130837754;
 			
 			// aapt resource value: 0x7f0200fb
-			public const int mr_button_connecting_light = 2130837755;
+			public const int mr_button_connecting_dark = 2130837755;
 			
 			// aapt resource value: 0x7f0200fc
-			public const int mr_button_dark = 2130837756;
+			public const int mr_button_connecting_light = 2130837756;
 			
 			// aapt resource value: 0x7f0200fd
-			public const int mr_button_light = 2130837757;
+			public const int mr_button_dark = 2130837757;
 			
 			// aapt resource value: 0x7f0200fe
-			public const int mr_dialog_close_dark = 2130837758;
+			public const int mr_button_light = 2130837758;
 			
 			// aapt resource value: 0x7f0200ff
-			public const int mr_dialog_close_light = 2130837759;
+			public const int mr_dialog_close_dark = 2130837759;
 			
 			// aapt resource value: 0x7f020100
-			public const int mr_dialog_material_background_dark = 2130837760;
+			public const int mr_dialog_close_light = 2130837760;
 			
 			// aapt resource value: 0x7f020101
-			public const int mr_dialog_material_background_light = 2130837761;
+			public const int mr_dialog_material_background_dark = 2130837761;
 			
 			// aapt resource value: 0x7f020102
-			public const int mr_group_collapse = 2130837762;
+			public const int mr_dialog_material_background_light = 2130837762;
 			
 			// aapt resource value: 0x7f020103
-			public const int mr_group_expand = 2130837763;
+			public const int mr_group_collapse = 2130837763;
 			
 			// aapt resource value: 0x7f020104
-			public const int mr_media_pause_dark = 2130837764;
+			public const int mr_group_expand = 2130837764;
 			
 			// aapt resource value: 0x7f020105
-			public const int mr_media_pause_light = 2130837765;
+			public const int mr_media_pause_dark = 2130837765;
 			
 			// aapt resource value: 0x7f020106
-			public const int mr_media_play_dark = 2130837766;
+			public const int mr_media_pause_light = 2130837766;
 			
 			// aapt resource value: 0x7f020107
-			public const int mr_media_play_light = 2130837767;
+			public const int mr_media_play_dark = 2130837767;
 			
 			// aapt resource value: 0x7f020108
-			public const int mr_media_stop_dark = 2130837768;
+			public const int mr_media_play_light = 2130837768;
 			
 			// aapt resource value: 0x7f020109
-			public const int mr_media_stop_light = 2130837769;
+			public const int mr_media_stop_dark = 2130837769;
 			
 			// aapt resource value: 0x7f02010a
-			public const int mr_vol_type_audiotrack_dark = 2130837770;
+			public const int mr_media_stop_light = 2130837770;
 			
 			// aapt resource value: 0x7f02010b
-			public const int mr_vol_type_audiotrack_light = 2130837771;
+			public const int mr_vol_type_audiotrack_dark = 2130837771;
 			
 			// aapt resource value: 0x7f02010c
-			public const int navigation_empty_icon = 2130837772;
+			public const int mr_vol_type_audiotrack_light = 2130837772;
 			
 			// aapt resource value: 0x7f02010d
-			public const int News_50px = 2130837773;
+			public const int navigation_empty_icon = 2130837773;
 			
 			// aapt resource value: 0x7f02010e
-			public const int Next = 2130837774;
+			public const int News_50px = 2130837774;
 			
 			// aapt resource value: 0x7f02010f
-			public const int notification_action_background = 2130837775;
+			public const int Next = 2130837775;
 			
 			// aapt resource value: 0x7f020110
-			public const int notification_bg = 2130837776;
+			public const int notification_action_background = 2130837776;
 			
 			// aapt resource value: 0x7f020111
-			public const int notification_bg_low = 2130837777;
+			public const int notification_bg = 2130837777;
 			
 			// aapt resource value: 0x7f020112
-			public const int notification_bg_low_normal = 2130837778;
+			public const int notification_bg_low = 2130837778;
 			
 			// aapt resource value: 0x7f020113
-			public const int notification_bg_low_pressed = 2130837779;
+			public const int notification_bg_low_normal = 2130837779;
 			
 			// aapt resource value: 0x7f020114
-			public const int notification_bg_normal = 2130837780;
+			public const int notification_bg_low_pressed = 2130837780;
 			
 			// aapt resource value: 0x7f020115
-			public const int notification_bg_normal_pressed = 2130837781;
+			public const int notification_bg_normal = 2130837781;
 			
 			// aapt resource value: 0x7f020116
-			public const int notification_icon_background = 2130837782;
-			
-			// aapt resource value: 0x7f02011f
-			public const int notification_template_icon_bg = 2130837791;
-			
-			// aapt resource value: 0x7f020120
-			public const int notification_template_icon_low_bg = 2130837792;
+			public const int notification_bg_normal_pressed = 2130837782;
 			
 			// aapt resource value: 0x7f020117
-			public const int notification_tile_bg = 2130837783;
+			public const int notification_icon_background = 2130837783;
+			
+			// aapt resource value: 0x7f020120
+			public const int notification_template_icon_bg = 2130837792;
+			
+			// aapt resource value: 0x7f020121
+			public const int notification_template_icon_low_bg = 2130837793;
 			
 			// aapt resource value: 0x7f020118
-			public const int notify_panel_notification_icon_bg = 2130837784;
+			public const int notification_tile_bg = 2130837784;
 			
 			// aapt resource value: 0x7f020119
-			public const int Pink_Filled_Circle_100px = 2130837785;
+			public const int notify_panel_notification_icon_bg = 2130837785;
 			
 			// aapt resource value: 0x7f02011a
-			public const int Prev = 2130837786;
+			public const int Pink_Filled_Circle_100px = 2130837786;
 			
 			// aapt resource value: 0x7f02011b
-			public const int Purple_Filled_Circle_100px = 2130837787;
+			public const int Prev = 2130837787;
 			
 			// aapt resource value: 0x7f02011c
-			public const int splashscreen = 2130837788;
+			public const int Purple_Filled_Circle_100px = 2130837788;
 			
 			// aapt resource value: 0x7f02011d
-			public const int Up = 2130837789;
+			public const int splashscreen = 2130837789;
 			
 			// aapt resource value: 0x7f02011e
-			public const int ViewCellBackground = 2130837790;
+			public const int Up = 2130837790;
+			
+			// aapt resource value: 0x7f02011f
+			public const int ViewCellBackground = 2130837791;
 			
 			static Drawable()
 			{
@@ -5102,41 +7383,41 @@ namespace Mugelli.Software.It.Mgc.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0800a6
-			public const int action0 = 2131230886;
+			// aapt resource value: 0x7f0800b0
+			public const int action0 = 2131230896;
 			
-			// aapt resource value: 0x7f080066
-			public const int action_bar = 2131230822;
+			// aapt resource value: 0x7f08006e
+			public const int action_bar = 2131230830;
 			
 			// aapt resource value: 0x7f080001
 			public const int action_bar_activity_content = 2131230721;
 			
-			// aapt resource value: 0x7f080065
-			public const int action_bar_container = 2131230821;
+			// aapt resource value: 0x7f08006d
+			public const int action_bar_container = 2131230829;
 			
-			// aapt resource value: 0x7f080061
-			public const int action_bar_root = 2131230817;
+			// aapt resource value: 0x7f080069
+			public const int action_bar_root = 2131230825;
 			
 			// aapt resource value: 0x7f080002
 			public const int action_bar_spinner = 2131230722;
 			
-			// aapt resource value: 0x7f080044
-			public const int action_bar_subtitle = 2131230788;
+			// aapt resource value: 0x7f08004c
+			public const int action_bar_subtitle = 2131230796;
 			
-			// aapt resource value: 0x7f080043
-			public const int action_bar_title = 2131230787;
+			// aapt resource value: 0x7f08004b
+			public const int action_bar_title = 2131230795;
 			
-			// aapt resource value: 0x7f0800a3
-			public const int action_container = 2131230883;
+			// aapt resource value: 0x7f0800ad
+			public const int action_container = 2131230893;
 			
-			// aapt resource value: 0x7f080067
-			public const int action_context_bar = 2131230823;
+			// aapt resource value: 0x7f08006f
+			public const int action_context_bar = 2131230831;
 			
-			// aapt resource value: 0x7f0800aa
-			public const int action_divider = 2131230890;
+			// aapt resource value: 0x7f0800b4
+			public const int action_divider = 2131230900;
 			
-			// aapt resource value: 0x7f0800a4
-			public const int action_image = 2131230884;
+			// aapt resource value: 0x7f0800ae
+			public const int action_image = 2131230894;
 			
 			// aapt resource value: 0x7f080003
 			public const int action_menu_divider = 2131230723;
@@ -5144,29 +7425,29 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f080004
 			public const int action_menu_presenter = 2131230724;
 			
-			// aapt resource value: 0x7f080063
-			public const int action_mode_bar = 2131230819;
+			// aapt resource value: 0x7f08006b
+			public const int action_mode_bar = 2131230827;
 			
-			// aapt resource value: 0x7f080062
-			public const int action_mode_bar_stub = 2131230818;
+			// aapt resource value: 0x7f08006a
+			public const int action_mode_bar_stub = 2131230826;
 			
-			// aapt resource value: 0x7f080045
-			public const int action_mode_close_button = 2131230789;
+			// aapt resource value: 0x7f08004d
+			public const int action_mode_close_button = 2131230797;
 			
-			// aapt resource value: 0x7f0800a5
-			public const int action_text = 2131230885;
+			// aapt resource value: 0x7f0800af
+			public const int action_text = 2131230895;
 			
-			// aapt resource value: 0x7f0800b3
-			public const int actions = 2131230899;
+			// aapt resource value: 0x7f0800bd
+			public const int actions = 2131230909;
 			
-			// aapt resource value: 0x7f080046
-			public const int activity_chooser_view_content = 2131230790;
+			// aapt resource value: 0x7f08004e
+			public const int activity_chooser_view_content = 2131230798;
 			
 			// aapt resource value: 0x7f08001e
 			public const int add = 2131230750;
 			
-			// aapt resource value: 0x7f08005a
-			public const int alertTitle = 2131230810;
+			// aapt resource value: 0x7f080062
+			public const int alertTitle = 2131230818;
 			
 			// aapt resource value: 0x7f08003d
 			public const int all = 2131230781;
@@ -5177,20 +7458,32 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f08002f
 			public const int auto = 2131230767;
 			
+			// aapt resource value: 0x7f080091
+			public const int backgroundView = 2131230865;
+			
 			// aapt resource value: 0x7f080020
 			public const int beginning = 2131230752;
 			
 			// aapt resource value: 0x7f080028
 			public const int bottom = 2131230760;
 			
-			// aapt resource value: 0x7f08004d
-			public const int buttonPanel = 2131230797;
+			// aapt resource value: 0x7f0800c4
+			public const int btnShare = 2131230916;
 			
-			// aapt resource value: 0x7f0800a7
-			public const int cancel_action = 2131230887;
+			// aapt resource value: 0x7f080055
+			public const int buttonPanel = 2131230805;
+			
+			// aapt resource value: 0x7f0800b1
+			public const int cancel_action = 2131230897;
 			
 			// aapt resource value: 0x7f080030
 			public const int center = 2131230768;
+			
+			// aapt resource value: 0x7f080041
+			public const int centerCrop = 2131230785;
+			
+			// aapt resource value: 0x7f080042
+			public const int centerInside = 2131230786;
 			
 			// aapt resource value: 0x7f080031
 			public const int center_horizontal = 2131230769;
@@ -5198,11 +7491,11 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f080032
 			public const int center_vertical = 2131230770;
 			
-			// aapt resource value: 0x7f08005d
-			public const int checkbox = 2131230813;
+			// aapt resource value: 0x7f080065
+			public const int checkbox = 2131230821;
 			
-			// aapt resource value: 0x7f0800af
-			public const int chronometer = 2131230895;
+			// aapt resource value: 0x7f0800b9
+			public const int chronometer = 2131230905;
 			
 			// aapt resource value: 0x7f080039
 			public const int clip_horizontal = 2131230777;
@@ -5213,53 +7506,56 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f080024
 			public const int collapseActionView = 2131230756;
 			
-			// aapt resource value: 0x7f080077
-			public const int container = 2131230839;
+			// aapt resource value: 0x7f08007f
+			public const int container = 2131230847;
 			
-			// aapt resource value: 0x7f080050
-			public const int contentPanel = 2131230800;
-			
-			// aapt resource value: 0x7f080078
-			public const int coordinator = 2131230840;
-			
-			// aapt resource value: 0x7f080057
-			public const int custom = 2131230807;
-			
-			// aapt resource value: 0x7f080056
-			public const int customPanel = 2131230806;
-			
-			// aapt resource value: 0x7f080064
-			public const int decor_content_parent = 2131230820;
-			
-			// aapt resource value: 0x7f080049
-			public const int default_activity_button = 2131230793;
-			
-			// aapt resource value: 0x7f08007a
-			public const int design_bottom_sheet = 2131230842;
-			
-			// aapt resource value: 0x7f080081
-			public const int design_menu_item_action_area = 2131230849;
+			// aapt resource value: 0x7f080058
+			public const int contentPanel = 2131230808;
 			
 			// aapt resource value: 0x7f080080
-			public const int design_menu_item_action_area_stub = 2131230848;
+			public const int coordinator = 2131230848;
 			
-			// aapt resource value: 0x7f08007f
-			public const int design_menu_item_text = 2131230847;
+			// aapt resource value: 0x7f08005f
+			public const int custom = 2131230815;
 			
-			// aapt resource value: 0x7f08007e
-			public const int design_navigation_view = 2131230846;
+			// aapt resource value: 0x7f08005e
+			public const int customPanel = 2131230814;
+			
+			// aapt resource value: 0x7f08006c
+			public const int decor_content_parent = 2131230828;
+			
+			// aapt resource value: 0x7f080051
+			public const int default_activity_button = 2131230801;
+			
+			// aapt resource value: 0x7f080082
+			public const int design_bottom_sheet = 2131230850;
+			
+			// aapt resource value: 0x7f080089
+			public const int design_menu_item_action_area = 2131230857;
+			
+			// aapt resource value: 0x7f080088
+			public const int design_menu_item_action_area_stub = 2131230856;
+			
+			// aapt resource value: 0x7f080087
+			public const int design_menu_item_text = 2131230855;
+			
+			// aapt resource value: 0x7f080086
+			public const int design_navigation_view = 2131230854;
 			
 			// aapt resource value: 0x7f080012
 			public const int disableHome = 2131230738;
 			
-			// aapt resource value: 0x7f080068
-			public const int edit_query = 2131230824;
+			// aapt resource value: 0x7f080092
+			public const int dismissView = 2131230866;
+			
+			// aapt resource value: 0x7f080070
+			public const int edit_query = 2131230832;
 			
 			// aapt resource value: 0x7f080021
 			public const int end = 2131230753;
 			
-			// aapt resource value: 0x7f0800b9
-			public const int end_padder = 2131230905;
+			// aapt resource value: 0x7f0800c3
+			public const int end_padder = 2131230915;
 			
 			// aapt resource value: 0x7f08002a
 			public const int enterAlways = 2131230762;
@@ -5270,11 +7566,11 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f08002c
 			public const int exitUntilCollapsed = 2131230764;
 			
-			// aapt resource value: 0x7f080047
-			public const int expand_activities_button = 2131230791;
+			// aapt resource value: 0x7f08004f
+			public const int expand_activities_button = 2131230799;
 			
-			// aapt resource value: 0x7f08005c
-			public const int expanded_menu = 2131230812;
+			// aapt resource value: 0x7f080064
+			public const int expanded_menu = 2131230820;
 			
 			// aapt resource value: 0x7f08003b
 			public const int fill = 2131230779;
@@ -5285,8 +7581,26 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f080033
 			public const int fill_vertical = 2131230771;
 			
+			// aapt resource value: 0x7f080043
+			public const int fitBottomStart = 2131230787;
+			
+			// aapt resource value: 0x7f080044
+			public const int fitCenter = 2131230788;
+			
+			// aapt resource value: 0x7f080045
+			public const int fitEnd = 2131230789;
+			
+			// aapt resource value: 0x7f080046
+			public const int fitStart = 2131230790;
+			
+			// aapt resource value: 0x7f080047
+			public const int fitXY = 2131230791;
+			
 			// aapt resource value: 0x7f08003f
 			public const int @fixed = 2131230783;
+			
+			// aapt resource value: 0x7f080048
+			public const int focusCrop = 2131230792;
 			
 			// aapt resource value: 0x7f080005
 			public const int home = 2131230725;
@@ -5294,53 +7608,53 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f080013
 			public const int homeAsUp = 2131230739;
 			
-			// aapt resource value: 0x7f080041
-			public const int horizontal = 2131230785;
+			// aapt resource value: 0x7f080049
+			public const int horizontal = 2131230793;
 			
-			// aapt resource value: 0x7f08004b
-			public const int icon = 2131230795;
+			// aapt resource value: 0x7f080053
+			public const int icon = 2131230803;
 			
-			// aapt resource value: 0x7f0800b4
-			public const int icon_group = 2131230900;
+			// aapt resource value: 0x7f0800be
+			public const int icon_group = 2131230910;
 			
 			// aapt resource value: 0x7f080025
 			public const int ifRoom = 2131230757;
 			
-			// aapt resource value: 0x7f080048
-			public const int image = 2131230792;
+			// aapt resource value: 0x7f080050
+			public const int image = 2131230800;
 			
-			// aapt resource value: 0x7f080088
-			public const int indicator = 2131230856;
+			// aapt resource value: 0x7f080090
+			public const int indicator = 2131230864;
 			
-			// aapt resource value: 0x7f0800b0
-			public const int info = 2131230896;
+			// aapt resource value: 0x7f0800ba
+			public const int info = 2131230906;
 			
 			// aapt resource value: 0x7f080000
 			public const int item_touch_helper_previous_elevation = 2131230720;
 			
-			// aapt resource value: 0x7f080076
-			public const int largeLabel = 2131230838;
+			// aapt resource value: 0x7f08007e
+			public const int largeLabel = 2131230846;
 			
 			// aapt resource value: 0x7f080034
 			public const int left = 2131230772;
 			
-			// aapt resource value: 0x7f0800b5
-			public const int line1 = 2131230901;
+			// aapt resource value: 0x7f0800bf
+			public const int line1 = 2131230911;
 			
-			// aapt resource value: 0x7f0800b7
-			public const int line3 = 2131230903;
+			// aapt resource value: 0x7f0800c1
+			public const int line3 = 2131230913;
 			
 			// aapt resource value: 0x7f08000f
 			public const int listMode = 2131230735;
 			
-			// aapt resource value: 0x7f08004a
-			public const int list_item = 2131230794;
+			// aapt resource value: 0x7f080052
+			public const int list_item = 2131230802;
 			
-			// aapt resource value: 0x7f0800bd
-			public const int masked = 2131230909;
+			// aapt resource value: 0x7f0800c9
+			public const int masked = 2131230921;
 			
-			// aapt resource value: 0x7f0800a9
-			public const int media_actions = 2131230889;
+			// aapt resource value: 0x7f0800b3
+			public const int media_actions = 2131230899;
 			
 			// aapt resource value: 0x7f080022
 			public const int middle = 2131230754;
@@ -5348,95 +7662,95 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f08003e
 			public const int mini = 2131230782;
 			
-			// aapt resource value: 0x7f080095
-			public const int mr_art = 2131230869;
-			
-			// aapt resource value: 0x7f08008a
-			public const int mr_chooser_list = 2131230858;
-			
-			// aapt resource value: 0x7f08008d
-			public const int mr_chooser_route_desc = 2131230861;
-			
-			// aapt resource value: 0x7f08008b
-			public const int mr_chooser_route_icon = 2131230859;
-			
-			// aapt resource value: 0x7f08008c
-			public const int mr_chooser_route_name = 2131230860;
-			
-			// aapt resource value: 0x7f080089
-			public const int mr_chooser_title = 2131230857;
-			
-			// aapt resource value: 0x7f080092
-			public const int mr_close = 2131230866;
-			
-			// aapt resource value: 0x7f080098
-			public const int mr_control_divider = 2131230872;
-			
-			// aapt resource value: 0x7f08009e
-			public const int mr_control_playback_ctrl = 2131230878;
-			
-			// aapt resource value: 0x7f0800a1
-			public const int mr_control_subtitle = 2131230881;
-			
-			// aapt resource value: 0x7f0800a0
-			public const int mr_control_title = 2131230880;
-			
 			// aapt resource value: 0x7f08009f
-			public const int mr_control_title_container = 2131230879;
-			
-			// aapt resource value: 0x7f080093
-			public const int mr_custom_control = 2131230867;
+			public const int mr_art = 2131230879;
 			
 			// aapt resource value: 0x7f080094
-			public const int mr_default_control = 2131230868;
-			
-			// aapt resource value: 0x7f08008f
-			public const int mr_dialog_area = 2131230863;
-			
-			// aapt resource value: 0x7f08008e
-			public const int mr_expandable_area = 2131230862;
-			
-			// aapt resource value: 0x7f0800a2
-			public const int mr_group_expand_collapse = 2131230882;
-			
-			// aapt resource value: 0x7f080096
-			public const int mr_media_main_control = 2131230870;
-			
-			// aapt resource value: 0x7f080091
-			public const int mr_name = 2131230865;
+			public const int mr_chooser_list = 2131230868;
 			
 			// aapt resource value: 0x7f080097
-			public const int mr_playback_control = 2131230871;
+			public const int mr_chooser_route_desc = 2131230871;
 			
-			// aapt resource value: 0x7f080090
-			public const int mr_title_bar = 2131230864;
+			// aapt resource value: 0x7f080095
+			public const int mr_chooser_route_icon = 2131230869;
 			
-			// aapt resource value: 0x7f080099
-			public const int mr_volume_control = 2131230873;
+			// aapt resource value: 0x7f080096
+			public const int mr_chooser_route_name = 2131230870;
 			
-			// aapt resource value: 0x7f08009a
-			public const int mr_volume_group_list = 2131230874;
+			// aapt resource value: 0x7f080093
+			public const int mr_chooser_title = 2131230867;
 			
 			// aapt resource value: 0x7f08009c
-			public const int mr_volume_item_icon = 2131230876;
+			public const int mr_close = 2131230876;
+			
+			// aapt resource value: 0x7f0800a2
+			public const int mr_control_divider = 2131230882;
+			
+			// aapt resource value: 0x7f0800a8
+			public const int mr_control_playback_ctrl = 2131230888;
+			
+			// aapt resource value: 0x7f0800ab
+			public const int mr_control_subtitle = 2131230891;
+			
+			// aapt resource value: 0x7f0800aa
+			public const int mr_control_title = 2131230890;
+			
+			// aapt resource value: 0x7f0800a9
+			public const int mr_control_title_container = 2131230889;
 			
 			// aapt resource value: 0x7f08009d
-			public const int mr_volume_slider = 2131230877;
+			public const int mr_custom_control = 2131230877;
+			
+			// aapt resource value: 0x7f08009e
+			public const int mr_default_control = 2131230878;
+			
+			// aapt resource value: 0x7f080099
+			public const int mr_dialog_area = 2131230873;
+			
+			// aapt resource value: 0x7f080098
+			public const int mr_expandable_area = 2131230872;
+			
+			// aapt resource value: 0x7f0800ac
+			public const int mr_group_expand_collapse = 2131230892;
+			
+			// aapt resource value: 0x7f0800a0
+			public const int mr_media_main_control = 2131230880;
+			
+			// aapt resource value: 0x7f08009b
+			public const int mr_name = 2131230875;
+			
+			// aapt resource value: 0x7f0800a1
+			public const int mr_playback_control = 2131230881;
+			
+			// aapt resource value: 0x7f08009a
+			public const int mr_title_bar = 2131230874;
+			
+			// aapt resource value: 0x7f0800a3
+			public const int mr_volume_control = 2131230883;
+			
+			// aapt resource value: 0x7f0800a4
+			public const int mr_volume_group_list = 2131230884;
+			
+			// aapt resource value: 0x7f0800a6
+			public const int mr_volume_item_icon = 2131230886;
+			
+			// aapt resource value: 0x7f0800a7
+			public const int mr_volume_slider = 2131230887;
 			
 			// aapt resource value: 0x7f080019
 			public const int multiply = 2131230745;
 			
-			// aapt resource value: 0x7f08007d
-			public const int navigation_header_container = 2131230845;
+			// aapt resource value: 0x7f080085
+			public const int navigation_header_container = 2131230853;
 			
 			// aapt resource value: 0x7f080026
 			public const int never = 2131230758;
 			
-			// aapt resource value: 0x7f080086
-			public const int next = 2131230854;
+			// aapt resource value: 0x7f08008e
+			public const int next = 2131230862;
 			
-			// aapt resource value: 0x7f080087
-			public const int nextArrow = 2131230855;
+			// aapt resource value: 0x7f08008f
+			public const int nextArrow = 2131230863;
 			
 			// aapt resource value: 0x7f080014
 			public const int none = 2131230740;
@@ -5444,32 +7758,32 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f080010
 			public const int normal = 2131230736;
 			
-			// aapt resource value: 0x7f0800b2
-			public const int notification_background = 2131230898;
+			// aapt resource value: 0x7f0800bc
+			public const int notification_background = 2131230908;
 			
-			// aapt resource value: 0x7f0800ac
-			public const int notification_main_column = 2131230892;
+			// aapt resource value: 0x7f0800b6
+			public const int notification_main_column = 2131230902;
 			
-			// aapt resource value: 0x7f0800ab
-			public const int notification_main_column_container = 2131230891;
+			// aapt resource value: 0x7f0800b5
+			public const int notification_main_column_container = 2131230901;
 			
-			// aapt resource value: 0x7f080083
-			public const int pager = 2131230851;
+			// aapt resource value: 0x7f08008b
+			public const int pager = 2131230859;
 			
 			// aapt resource value: 0x7f080037
 			public const int parallax = 2131230775;
 			
-			// aapt resource value: 0x7f08004f
-			public const int parentPanel = 2131230799;
+			// aapt resource value: 0x7f080057
+			public const int parentPanel = 2131230807;
 			
 			// aapt resource value: 0x7f080038
 			public const int pin = 2131230776;
 			
-			// aapt resource value: 0x7f080084
-			public const int prev = 2131230852;
+			// aapt resource value: 0x7f08008c
+			public const int prev = 2131230860;
 			
-			// aapt resource value: 0x7f080085
-			public const int prevArrow = 2131230853;
+			// aapt resource value: 0x7f08008d
+			public const int prevArrow = 2131230861;
 			
 			// aapt resource value: 0x7f080006
 			public const int progress_circular = 2131230726;
@@ -5477,17 +7791,17 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f080007
 			public const int progress_horizontal = 2131230727;
 			
-			// aapt resource value: 0x7f08005f
-			public const int radio = 2131230815;
+			// aapt resource value: 0x7f080067
+			public const int radio = 2131230823;
 			
 			// aapt resource value: 0x7f080035
 			public const int right = 2131230773;
 			
-			// aapt resource value: 0x7f0800b1
-			public const int right_icon = 2131230897;
+			// aapt resource value: 0x7f0800bb
+			public const int right_icon = 2131230907;
 			
-			// aapt resource value: 0x7f0800ad
-			public const int right_side = 2131230893;
+			// aapt resource value: 0x7f0800b7
+			public const int right_side = 2131230903;
 			
 			// aapt resource value: 0x7f08001a
 			public const int screen = 2131230746;
@@ -5495,53 +7809,53 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f08002d
 			public const int scroll = 2131230765;
 			
-			// aapt resource value: 0x7f080055
-			public const int scrollIndicatorDown = 2131230805;
+			// aapt resource value: 0x7f08005d
+			public const int scrollIndicatorDown = 2131230813;
 			
-			// aapt resource value: 0x7f080051
-			public const int scrollIndicatorUp = 2131230801;
+			// aapt resource value: 0x7f080059
+			public const int scrollIndicatorUp = 2131230809;
 			
-			// aapt resource value: 0x7f080052
-			public const int scrollView = 2131230802;
+			// aapt resource value: 0x7f08005a
+			public const int scrollView = 2131230810;
 			
 			// aapt resource value: 0x7f080040
 			public const int scrollable = 2131230784;
 			
-			// aapt resource value: 0x7f08006a
-			public const int search_badge = 2131230826;
-			
-			// aapt resource value: 0x7f080069
-			public const int search_bar = 2131230825;
-			
-			// aapt resource value: 0x7f08006b
-			public const int search_button = 2131230827;
-			
-			// aapt resource value: 0x7f080070
-			public const int search_close_btn = 2131230832;
-			
-			// aapt resource value: 0x7f08006c
-			public const int search_edit_frame = 2131230828;
-			
 			// aapt resource value: 0x7f080072
-			public const int search_go_btn = 2131230834;
+			public const int search_badge = 2131230834;
 			
-			// aapt resource value: 0x7f08006d
-			public const int search_mag_icon = 2131230829;
-			
-			// aapt resource value: 0x7f08006e
-			public const int search_plate = 2131230830;
-			
-			// aapt resource value: 0x7f08006f
-			public const int search_src_text = 2131230831;
+			// aapt resource value: 0x7f080071
+			public const int search_bar = 2131230833;
 			
 			// aapt resource value: 0x7f080073
-			public const int search_voice_btn = 2131230835;
+			public const int search_button = 2131230835;
+			
+			// aapt resource value: 0x7f080078
+			public const int search_close_btn = 2131230840;
 			
 			// aapt resource value: 0x7f080074
-			public const int select_dialog_listview = 2131230836;
+			public const int search_edit_frame = 2131230836;
 			
-			// aapt resource value: 0x7f08005e
-			public const int shortcut = 2131230814;
+			// aapt resource value: 0x7f08007a
+			public const int search_go_btn = 2131230842;
+			
+			// aapt resource value: 0x7f080075
+			public const int search_mag_icon = 2131230837;
+			
+			// aapt resource value: 0x7f080076
+			public const int search_plate = 2131230838;
+			
+			// aapt resource value: 0x7f080077
+			public const int search_src_text = 2131230839;
+			
+			// aapt resource value: 0x7f08007b
+			public const int search_voice_btn = 2131230843;
+			
+			// aapt resource value: 0x7f08007c
+			public const int select_dialog_listview = 2131230844;
+			
+			// aapt resource value: 0x7f080066
+			public const int shortcut = 2131230822;
 			
 			// aapt resource value: 0x7f080015
 			public const int showCustom = 2131230741;
@@ -5552,23 +7866,23 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f080017
 			public const int showTitle = 2131230743;
 			
-			// aapt resource value: 0x7f0800ba
-			public const int sliding_tabs = 2131230906;
+			// aapt resource value: 0x7f0800c6
+			public const int sliding_tabs = 2131230918;
 			
-			// aapt resource value: 0x7f080075
-			public const int smallLabel = 2131230837;
+			// aapt resource value: 0x7f08007d
+			public const int smallLabel = 2131230845;
 			
-			// aapt resource value: 0x7f08007c
-			public const int snackbar_action = 2131230844;
+			// aapt resource value: 0x7f080084
+			public const int snackbar_action = 2131230852;
 			
-			// aapt resource value: 0x7f08007b
-			public const int snackbar_text = 2131230843;
+			// aapt resource value: 0x7f080083
+			public const int snackbar_text = 2131230851;
 			
 			// aapt resource value: 0x7f08002e
 			public const int snap = 2131230766;
 			
-			// aapt resource value: 0x7f08004e
-			public const int spacer = 2131230798;
+			// aapt resource value: 0x7f080056
+			public const int spacer = 2131230806;
 			
 			// aapt resource value: 0x7f080008
 			public const int split_action_bar = 2131230728;
@@ -5585,32 +7899,32 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f080036
 			public const int start = 2131230774;
 			
-			// aapt resource value: 0x7f0800a8
-			public const int status_bar_latest_event_content = 2131230888;
+			// aapt resource value: 0x7f0800b2
+			public const int status_bar_latest_event_content = 2131230898;
 			
-			// aapt resource value: 0x7f080060
-			public const int submenuarrow = 2131230816;
+			// aapt resource value: 0x7f080068
+			public const int submenuarrow = 2131230824;
 			
-			// aapt resource value: 0x7f080071
-			public const int submit_area = 2131230833;
+			// aapt resource value: 0x7f080079
+			public const int submit_area = 2131230841;
 			
 			// aapt resource value: 0x7f080011
 			public const int tabMode = 2131230737;
 			
-			// aapt resource value: 0x7f0800b8
-			public const int text = 2131230904;
+			// aapt resource value: 0x7f0800c2
+			public const int text = 2131230914;
 			
-			// aapt resource value: 0x7f0800b6
-			public const int text2 = 2131230902;
+			// aapt resource value: 0x7f0800c0
+			public const int text2 = 2131230912;
 			
-			// aapt resource value: 0x7f080054
-			public const int textSpacerNoButtons = 2131230804;
+			// aapt resource value: 0x7f08005c
+			public const int textSpacerNoButtons = 2131230812;
 			
-			// aapt resource value: 0x7f080053
-			public const int textSpacerNoTitle = 2131230803;
+			// aapt resource value: 0x7f08005b
+			public const int textSpacerNoTitle = 2131230811;
 			
-			// aapt resource value: 0x7f080082
-			public const int text_input_password_toggle = 2131230850;
+			// aapt resource value: 0x7f08008a
+			public const int text_input_password_toggle = 2131230858;
 			
 			// aapt resource value: 0x7f08000c
 			public const int textinput_counter = 2131230732;
@@ -5618,29 +7932,29 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f08000d
 			public const int textinput_error = 2131230733;
 			
-			// aapt resource value: 0x7f0800ae
-			public const int time = 2131230894;
+			// aapt resource value: 0x7f0800b8
+			public const int time = 2131230904;
 			
-			// aapt resource value: 0x7f08004c
-			public const int title = 2131230796;
+			// aapt resource value: 0x7f080054
+			public const int title = 2131230804;
 			
-			// aapt resource value: 0x7f08005b
-			public const int titleDividerNoCustom = 2131230811;
+			// aapt resource value: 0x7f080063
+			public const int titleDividerNoCustom = 2131230819;
 			
-			// aapt resource value: 0x7f080059
-			public const int title_template = 2131230809;
+			// aapt resource value: 0x7f080061
+			public const int title_template = 2131230817;
 			
-			// aapt resource value: 0x7f0800bb
-			public const int toolbar = 2131230907;
+			// aapt resource value: 0x7f0800c7
+			public const int toolbar = 2131230919;
 			
 			// aapt resource value: 0x7f080029
 			public const int top = 2131230761;
 			
-			// aapt resource value: 0x7f080058
-			public const int topPanel = 2131230808;
+			// aapt resource value: 0x7f080060
+			public const int topPanel = 2131230816;
 			
-			// aapt resource value: 0x7f080079
-			public const int touch_outside = 2131230841;
+			// aapt resource value: 0x7f080081
+			public const int touch_outside = 2131230849;
 			
 			// aapt resource value: 0x7f08000a
 			public const int transition_current_scene = 2131230730;
@@ -5648,23 +7962,26 @@ namespace Mugelli.Software.It.Mgc.Droid
 			// aapt resource value: 0x7f08000b
 			public const int transition_scene_layoutid_cache = 2131230731;
 			
+			// aapt resource value: 0x7f0800c5
+			public const int tvDescription = 2131230917;
+			
 			// aapt resource value: 0x7f080009
 			public const int up = 2131230729;
 			
 			// aapt resource value: 0x7f080018
 			public const int useLogo = 2131230744;
 			
-			// aapt resource value: 0x7f080042
-			public const int vertical = 2131230786;
+			// aapt resource value: 0x7f08004a
+			public const int vertical = 2131230794;
 			
 			// aapt resource value: 0x7f08000e
 			public const int view_offset_helper = 2131230734;
 			
-			// aapt resource value: 0x7f0800bc
-			public const int visible = 2131230908;
+			// aapt resource value: 0x7f0800c8
+			public const int visible = 2131230920;
 			
-			// aapt resource value: 0x7f08009b
-			public const int volume_item_container = 2131230875;
+			// aapt resource value: 0x7f0800a5
+			public const int volume_item_container = 2131230885;
 			
 			// aapt resource value: 0x7f080027
 			public const int withText = 2131230759;
@@ -5883,88 +8200,94 @@ namespace Mugelli.Software.It.Mgc.Droid
 			public const int horizontal_viewpager = 2130903081;
 			
 			// aapt resource value: 0x7f03002a
-			public const int mr_chooser_dialog = 2130903082;
+			public const int image_viewer = 2130903082;
 			
 			// aapt resource value: 0x7f03002b
-			public const int mr_chooser_list_item = 2130903083;
+			public const int mr_chooser_dialog = 2130903083;
 			
 			// aapt resource value: 0x7f03002c
-			public const int mr_controller_material_dialog_b = 2130903084;
+			public const int mr_chooser_list_item = 2130903084;
 			
 			// aapt resource value: 0x7f03002d
-			public const int mr_controller_volume_item = 2130903085;
+			public const int mr_controller_material_dialog_b = 2130903085;
 			
 			// aapt resource value: 0x7f03002e
-			public const int mr_playback_control = 2130903086;
+			public const int mr_controller_volume_item = 2130903086;
 			
 			// aapt resource value: 0x7f03002f
-			public const int mr_volume_control = 2130903087;
+			public const int mr_playback_control = 2130903087;
 			
 			// aapt resource value: 0x7f030030
-			public const int notification_action = 2130903088;
+			public const int mr_volume_control = 2130903088;
 			
 			// aapt resource value: 0x7f030031
-			public const int notification_action_tombstone = 2130903089;
+			public const int notification_action = 2130903089;
 			
 			// aapt resource value: 0x7f030032
-			public const int notification_media_action = 2130903090;
+			public const int notification_action_tombstone = 2130903090;
 			
 			// aapt resource value: 0x7f030033
-			public const int notification_media_cancel_action = 2130903091;
+			public const int notification_media_action = 2130903091;
 			
 			// aapt resource value: 0x7f030034
-			public const int notification_template_big_media = 2130903092;
+			public const int notification_media_cancel_action = 2130903092;
 			
 			// aapt resource value: 0x7f030035
-			public const int notification_template_big_media_custom = 2130903093;
+			public const int notification_template_big_media = 2130903093;
 			
 			// aapt resource value: 0x7f030036
-			public const int notification_template_big_media_narrow = 2130903094;
+			public const int notification_template_big_media_custom = 2130903094;
 			
 			// aapt resource value: 0x7f030037
-			public const int notification_template_big_media_narrow_custom = 2130903095;
+			public const int notification_template_big_media_narrow = 2130903095;
 			
 			// aapt resource value: 0x7f030038
-			public const int notification_template_custom_big = 2130903096;
+			public const int notification_template_big_media_narrow_custom = 2130903096;
 			
 			// aapt resource value: 0x7f030039
-			public const int notification_template_icon_group = 2130903097;
+			public const int notification_template_custom_big = 2130903097;
 			
 			// aapt resource value: 0x7f03003a
-			public const int notification_template_lines_media = 2130903098;
+			public const int notification_template_icon_group = 2130903098;
 			
 			// aapt resource value: 0x7f03003b
-			public const int notification_template_media = 2130903099;
+			public const int notification_template_lines_media = 2130903099;
 			
 			// aapt resource value: 0x7f03003c
-			public const int notification_template_media_custom = 2130903100;
+			public const int notification_template_media = 2130903100;
 			
 			// aapt resource value: 0x7f03003d
-			public const int notification_template_part_chronometer = 2130903101;
+			public const int notification_template_media_custom = 2130903101;
 			
 			// aapt resource value: 0x7f03003e
-			public const int notification_template_part_time = 2130903102;
+			public const int notification_template_part_chronometer = 2130903102;
 			
 			// aapt resource value: 0x7f03003f
-			public const int select_dialog_item_material = 2130903103;
+			public const int notification_template_part_time = 2130903103;
 			
 			// aapt resource value: 0x7f030040
-			public const int select_dialog_multichoice_material = 2130903104;
+			public const int photo_browser_overlay = 2130903104;
 			
 			// aapt resource value: 0x7f030041
-			public const int select_dialog_singlechoice_material = 2130903105;
+			public const int select_dialog_item_material = 2130903105;
 			
 			// aapt resource value: 0x7f030042
-			public const int support_simple_spinner_dropdown_item = 2130903106;
+			public const int select_dialog_multichoice_material = 2130903106;
 			
 			// aapt resource value: 0x7f030043
-			public const int Tabbar = 2130903107;
+			public const int select_dialog_singlechoice_material = 2130903107;
 			
 			// aapt resource value: 0x7f030044
-			public const int Toolbar = 2130903108;
+			public const int support_simple_spinner_dropdown_item = 2130903108;
 			
 			// aapt resource value: 0x7f030045
-			public const int vertical_viewpager = 2130903109;
+			public const int Tabbar = 2130903109;
+			
+			// aapt resource value: 0x7f030046
+			public const int Toolbar = 2130903110;
+			
+			// aapt resource value: 0x7f030047
+			public const int vertical_viewpager = 2130903111;
 			
 			static Layout()
 			{
@@ -8268,14 +10591,14 @@ namespace Mugelli.Software.It.Mgc.Droid
 			public const int CardView_contentPaddingTop = 11;
 			
 			public static int[] CirclePageIndicator = new int[] {
-					2130772310,
-					2130772311,
-					2130772312,
-					2130772313,
-					2130772314,
-					2130772315,
-					2130772316,
-					2130772317};
+					2130772337,
+					2130772338,
+					2130772339,
+					2130772340,
+					2130772341,
+					2130772342,
+					2130772343,
+					2130772344};
 			
 			// aapt resource value: 0
 			public const int CirclePageIndicator_vpiCentered = 0;
@@ -8546,6 +10869,108 @@ namespace Mugelli.Software.It.Mgc.Droid
 			
 			// aapt resource value: 2
 			public const int ForegroundLinearLayout_foregroundInsidePadding = 2;
+			
+			public static int[] GenericDraweeHierarchy = new int[] {
+					2130772309,
+					2130772310,
+					2130772311,
+					2130772312,
+					2130772313,
+					2130772314,
+					2130772315,
+					2130772316,
+					2130772317,
+					2130772318,
+					2130772319,
+					2130772320,
+					2130772321,
+					2130772322,
+					2130772323,
+					2130772324,
+					2130772325,
+					2130772326,
+					2130772327,
+					2130772328,
+					2130772329,
+					2130772330,
+					2130772331,
+					2130772332,
+					2130772333};
+			
+			// aapt resource value: 11
+			public const int GenericDraweeHierarchy_actualImageScaleType = 11;
+			
+			// aapt resource value: 12
+			public const int GenericDraweeHierarchy_backgroundImage = 12;
+			
+			// aapt resource value: 0
+			public const int GenericDraweeHierarchy_fadeDuration = 0;
+			
+			// aapt resource value: 6
+			public const int GenericDraweeHierarchy_failureImage = 6;
+			
+			// aapt resource value: 7
+			public const int GenericDraweeHierarchy_failureImageScaleType = 7;
+			
+			// aapt resource value: 13
+			public const int GenericDraweeHierarchy_overlayImage = 13;
+			
+			// aapt resource value: 2
+			public const int GenericDraweeHierarchy_placeholderImage = 2;
+			
+			// aapt resource value: 3
+			public const int GenericDraweeHierarchy_placeholderImageScaleType = 3;
+			
+			// aapt resource value: 14
+			public const int GenericDraweeHierarchy_pressedStateOverlayImage = 14;
+			
+			// aapt resource value: 10
+			public const int GenericDraweeHierarchy_progressBarAutoRotateInterval = 10;
+			
+			// aapt resource value: 8
+			public const int GenericDraweeHierarchy_progressBarImage = 8;
+			
+			// aapt resource value: 9
+			public const int GenericDraweeHierarchy_progressBarImageScaleType = 9;
+			
+			// aapt resource value: 4
+			public const int GenericDraweeHierarchy_retryImage = 4;
+			
+			// aapt resource value: 5
+			public const int GenericDraweeHierarchy_retryImageScaleType = 5;
+			
+			// aapt resource value: 15
+			public const int GenericDraweeHierarchy_roundAsCircle = 15;
+			
+			// aapt resource value: 20
+			public const int GenericDraweeHierarchy_roundBottomLeft = 20;
+			
+			// aapt resource value: 19
+			public const int GenericDraweeHierarchy_roundBottomRight = 19;
+			
+			// aapt resource value: 17
+			public const int GenericDraweeHierarchy_roundTopLeft = 17;
+			
+			// aapt resource value: 18
+			public const int GenericDraweeHierarchy_roundTopRight = 18;
+			
+			// aapt resource value: 21
+			public const int GenericDraweeHierarchy_roundWithOverlayColor = 21;
+			
+			// aapt resource value: 16
+			public const int GenericDraweeHierarchy_roundedCornerRadius = 16;
+			
+			// aapt resource value: 23
+			public const int GenericDraweeHierarchy_roundingBorderColor = 23;
+			
+			// aapt resource value: 24
+			public const int GenericDraweeHierarchy_roundingBorderPadding = 24;
+			
+			// aapt resource value: 22
+			public const int GenericDraweeHierarchy_roundingBorderWidth = 22;
+			
+			// aapt resource value: 1
+			public const int GenericDraweeHierarchy_viewAspectRatio = 1;
 			
 			public static int[] LinearLayoutCompat = new int[] {
 					16842927,
@@ -8944,6 +11369,116 @@ namespace Mugelli.Software.It.Mgc.Droid
 			
 			// aapt resource value: 12
 			public const int SearchView_voiceIcon = 12;
+			
+			public static int[] SimpleDraweeView = new int[] {
+					2130772309,
+					2130772310,
+					2130772311,
+					2130772312,
+					2130772313,
+					2130772314,
+					2130772315,
+					2130772316,
+					2130772317,
+					2130772318,
+					2130772319,
+					2130772320,
+					2130772321,
+					2130772322,
+					2130772323,
+					2130772324,
+					2130772325,
+					2130772326,
+					2130772327,
+					2130772328,
+					2130772329,
+					2130772330,
+					2130772331,
+					2130772332,
+					2130772333,
+					2130772334,
+					2130772335};
+			
+			// aapt resource value: 26
+			public const int SimpleDraweeView_actualImageResource = 26;
+			
+			// aapt resource value: 11
+			public const int SimpleDraweeView_actualImageScaleType = 11;
+			
+			// aapt resource value: 25
+			public const int SimpleDraweeView_actualImageUri = 25;
+			
+			// aapt resource value: 12
+			public const int SimpleDraweeView_backgroundImage = 12;
+			
+			// aapt resource value: 0
+			public const int SimpleDraweeView_fadeDuration = 0;
+			
+			// aapt resource value: 6
+			public const int SimpleDraweeView_failureImage = 6;
+			
+			// aapt resource value: 7
+			public const int SimpleDraweeView_failureImageScaleType = 7;
+			
+			// aapt resource value: 13
+			public const int SimpleDraweeView_overlayImage = 13;
+			
+			// aapt resource value: 2
+			public const int SimpleDraweeView_placeholderImage = 2;
+			
+			// aapt resource value: 3
+			public const int SimpleDraweeView_placeholderImageScaleType = 3;
+			
+			// aapt resource value: 14
+			public const int SimpleDraweeView_pressedStateOverlayImage = 14;
+			
+			// aapt resource value: 10
+			public const int SimpleDraweeView_progressBarAutoRotateInterval = 10;
+			
+			// aapt resource value: 8
+			public const int SimpleDraweeView_progressBarImage = 8;
+			
+			// aapt resource value: 9
+			public const int SimpleDraweeView_progressBarImageScaleType = 9;
+			
+			// aapt resource value: 4
+			public const int SimpleDraweeView_retryImage = 4;
+			
+			// aapt resource value: 5
+			public const int SimpleDraweeView_retryImageScaleType = 5;
+			
+			// aapt resource value: 15
+			public const int SimpleDraweeView_roundAsCircle = 15;
+			
+			// aapt resource value: 20
+			public const int SimpleDraweeView_roundBottomLeft = 20;
+			
+			// aapt resource value: 19
+			public const int SimpleDraweeView_roundBottomRight = 19;
+			
+			// aapt resource value: 17
+			public const int SimpleDraweeView_roundTopLeft = 17;
+			
+			// aapt resource value: 18
+			public const int SimpleDraweeView_roundTopRight = 18;
+			
+			// aapt resource value: 21
+			public const int SimpleDraweeView_roundWithOverlayColor = 21;
+			
+			// aapt resource value: 16
+			public const int SimpleDraweeView_roundedCornerRadius = 16;
+			
+			// aapt resource value: 23
+			public const int SimpleDraweeView_roundingBorderColor = 23;
+			
+			// aapt resource value: 24
+			public const int SimpleDraweeView_roundingBorderPadding = 24;
+			
+			// aapt resource value: 22
+			public const int SimpleDraweeView_roundingBorderWidth = 22;
+			
+			// aapt resource value: 1
+			public const int SimpleDraweeView_viewAspectRatio = 1;
 			
 			public static int[] SnackbarLayout = new int[] {
 					16843039,
@@ -9382,7 +11917,7 @@ namespace Mugelli.Software.It.Mgc.Droid
 			public const int ViewBackgroundHelper_backgroundTintMode = 2;
 			
 			public static int[] ViewPagerIndicator = new int[] {
-					2130772309};
+					2130772336};
 			
 			// aapt resource value: 0
 			public const int ViewPagerIndicator_vpiCirclePageIndicatorStyle = 0;

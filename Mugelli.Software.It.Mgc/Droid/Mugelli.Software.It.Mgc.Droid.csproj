@@ -142,6 +142,39 @@
     <Reference Include="FFImageLoading.Forms.Droid">
       <HintPath>..\packages\Xamarin.FFImageLoading.Forms.2.3.4\lib\MonoAndroid10\FFImageLoading.Forms.Droid.dll</HintPath>
     </Reference>
+    <Reference Include="Bolts.AppLinks">
+      <HintPath>..\packages\Bolts.1.4.0.1\lib\MonoAndroid403\Bolts.AppLinks.dll</HintPath>
+    </Reference>
+    <Reference Include="Bolts.Tasks">
+      <HintPath>..\packages\Bolts.1.4.0.1\lib\MonoAndroid403\Bolts.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Naxam.FrescoCore.Droid">
+      <HintPath>..\packages\Naxam.FrescoCore.Droid.1.5.0\lib\MonoAndroid10\Naxam.FrescoCore.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Naxam.FrescoDrawee.Droid">
+      <HintPath>..\packages\Naxam.FrescoDrawee.Droid.1.5.0\lib\MonoAndroid10\Naxam.FrescoDrawee.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Naxam.FrescoImagePipelineBase.Droid">
+      <HintPath>..\packages\Naxam.FrescoImagePipelineBase.Droid.1.5.0\lib\MonoAndroid10\Naxam.FrescoImagePipelineBase.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Naxam.FrescoImagePipeline.Droid">
+      <HintPath>..\packages\Naxam.FrescoImagePipeline.Droid.1.5.0\lib\MonoAndroid10\Naxam.FrescoImagePipeline.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Naxam.Fresco.Droid">
+      <HintPath>..\packages\Naxam.Fresco.Droid.1.5.0\lib\MonoAndroid10\Naxam.Fresco.Droid.dll</HintPath>
+    </Reference>
+    <Reference Include="Stormlion.FrescoImageViewer">
+      <HintPath>..\packages\PhotoBrowser.Forms.0.1.2\lib\MonoAndroid\Stormlion.FrescoImageViewer.dll</HintPath>
+    </Reference>
+    <Reference Include="Stormlion.PhotoBrowser.Android">
+      <HintPath>..\packages\PhotoBrowser.Forms.0.1.2\lib\MonoAndroid\Stormlion.PhotoBrowser.Android.dll</HintPath>
+    </Reference>
+    <Reference Include="Stormlion.PhotoBrowser">
+      <HintPath>..\packages\PhotoBrowser.Forms.0.1.2\lib\MonoAndroid\Stormlion.PhotoBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="Stormlion.PhotoDraweeView">
+      <HintPath>..\packages\PhotoBrowser.Forms.0.1.2\lib\MonoAndroid\Stormlion.PhotoDraweeView.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Mugelli.Software.It.Mgc.csproj">
@@ -158,6 +191,7 @@
     <Compile Include="Renders\HtmlFormatLabelRenderer.cs" />
     <Compile Include="Renders\ViewCellItemSelectedCustomRenderer.cs" />
     <Compile Include="LaunchActivity.cs" />
+    <Compile Include="MessagingCenters\PhotoBrowserDroidMessage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -221,6 +255,12 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\Pink_Filled_Circle_100px.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\Purple_Filled_Circle_100px.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\splashscreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MessagingCenters\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\fontawesome.ttf" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Compat.25.4.0.2\build\MonoAndroid70\Xamarin.Android.Support.Compat.targets')" />
