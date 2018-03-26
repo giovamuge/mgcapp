@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:behaviors="clr-namespace:Mugelli.Software.It.Mgc.Behaviors;assembly=Mugelli.Software.It.Mgc"
              xmlns:userControls="clr-namespace:Mugelli.Software.It.Mgc.UserControls;assembly=Mugelli.Software.It.Mgc"
+             xmlns:fonts="clr-namespace:Mugelli.Software.It.Mgc.Fonts;assembly=Mugelli.Software.It.Mgc"
              x:Class="Mugelli.Software.It.Mgc.Pages.CommunicationsPage"
              Title="{Binding Title}"
              Icon="{Binding Icon}"
@@ -41,7 +42,64 @@
 
                         <ViewCell>
                             <ViewCell.View>
-                                <Grid Padding="14" 
+
+                                 <Grid BackgroundColor="{StaticResource GrayUltraLight}">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="70" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <ContentView Grid.Column="0"
+                                                 BackgroundColor="{Binding Path=Type, Converter={StaticResource TypeEventColorConverter}}"
+                                                 VerticalOptions="FillAndExpand">
+
+                                        <Grid VerticalOptions="Center">
+                                            <StackLayout HorizontalOptions="Center"
+                                                         Orientation="Vertical"
+                                                         BackgroundColor="{Binding Path=Type, Converter={StaticResource TypeEventColorConverter}}"
+                                                         Padding="15">
+                                                <Label Text="{x:Static fonts:FontAwesomeIcons.EnvelopeO}"
+                                                       FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                                                       HorizontalOptions="Center"
+                                                       VerticalOptions="Center"
+                                                       Style="{StaticResource TitleLabelSecondary}"/>
+                                            </StackLayout>
+                                        </Grid>
+
+                                    </ContentView>
+                                    <ContentView Grid.Column="1"
+                                                 VerticalOptions="FillAndExpand">
+
+                                        <StackLayout Orientation="Vertical"
+                                                     Padding="20">
+                                            <Label Style="{StaticResource ClassNameLabel}" 
+                                                   Text="{Binding Path=Title}"></Label>
+                                            
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                </Grid.ColumnDefinitions>
+                                                
+                                                <Label Text="{x:Static fonts:FontAwesomeIcons.User}"
+                                                       FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                                                       Grid.Column="0"
+                                                       IsVisible="{Binding Path=Author, Converter={StaticResource IsNotNullToBoolConverter}}"
+                                                       Style="{StaticResource ClassInstructorLabelFont}"/>
+                                                
+                                                <Label Style="{StaticResource ClassInstructorLabel}" 
+                                                       Text="{Binding Path=Author}"
+                                                       FontSize="11"
+                                                       Grid.Column="1"/>
+
+                                            </Grid>
+                                        </StackLayout>
+
+                                    </ContentView>
+
+                                </Grid>
+                                
+                                <!--<Grid Padding="14" 
                                       VerticalOptions="FillAndExpand"
                                       BackgroundColor="{StaticResource GrayLight}">
 
@@ -100,16 +158,10 @@
                                                            VerticalOptions="Fill"
                                                            LineBreakMode="WordWrap"/>
                                                 </ContentView>
-                                                <!--<Label Text="{Binding Path=ShortContent}"
-                                                       Style="{StaticResource ClassInstructorLabel}"
-                                                       VerticalOptions="Fill"
-                                                       LineBreakMode="WordWrap"
-                                                       Grid.Row="2"
-                                                       Grid.ColumnSpan="2"/>-->
                                             </Grid>
                                         </StackLayout>
                                     </StackLayout>
-                                </Grid>
+                                </Grid>-->
                             </ViewCell.View>
                         </ViewCell>
                     </DataTemplate>
