@@ -48,6 +48,7 @@
                     
                     <OnPlatform x:TypeArguments="View">
                         <OnPlatform.iOS>
+                            <Grid Grid.Column="0"></Grid>
                         </OnPlatform.iOS>
                         <OnPlatform.Android>
                                 <Button Text="{x:Static fonts:FontAwesomeIcons.ArrowLeft}"
@@ -66,6 +67,7 @@
                     </OnPlatform>
                     <OnPlatform x:TypeArguments="View">
                         <OnPlatform.iOS>
+                            <Grid Grid.Column="1"></Grid>
                         </OnPlatform.iOS>
                         <OnPlatform.Android>
                                 <Button Text="{x:Static fonts:FontAwesomeIcons.Image}"
