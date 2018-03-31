@@ -7,6 +7,7 @@ using FFImageLoading.Forms.Touch;
 using Foundation;
 using Mugelli.Software.It.Mgc.iOS.MessaggingCenters;
 using Mugelli.Software.It.Mgc.MessagingCenters;
+using Stormlion.PhotoBrowser.iOS;
 //using Stormlion.PhotoBrowser;
 //using Stormlion.PhotoBrowser.iOS;
 using UIKit;
@@ -40,7 +41,7 @@ namespace Mugelli.Software.It.Mgc.iOS
 			Xamarin.Calabash.Start();
 #endif
 
-            //Platform.Init();
+            Platform.Init();
             PhotoBrowseriOSMessage.Subscribe(this);
 
             LoadApplication(new App());

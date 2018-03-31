@@ -425,6 +425,8 @@ namespace Mugelli.Software.It.Mgc.Fonts
         public static readonly string FileExcelO = "\uf1c3";
         public static readonly string FilePowerpointO = "\uf1c4";
         public static readonly string FileImageO = "\uf1c5";
+        public static readonly string Images = "\uf302";
+        public static readonly string Image = "\uf03e";
         public static readonly string FileArchiveO = "\uf1c6";
         public static readonly string FileAudioO = "\uf1c7";
         public static readonly string FileVideoO = "\uf1c8";

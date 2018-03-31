@@ -22,31 +22,30 @@
                 
                 <ContentView Padding="0"
                              Grid.Row="0">
-                    <Grid>
-                        <!-- Gesture image -->
-                        <Grid.GestureRecognizers>
+
+                    <!-- Gesture image -->
+                    <ContentView.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ShowGalleryImage}"/>
+                    </ContentView.GestureRecognizers>
+                
+                    <forms:CachedImage Source="{Binding Article.HeroImage}"
+                                       HeightRequest="300"
+                                       x:Name="HeroImage"
+                                       HorizontalOptions="Fill"
+                                       Aspect="AspectFill"
+                                       Grid.Row="0">
+                        <forms:CachedImage.GestureRecognizers>
                             <TapGestureRecognizer Command="{Binding ShowGalleryImage}"/>
-                        </Grid.GestureRecognizers>
-
-                        <forms:CachedImage Source="{Binding Article.HeroImage}"
-                                           HeightRequest="300"
-                                           x:Name="HeroImage"
-                                           HorizontalOptions="Fill"
-                                           Aspect="AspectFill"
-                                           Grid.Row="0">
-                            <forms:CachedImage.GestureRecognizers>
-                                <TapGestureRecognizer Command="{Binding ShowGalleryImage}"/>
-                            </forms:CachedImage.GestureRecognizers>
-
-                            <!--<forms:CachedImage.GestureRecognizers>
-                                <PinchGestureRecognizer PinchUpdated="OnPinchUpdated" />
-                            </forms:CachedImage.GestureRecognizers>-->
-                        </forms:CachedImage>
-                    </Grid>
-
+                        </forms:CachedImage.GestureRecognizers>
+                    </forms:CachedImage>
                 </ContentView>
 
-                 <ContentView>
+                 <Grid HorizontalOptions="FillAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    
                     <OnPlatform x:TypeArguments="View">
                         <OnPlatform.iOS>
                         </OnPlatform.iOS>
@@ -62,10 +61,28 @@
                                     Margin="5"
                                     TextColor="White"
                                     BackgroundColor="Transparent"
-                                    Grid.Row="0"/>
+                                    Grid.Column="0"/>
                         </OnPlatform.Android>
                     </OnPlatform>
-                </ContentView>
+                    <OnPlatform x:TypeArguments="View">
+                        <OnPlatform.iOS>
+                        </OnPlatform.iOS>
+                        <OnPlatform.Android>
+                                <Button Text="{x:Static fonts:FontAwesomeIcons.Image}"
+                                    FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                                    Command="{Binding ShowGalleryImage}"
+                                    FontSize="25"
+                                    HeightRequest="50"
+                                    WidthRequest="50"
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="End"
+                                    Margin="5"
+                                    TextColor="White"
+                                    BackgroundColor="Transparent"
+                                    Grid.Column="1"/>
+                        </OnPlatform.Android>
+                    </OnPlatform>
+                </Grid>
 
                 <StackLayout Orientation="Vertical"
                              HorizontalOptions="Fill"
