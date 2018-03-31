@@ -8,7 +8,6 @@ namespace Mugelli.Software.It.Mgc.Commons
     {
         private static readonly string[] AmmiKeyWords =
         {
-            "famiglia",
             "ammi"
         };
 
@@ -35,12 +34,13 @@ namespace Mugelli.Software.It.Mgc.Commons
             var sourceParseList = source.ToParseList(new[] {' '});
             if (MgcKeyWords.Any(x => sourceParseList.Any(y => y.Contains(x))))
                 return EventType.Mgc;
-
-            if (AmmiKeyWords.Any(x => sourceParseList.Any(y => y.Contains(x))))
-                return EventType.Ammi;
-
+            
             if (GiovanissimiKeyWords.Any(x => sourceParseList.Any(y => y.Contains(x))))
                 return EventType.Giovanissimi;
+
+            //if (AmmiKeyWords.Any(x => sourceParseList.Any(y => y.Contains(x))))
+                //return EventType.Ammi;
+
 
             return OblatiKeyWords.Any(x => sourceParseList.Any(y => y.Contains(x)))
                 ? EventType.Oblati

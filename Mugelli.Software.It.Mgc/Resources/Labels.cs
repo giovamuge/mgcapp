@@ -209,6 +209,20 @@ namespace Mugelli.Software.It.Mgc.Resources
                 resources.Add("BodyLabelPrimary", stylee);
             }
 
+            if (!resources.ContainsKey("BodyLabelSecondary"))
+            {
+                var stylee = new Style(typeof(Label))
+                {
+                    Setters =
+                    {
+                        new Setter { Property = Label.TextColorProperty, Value = resources["SecondaryTextColor"] },
+                        new Setter { Property = Label.FontSizeProperty, Value = resources["BodyFont"]},
+                        new Setter { Property = Label.FontFamilyProperty, Value = resources["LightFontFamily"]}
+                    }
+                };
+                resources.Add("BodyLabelPrimary", stylee);
+            }
+
 
             //
             //

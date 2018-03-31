@@ -11,168 +11,77 @@
     <ContentPage.Content>
 
         <ScrollView>
-            
-           <!-- <StackLayout Orientation="Vertical"
-                         Spacing="0"
-                         VerticalOptions="FillAndExpand">
-
-                <StackLayout Padding=".5"
-                             Spacing="4"
-                             BackgroundColor="{StaticResource GrayPrimary}">
-
-                    <Grid Padding="16, 10"
-                          BackgroundColor="{StaticResource GrayUltraLight}">
-
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"></ColumnDefinition>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-
-                        <Label Text="{Binding Comm.Title}"
-                               Style="{StaticResource TitleLabelPrimary}"
-                               VerticalOptions="Fill"
-                               LineBreakMode="WordWrap"
-                               Grid.Row="0"
-                               Grid.ColumnSpan="2"/>
-
-                        <StackLayout Grid.Column="0"
-                                     Grid.Row="1"
-                                     BackgroundColor="{Binding Path=Type, Converter={StaticResource TypeEventColorConverter}}"
-                                     Margin="-16, 0, 0, 0"
-                                     Padding="18, 4, 8, 4">
-                            <Label Text="{Binding Path=Type, Converter={StaticResource TypeEventTextConverter}}"
-                                   Style="{StaticResource HandleLabelSecondary}"/>
-                        </StackLayout>
-
-                        <StackLayout HorizontalOptions="End"
-                                     Orientation="Horizontal"
-                                     VerticalOptions="Fill"
-                                     Grid.Row="1"
-                                     Grid.Column="1">
-                            <Image Source="Black_Clock_50px.png" />
-                            <Label Text="{Binding Comm.Date, StringFormat='{}{0: dd MMM yyyy}'}"
-                                   Style="{StaticResource HandleLabelPrimary}"
-                                   VerticalTextAlignment="Center"></Label>
-                        </StackLayout>
-
-                       <userControls:HtmlFormatLabel Text="{Binding Comm.Content}"
-                               Style="{StaticResource ClassInstructorLabel}"
-                               VerticalOptions="Fill"
-                               Grid.Row="2"
-                               Grid.ColumnSpan="2"/>
-                    </Grid>
-                </StackLayout>
-            </StackLayout>-->
-
                <Grid VerticalOptions="Fill">
 
                 <StackLayout Orientation="Vertical"
                              HorizontalOptions="Fill"
-                             Padding="24,30,24,0" 
+                             Padding="24, 30, 24, 24" 
                              Spacing="14"
                              BackgroundColor="{StaticResource GrayUltraLight}">
-
-                     <ContentView>
-                        <OnPlatform x:TypeArguments="View">
-                            <OnPlatform.iOS>
-                            </OnPlatform.iOS>
-                            <OnPlatform.Android>
-                                    <Button Text="{x:Static fonts:FontAwesomeIcons.ArrowLeft}"
-                                            FontFamily="{x:Static fonts:Fonts.FontAwesome}"
-                                            Command="{Binding GoBack}"
-                                            FontSize="25"
-                                            HeightRequest="50"
-                                            WidthRequest="50"
-                                            VerticalOptions="Start"
-                                            HorizontalOptions="Start"
-                                            Margin="-10,0,0,5"
-                                            BackgroundColor="Transparent"
-                                            TextColor="{StaticResource PrimaryTextColor}"
-                                            Grid.Row="0"/>
-                            </OnPlatform.Android>
-                        </OnPlatform>
-                    </ContentView>
-
-                    <Label Style="{StaticResource TitleLabelPrimary}" Text="{Binding CommunicationData.Title}" FontSize="30" />
-
-                    <StackLayout Grid.Column="0"
-                                 Grid.Row="1"
-                                 BackgroundColor="{Binding Path=Type, Converter={StaticResource TypeEventColorConverter}}"
-                                 Margin="-24, 0, 0, 0"
-                                 Padding="18, 4, 8, 4">
-                        <Label Text="{Binding CommunicationData.Type, Converter={StaticResource TypeEventTextConverter}}"
-                               Style="{StaticResource HandleLabelSecondary}"/>
-                    </StackLayout>
-
-                    <Grid>
-                        <!-- Columns -->
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"></ColumnDefinition>
-                            <ColumnDefinition Width="Auto"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-
-                        <StackLayout Orientation="Horizontal"
-                                     Grid.Column="0">
-                            <Label  Text="{x:Static fonts:FontAwesomeIcons.User}"
-                                    FontFamily="{x:Static fonts:Fonts.FontAwesome}"
-                                    Style="{StaticResource HandleLabelPrimaryFont}"/>
-                            <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding CommunicationData.Author}" />
-                        </StackLayout>
-                        
-                        <StackLayout Orientation="Horizontal"
-                                     Grid.Column="1">
-                            <!--<Image Source="Black_Clock_50px.png" />-->
-                            <Label  Text="{x:Static fonts:FontAwesomeIcons.ClockO}"
-                                    FontFamily="{x:Static fonts:Fonts.FontAwesome}"
-                                    Style="{StaticResource HandleLabelPrimaryFont}"/>
-                            <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding CommunicationData.Date, StringFormat='{}{0:dd MMM yyyy HH:mm}'}" />
-                        </StackLayout>
-                    </Grid>
-
-
-                     
-                    <Grid Padding="24, 7, 7, 7"
-                          Margin="-24, 0, -15, 0"
-                          HorizontalOptions="Start"
-                          BackgroundColor="{Binding CommunicationData.Type, Converter={StaticResource TypeEventColorConverter}}">
-
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"></ColumnDefinition>
-                            <ColumnDefinition Width="Auto"></ColumnDefinition>
-                        </Grid.ColumnDefinitions>
-                        
-                        <Label Text="{x:Static fonts:FontAwesomeIcons.EnvelopeO}"
-                               FontFamily="{x:Static fonts:Fonts.FontAwesome}"
-                               Style="{StaticResource HandleLabelSecondaryFont}"
-                               Grid.Column="0"/>
-                        
-                        <Label Style="{StaticResource HandleLabelSecondary}"
-                               Text="{Binding CommunicationData.Type, Converter={StaticResource TypeEventTextConverter}}"
-                               Grid.Column="1"/>
-                        
-                    </Grid>
                     
-                    <!--<userControls:HtmlFormatLabel Style="{StaticResource BodyLabelPrimary}" Text="{Binding Article.ContentHtml}" FontSize="20" />-->
-<!--                    <Label Style="{StaticResource ClassInstructorLabel}" Text="{Binding CommunicationData.Content}" FontSize="25" />-->
+                    <StackLayout Orientation="Vertical" 
+                                 BackgroundColor="{Binding CommunicationData.Type, Converter={StaticResource TypeEventColorConverter}}"
+                                 Margin="-24, -30, -24, -24"
+                                 Padding="24, 30, 24, 24" >
 
+                         <ContentView>
+                            <OnPlatform x:TypeArguments="View">
+                                <OnPlatform.iOS>
+                                </OnPlatform.iOS>
+                                <OnPlatform.Android>
+                                        <Button Text="{x:Static fonts:FontAwesomeIcons.ArrowLeft}"
+                                                FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                                                Command="{Binding GoBack}"
+                                                FontSize="25"
+                                                HeightRequest="50"
+                                                WidthRequest="50"
+                                                VerticalOptions="Start"
+                                                HorizontalOptions="Start"
+                                                Margin="-10,0,0,5"
+                                                BackgroundColor="Transparent"
+                                                TextColor="{StaticResource SecondaryTextColor}"
+                                                Grid.Row="0"/>
+                                </OnPlatform.Android>
+                            </OnPlatform>
+                        </ContentView>
 
-                       <!--<userControls:HtmlFormatLabel Text="{Binding CommunicationData.Content}"
-                               Style="{StaticResource ClassInstructorLabel}"
-                               VerticalOptions="Fill"
-                               Grid.Row="2"
-                               FontSize="25"
-                               Grid.ColumnSpan="2"/>-->
+                        <Label Style="{StaticResource TitleLabelSecondary}" Text="{Binding CommunicationData.Title}" FontSize="30" />
+
+                        <StackLayout Orientation="Vertical">
+                            
+                            <StackLayout Orientation="Horizontal"
+                                         Margin="0, 5, 0, 0">
+                                <Label  Text="{x:Static fonts:FontAwesomeIcons.User}"
+                                        FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                                        Style="{StaticResource BodyLabelSecondaryFont}"/>
+                                <Label Style="{StaticResource BodyLabelSecondary}" Text="{Binding CommunicationData.Author}" />
+                            </StackLayout>
+                            
+                            <StackLayout Orientation="Horizontal"
+                                         Margin="0, 5, 0, 0">
+                                
+                                <Label  Text="{x:Static fonts:FontAwesomeIcons.ClockO}"
+                                        FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                                        Style="{StaticResource BodyLabelSecondaryFont}"/>
+                                <Label Style="{StaticResource BodyLabelSecondary}" Text="{Binding CommunicationData.Date, StringFormat='{}{0:dd MMM yyyy HH:mm}'}" />
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal"
+                                         Margin="0, 5, 0, 0">
+                                <Label Text="{x:Static fonts:FontAwesomeIcons.EnvelopeO}"
+                                       FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                                       Style="{StaticResource BodyLabelSecondaryFont}"/>
+                                <Label Style="{StaticResource BodyLabelSecondary}" Text="{Binding CommunicationData.Type, Converter={StaticResource TypeEventTextConverter}}"/>
+                            </StackLayout>
+                            
+                        </StackLayout>
+                        
+                    </StackLayout>
 
                     <WebView Source="{Binding CommunicationData.Source}" 
                              VerticalOptions="FillAndExpand" 
                              HorizontalOptions="FillAndExpand"
-                             Margin="0, -14, 0, 0"/>
+                             Margin="0, 11, 0, 0"/>
                 </StackLayout>
 
             </Grid>
