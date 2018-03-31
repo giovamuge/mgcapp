@@ -5,7 +5,7 @@
     xmlns:behaviors="clr-namespace:Mugelli.Software.It.Mgc.Behaviors;assembly=Mugelli.Software.It.Mgc"
     xmlns:userControls="clr-namespace:Mugelli.Software.It.Mgc.UserControls;assembly=Mugelli.Software.It.Mgc"  
     xmlns:fonts="clr-namespace:Mugelli.Software.It.Mgc.Fonts;assembly=Mugelli.Software.It.Mgc"     
-    Title="{Binding Communication.Title}"
+    Title="{Binding CommunicationData.Title}"
     BindingContext="{Binding CommunicationDetailViewModel, Source={StaticResource ViewModelLocator}}"
     BackgroundColor="{StaticResource GrayUltraLight}">
     <ContentPage.Content>
@@ -99,14 +99,14 @@
                         </OnPlatform>
                     </ContentView>
 
-                    <Label Style="{StaticResource TitleLabelPrimary}" Text="{Binding Communication.Title}" FontSize="30" />
+                    <Label Style="{StaticResource TitleLabelPrimary}" Text="{Binding CommunicationData.Title}" FontSize="30" />
 
                     <StackLayout Grid.Column="0"
                                  Grid.Row="1"
                                  BackgroundColor="{Binding Path=Type, Converter={StaticResource TypeEventColorConverter}}"
                                  Margin="-24, 0, 0, 0"
                                  Padding="18, 4, 8, 4">
-                        <Label Text="{Binding Communication.Type, Converter={StaticResource TypeEventTextConverter}}"
+                        <Label Text="{Binding CommunicationData.Type, Converter={StaticResource TypeEventTextConverter}}"
                                Style="{StaticResource HandleLabelSecondary}"/>
                     </StackLayout>
 
@@ -122,7 +122,7 @@
                             <Label  Text="{x:Static fonts:FontAwesomeIcons.User}"
                                     FontFamily="{x:Static fonts:Fonts.FontAwesome}"
                                     Style="{StaticResource HandleLabelPrimaryFont}"/>
-                            <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding Communication.Author}" />
+                            <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding CommunicationData.Author}" />
                         </StackLayout>
                         
                         <StackLayout Orientation="Horizontal"
@@ -131,20 +131,48 @@
                             <Label  Text="{x:Static fonts:FontAwesomeIcons.ClockO}"
                                     FontFamily="{x:Static fonts:Fonts.FontAwesome}"
                                     Style="{StaticResource HandleLabelPrimaryFont}"/>
-                            <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding Communication.Date, StringFormat='{}{0:dd MMM yyyy HH:mm}'}" />
+                            <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding CommunicationData.Date, StringFormat='{}{0:dd MMM yyyy HH:mm}'}" />
                         </StackLayout>
+                    </Grid>
+
+
+                     
+                    <Grid Padding="24, 7, 7, 7"
+                          Margin="-24, 0, -15, 0"
+                          HorizontalOptions="Start"
+                          BackgroundColor="{Binding CommunicationData.Type, Converter={StaticResource TypeEventColorConverter}}">
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        
+                        <Label Text="{x:Static fonts:FontAwesomeIcons.EnvelopeO}"
+                               FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                               Style="{StaticResource HandleLabelSecondaryFont}"
+                               Grid.Column="0"/>
+                        
+                        <Label Style="{StaticResource HandleLabelSecondary}"
+                               Text="{Binding CommunicationData.Type, Converter={StaticResource TypeEventTextConverter}}"
+                               Grid.Column="1"/>
+                        
                     </Grid>
                     
                     <!--<userControls:HtmlFormatLabel Style="{StaticResource BodyLabelPrimary}" Text="{Binding Article.ContentHtml}" FontSize="20" />-->
-<!--                    <Label Style="{StaticResource ClassInstructorLabel}" Text="{Binding Communication.Content}" FontSize="25" />-->
+<!--                    <Label Style="{StaticResource ClassInstructorLabel}" Text="{Binding CommunicationData.Content}" FontSize="25" />-->
 
 
-                       <userControls:HtmlFormatLabel Text="{Binding Communication.Content}"
+                       <!--<userControls:HtmlFormatLabel Text="{Binding CommunicationData.Content}"
                                Style="{StaticResource ClassInstructorLabel}"
                                VerticalOptions="Fill"
                                Grid.Row="2"
                                FontSize="25"
-                               Grid.ColumnSpan="2"/>
+                               Grid.ColumnSpan="2"/>-->
+
+                    <WebView Source="{Binding CommunicationData.Source}" 
+                             VerticalOptions="FillAndExpand" 
+                             HorizontalOptions="FillAndExpand"
+                             Margin="0, -14, 0, 0"/>
                 </StackLayout>
 
             </Grid>

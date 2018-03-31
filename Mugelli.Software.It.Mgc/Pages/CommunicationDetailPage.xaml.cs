@@ -18,7 +18,7 @@ namespace Mugelli.Software.It.Mgc.Pages
             }
 
             var viewModel = BindingContext as CommunicationDetailViewModel;
-            if (viewModel != null) viewModel.Communication = communication;
+            if (viewModel != null) viewModel.CommunicationData = communication;
         }
     }
 }

@@ -1,10 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using Mugelli.Software.It.Mgc.Helper;
 using Mugelli.Software.It.Mgc.Models;
+using Mugelli.Software.It.Mgc.Models.Types;
 using Mugelli.Software.It.Mgc.Navigations;
 using Mugelli.Software.It.Mgc.Services;
 using Mugelli.Software.It.Mgc.Stacks;
@@ -24,6 +26,12 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             ReadCommCommand = new RelayCommand<object>(OnReadCommCommand);
 
             OnRefresh();
+
+            // TODO: Soluzione brutta per ios perchè quando clicco la prima volta su gli avvisi non naviga
+            //if (Device.RuntimePlatform == Device.iOS)
+            //{
+            //    OnReadCommCommand(new Communication { Content = "", Author = "", Date = DateTime.Now, Title = "", ShortContent = "", Type = EventType.Mgc });
+            //}
         }
 
         public ICommand RefreshCommand { get; set; }
@@ -46,7 +54,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             get => _readCommSelected;
             set
             {
-                RaisePropertyChanged(nameof(Communication), _readCommSelected, value);
+                RaisePropertyChanged(nameof(ReadCommSelected), _readCommSelected, value);
                 _readCommSelected = value;
             }
         }
@@ -79,8 +87,8 @@ namespace Mugelli.Software.It.Mgc.ViewModel
 
         private void OnReadCommCommand(object data)
         {
-            Communication comm;
-            if(data is Communication)
+            Communication comm = new Communication();
+            if (data is Communication)
             {
                 comm = (Communication)data;
             }
@@ -89,14 +97,18 @@ namespace Mugelli.Software.It.Mgc.ViewModel
                 if (item.Item is Communication)
                 {
                     comm = (Communication)item.Item;
-                    _navigationService.NavigateTo(PageStacks.CommunicationDetailPage, comm);
-                    ReadCommSelected = null;
-                    return;
                 }
             }
 
-            //_navigationService.NavigateTo(PageStacks.CommunicationDetailPage, ReadCommSelected);
-            //ReadCommSelected = null;
+            if (comm != null)
+            {
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    _navigationService.NavigateTo(PageStacks.CommunicationDetailPage, comm);
+                    ReadCommSelected = null;
+                });
+
+            }
         }
     }
 }

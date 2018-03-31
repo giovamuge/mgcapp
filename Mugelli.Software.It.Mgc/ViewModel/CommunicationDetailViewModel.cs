@@ -9,15 +9,15 @@ namespace Mugelli.Software.It.Mgc.ViewModel
 {
     public class CommunicationDetailViewModel : ViewModelBase
     {
-        private Communication _communication;
+        private Communication _communicationData;
 
-        public Communication Communication
+        public Communication CommunicationData
         {
-            get => _communication;
+            get => _communicationData;
             set
             {
-                RaisePropertyChanged(nameof(Communication), _communication, value);
-                _communication = value;
+                RaisePropertyChanged(nameof(CommunicationData), _communicationData, value);
+                _communicationData = value;
             }
         }
 
