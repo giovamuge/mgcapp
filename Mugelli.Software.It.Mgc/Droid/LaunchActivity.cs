@@ -30,7 +30,7 @@ namespace Mugelli.Software.It.Mgc.Droid
         {
             base.OnResume();
 
-			StartActivity(typeof(MainActivity);
+			StartActivity(typeof(MainActivity));
 
             // Viene una schermata nera
 			//Task.Factory.StartNew(() => StartActivity(typeof(MainActivity));
