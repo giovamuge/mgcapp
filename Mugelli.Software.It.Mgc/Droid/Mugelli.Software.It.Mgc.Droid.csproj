@@ -58,12 +58,6 @@
     </Reference>
     <Reference Include="System.IO.Compression" />
     <Reference Include="System.Net.Http" />
-    <Reference Include="Plugin.FirebasePushNotification.Abstractions">
-      <HintPath>..\packages\Plugin.FirebasePushNotification.2.3.0\lib\netstandard1.0\Plugin.FirebasePushNotification.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Plugin.FirebasePushNotification">
-      <HintPath>..\packages\Plugin.FirebasePushNotification.2.3.0\lib\netstandard1.0\Plugin.FirebasePushNotification.dll</HintPath>
-    </Reference>
     <Reference Include="Bolts.AppLinks">
       <HintPath>..\packages\Bolts.1.4.0.1\lib\MonoAndroid403\Bolts.AppLinks.dll</HintPath>
     </Reference>
@@ -175,6 +169,15 @@
     <Reference Include="FFImageLoading.Forms.Droid">
       <HintPath>..\packages\Xamarin.FFImageLoading.Forms.2.3.4\lib\MonoAndroid10\FFImageLoading.Forms.Droid.dll</HintPath>
     </Reference>
+    <Reference Include="Plugin.FirebasePushNotification.Abstractions">
+      <HintPath>..\packages\Plugin.FirebasePushNotification.2.3.0\lib\netstandard1.0\Plugin.FirebasePushNotification.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.FirebasePushNotification">
+      <HintPath>..\packages\Plugin.FirebasePushNotification.2.3.0\lib\netstandard1.0\Plugin.FirebasePushNotification.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.FirebasePushNotification">
+      <HintPath>bin\Debug\Plugin.FirebasePushNotification.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Mugelli.Software.It.Mgc.csproj">
@@ -198,6 +201,7 @@
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
     <None Include="packages.config" />
+    <None Include="google-services.json" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Tabbar.axml" />
@@ -213,7 +217,6 @@
     <AndroidResource Include="Resources\drawable\Filled_Circle_100px.png" />
     <AndroidResource Include="Resources\drawable\footer.png" />
     <AndroidResource Include="Resources\drawable\Indigo_Filled_Circle_100px.png" />
-    <AndroidResource Include="Resources\drawable\LaunchView.axml" />
     <AndroidResource Include="Resources\drawable\News_50px.png" />
     <AndroidResource Include="Resources\drawable\Pink_Filled_Circle_100px.png" />
     <AndroidResource Include="Resources\drawable\Purple_Filled_Circle_100px.png" />
@@ -255,6 +258,7 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\Pink_Filled_Circle_100px.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\Purple_Filled_Circle_100px.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\splashscreen.png" />
+    <AndroidResource Include="Resources\drawable\LaunchView.xml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="MessagingCenters\" />

@@ -1,24 +1,17 @@
 ﻿using System;
 
 using Android.App;
-using Android.Content;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
 using FFImageLoading;
 using CarouselView.FormsPlugin.Android;
-using Plugin.FirebasePushNotification;
 using FFImageLoading.Forms.Droid;
-using Xamarin.Forms;
-using Xamarin.Forms.Platform.Android;
-using Stormlion.PhotoBrowser;
 using Mugelli.Software.It.Mgc.Droid.MessagingCenters;
+using Plugin.FirebasePushNotification;
 
 namespace Mugelli.Software.It.Mgc.Droid
 {
-    [Activity(Label = "MGC", Icon = "@drawable/icon", Theme = "@style/MyTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "MGC", Icon = "@drawable/icon", Theme = "@style/MyTheme", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
@@ -30,15 +23,16 @@ namespace Mugelli.Software.It.Mgc.Droid
 
             CachedImageRenderer.Init(true);
 
-            var config = new FFImageLoading.Config.Configuration
-            {
-                VerboseLogging = false,
-                VerbosePerformanceLogging = false,
-                VerboseMemoryCacheLogging = false,
-                VerboseLoadingCancelledLogging = false,
-                DiskCacheDuration = TimeSpan.FromDays(30),
-                FadeAnimationEnabled = true,
-                FadeAnimationForCachedImages = false
+			var config = new FFImageLoading.Config.Configuration
+			{
+				VerboseLogging = false,
+				VerbosePerformanceLogging = false,
+				VerboseMemoryCacheLogging = false,
+				VerboseLoadingCancelledLogging = false,
+				DiskCacheDuration = TimeSpan.FromDays(30),
+				FadeAnimationEnabled = true,
+				FadeAnimationForCachedImages = false,
+				AllowUpscale = true
             };
             ImageService.Instance.Initialize(config);
 
@@ -67,7 +61,7 @@ namespace Mugelli.Software.It.Mgc.Droid
             //    })
             //}, tru
 #else
-            var options = new FirebaseOptions.Builder()
+			var options = new FirebaseOptions.Builder()
                                  .SetApplicationId("1:402954439752:android:2d2810dce428328e")
                                  .SetApiKey("AIzaSyD2ANVRy4K4md-ASE0jhRbDdJCOoY34p8Y")
                                  .SetDatabaseUrl("https://mgc-news.firebaseio.com/")
@@ -115,6 +109,32 @@ namespace Mugelli.Software.It.Mgc.Droid
             //    }
 
             //};
+
+
+
+			//If debug you should reset the token each time.
+#if DEBUG
+            FirebasePushNotificationManager.Initialize(this,true);
+#else
+            FirebasePushNotificationManager.Initialize(this, false);
+#endif
+
+            //Handle notification when app is closed here
+            CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
+            {
+
+
+            };
+
+            //Set the default notification channel for your app when running Android Oreo
+            if (Build.VERSION.SdkInt >= BuildVersionCodes.O)
+            {
+                //Change for your default notification channel id here
+                FirebasePushNotificationManager.DefaultNotificationChannelId = "DefaultChannel";
+
+                //Change for your default notification channel name here
+                FirebasePushNotificationManager.DefaultNotificationChannelName = "General";
+            }
         }
     }
 }
