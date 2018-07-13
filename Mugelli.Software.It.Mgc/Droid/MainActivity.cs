@@ -10,6 +10,10 @@ using Mugelli.Software.It.Mgc.Droid.MessagingCenters;
 using Android.Gms.Common;
 using Android.Util;
 using Firebase.Iid;
+using Firebase;
+using Firebase.Messaging;
+using Mugelli.Software.It.Mgc.MessagingCenters;
+using Newtonsoft.Json;
 
 namespace Mugelli.Software.It.Mgc.Droid
 {
@@ -43,105 +47,17 @@ namespace Mugelli.Software.It.Mgc.Droid
 
             Stormlion.PhotoBrowser.Droid.Platform.Init(this);
             PhotoBrowserDroidMessage.Subscribe(this);
+            PayloadDroidMessage.Subscribe(this);
 
             LoadApplication(new App());
 
-            //If debug you should reset the token each time.
-#if DEBUG
-            //FirebasePushNotificationManager.Initialize(this,true);
-            //FirebasePushNotificationManager.Initialize(this,
-            //new[]
-            //{
-            //    new NotificationUserCategory("message",new List<NotificationUserAction> {
-            //        new NotificationUserAction("Reply","Reply", NotificationActionType.Foreground),
-            //        new NotificationUserAction("Forward","Forward", NotificationActionType.Foreground)
-
-            //    }),
-            //    new NotificationUserCategory("alldevices",new List<NotificationUserAction>  {
-            //        new NotificationUserAction("Accept","Visualizza", NotificationActionType.Default, "check"),
-            //        new NotificationUserAction("Reject","Cancella", NotificationActionType.Default, "cancel")
-            //    })
-            //}, tru
-#else
-			var options = new FirebaseOptions.Builder()
-                                 .SetApplicationId("1:402954439752:android:2d2810dce428328e")
-                                 .SetApiKey("AIzaSyD2ANVRy4K4md-ASE0jhRbDdJCOoY34p8Y")
-                                 .SetDatabaseUrl("https://mgc-news.firebaseio.com/")
-                                 .Build();
-            
-            var fire = FirebaseApp.InitializeApp(this, options, "mgc");
-
-            FirebasePushNotificationManager.ProcessIntent(Intent);//Subscribing to single topic
-            //CrossFirebasePushNotification.Current.Subscribe("alldevices");
-            FirebaseMessaging.Instance.SubscribeToTopic("alldevices");
-            //FirebasePushNotificationManager.Initialize(this, false);  
-            FirebasePushNotificationManager.Initialize(this,
-                new NotificationUserCategory[]
-                {
-                    new NotificationUserCategory("message",new List<NotificationUserAction> {
-                        new NotificationUserAction("Reply","Reply", NotificationActionType.Foreground),
-                        new NotificationUserAction("Forward","Forward", NotificationActionType.Foreground)
-
-                    }),
-                    new NotificationUserCategory("alldevices",new List<NotificationUserAction>  {
-                        new NotificationUserAction("Accept","Visualizza", NotificationActionType.Default, "check"),
-                        new NotificationUserAction("Reject","Cancella", NotificationActionType.Default, "cancel")
-                    })
-                }, false);
-#endif
-
-            //Handle notification when app is closed here
-            //CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
-            //{
-            //    System.Diagnostics.Debug.WriteLine("Received");
-            //    //SendNotification(p.Data["body"]);
-            //};
-
-            //CrossFirebasePushNotification.Current.OnNotificationOpened += (s, p) =>
-            //{
-            //    System.Diagnostics.Debug.WriteLine("Opened");
-            //    foreach (var data in p.Data)
-            //    {
-            //        System.Diagnostics.Debug.WriteLine($"{data.Key} : {data.Value}");
-            //    }
-
-            //    if (!string.IsNullOrEmpty(p.Identifier))
-            //    {
-            //        System.Diagnostics.Debug.WriteLine($"ActionId: {p.Identifier}");
-            //    }
-
-            //};
-
-
-
-            //If debug you should reset the token each time.
-            //#if DEBUG
-            //            FirebasePushNotificationManager.Initialize(this,true);
-            //#else
-            //            FirebasePushNotificationManager.Initialize(this, false);
-            //#endif
-
-            ////Handle notification when app is closed here
-            //CrossFirebasePushNotification.Current.OnNotificationReceived += (s, p) =>
-            //{
-
-
-            //};
-
-            ////Set the default notification channel for your app when running Android Oreo
-            //if (Build.VERSION.SdkInt >= BuildVersionCodes.O)
-            //{
-            //    //Change for your default notification channel id here
-            //    FirebasePushNotificationManager.DefaultNotificationChannelId = "DefaultChannel";
-
-            //    //Change for your default notification channel name here
-            //    FirebasePushNotificationManager.DefaultNotificationChannelName = "General";
-            //}
-
+           
             if (!IsPlayServicesAvailable())  return;
-            //Firebase.Iid.FirebaseInstanceId.Instance.GetToken();
-            Firebase.Messaging.FirebaseMessaging.Instance.SubscribeToTopic("testt");
-            Log.Debug("Token", "InstanceID token: " + FirebaseInstanceId.Instance.Token);
+
+            FirebaseMessaging.Instance.SubscribeToTopic("calendars");
+            FirebaseMessaging.Instance.SubscribeToTopic("news");
+            FirebaseMessaging.Instance.SubscribeToTopic("advertisings");
+            //Log.Debug("Token", "InstanceID token: " + FirebaseInstanceId.Instance.Token);
         }
 
         public bool IsPlayServicesAvailable()
@@ -161,6 +77,21 @@ namespace Mugelli.Software.It.Mgc.Droid
 
             Log.Debug(nameof(MainActivity), "Google Play Services is available.");
             return true;
+        }
+
+        protected override void OnResume()
+        {
+            base.OnResume();
+
+            if (Intent != null && Intent.Extras != null)
+            {
+                if (Intent.Extras.ContainsKey("payload"))
+                {
+                    var payloadStrify = Intent.Extras.GetString("payload");
+                    var payload = JsonConvert.DeserializeObject<PayloadMessage>(payloadStrify);
+                    PayloadDroidMessage.Send(payload);
+                }
+            }
         }
     }
 }

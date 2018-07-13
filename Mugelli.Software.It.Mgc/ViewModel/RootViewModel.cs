@@ -4,8 +4,10 @@ using System.Collections.Specialized;
 using System.ComponentModel;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using Mugelli.Software.It.Mgc.MessagingCenters;
 using Mugelli.Software.It.Mgc.Navigations;
 using Mugelli.Software.It.Mgc.Pages;
+using Mugelli.Software.It.Mgc.Services;
 using Mugelli.Software.It.Mgc.Stacks;
 using Xamarin.Forms;
 
@@ -29,10 +31,14 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         public List<Page> Childrens { get; set; }
 
         private readonly INavigationService _navigationService;
+        //private readonly IPayloadService _payloadService;
 
         public RootViewModel(INavigationService navigationService)
         {
             _navigationService = navigationService;
+            //_payloadService = payloadService;
+
+            //MessagingCenter.Subscribe<PayloadMessage>(this, nameof(PayloadMessage), _payloadService.OnViewPayload);
 
             Title = "MGC";
             TitleCommunications = "Communicazioni";

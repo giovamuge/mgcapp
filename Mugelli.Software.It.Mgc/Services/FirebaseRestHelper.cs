@@ -71,5 +71,15 @@ namespace Mugelli.Software.It.Mgc.Services
             return (await Client.Child("calendar").OnceAsync<object>()).Select(
                 x => JsonConvert.DeserializeObject<Appointment>(x.Object.ToString())).Where(x => x.Date >= DateTime.Now).OrderBy(x => x.Date).ToList();
         }
+
+        //public async Task<Communication> GetCommunication(string id) 
+        //{
+        //    if (Client == null)
+        //    {
+        //        Init();
+        //    }
+        //    var data = await Client.Child($"calendar/{id}").OnceSingleAsync<object>();
+        //    return new Communication();
+        //}
     }
 }

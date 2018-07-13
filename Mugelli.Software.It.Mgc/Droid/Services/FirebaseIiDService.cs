@@ -6,6 +6,8 @@ using Android.Support.V4.App;
 using Android.Util;
 using Firebase.Iid;
 using Firebase.Messaging;
+using Mugelli.Software.It.Mgc.MessagingCenters;
+using Newtonsoft.Json;
 
 namespace Mugelli.Software.It.Mgc.Droid.Services
 {
@@ -38,25 +40,46 @@ namespace Mugelli.Software.It.Mgc.Droid.Services
         {
             Log.Debug(TAG, "From: " + message.From);
             Log.Debug(TAG, "Notification Message Body: " + message.GetNotification().Body);
+
+            SendNotification(message.GetNotification().Body);
         }
 
-        void SendNotification(string messageBody)
+        protected void SendNotification(string payloadStrify)
         {
-            var intent = new Intent(this, typeof(MainActivity));
-            intent.AddFlags(ActivityFlags.ClearTop);
-            var pendingIntent = PendingIntent.GetActivity(this, 0 /* Request code */, intent, PendingIntentFlags.OneShot);
+            try
+            {   
+                var payload = JsonConvert.DeserializeObject<PayloadMessage>(payloadStrify);
+                // Set up an intent so that tapping the notifications returns to this app:
+                var intent = new Intent(this, typeof(MainActivity));
+                intent.PutExtra("payload", payloadStrify);
 
-            var defaultSoundUri = RingtoneManager.GetDefaultUri(RingtoneType.Notification);
-            var notificationBuilder = new NotificationCompat.Builder(this)
-                .SetContentTitle("FCM Message")
-                .SetContentText(messageBody)
-                .SetAutoCancel(true)
-                .SetSound(defaultSoundUri)
-                .SetContentIntent(pendingIntent);
+                // Create a PendingIntent; we're only using one PendingIntent (ID = 0):
+                const int pendingIntentId = 0;
+                var pendingIntent =
+                    PendingIntent.GetActivity(this, pendingIntentId, intent, PendingIntentFlags.OneShot);
 
-            var notificationManager = NotificationManager.FromContext(this);
+                // Instantiate the builder and set notification elements, including pending intent:
+                var builder = new Notification.Builder(this)
+                    .SetContentIntent(pendingIntent)
+                    .SetContentTitle(payload.Title)
+                    .SetContentText(payload.Body)
+                    .SetSmallIcon(Resource.Drawable.icon);
 
-            notificationManager.Notify(0, notificationBuilder.Build());
+                // Build the notification:
+                var notification = builder.Build();
+
+                // Get the notification manager:
+                var notificationManager =
+                    GetSystemService(NotificationService) as NotificationManager;
+                
+                // Publish the notification:
+                var notificationId = payload.Id.GetHashCode();
+                    notificationManager.Notify(notificationId, notification);
+            }
+            catch(Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
     }
 }

@@ -179,6 +179,9 @@
     <Compile Include="Resources\Labels.cs" />
     <Compile Include="Resources\Converters.cs" />
     <Compile Include="ViewModel\InfoViewModel.cs" />
+    <Compile Include="MessagingCenters\PayloadMessage.cs" />
+    <Compile Include="Services\PayloadService.cs" />
+    <Compile Include="Services\IPayloadService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="CarouselView.FormsPlugin.Abstractions">
