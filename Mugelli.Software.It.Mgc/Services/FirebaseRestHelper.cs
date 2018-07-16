@@ -6,6 +6,8 @@ using Mugelli.Software.It.Mgc.Models;
 using System.Reflection;
 using Newtonsoft.Json;
 using System;
+using Xamarin.Forms.Internals;
+using Mugelli.Software.It.Mgc.Extensions;
 
 namespace Mugelli.Software.It.Mgc.Services
 {
@@ -72,14 +74,37 @@ namespace Mugelli.Software.It.Mgc.Services
                 x => JsonConvert.DeserializeObject<Appointment>(x.Object.ToString())).Where(x => x.Date >= DateTime.Now).OrderBy(x => x.Date).ToList();
         }
 
-        //public async Task<Communication> GetCommunication(string id) 
-        //{
-        //    if (Client == null)
-        //    {
-        //        Init();
-        //    }
-        //    var data = await Client.Child($"calendar/{id}").OnceSingleAsync<object>();
-        //    return new Communication();
-        //}
+        public async Task<Communication> GetAdvertising(string id)
+        {
+            try
+            {
+                if (Client == null)
+                {
+                    Init();
+                }
+                var data = await Client.Child($"advertising/{id}").OnceAsync<object>();
+                var dir = data.ToDictionary(x => x.Key.FirstCharToUpper(), x => x.Object); //.Select(x => new Dictionary<string, object> { x.Key, x.Object });
+                var comm = GetObject<Communication>(dir);
+                return comm;
+
+            }
+            catch(Exception ex) 
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        private T GetObject<T>(Dictionary<string, object> dict)
+        {
+            Type type = typeof(T);
+            var obj = Activator.CreateInstance(type);
+
+            foreach (var kv in dict)
+            {
+                if (type.HasProperty(kv.Key))
+                    type.GetProperty(kv.Key).SetValue(obj, kv.Value);
+            }
+            return (T)obj;
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Xamarin.Forms.Internals;
 
 namespace Mugelli.Software.It.Mgc.Extensions
 {
@@ -18,5 +19,15 @@ namespace Mugelli.Software.It.Mgc.Extensions
 				? value
 				: defaultValueProvider();
 		}
+
+        public static bool HasProperty(this Type type, string propertyName)
+        {
+            return type.GetProperty(propertyName) != null;
+        }
+
+        public static bool HasProperty(this object obj, string propertyName)
+        {
+            return obj.GetType().GetProperty(propertyName) != null;
+        }
 	}
 }

@@ -37,5 +37,9 @@ namespace Mugelli.Software.It.Mgc.Commons
             "Nov",
             "Dic"
         };
+
+        public const string AdvertisingMessage = "advertising";
+        public const string NewsgMessage = "news";
+        public const string CalendarMessage = "calendar";
     }
 }

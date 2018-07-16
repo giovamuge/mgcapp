@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.ComponentModel;
+using System.Threading.Tasks;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using Mugelli.Software.It.Mgc.Commons;
 using Mugelli.Software.It.Mgc.MessagingCenters;
+using Mugelli.Software.It.Mgc.Models;
 using Mugelli.Software.It.Mgc.Navigations;
 using Mugelli.Software.It.Mgc.Pages;
 using Mugelli.Software.It.Mgc.Services;
@@ -31,14 +34,34 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         public List<Page> Childrens { get; set; }
 
         private readonly INavigationService _navigationService;
-        //private readonly IPayloadService _payloadService;
+        private readonly IPayloadService _payloadService;
 
-        public RootViewModel(INavigationService navigationService)
+        public RootViewModel(INavigationService navigationService, IPayloadService payloadService)
         {
             _navigationService = navigationService;
-            //_payloadService = payloadService;
+            _payloadService = payloadService;
 
-            //MessagingCenter.Subscribe<PayloadMessage>(this, nameof(PayloadMessage), _payloadService.OnViewPayload);
+            //MessagingCenter.Subscribe<PayloadMessage>(this, nameof(PayloadMessage), (sender) => _payloadService.OnViewPayload(sender));
+            MessagingCenter.Subscribe<PayloadMessage>(this, nameof(PayloadMessage), (sender) => 
+            {
+                switch (sender.Type)
+                {
+                    case ConstantCommon.AdvertisingMessage:
+                        Task.Factory.StartNew(async () =>
+                        {
+                            var advert = await FirebaseRestHelper.Instance.GetAdvertising(sender.Id);
+                            _navigationService.NavigateTo(PageStacks.CommunicationDetailPage, advert);
+                        });
+                        break;
+                    case ConstantCommon.NewsgMessage:
+                        _navigationService.NavigateTo(PageStacks.NewsDetailPage, new NewsDetail());
+                        break;
+                    case ConstantCommon.CalendarMessage:
+                        _navigationService.NavigateTo(PageStacks.CalendarDetailPage, new Appointment());
+                        break;
+                }
+            });
+
 
             Title = "MGC";
             TitleCommunications = "Communicazioni";

@@ -1,4 +1,5 @@
-﻿using Mugelli.Software.It.Mgc.MessagingCenters;
+﻿using System.Threading.Tasks;
+using Mugelli.Software.It.Mgc.MessagingCenters;
 
 namespace Mugelli.Software.It.Mgc.Services
 {

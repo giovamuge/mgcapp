@@ -41,17 +41,24 @@ namespace Mugelli.Software.It.Mgc.Droid.Services
             Log.Debug(TAG, "From: " + message.From);
             Log.Debug(TAG, "Notification Message Body: " + message.GetNotification().Body);
 
-            SendNotification(message.GetNotification().Body);
+            SendNotification(message.GetNotification());
         }
 
-        protected void SendNotification(string payloadStrify)
+        protected void SendNotification(RemoteMessage.Notification payloadNotification)
         {
             try
-            {   
-                var payload = JsonConvert.DeserializeObject<PayloadMessage>(payloadStrify);
+            {
+                //var payload = JsonConvert.DeserializeObject<PayloadMessage>(payloadStrify);
+                var payload = new PayloadMessage
+                {
+                    Title = payloadNotification.Title,
+                    Body = payloadNotification.Body,
+                    Id = payloadNotification.ClickAction,
+                    Type = payloadNotification.Tag
+                };
                 // Set up an intent so that tapping the notifications returns to this app:
                 var intent = new Intent(this, typeof(MainActivity));
-                intent.PutExtra("payload", payloadStrify);
+                intent.PutExtra("payload", JsonConvert.SerializeObject(payload));
 
                 // Create a PendingIntent; we're only using one PendingIntent (ID = 0):
                 const int pendingIntentId = 0;
@@ -71,10 +78,11 @@ namespace Mugelli.Software.It.Mgc.Droid.Services
                 // Get the notification manager:
                 var notificationManager =
                     GetSystemService(NotificationService) as NotificationManager;
-                
+
                 // Publish the notification:
-                var notificationId = payload.Id.GetHashCode();
-                    notificationManager.Notify(notificationId, notification);
+                //var notificationId = payload.Id.GetHashCode();
+                var notificationId = 0;
+                notificationManager.Notify(notificationId, notification);
             }
             catch(Exception ex)
             {

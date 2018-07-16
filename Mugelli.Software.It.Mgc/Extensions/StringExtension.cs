@@ -128,5 +128,15 @@ namespace Mugelli.Software.It.Mgc.Extensions
             //return !string.IsNullOrEmpty(input) ? Regex.Replace(input, "<.*?>", string.Empty) : string.Empty;
             return Regex.Replace(input, "<.*?>", string.Empty);
         }
+
+        public static string FirstCharToUpper(this string input)
+        {
+            switch (input)
+            {
+                case null: throw new ArgumentNullException(nameof(input));
+                case "": throw new ArgumentException($"{nameof(input)} cannot be empty", nameof(input));
+                default: return char.ToUpper(input[0]) + input.Substring(1);
+            }
+        }
     }
 }

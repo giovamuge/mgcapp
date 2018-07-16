@@ -81,8 +81,6 @@ namespace Mugelli.Software.It.Mgc.Droid
 
         protected override void OnResume()
         {
-            base.OnResume();
-
             if (Intent != null && Intent.Extras != null)
             {
                 if (Intent.Extras.ContainsKey("payload"))
@@ -92,6 +90,7 @@ namespace Mugelli.Software.It.Mgc.Droid
                     PayloadDroidMessage.Send(payload);
                 }
             }
+            base.OnResume();
         }
     }
 }
