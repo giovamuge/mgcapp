@@ -22,7 +22,7 @@ namespace Mugelli.Software.It.Mgc.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
-            CachedImageRenderer.Init();
+            FFImageLoading.Forms.Platform.CachedImageRenderer.Init();
             CarouselViewRenderer.Init();
 
             var config = new FFImageLoading.Config.Configuration()

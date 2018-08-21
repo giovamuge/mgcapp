@@ -115,24 +115,6 @@
     <Reference Include="FFImageLoading.Platform">
       <HintPath>..\packages\Xamarin.FFImageLoading.2.4.3.840\lib\Xamarin.iOS10\FFImageLoading.Platform.dll</HintPath>
     </Reference>
-    <Reference Include="Firebase.Core">
-      <HintPath>..\packages\Xamarin.Firebase.iOS.Core.5.0.5\lib\Xamarin.iOS10\Firebase.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.InstanceID">
-      <HintPath>..\packages\Xamarin.Firebase.iOS.InstanceID.3.1.1\lib\Xamarin.iOS10\Firebase.InstanceID.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.Analytics">
-      <HintPath>..\packages\Xamarin.Firebase.iOS.Analytics.5.0.1\lib\Xamarin.iOS10\Firebase.Analytics.dll</HintPath>
-    </Reference>
-    <Reference Include="Firebase.CloudMessaging">
-      <HintPath>..\packages\Xamarin.Firebase.iOS.CloudMessaging.3.0.3\lib\Xamarin.iOS10\Firebase.CloudMessaging.dll</HintPath>
-    </Reference>
-    <Reference Include="Plugin.FirebasePushNotification.Abstractions">
-      <HintPath>..\packages\Plugin.FirebasePushNotification.2.3.5\lib\Xamarin.iOS10\Plugin.FirebasePushNotification.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Plugin.FirebasePushNotification">
-      <HintPath>..\packages\Plugin.FirebasePushNotification.2.3.5\lib\Xamarin.iOS10\Plugin.FirebasePushNotification.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Forms.Core">
       <HintPath>..\packages\Xamarin.Forms.3.1.0.697729\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
     </Reference>
@@ -265,7 +247,5 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.targets" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.targets')" />
-  <Import Project="..\packages\Xamarin.Firebase.iOS.InstanceID.3.1.1\build\Xamarin.Firebase.iOS.InstanceID.targets" Condition="Exists('..\packages\Xamarin.Firebase.iOS.InstanceID.3.1.1\build\Xamarin.Firebase.iOS.InstanceID.targets')" />
-  <Import Project="..\packages\Xamarin.Firebase.iOS.Analytics.5.0.1\build\Xamarin.Firebase.iOS.Analytics.targets" Condition="Exists('..\packages\Xamarin.Firebase.iOS.Analytics.5.0.1\build\Xamarin.Firebase.iOS.Analytics.targets')" />
   <Import Project="..\packages\Xamarin.Forms.3.1.0.697729\build\netstandard2.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.1.0.697729\build\netstandard2.0\Xamarin.Forms.targets')" />
 </Project>
