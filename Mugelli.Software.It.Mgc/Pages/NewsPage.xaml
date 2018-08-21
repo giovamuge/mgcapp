@@ -54,18 +54,20 @@
                                       VerticalOptions="FillAndExpand"
                                       BackgroundColor="{StaticResource GrayLight}">
 
-                                    <StackLayout Orientation="Vertical" 
+                                   <!-- <StackLayout Orientation="Vertical" 
                                                  Spacing="0" 
                                                  VerticalOptions="Fill"
                                                  Padding="30"
-                                                 IsVisible="{Binding Path=Title, Converter={StaticResource IsNullToBoolConverter}}">
+                                                 IsVisible="{Binding Path=Title, Converter={StaticResource IsNullToBoolConverter}}">-->
 
                                         <Label Text="Non esiste" 
                                                FontSize="Large" 
                                                TextColor="{StaticResource GrayDark}"
+                                               Margin="30"
+                                                IsVisible="{Binding Path=Title, Converter={StaticResource IsNullToBoolConverter}}"
                                                HorizontalTextAlignment="Center" />
                                         
-                                    </StackLayout>
+                                    <!-- </StackLayout> -->
 
                                     <StackLayout Orientation="Vertical"
                                                  Spacing="0"
@@ -169,59 +171,6 @@
                                 </Grid>
                             </ViewCell.View>
                         </ViewCell>
-
-                        <!-- SOLUZIONE ALTERNATIVA -->
-
-                        <!--<ViewCell>
-                            <Grid RowSpacing="5" ColumnSpacing="0" Margin="10,5">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="*" />
-                                    <RowDefinition Height="AUTO" />
-                                </Grid.RowDefinitions>
-
-                                <Image Source="{Binding Path=HeroImage}" Aspect="AspectFill" Grid.RowSpan="2" />
-                                <Image Source="ShadowOverlay" Grid.RowSpan="2" Aspect="Fill" VerticalOptions="End"
-                                       HorizontalOptions="Fill" />
-
-                                <Grid Margin="10" RowSpacing="10" ColumnSpacing="10" Grid.Row="1">
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition Height="AUTO" />
-                                        <RowDefinition Height="25" />
-                                    </Grid.RowDefinitions>
-                                    <Grid.ColumnDefinitions>
-                                        -->
-                        <!--<ColumnDefinition Width="25" />-->
-                        <!--
-                                        <ColumnDefinition Width="*" />
-                                        <ColumnDefinition Width="AUTO" />
-                                    </Grid.ColumnDefinitions>
-
-                                    <Label Text="{Binding Path=ShortTitle}" Grid.Row="0" Grid.ColumnSpan="2"
-                                           Style="{StaticResource TitleLabelSecondary}" LineBreakMode="NoWrap" />
-
-                                    -->
-                        <!--<controls:CircleImage Source="{Binding ProfileImage}" Aspect="AspectFill" Grid.Row="1" Grid.Column="0" WidthRequest="25" HeightRequest="25" />-->
-                        <!--
-                                    <Label Text="{Binding Path=Subtitle}" Grid.Row="1" Grid.Column="0" FontSize="10"
-                                           VerticalOptions="Center" Style="{StaticResource BodyLabelSecondary}" />
-
-                                    <StackLayout Orientation="Horizontal" VerticalOptions="Center" Grid.Column="1"
-                                                 Grid.Row="1" Spacing="5">
-                                        -->
-                        <!-- TODO:aggiungere icona orologio -->
-                        <!--
-                                        <Image Source="Clock_50px.png" />
-                                        -->
-                        <!--<Label Text="pubblicato" Style="{StaticResource BodyLabel}" />-->
-                        <!--
-                                        <Label Text="{Binding Path=DateCreate}"
-                                               Style="{StaticResource HandleLabelSecondary}" />
-                                    </StackLayout>
-                                </Grid>
-                            </Grid>
-                        </ViewCell>-->
-
-
                     </DataTemplate>
                 </ListView.ItemTemplate>
 

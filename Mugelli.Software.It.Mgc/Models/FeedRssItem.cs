@@ -88,7 +88,8 @@ namespace Mugelli.Software.It.Mgc.Models
             }
             //Default value
             //return new Uri("PiccoloPrincipe.jpg");
-            return "PiccoloPrincipe.jpg";
+            //return "PiccoloPrincipe.jpg";
+            return string.Empty;
         }
 
         private static List<string> GetImages(string value)
