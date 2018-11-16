@@ -24,18 +24,10 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         //public List<News> NewsList { get; set; }
         private List<FeedRssItem> _newsList;
 
-        private FeedRssItem _readArticleSelected;
-
         public NewsViewModel(INavigationService navigationService, IRssFeedService rssFeedService)
         {
             _navigationService = navigationService;
             _rssFeedService = rssFeedService;
-
-            ReadArticleCommand = new RelayCommand(OnReadArticle);
-            NavigateMgcSite = new RelayCommand(() => Device.OpenUri(new Uri("http://www.mgcfirenze.net/it")));
-            RefreshCommand = new RelayCommand(OnRefresh);
-
-            OnRefresh();
         }
 
         public string Title { get; set; } = "News";
@@ -48,16 +40,6 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             {
                 RaisePropertyChanged(nameof(IsRefreshing), _isRefreshing, value);
                 _isRefreshing = value;
-            }
-        }
-
-        public FeedRssItem ReadArticleSelected
-        {
-            get => _readArticleSelected;
-            set
-            {
-                RaisePropertyChanged(nameof(ReadArticleSelected), _readArticleSelected, value);
-                _readArticleSelected = value;
             }
         }
 
@@ -75,21 +57,32 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         public ICommand NavigateMgcSite { get; set; }
         public ICommand RefreshCommand { get; set; }
 
-        private void OnRefresh()
+        private async Task OnRefresh()
         {
             IsRefreshing = true;
-            Task.Factory.StartNew(async () =>
-            {
-                var rss = await _rssFeedService.GetRss();
-                NewsList = rss.Items;
-                IsRefreshing = false;
-            });
+            var rss = await _rssFeedService.GetRss();
+            NewsList = rss.Items;
+            IsRefreshing = false;
         }
 
-        private void OnReadArticle()
+        public void OnReadArticle(FeedRssItem item)
         {
-            _navigationService.NavigateTo(PageStacks.NewsDetailPage, ReadArticleSelected);
-            ReadArticleSelected = null;
+            if (item == null)
+            {
+                Device.BeginInvokeOnMainThread(async () => await Application.Current.MainPage.DisplayAlert("Errore", "Non è possibile visualizzare l'articolo, contatta Giova per risolvere il bug", "Ok"));
+                return;
+            }
+
+            _navigationService.NavigateTo(PageStacks.NewsDetailPage, item);
+        }
+
+        public void OnInit()
+        {
+            ReadArticleCommand = new RelayCommand<FeedRssItem>(OnReadArticle);
+            NavigateMgcSite = new RelayCommand(() => Device.OpenUri(new Uri("http://www.mgcfirenze.net/it")));
+            RefreshCommand = new RelayCommand(async () => await OnRefresh());
+
+            Task.Run(OnRefresh);
         }
     }
 }

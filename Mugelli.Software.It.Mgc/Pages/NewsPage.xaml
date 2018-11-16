@@ -17,20 +17,20 @@
                 ItemsSource="{Binding NewsList}"
                 BackgroundColor="Transparent"
                 HasUnevenRows="True"
+                ItemTapped="OnItemTapped"
                 SeparatorVisibility="None"
                 IsPullToRefreshEnabled="True"
-                SelectedItem="{Binding ReadArticleSelected, Mode=TwoWay}"
                 IsRefreshing="{Binding IsRefreshing}"
                 RefreshCommand="{Binding RefreshCommand}">
 
 
-                <ListView.Behaviors>
+                <!--<ListView.Behaviors>-->
                     <!--<behaviors:ListViewSelectedItemBehavior Command="{Binding ReadArticleCommand}"
                                                             Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}" />-->
-                    <behaviors:EventToCommandBehavior Command="{Binding ReadArticleCommand}"
+                    <!--<behaviors:EventToCommandBehavior Command="{Binding ReadArticleCommand}"
                                                       EventName="ItemTapped"
-                                                      Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}" />
-                </ListView.Behaviors>
+                                                      Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}" />-->
+                <!--</ListView.Behaviors>-->
                 
                 <ListView.Footer>
                         <Grid Padding="14"

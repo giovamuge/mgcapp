@@ -53,11 +53,6 @@ namespace Mugelli.Software.It.Mgc.Droid
 
            
             if (!IsPlayServicesAvailable())  return;
-
-            FirebaseMessaging.Instance.SubscribeToTopic("calendars");
-            FirebaseMessaging.Instance.SubscribeToTopic("news");
-            FirebaseMessaging.Instance.SubscribeToTopic("advertisings");
-            //Log.Debug("Token", "InstanceID token: " + FirebaseInstanceId.Instance.Token);
         }
 
         public bool IsPlayServicesAvailable()
@@ -95,43 +90,43 @@ namespace Mugelli.Software.It.Mgc.Droid
 
         protected override void OnPause()
         {
-            var payload = new PayloadMessage
-            {
-                Title = "Test notification",
-                Body = "Send notification on pause application",
-                Id = "164a23d68d9ee542",
-                Type = "mgc"
-            };
-            // Set up an intent so that tapping the notifications returns to this app:
-            var intent = new Intent(this, typeof(MainActivity));
-            intent.PutExtra("payload", JsonConvert.SerializeObject(payload));
+            //var payload = new PayloadMessage
+            //{
+            //    Title = "Test notification",
+            //    Body = "Send notification on pause application",
+            //    Id = "164a23d68d9ee542",
+            //    Type = "advertising"
+            //};
+            //// Set up an intent so that tapping the notifications returns to this app:
+            //var intent = new Intent(this, typeof(MainActivity));
+            //intent.PutExtra("payload", JsonConvert.SerializeObject(payload));
 
-            // Create a PendingIntent; we're only using one PendingIntent (ID = 0):
-            const int pendingIntentId = 0;
-            var pendingIntent =
-                PendingIntent.GetActivity(this, pendingIntentId, intent, PendingIntentFlags.OneShot);
+            //// Create a PendingIntent; we're only using one PendingIntent (ID = 0):
+            //const int pendingIntentId = 0;
+            //var pendingIntent =
+            //    PendingIntent.GetActivity(this, pendingIntentId, intent, PendingIntentFlags.OneShot);
 
-            // Build the notification:
-            Notification notification;
+            //// Build the notification:
+            //Notification notification;
 
-            // Instantiate the builder and set notification elements, including pending intent:
-            using (var builder = new Notification.Builder(this)
-                .SetContentIntent(pendingIntent)
-                .SetContentTitle(payload.Title)
-                .SetContentText(payload.Body)
-                .SetSmallIcon(Resource.Drawable.icon))
-            {
-                notification = builder.Build();
-            }
+            //// Instantiate the builder and set notification elements, including pending intent:
+            //using (var builder = new Notification.Builder(this)
+            //    .SetContentIntent(pendingIntent)
+            //    .SetContentTitle(payload.Title)
+            //    .SetContentText(payload.Body)
+            //    .SetSmallIcon(Resource.Drawable.icon))
+            //{
+            //    notification = builder.Build();
+            //}
 
-            // Get the notification manager:
-            var notificationManager =
-                GetSystemService(NotificationService) as NotificationManager;
+            //// Get the notification manager:
+            //var notificationManager =
+            //    GetSystemService(NotificationService) as NotificationManager;
 
-            // Publish the notification:
-            //var notificationId = payload.Id.GetHashCode();
-            var notificationId = 0;
-            notificationManager.Notify(notificationId, notification);
+            //// Publish the notification:
+            ////var notificationId = payload.Id.GetHashCode();
+            //var notificationId = 0;
+            //notificationManager.Notify(notificationId, notification);
 
             base.OnPause();
         }

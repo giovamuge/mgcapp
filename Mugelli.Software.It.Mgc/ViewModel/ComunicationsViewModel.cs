@@ -23,7 +23,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             _navigationService = navigationService;
 
             RefreshCommand = new RelayCommand(OnRefresh);
-            ReadCommCommand = new RelayCommand<object>(OnReadCommCommand);
+            ReadCommCommand = new RelayCommand<Communication>(OnReadCommCommand);
 
             OnRefresh();
 
@@ -45,17 +45,6 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             {
                 RaisePropertyChanged(nameof(CommunicationsList), _communicationList, value);
                 _communicationList = value;
-            }
-        }
-
-        private Communication _readCommSelected { get; set; }
-        public Communication ReadCommSelected
-        {
-            get => _readCommSelected;
-            set
-            {
-                RaisePropertyChanged(nameof(ReadCommSelected), _readCommSelected, value);
-                _readCommSelected = value;
             }
         }
 
@@ -85,30 +74,37 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             });
         }
 
-        private void OnReadCommCommand(object data)
+        private void OnReadCommCommand(Communication communication)
         {
-            Communication comm = new Communication();
-            if (data is Communication)
+            //Communication comm = new Communication();
+            //if (data is Communication)
+            //{
+            //    comm = (Communication)data;
+            //}
+            //else if (data is ItemTappedEventArgs item)
+            //{
+            //    if (item.Item is Communication)
+            //    {
+            //        comm = (Communication)item.Item;
+            //    }
+            //}
+
+            //if (comm != null)
+            //{
+            //    Device.BeginInvokeOnMainThread(() =>
+            //    {
+            //        _navigationService.NavigateTo(PageStacks.CommunicationDetailPage, comm);
+            //    });
+
+            //}
+
+            if(communication == null)
             {
-                comm = (Communication)data;
-            }
-            else if (data is ItemTappedEventArgs item)
-            {
-                if (item.Item is Communication)
-                {
-                    comm = (Communication)item.Item;
-                }
+                Device.BeginInvokeOnMainThread(async () => await Application.Current.MainPage.DisplayAlert("Errore", "Non è possibile visualizzare l'avviso, contatta Giova per risolvere il bug", "Ok"));
+                return;
             }
 
-            if (comm != null)
-            {
-                Device.BeginInvokeOnMainThread(() =>
-                {
-                    _navigationService.NavigateTo(PageStacks.CommunicationDetailPage, comm);
-                    ReadCommSelected = null;
-                });
-
-            }
+            _navigationService.NavigateTo(PageStacks.CommunicationDetailPage, communication);
         }
     }
 }

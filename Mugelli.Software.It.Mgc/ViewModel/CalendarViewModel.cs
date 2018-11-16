@@ -10,6 +10,7 @@ using Mugelli.Software.It.Mgc.Models;
 using Mugelli.Software.It.Mgc.Navigations;
 using Mugelli.Software.It.Mgc.Services;
 using Mugelli.Software.It.Mgc.Stacks;
+using Xamarin.Forms;
 
 namespace Mugelli.Software.It.Mgc.ViewModel
 {
@@ -19,8 +20,6 @@ namespace Mugelli.Software.It.Mgc.ViewModel
 
         private List<Appointment> _appointments;
 
-        private Appointment _appointmentSelected;
-
         private List<AppointmentsGroupped> _appointmentsGroupped;
 
         private bool _isRefreshing;
@@ -29,7 +28,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         {
             _navigationService = navigationService;
 
-            ShowAppointmentCommand = new RelayCommand(OnShowAppointment);
+            ShowAppointmentCommand = new RelayCommand<Appointment>(OnShowAppointment);
             RefreshCommand = new RelayCommand(OnRefresh);
 
             OnRefresh();
@@ -72,16 +71,6 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             }
         }
 
-        public Appointment AppointmentSelected
-        {
-            get => _appointmentSelected;
-            set
-            {
-                RaisePropertyChanged(nameof(AppointmentSelected), _appointmentSelected, value);
-                _appointmentSelected = value;
-            }
-        }
-
         private void OnRefresh()
         {
             IsRefreshing = true;
@@ -101,10 +90,16 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             });
         }
 
-        private void OnShowAppointment()
+        private void OnShowAppointment(Appointment appointment)
         {
-            _navigationService.NavigateTo(PageStacks.CalendarDetailPage, AppointmentSelected);
-            AppointmentSelected = null;
+            if (appointment == null)
+            {
+                Device.BeginInvokeOnMainThread(async () => await Application.Current.MainPage.DisplayAlert("Errore", "Non è possibile visualizzare l'appuntamento, contatta Giova per risolvere il bug", "Ok"));
+                return;
+            }
+
+            _navigationService.NavigateTo(PageStacks.CalendarDetailPage, appointment);
+            //AppointmentSelected = null;
         }
     }
 }

@@ -183,6 +183,7 @@
     <Compile Include="MessagingCenters\PayloadMessage.cs" />
     <Compile Include="Services\PayloadService.cs" />
     <Compile Include="Services\IPayloadService.cs" />
+    <Compile Include="Behaviors\ItemTappedCommandListView.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="CarouselView.FormsPlugin.Abstractions">

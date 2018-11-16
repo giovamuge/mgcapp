@@ -29,13 +29,13 @@
                 RefreshCommand="{Binding RefreshCommand}"
                 IsRefreshing="{Binding IsRefreshing}"
                 IsVisible="{Binding CommunicationsList, Converter={StaticResource IsNotNullToBoolConverter}}"
-                SelectedItem="{Binding ReadCommSelected, Mode=TwoWay}">
+                behaviors:ItemTappedCommandListView.ItemTappedCommand="{Binding ReadCommCommand}">
 
-                <ListView.Behaviors>
+                <!--<ListView.Behaviors>
                     <behaviors:EventToCommandBehavior Command="{Binding ReadCommCommand}"
                                                       EventName="ItemTapped"
                                                       Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}" />
-                </ListView.Behaviors>
+                </ListView.Behaviors>-->
 
                 <ListView.ItemTemplate>
                     <DataTemplate>
