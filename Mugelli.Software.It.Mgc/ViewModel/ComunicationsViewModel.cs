@@ -22,10 +22,10 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         {
             _navigationService = navigationService;
 
-            RefreshCommand = new RelayCommand(OnRefresh);
+            RefreshCommand = new RelayCommand(async () => await OnRefresh());
             ReadCommCommand = new RelayCommand<Communication>(OnReadCommCommand);
 
-            OnRefresh();
+            Task.Run(OnRefresh);
 
             // TODO: Soluzione brutta per ios perchè quando clicco la prima volta su gli avvisi non naviga
             //if (Device.RuntimePlatform == Device.iOS)
@@ -63,15 +63,12 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             }
         }
 
-        private void OnRefresh()
+        private async Task OnRefresh()
         {
             IsRefreshing = true;
-            Task.Factory.StartNew(async () =>
-            {
-                var calendars = await FirebaseRestHelper.Instance.GetCommunications();
-                CommunicationsList = calendars;
-                IsRefreshing = false;
-            });
+            var calendars = await FirebaseRestHelper.Instance.GetCommunications();
+            CommunicationsList = calendars;
+            IsRefreshing = false;
         }
 
         private void OnReadCommCommand(Communication communication)
@@ -98,7 +95,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
 
             //}
 
-            if(communication == null)
+            if (communication == null)
             {
                 Device.BeginInvokeOnMainThread(async () => await Application.Current.MainPage.DisplayAlert("Errore", "Non è possibile visualizzare l'avviso, contatta Giova per risolvere il bug", "Ok"));
                 return;

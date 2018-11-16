@@ -29,9 +29,9 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             _navigationService = navigationService;
 
             ShowAppointmentCommand = new RelayCommand<Appointment>(OnShowAppointment);
-            RefreshCommand = new RelayCommand(OnRefresh);
+            RefreshCommand = new RelayCommand(async () => await OnRefresh());
 
-            OnRefresh();
+            Task.Run(OnRefresh);
         }
 
         public ICommand RefreshCommand { get; set; }
@@ -71,23 +71,20 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             }
         }
 
-        private void OnRefresh()
+        private async Task OnRefresh()
         {
             IsRefreshing = true;
-            Task.Factory.StartNew(async () =>
-            {
-                var calendars = await FirebaseRestHelper.Instance.GetCalendar();
+            var calendars = await FirebaseRestHelper.Instance.GetCalendar();
 
-                var groupped = calendars.OrderBy(x => x.Date).GroupBy(x => new {x.Date.Month, x.Date.Year}).Select(x =>
-                    new AppointmentsGroupped(
-                        $"{ConstantCommon.Month[x.Key.Month - 1]} {x.Key.Year}",
-                        $"{ConstantCommon.ShortMonth[x.Key.Month - 1]} {x.Key.Year}",
-                        x)).ToList();
+            var groupped = calendars.OrderBy(x => x.Date).GroupBy(x => new { x.Date.Month, x.Date.Year }).Select(x =>
+                  new AppointmentsGroupped(
+                      $"{ConstantCommon.Month[x.Key.Month - 1]} {x.Key.Year}",
+                      $"{ConstantCommon.ShortMonth[x.Key.Month - 1]} {x.Key.Year}",
+                      x)).ToList();
 
-                AppointmentsGroupped = groupped;
+            AppointmentsGroupped = groupped;
 
-                IsRefreshing = false;
-            });
+            IsRefreshing = false;
         }
 
         private void OnShowAppointment(Appointment appointment)
