@@ -9,11 +9,10 @@ using Android.Content;
 
 using Mugelli.Software.It.Mgc.Droid.MessagingCenters;
 using Mugelli.Software.It.Mgc.MessagingCenters;
+using Mugelli.Software.It.Mgc.Helpers;
 
 using FFImageLoading;
 using CarouselView.FormsPlugin.Android;
-using Firebase.Messaging;
-using Newtonsoft.Json;
 
 namespace Mugelli.Software.It.Mgc.Droid
 {
@@ -78,12 +77,28 @@ namespace Mugelli.Software.It.Mgc.Droid
         {
             if (Intent != null && Intent.Extras != null)
             {
-                if (Intent.Extras.ContainsKey("payload"))
+                //if (Intent.Extras.ContainsKey("payload"))
+                //{
+                //    //var payloadStrify = Intent.Extras.GetString("payload");
+                //    //var payload = JsonConvert.DeserializeObject<PayloadMessage>(payloadStrify);
+                //    //PayloadDroidMessage.Send(payload);
+                //}
+
+                var payload = new PayloadMessage();
+
+                if(Intent.Extras.ContainsKey("id"))
                 {
-                    var payloadStrify = Intent.Extras.GetString("payload");
-                    var payload = JsonConvert.DeserializeObject<PayloadMessage>(payloadStrify);
-                    PayloadDroidMessage.Send(payload);
+                    payload.Id = Intent.Extras.GetString("id");
                 }
+
+                if(Intent.Extras.ContainsKey("type"))
+                {
+                    payload.Type = Intent.Extras.GetString("type");
+                }
+
+                //Settings.Payload = payload;
+                Settings.PayloadId = payload.Id;
+                Settings.PayloadType = payload.Type;
             }
             base.OnResume();
         }

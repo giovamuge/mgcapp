@@ -24,7 +24,9 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         //public List<News> NewsList { get; set; }
         private List<FeedRssItem> _newsList;
 
-        public NewsViewModel(INavigationService navigationService, IRssFeedService rssFeedService)
+        public NewsViewModel(
+            INavigationService navigationService,
+            IRssFeedService rssFeedService)
         {
             _navigationService = navigationService;
             _rssFeedService = rssFeedService;
@@ -38,8 +40,9 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             get => _isRefreshing;
             set
             {
-                RaisePropertyChanged(nameof(IsRefreshing), _isRefreshing, value);
+                //RaisePropertyChanged(nameof(IsRefreshing), _isRefreshing, value);
                 _isRefreshing = value;
+                RaisePropertyChanged();
             }
         }
 
@@ -60,8 +63,9 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         private async Task OnRefresh()
         {
             IsRefreshing = true;
-            var rss = await _rssFeedService.GetRss();
-            NewsList = rss.Items;
+            //var rss = await _rssFeedService.GetRss();
+            //NewsList = rss.Items;
+            NewsList = await FirebaseRestHelper.Instance.GetNews();
             IsRefreshing = false;
         }
 

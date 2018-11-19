@@ -94,6 +94,44 @@ namespace Mugelli.Software.It.Mgc.Services
             }
         }
 
+        public async Task<List<FeedRssItem>> GetNews()
+        {
+            try
+            {
+                if (Client == null)
+                {
+                    Init();
+                }
+                return (await Client.Child($"news").OnceAsync<object>()).Select(
+                    x => JsonConvert.DeserializeObject<FeedRssItem>(x.Object.ToString()))/*.Where(x => x.DatePublished >= DateTime.Now)*/.OrderByDescending(x => x.DatePublished).Take(10).ToList();
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public async Task<FeedRssItem> GetSingleNews(string id)
+        {
+            try
+            {
+                if (Client == null)
+                {
+                    Init();
+                }
+                var data = await Client.Child($"news/{id}").OnceAsync<object>();
+                var dir = data.ToDictionary(x => x.Key.FirstCharToUpper(), x => x.Object); //.Select(x => new Dictionary<string, object> { x.Key, x.Object });
+                var comm = GetObject<FeedRssItem>(dir);
+                return comm;
+
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         private T GetObject<T>(Dictionary<string, object> dict)
         {
             Type type = typeof(T);

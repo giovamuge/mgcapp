@@ -105,7 +105,6 @@
     <Compile Include="Extensions\StringExtension.cs" />
     <Compile Include="Fonts\FontAwesomeIcons.cs" />
     <Compile Include="Fonts\Fonts.cs" />
-    <Compile Include="Helper\OnPlatformHelper.cs" />
     <Compile Include="MessagingCenters\BrowserPhotosMessage.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Author.cs" />
@@ -184,6 +183,9 @@
     <Compile Include="Services\PayloadService.cs" />
     <Compile Include="Services\IPayloadService.cs" />
     <Compile Include="Behaviors\ItemTappedCommandListView.cs" />
+    <Compile Include="Helpers\Settings.cs" />
+    <Compile Include="Helpers\OnPlatformHelper.cs" />
+    <Compile Include="Extensions\SettingsExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="CarouselView.FormsPlugin.Abstractions">
@@ -242,6 +244,12 @@
     </Reference>
     <Reference Include="FFImageLoading.Forms">
       <HintPath>packages\Xamarin.FFImageLoading.Forms.2.4.3.840\lib\portable-win+net45+wp80+win81+wpa81\FFImageLoading.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Settings.Abstractions">
+      <HintPath>packages\Xam.Plugins.Settings.3.1.1\lib\netstandard1.0\Plugin.Settings.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Plugin.Settings">
+      <HintPath>packages\Xam.Plugins.Settings.3.1.1\lib\netstandard1.0\Plugin.Settings.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

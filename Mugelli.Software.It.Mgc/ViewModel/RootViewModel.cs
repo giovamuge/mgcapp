@@ -1,12 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Collections.Specialized;
+﻿using System.Collections.Generic;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using Mugelli.Software.It.Mgc.Commons;
-using Mugelli.Software.It.Mgc.MessagingCenters;
+using Mugelli.Software.It.Mgc.Helpers;
 using Mugelli.Software.It.Mgc.Models;
 using Mugelli.Software.It.Mgc.Navigations;
 using Mugelli.Software.It.Mgc.Pages;
@@ -29,7 +27,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         public Page Calendar { get; set; }
 
         public Color BarBackgroundColor { get; set; }
-        public Color BarTextColor { get; set; } 
+        public Color BarTextColor { get; set; }
 
         public List<Page> Childrens { get; set; }
 
@@ -40,28 +38,6 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         {
             _navigationService = navigationService;
             _payloadService = payloadService;
-
-            //MessagingCenter.Subscribe<PayloadMessage>(this, nameof(PayloadMessage), (sender) => _payloadService.OnViewPayload(sender));
-            MessagingCenter.Subscribe<PayloadMessage>(this, nameof(PayloadMessage), (sender) => 
-            {
-                switch (sender.Type)
-                {
-                    case ConstantCommon.AdvertisingMessage:
-                        Task.Factory.StartNew(async () =>
-                        {
-                            var advert = await FirebaseRestHelper.Instance.GetAdvertising(sender.Id);
-                            _navigationService.NavigateTo(PageStacks.CommunicationDetailPage, advert);
-                        });
-                        break;
-                    case ConstantCommon.NewsgMessage:
-                        _navigationService.NavigateTo(PageStacks.NewsDetailPage, new NewsDetail());
-                        break;
-                    case ConstantCommon.CalendarMessage:
-                        _navigationService.NavigateTo(PageStacks.CalendarDetailPage, new Appointment());
-                        break;
-                }
-            });
-
 
             Title = "MGC";
             TitleCommunications = "Communicazioni";
@@ -78,8 +54,8 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             switch (Device.RuntimePlatform)
             {
                 case Device.Android:
-                    BarBackgroundColor = (Color) Application.Current.Resources["MgcColor"];
-                    BarTextColor = (Color) Application.Current.Resources["GrayUltraLight"];
+                    BarBackgroundColor = (Color)Application.Current.Resources["MgcColor"];
+                    BarTextColor = (Color)Application.Current.Resources["GrayUltraLight"];
 
                     listpages = new List<Page>
                     {
@@ -97,7 +73,8 @@ namespace Mugelli.Software.It.Mgc.ViewModel
                     var toolbarinformation = new ToolbarItem
                     {
                         Icon = "information.png",
-                        Command = new RelayCommand(() => {
+                        Command = new RelayCommand(() =>
+                        {
                             _navigationService.PushModal(ModalStacks.InfoModal, null);
                         }),
                         Priority = 0,
@@ -118,7 +95,40 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             }
 
             Childrens = listpages;
+
+            // Controlla e inizializza payload della notifica
+            Task.Run(InitializePayload);
         }
-        
+
+        private async Task InitializePayload()
+        {
+            if (Settings.Payload == null)
+            {
+                return;
+            }
+
+            switch (Settings.Payload.Type)
+            {
+                case ConstantCommon.AdvertisingMessage:
+                    var advert = await FirebaseRestHelper.Instance.GetAdvertising(Settings.Payload.Id);
+                    ResetPayload();
+                    _navigationService.NavigateTo(PageStacks.CommunicationDetailPage, advert);
+                    break;
+                case ConstantCommon.NewsgMessage:
+                    var news = await FirebaseRestHelper.Instance.GetSingleNews(Settings.Payload.Id);
+                    ResetPayload();
+                    _navigationService.NavigateTo(PageStacks.NewsDetailPage, new NewsDetail());
+                    break;
+                case ConstantCommon.CalendarMessage:
+                    ResetPayload();
+                    _navigationService.NavigateTo(PageStacks.CalendarDetailPage, new Appointment());
+                    break;
+            }
+        }
+
+        private static void ResetPayload()
+        {
+            Settings.Payload = null;
+        }
     }
 }
