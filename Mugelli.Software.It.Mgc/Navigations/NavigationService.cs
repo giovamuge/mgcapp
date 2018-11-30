@@ -35,6 +35,12 @@ namespace Mugelli.Software.It.Mgc.Navigations
 
         public void GoBack()
         {
+            if (Application.Current.MainPage.Navigation.ModalStack.Count > 0)
+            {
+                Task.Run(PopModal);
+                return;
+            }
+
             _navigation.PopAsync();
         }
 

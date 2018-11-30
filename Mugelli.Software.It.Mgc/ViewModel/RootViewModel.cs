@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Threading.Tasks;
 using GalaSoft.MvvmLight;
@@ -97,38 +98,39 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             Childrens = listpages;
 
             // Controlla e inizializza payload della notifica
-            Task.Run(InitializePayload);
+            //Task.Run(InitializePayload);
         }
 
-        private async Task InitializePayload()
+        public async Task InitializePayload()
         {
-            if (Settings.Payload == null)
+            if (string.IsNullOrEmpty(Settings.PayloadType) || string.IsNullOrEmpty(Settings.PayloadId))
             {
                 return;
             }
 
-            switch (Settings.Payload.Type)
+            switch (Settings.PayloadType)
             {
                 case ConstantCommon.AdvertisingMessage:
-                    var advert = await FirebaseRestHelper.Instance.GetAdvertising(Settings.Payload.Id);
+                    var advert = await FirebaseRestHelper.Instance.GetAdvertising(Settings.PayloadId);
                     ResetPayload();
-                    _navigationService.NavigateTo(PageStacks.CommunicationDetailPage, advert);
+                    await _navigationService.PushModal(PageStacks.CommunicationDetailPage, advert);
                     break;
                 case ConstantCommon.NewsgMessage:
-                    var news = await FirebaseRestHelper.Instance.GetSingleNews(Settings.Payload.Id);
+                    var news = await FirebaseRestHelper.Instance.GetSingleNews(Settings.PayloadId);
                     ResetPayload();
-                    _navigationService.NavigateTo(PageStacks.NewsDetailPage, new NewsDetail());
+                    await _navigationService.PushModal(PageStacks.NewsDetailPage, news);
                     break;
                 case ConstantCommon.CalendarMessage:
                     ResetPayload();
-                    _navigationService.NavigateTo(PageStacks.CalendarDetailPage, new Appointment());
+                    await _navigationService.PushModal(PageStacks.CalendarDetailPage, new Appointment());
                     break;
             }
         }
 
         private static void ResetPayload()
         {
-            Settings.Payload = null;
+            Settings.PayloadId = string.Empty;
+            Settings.PayloadType = string.Empty;
         }
     }
 }

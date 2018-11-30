@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using Mugelli.Software.It.Mgc.Pages;
+using Mugelli.Software.It.Mgc.ViewModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -14,6 +15,8 @@ namespace Mugelli.Software.It.Mgc
             BindableProperty.Create<RootPage, IEnumerable>(x => x.Children, null, BindingMode.TwoWay,
                 propertyChanged: OnItemsSourcePropertyChanged);
 
+        private readonly RootViewModel _viewModel;
+
         public RootPage()
         {
             InitializeComponent();
@@ -22,6 +25,15 @@ namespace Mugelli.Software.It.Mgc
             {
                 NavigationPage.SetHasNavigationBar(this, false);
             }
+
+            _viewModel = (RootViewModel)BindingContext;
+            Appearing += OnApparingEvent;
+        }
+
+
+        async void OnApparingEvent(object sender, System.EventArgs e)
+        {
+            await _viewModel.InitializePayload();
         }
 
 

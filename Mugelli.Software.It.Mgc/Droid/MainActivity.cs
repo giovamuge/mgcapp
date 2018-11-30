@@ -13,6 +13,7 @@ using Mugelli.Software.It.Mgc.Helpers;
 
 using FFImageLoading;
 using CarouselView.FormsPlugin.Android;
+using Firebase.Iid;
 
 namespace Mugelli.Software.It.Mgc.Droid
 {
@@ -77,72 +78,26 @@ namespace Mugelli.Software.It.Mgc.Droid
         {
             if (Intent != null && Intent.Extras != null)
             {
-                //if (Intent.Extras.ContainsKey("payload"))
-                //{
-                //    //var payloadStrify = Intent.Extras.GetString("payload");
-                //    //var payload = JsonConvert.DeserializeObject<PayloadMessage>(payloadStrify);
-                //    //PayloadDroidMessage.Send(payload);
-                //}
-
-                var payload = new PayloadMessage();
+                string payloadId,
+                    payloadType;
 
                 if(Intent.Extras.ContainsKey("id"))
                 {
-                    payload.Id = Intent.Extras.GetString("id");
+                    payloadId = Intent.Extras.GetString("id");
+                    Settings.PayloadId = payloadId;
                 }
 
                 if(Intent.Extras.ContainsKey("type"))
                 {
-                    payload.Type = Intent.Extras.GetString("type");
+                    payloadType = Intent.Extras.GetString("type");
+                    Settings.PayloadType = payloadType;
                 }
-
-                //Settings.Payload = payload;
-                Settings.PayloadId = payload.Id;
-                Settings.PayloadType = payload.Type;
             }
             base.OnResume();
         }
 
         protected override void OnPause()
         {
-            //var payload = new PayloadMessage
-            //{
-            //    Title = "Test notification",
-            //    Body = "Send notification on pause application",
-            //    Id = "164a23d68d9ee542",
-            //    Type = "advertising"
-            //};
-            //// Set up an intent so that tapping the notifications returns to this app:
-            //var intent = new Intent(this, typeof(MainActivity));
-            //intent.PutExtra("payload", JsonConvert.SerializeObject(payload));
-
-            //// Create a PendingIntent; we're only using one PendingIntent (ID = 0):
-            //const int pendingIntentId = 0;
-            //var pendingIntent =
-            //    PendingIntent.GetActivity(this, pendingIntentId, intent, PendingIntentFlags.OneShot);
-
-            //// Build the notification:
-            //Notification notification;
-
-            //// Instantiate the builder and set notification elements, including pending intent:
-            //using (var builder = new Notification.Builder(this)
-            //    .SetContentIntent(pendingIntent)
-            //    .SetContentTitle(payload.Title)
-            //    .SetContentText(payload.Body)
-            //    .SetSmallIcon(Resource.Drawable.icon))
-            //{
-            //    notification = builder.Build();
-            //}
-
-            //// Get the notification manager:
-            //var notificationManager =
-            //    GetSystemService(NotificationService) as NotificationManager;
-
-            //// Publish the notification:
-            ////var notificationId = payload.Id.GetHashCode();
-            //var notificationId = 0;
-            //notificationManager.Notify(notificationId, notification);
-
             base.OnPause();
         }
     }

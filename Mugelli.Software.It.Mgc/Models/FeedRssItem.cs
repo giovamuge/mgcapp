@@ -19,6 +19,8 @@ namespace Mugelli.Software.It.Mgc.Models
         private string _title;
         private EventType _type;
 
+        public string Id { get; set; }
+
         public string Title
         {
             get => _title;

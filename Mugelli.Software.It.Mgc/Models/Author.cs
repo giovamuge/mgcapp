@@ -2,6 +2,12 @@
 {
     public class Author
     {
-        public string Name { get; set; }
+        private string _name = "Sconosciuto";
+
+        public string Name
+        {
+            get => _name;
+            set => _name = value;
+        }
     }
 }

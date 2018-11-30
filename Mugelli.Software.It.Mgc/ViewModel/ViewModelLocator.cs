@@ -15,7 +15,6 @@
 using CommonServiceLocator;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Ioc;
-//using Microsoft.Practices.ServiceLocation;
 
 namespace Mugelli.Software.It.Mgc.ViewModel
 {
@@ -42,8 +41,6 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             ////    // Create run time view services and models
             ////    SimpleIoc.Default.Register<IDataService, DataService>();
             ////}
-
-            SimpleIoc.Default.Register<MainViewModel>();
             SimpleIoc.Default.Register<RootViewModel>();
             SimpleIoc.Default.Register<NewsViewModel>();
             SimpleIoc.Default.Register<CalendarViewModel>();
@@ -53,9 +50,8 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             SimpleIoc.Default.Register<ImageGalleryViewModel>();
             SimpleIoc.Default.Register<CommunicationDetailViewModel>();
             SimpleIoc.Default.Register<InfoViewModel>();
-        }
 
-        public MainViewModel MainViewModel => ServiceLocator.Current.GetInstance<MainViewModel>();
+        }
 
         public RootViewModel RootViewModel => ServiceLocator.Current.GetInstance<RootViewModel>();
 
@@ -74,6 +70,8 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         public CommunicationDetailViewModel CommunicationDetailViewModel => ServiceLocator.Current.GetInstance<CommunicationDetailViewModel>();
 
         public InfoViewModel InfoViewModel => ServiceLocator.Current.GetInstance<InfoViewModel>();
+
+
 
         public static void Cleanup()
         {
