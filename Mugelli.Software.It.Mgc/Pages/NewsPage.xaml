@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behaviors="clr-namespace:Mugelli.Software.It.Mgc.Behaviors;assembly=Mugelli.Software.It.Mgc"
+             xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:userControls="clr-namespace:Mugelli.Software.It.Mgc.UserControls;assembly=Mugelli.Software.It.Mgc"
+             xmlns:fonts="clr-namespace:Mugelli.Software.It.Mgc.Fonts;assembly=Mugelli.Software.It.Mgc"
+             x:Class="Mugelli.Software.It.Mgc.Pages.NewsPage"
+             Title="{Binding Title}"
+             Icon="{Binding Icon}"
+             BindingContext="{Binding NewsViewModel, Source={StaticResource ViewModelLocator}}"
+             BackgroundColor="WhiteSmoke">
+    <ContentPage.Content>
+        <Grid>
+            <ListView
+                ItemsSource="{Binding NewsList}"
+                BackgroundColor="Transparent"
+                HasUnevenRows="True"
+                ItemTapped="OnItemTapped"
+                SeparatorVisibility="None"
+                IsPullToRefreshEnabled="True"
+                IsRefreshing="{Binding IsRefreshing}"
+                RefreshCommand="{Binding RefreshCommand}">
+
+
+                <!--<ListView.Behaviors>-->
+                    <!--<behaviors:ListViewSelectedItemBehavior Command="{Binding ReadArticleCommand}"
+                                                            Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}" />-->
+                    <!--<behaviors:EventToCommandBehavior Command="{Binding ReadArticleCommand}"
+                                                      EventName="ItemTapped"
+                                                      Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}" />-->
+                <!--</ListView.Behaviors>-->
+                
+                <ListView.Footer>
+                        <Grid Padding="14"
+                              IsVisible="{Binding IsRefreshing, Converter={StaticResource InverseBoolConverter}}">
+                            <userControls:CustomButton Text="Altro"
+                                                       TextColor="{StaticResource GrayUltraLight}"
+                                                       FontSize="Medium"
+                                                       BackgroundColor="{StaticResource MgcColor}"
+                                                       HeightRequest="45"
+                                                       BorderRadius="4"
+                                                       Command="{Binding NavigateMgcSite}"></userControls:CustomButton>
+                        </Grid>
+                </ListView.Footer>
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <ViewCell>
+                            <ViewCell.View>
+                                <Grid Padding="14" 
+                                      VerticalOptions="FillAndExpand"
+                                      BackgroundColor="{StaticResource GrayLight}">
+
+                                   <!-- <StackLayout Orientation="Vertical" 
+                                                 Spacing="0" 
+                                                 VerticalOptions="Fill"
+                                                 Padding="30"
+                                                 IsVisible="{Binding Path=Title, Converter={StaticResource IsNullToBoolConverter}}">-->
+
+                                        <Label Text="Non esiste" 
+                                               FontSize="Large" 
+                                               TextColor="{StaticResource GrayDark}"
+                                               Margin="30"
+                                                IsVisible="{Binding Path=Title, Converter={StaticResource IsNullToBoolConverter}}"
+                                               HorizontalTextAlignment="Center" />
+                                        
+                                    <!-- </StackLayout> -->
+
+                                    <StackLayout Orientation="Vertical"
+                                                 Spacing="0"
+                                                 VerticalOptions="FillAndExpand"
+                                                 IsVisible="{Binding Path=Title, Converter={StaticResource IsNotNullToBoolConverter}}">
+
+                                        <forms:CachedImage Source="{Binding Path=HeroImage}" 
+                                                               Aspect="AspectFill"
+                                                           HorizontalOptions="Fill"
+                                                           DownsampleToViewSize="true"
+                                                           HeightRequest="150" />
+                                        <!--<Image Source="{Binding Path=HeroImage}" 
+                                               Aspect="AspectFill"
+                                               HorizontalOptions="Fill"
+                                               Opacity=".8" />-->
+
+                                        <StackLayout Padding=".5, 0, .5, .5"
+                                                     Spacing="4"
+                                                     BackgroundColor="{StaticResource GrayPrimary}">
+
+                                            <Grid Padding="16, 10"
+                                                  BackgroundColor="{StaticResource GrayUltraLight}">
+                                                
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" /> 
+                                                </Grid.RowDefinitions>
+                                                
+                                                <Label Text="{Binding Path=Title}"
+                                                       Style="{StaticResource ClassNameLabel}"
+                                                       VerticalOptions="Fill"
+                                                       LineBreakMode="WordWrap"
+                                                       Grid.Row="0"/>
+                                                
+                                                <Grid HorizontalOptions="Fill"
+                                                      Grid.Row="1">
+
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                        <ColumnDefinition Width="*"></ColumnDefinition>
+                                                    </Grid.ColumnDefinitions>
+
+                                                    <StackLayout Grid.Column="0"
+                                                                 BackgroundColor="{Binding Path=Type, Converter={StaticResource TypeEventColorConverter}}"
+                                                                 Margin="-16, 0, 0, 0"
+                                                                 Padding="18, 4, 8, 4">
+                                                        <Label Text="{Binding Path=Type, Converter={StaticResource TypeEventTextConverter}}"
+                                                               Style="{StaticResource HandleLabelSecondary}"/>
+                                                    </StackLayout>
+
+                                                    <StackLayout HorizontalOptions="End"
+                                                                 Orientation="Horizontal"
+                                                                 VerticalOptions="Fill"
+                                                                 Grid.Column="1">
+                                                        <!--<Image Source="Black_Clock_50px.png" />-->
+                                                        <Label  Text="{x:Static fonts:FontAwesomeIcons.ClockO}"
+                                                                FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                                                                VerticalTextAlignment="Center"
+                                                                HorizontalTextAlignment="End"
+                                                                Margin="0, 0, 2, 0"
+                                                                Style="{StaticResource HandleLabelPrimaryFont}"/>
+                                                        <Label Text="{Binding Path=DatePublished, StringFormat='{}{0: dd MMM yyyy}'}"
+                                                               Style="{StaticResource HandleLabelPrimary}"
+                                                               VerticalTextAlignment="Center"
+                                                               HorizontalTextAlignment="Start"></Label>
+                                                    </StackLayout>
+                                                </Grid>
+
+                                                <Label Text="{Binding Path=ShortTitle}"
+                                                       Style="{StaticResource ClassInstructorLabel}"
+                                                       VerticalOptions="Fill"
+                                                       LineBreakMode="CharacterWrap"
+                                                       Grid.Row="2"/>
+                                            </Grid>
+
+
+                                            <!--<Grid Padding="0,10" 
+                                                      MinimumHeightRequest="36" 
+                                                      MinimumWidthRequest="44">
+
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="36" />
+                                                    <ColumnDefinition Width="*" />
+                                                </Grid.ColumnDefinitions>
+
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="36" />
+                                                </Grid.RowDefinitions>
+
+                                                <Image Source="Clock_50px.png"
+                                                           Grid.Column="0"/>
+                                                <Label Grid.Column="1" 
+                                                           Text="{Binding Path=DateCreate}"
+                                                           VerticalOptions="Center"
+                                                           Style="{StaticResource Sub}"
+                                                           IsVisible="true" />
+                                            </Grid>-->
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+             xmlns:fonts="clr-namespace:Mugelli.Software.It.Mgc.Fonts;assembly=Mugelli.Software.It.Mgc"
+             x:Class="Mugelli.Software.It.Mgc.Pages.NewsDetailPage"
+             Title="{Binding Article.Title}"
+             BindingContext="{Binding NewsDetailViewModel, Source={StaticResource ViewModelLocator}}"
+             BackgroundColor="{StaticResource GrayUltraLight}">
+    <ContentPage.Content>
+
+        <ScrollView x:Name="ScrollCustom">
+
+            <Grid VerticalOptions="Fill">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                
+                <ContentView Padding="0"
+                             Grid.Row="0">
+
+                    <!-- Gesture image -->
+                    <ContentView.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding ShowGalleryImage}"/>
+                    </ContentView.GestureRecognizers>
+                
+                    <forms:CachedImage Source="{Binding Article.HeroImage}"
+                                       HeightRequest="300"
+                                       x:Name="HeroImage"
+                                       HorizontalOptions="Fill"
+                                       Aspect="AspectFill"
+                                       Grid.Row="0">
+                        <forms:CachedImage.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ShowGalleryImage}"/>
+                        </forms:CachedImage.GestureRecognizers>
+                    </forms:CachedImage>
+                </ContentView>
+
+                 <Grid HorizontalOptions="FillAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    
+                    <OnPlatform x:TypeArguments="View">
+                        <OnPlatform.iOS>
+                            <Grid Grid.Column="0"></Grid>
+                        </OnPlatform.iOS>
+                        <OnPlatform.Android>
+                                <Button Text="{x:Static fonts:FontAwesomeIcons.ArrowLeft}"
+                                    FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                                    Command="{Binding GoBack}"
+                                    FontSize="25"
+                                    HeightRequest="50"
+                                    WidthRequest="50"
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="Start"
+                                    Margin="5"
+                                    TextColor="White"
+                                    BackgroundColor="Transparent"
+                                    Grid.Column="0"/>
+                        </OnPlatform.Android>
+                    </OnPlatform>
+                    <OnPlatform x:TypeArguments="View">
+                        <OnPlatform.iOS>
+                            <Grid Grid.Column="1"></Grid>
+                        </OnPlatform.iOS>
+                        <OnPlatform.Android>
+                                <Button Text="{x:Static fonts:FontAwesomeIcons.Image}"
+                                    FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                                    Command="{Binding ShowGalleryImage}"
+                                    FontSize="25"
+                                    HeightRequest="50"
+                                    WidthRequest="50"
+                                    VerticalOptions="Start"
+                                    HorizontalOptions="End"
+                                    Margin="5"
+                                    TextColor="White"
+                                    BackgroundColor="Transparent"
+                                    Grid.Column="1"/>
+                        </OnPlatform.Android>
+                    </OnPlatform>
+                </Grid>
+
+                <StackLayout Orientation="Vertical"
+                             HorizontalOptions="Fill"
+                             Grid.Row="1"
+                             Padding="24,30,24,0" 
+                             Spacing="14"
+                             BackgroundColor="{StaticResource GrayUltraLight}">
+
+                    <Label Style="{StaticResource TitleLabelPrimary}" Text="{Binding Article.Title}" FontSize="30" />
+
+                    <Grid>
+                        <!-- Columns -->
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                            <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <StackLayout Orientation="Horizontal"
+                                     Grid.Column="0">
+                            <Label  Text="{x:Static fonts:FontAwesomeIcons.User}"
+                                    FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                                    Style="{StaticResource HandleLabelPrimaryFont}"/>
+                            <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding Article.Author.Name}" />
+                        </StackLayout>
+                        
+                        <StackLayout Orientation="Horizontal"
+                                     Grid.Column="1">
+                            <!--<Image Source="Black_Clock_50px.png" />-->
+                            <Label  Text="{x:Static fonts:FontAwesomeIcons.ClockO}"
+                                    FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                                    Style="{StaticResource HandleLabelPrimaryFont}"/>
+                            <Label Style="{StaticResource HandleLabelPrimary}" Text="{Binding Article.DatePublished, StringFormat='{}{0:dd MMM yyyy HH:mm}'}" />
+                        </StackLayout>
+                    </Grid>
+                    <!--<userControls:HtmlFormatLabel Style="{StaticResource BodyLabelPrimary}" Text="{Binding Article.ContentHtml}" FontSize="20" />-->
+                    <Label Style="{StaticResource ClassInstructorLabel}" Text="{Binding Article.Content}" FontSize="25" />
+
+                    <!--<ScrollView Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal"
+                                     HorizontalOptions="FillAndExpand"
+                                     Children="{Binding ChildrenImage}">
+                            
+                        </StackLayout>
+                    </ScrollView>-->
+                    <!-- TODO: Cambiare icona con gallery -->
+                    <StackLayout Orientation="Horizontal">
+                        <!--<Image Source="Black_Clock_50px.png" />-->
+                        <Label  Text="{x:Static fonts:FontAwesomeIcons.PictureO}"
+                                FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                                Style="{StaticResource HandleLabelPrimaryFont}"/>
+                        <Label Style="{StaticResource HandleLabelPrimary}" Text="Immagini Gallery" />
+                    </StackLayout>
+
+                    <Grid Margin="-24, 0, -24, 0">
+                        <!-- Gesture image -->
+                        <Grid.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ShowGalleryImage}"/>
+                        </Grid.GestureRecognizers>
+
+                        <controls:CarouselViewControl ItemsSource="{Binding Images}"
+                                                          HeightRequest="300"
+                                                          HorizontalOptions="Fill"
+                                                          ShowIndicators="True"
+                                                          IndicatorsTintColor="{StaticResource GrayUltraLight}">
+
+                        <controls:CarouselViewControl.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding ShowGalleryImage}"/>
+                        </controls:CarouselViewControl.GestureRecognizers>
+
+                            <controls:CarouselViewControl.ItemTemplate>
+                                <DataTemplate>
+                                    <forms:CachedImage Source="{Binding Path=.}"
+                                       Aspect="AspectFill"
+                                       HeightRequest="300"
+                                       HorizontalOptions="Fill">
+
+                                        <!-- Gesture image -->
+                                        <!--<forms:CachedImage.GestureRecognizers>
+                                            <TapGestureRecognizer Command="{Binding ShowGalleryImage}"/>
+                                        </forms:CachedImage.GestureRecognizers>-->
+
+                                    </forms:CachedImage>
+                                </DataTemplate>
+
+                            </controls:CarouselViewControl.ItemTemplate>
+                        </controls:CarouselViewControl>
+                    </Grid>
+
+                </StackLayout>
+
+            </Grid>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

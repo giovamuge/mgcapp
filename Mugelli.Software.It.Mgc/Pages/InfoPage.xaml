@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:fonts="clr-namespace:Mugelli.Software.It.Mgc.Fonts;assembly=Mugelli.Software.It.Mgc"
+    x:Class="Mugelli.Software.It.Mgc.Pages.InfoPage"
+    BindingContext="{Binding InfoViewModel, Source={StaticResource ViewModelLocator}}"
+    Title="Info">
+    <ContentPage.Content>
+        <Grid HorizontalOptions="FillAndExpand"
+            VerticalOptions="FillAndExpand"
+            BackgroundColor="{StaticResource MgcColor}">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <StackLayout
+                Orientation="Horizontal"
+                HorizontalOptions="End" Grid.Row="0">
+                 <OnPlatform x:TypeArguments="View">
+                            <OnPlatform.iOS>
+                                    <Button Text="{x:Static fonts:FontAwesomeIcons.ChevronDown}"
+                                            FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                                            Command="{Binding CloseModal}"
+                                            FontSize="25"
+                                            HeightRequest="50"
+                                            WidthRequest="50"
+                                            VerticalOptions="End"
+                                            HorizontalOptions="End"
+                                            Margin="21,25,0,0"
+                                            BackgroundColor="Transparent"
+                                            TextColor="{StaticResource SecondaryTextColor}"/>
+                            </OnPlatform.iOS>
+                            <OnPlatform.Android>
+                                <Label></Label>
+                            </OnPlatform.Android>
+                        </OnPlatform>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="Center"
+                HorizontalOptions="Center" Grid.Row="1">
+                
+                <Image Source="icon.png"
+                    HorizontalOptions="Center"
+                    Margin="0, 30"
+                    HeightRequest="75"/>
+
+
+
+                <Label 
+                    Style="{StaticResource HandleLabelSecondary}" 
+                    Text="Versione 1.0.0"
+                    HorizontalTextAlignment="Center"
+                    WidthRequest="250"/>
+
+                <Label 
+                    Margin="0, 5"
+                    Style="{StaticResource HandleLabelSecondary}" 
+                    Text="Questa applicazione è stata realizzata e pensata per la gestione e la visualizzazione di eventi che riguardano la realtà MGC"
+                    HorizontalTextAlignment="Center"
+                    WidthRequest="250"/>
+
+
+    
+            </StackLayout>
+
+            <StackLayout 
+                VerticalOptions="End"
+                Padding="0, 10"
+                Grid.Row="2">
+
+                <Label 
+                    Margin="0, 30, 0, -5"
+                    Style="{StaticResource HandleLabelSecondary}" 
+                    Text="Copyright © 2018 Giovanni Mugelli"
+                    HorizontalTextAlignment="Center"
+                    FontSize="9"
+                    WidthRequest="250"/>
+
+                <Label
+                    Style="{StaticResource HandleLabelSecondary}" 
+                    Text="community Ponci"
+                    HorizontalTextAlignment="Center"
+                    FontSize="9"
+                    WidthRequest="250"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

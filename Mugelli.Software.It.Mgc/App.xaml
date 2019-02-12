@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mugelli.Software.It.Mgc.App" xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             d1p1:Ignorable="d" xmlns:d1p1="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:forms="http://xamarin.com/schemas/2014/forms"
+             xmlns:converters="clr-namespace:Mugelli.Software.It.Mgc.Converters;assembly=Mugelli.Software.It.Mgc"
+             xmlns:userControls="clr-namespace:Mugelli.Software.It.Mgc.UserControls;assembly=Mugelli.Software.It.Mgc">
+    <Application.Resources>
+        <!-- Application resource dictionary -->
+        <forms:ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+            <!--<vm:ViewModelLocator x:Key="ViewModelLocator" d4p1:Key="Locator" d:IsDataSource="True"
+                                 xmlns:d4p1="http://schemas.microsoft.com/winfx/2006/xaml"
+                                 xmlns:vm="clr-namespace:Mugelli.Software.It.Mgc.ViewModel" />-->
+
+            <!-- Converters -->
+            <!--<converters:SelectedItemEventArgsToSelectedItemConverter
+                x:Key="SelectedItemEventArgsToSelectedItemConverter" />
+            <converters:InverseBoolConverter x:Key="InverseBoolConverter" />
+            <converters:IsEmptyConverter x:Key="IsEmptyConverter" />
+            <converters:IsNotNullToBoolConverter x:Key="IsNotNullToBoolConverter" />
+            <converters:IsNullToBoolConverter x:Key="IsNullToBoolConverter" />
+            <converters:NullIntValueConverter x:Key="NullIntValueConverter" />
+            <converters:TypeEventColorConverter x:Key="TypeEventColorConverter" />
+            <converters:TypeEventImageConverter x:Key="TypeEventImageConverter" />
+            <converters:TypeEventTextConverter x:Key="TypeEventTextConverter" />
+            <converters:NotBooleanConverter x:Key="NotBooleanConverter" />-->
+
+            <!-- STYLE -->
+            <!---->
+            <!---->
+            <!-- Color -->
+            <!--<forms:OnPlatform 
+                x:TypeArguments="x:String" 
+                x:Key="PrimaryTextColor">
+                <forms:On>#333</forms:On>
+            </forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="SecondaryTextColor">
+                <forms:On>#FFFFFF</forms:On>
+            </forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="MgcColor">
+                <forms:On>#63388a</forms:On>
+            </forms:OnPlatform>
+
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="AsphaltPrimary">
+                <forms:On>#5c7d90</forms:On>
+            </forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="RedPrimary">
+                <forms:On>#F56D50</forms:On>
+            </forms:OnPlatform>-->
+            
+            
+            <!--<forms:OnPlatform x:TypeArguments="x:String" x:Key="OrangeLight">#f76d45</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="OrangePrimary">#FF5722</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="OrangeDark">#E64A19</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="PinkLight">#EA3874</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="PinkPrimary">#E91E63</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="PinkDark">#9C0A3C</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="AsphaltLight">#6D8491</forms:OnPlatform>-->
+            <!--<forms:OnPlatform x:TypeArguments="x:String" x:Key="AsphaltDark">#233743</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="BlueLight">#71E5FF</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="BluePrimary">#4FCAE6</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="BlueDark">#258499</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="IndigoLight">#5362B6</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="IndigoPrimary">#3F51B5</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="IndigoDark">#172468</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="TealLight">#7AD5C9</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="TealPrimary">#6AB9AF</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="TealDark">#457972</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="PurpleLight">#A38FCE</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="PurplePrimary">#9378CD</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="PurpleDark">#533D80</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="GreenLight">#9FE168</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="GreenPrimary">#91E04F</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="GreenDark">#579325</forms:OnPlatform>-->
+
+            <!--<forms:OnPlatform x:TypeArguments="x:String" x:Key="RedLight">#FF866D</forms:OnPlatform>-->
+            <!--<forms:OnPlatform x:TypeArguments="x:String" x:Key="RedDark">#A83D26</forms:OnPlatform>-->
+
+            <!--<forms:OnPlatform x:TypeArguments="x:String" x:Key="YellowLight">#FFE45C</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="YellowPrimary">#F5D740</forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="YellowDark">#D1B941</forms:OnPlatform>-->
+
+            
+            
+            <!--<forms:OnPlatform x:TypeArguments="x:String" x:Key="GrayUltraLight">
+                <forms:On>#FFFFFF</forms:On>
+            </forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="GrayLight">
+                <forms:On>#F2F2F2</forms:On>
+            </forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="GrayPrimary">
+                <forms:On>#B9B9B9</forms:On>
+            </forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="GrayDark">
+                <forms:On>#959595</forms:On>
+            </forms:OnPlatform>
+            <forms:OnPlatform x:TypeArguments="x:String" x:Key="GrayMedium">
+                <forms:On>#B9B9B9</forms:On>
+            </forms:OnPlatform>-->
+
+
+            <!--  font families  -->
+     <!--       <forms:OnPlatform
+                x:Key="RegularFontFamily"
+                x:TypeArguments="x:String"
+                Android="sans-serif"
+                iOS="HelveticaNeue" />
+            <forms:OnPlatform
+                x:Key="LightFontFamily"
+                x:TypeArguments="x:String"
+                Android="sans-serif-light"
+                iOS="HelveticaNeue-Light" />
+            <forms:OnPlatform
+                x:Key="MediumFontFamily"
+                x:TypeArguments="x:String"
+                Android="sans-serif-medium"
+                iOS="HelveticaNeue-Medium" />
+            <forms:OnPlatform
+                x:Key="BoldFontFamily"
+                x:TypeArguments="x:String"
+                Android="sans-serif-medium"
+                iOS="HelveticaNeue-Bold" />-->
+
+            <!--  fonts  -->
+            <!--<forms:Font
+                x:Key="TitleFont"
+                FontFamily="{StaticResource BoldFontFamily}"
+                FontSize="20" />
+            <forms:Font
+                x:Key="HandleFont"
+                FontFamily="{StaticResource BoldFontFamily}"
+                FontSize="12" />
+            <forms:Font
+                x:Key="BodyFont"
+                FontFamily="{StaticResource LightFontFamily}"
+                FontSize="12" />
+            <forms:Font
+                x:Key="HeaderFont"
+                FontFamily="{StaticResource MediumFontFamily}"
+                FontSize="30" />
+            <forms:Font
+                x:Key="SubHeaderFont"
+                FontFamily="{StaticResource MediumFontFamily}"
+                FontSize="18" />
+            <forms:Font
+                x:Key="TitleMediumFont"
+                FontFamily="{StaticResource MediumFontFamily}"
+                FontSize="20" />
+            <forms:Font
+                x:Key="BodyMediumFont"
+                FontFamily="{StaticResource RegularFontFamily}"
+                FontSize="18" />-->
+
+            <!-- Da scommentare -->
+            <!--<forms:OnPlatform 
+                x:Key="TitleFont"
+                x:TypeArguments="x:Double"
+                Android="20"
+                iOS="20"/>
+            <forms:OnPlatform 
+                x:Key="HandleFont"
+                x:TypeArguments="x:Double"
+                Android="12"
+                iOS="12"/>
+            <forms:OnPlatform 
+                x:Key="BodyFont"
+                x:TypeArguments="x:Double"
+                Android="12"
+                iOS="12"/>
+            <forms:OnPlatform 
+                x:Key="HeaderFont"
+                x:TypeArguments="x:Double"
+                Android="30"
+                iOS="30"/>
+            <forms:OnPlatform 
+                x:Key="SubHeaderFont"
+                x:TypeArguments="x:Double"
+                Android="18"
+                iOS="18"/>
+            <forms:OnPlatform 
+                x:Key="TitleMediumFont"
+                x:TypeArguments="x:Double"
+                Android="20"
+                iOS="20"/>
+            <forms:OnPlatform 
+                x:Key="BodyMediumFont"
+                x:TypeArguments="x:Double"
+                Android="18"
+                iOS="18"/>-->
+
+
+            <!-- Code xaml to cs -->
+            <!--  styles  -->
+            <!--<forms:Style x:Key="PageHeaderLabel" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
+                <forms:Setter Property="FontSize" Value="{StaticResource HeaderFont}" />
+            </forms:Style>
+
+            <forms:Style x:Key="SubHeaderLabel" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
+                <forms:Setter Property="FontSize" Value="{StaticResource SubHeaderFont}" />
+            </forms:Style>
+
+            <forms:Style x:Key="SecondaryPageHeaderLabel" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource SecondaryTextColor}" />
+                <forms:Setter Property="FontSize" Value="{StaticResource HeaderFont}" />
+            </forms:Style>
+
+            <forms:Style x:Key="SecondarySubHeaderLabel" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource SecondaryTextColor}" />
+                <forms:Setter Property="FontSize" Value="{StaticResource SubHeaderFont}" />
+            </forms:Style>
+
+            <forms:Style x:Key="ClassTimeLabel" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
+                <forms:Setter Property="FontSize" Value="{StaticResource TitleFont}" />
+            </forms:Style>
+
+            <forms:Style x:Key="ClassNameLabel" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
+                <forms:Setter Property="FontSize" Value="{StaticResource TitleFont}" />
+            </forms:Style>
+
+            <forms:Style x:Key="ClassInstructorLabel" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
+                <forms:Setter Property="FontSize" Value="{StaticResource BodyFont}" />
+            </forms:Style>
+
+            <forms:Style x:Key="TitleLabelSecondary" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource SecondaryTextColor}" />
+                <forms:Setter Property="FontSize" Value="{StaticResource TitleFont}" />
+            </forms:Style>
+
+            <forms:Style x:Key="HandleLabelSecondary" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource SecondaryTextColor}" />
+                <forms:Setter Property="FontSize" Value="{StaticResource HandleFont}" />
+            </forms:Style>
+
+            <forms:Style x:Key="BodyLabelSecondary" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource SecondaryTextColor}" />
+                <forms:Setter Property="FontSize" Value="{StaticResource BodyFont}" />
+            </forms:Style>
+
+
+            <forms:Style x:Key="TitleLabelPrimary" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
+                <forms:Setter Property="FontSize" Value="{StaticResource TitleFont}" />
+            </forms:Style>
+
+            <forms:Style x:Key="HandleLabelPrimary" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
+                <forms:Setter Property="FontSize" Value="{StaticResource HandleFont}" />
+            </forms:Style>
+
+            <forms:Style x:Key="BodyLabelPrimary" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource PrimaryTextColor}" />
+                <forms:Setter Property="FontSize" Value="{StaticResource BodyFont}" />
+            </forms:Style>-->
+
+      <!--      <forms:Style x:Key="ButtonStyle" TargetType="forms:Button">
+                <forms:Setter Property="TextColor" Value="White" />
+                <forms:Setter Property="BorderRadius" Value="4" />
+                <forms:Setter Property="FontSize" Value="Medium" />
+                <forms:Setter Property="BackgroundColor" Value="{StaticResource MgcColor}" />
+                <forms:Setter Property="HeightRequest">
+                    <forms:Setter.Value>
+                        <forms:OnPlatform x:TypeArguments="x:Double" iOS="40" Android="50" />
+                    </forms:Setter.Value>
+                </forms:Setter>
+            </forms:Style>-->
+
+            
+            <!--<forms:Style x:Key="ButtonStyle" TargetType="forms:Button" BasedOn="{StaticResource ButtonStyle}" />-->
+            <!--<forms:Style x:Key="CustomButtonStyle" TargetType="userControls:CustomButton"
+                         BasedOn="{StaticResource ButtonStyle}" />
+            <forms:Style x:Key="DeleteButtonStyle" TargetType="forms:Button" BasedOn="{StaticResource ButtonStyle}">
+                <forms:Setter Property="TextColor" Value="White" />
+                <forms:Setter Property="BackgroundColor" Value="{StaticResource RedPrimary}" />
+            </forms:Style>
+            <forms:Style x:Key="WizardButton" TargetType="userControls:CustomButton"
+                         BasedOn="{StaticResource ButtonStyle}">
+                <forms:Setter Property="BackgroundColor" Value="#3FFF" />
+                <forms:Setter Property="BorderColor" Value="#AFFF" />
+                <forms:Setter Property="TextColor" Value="#CFFF" />
+                <forms:Setter Property="BorderWidth" Value=".5" />
+            </forms:Style>-->
+            <!--<forms:Style x:Key="ImageButtonStyle" TargetType="userControls:ImageButton">
+                <forms:Setter Property="HeightRequest">
+                    <forms:Setter.Value>
+                        <forms:OnPlatform x:TypeArguments="x:Double" iOS="40" Android="50" />
+                    </forms:Setter.Value>
+                </forms:Setter>
+            </forms:Style>-->
+
+            
+            <!--<forms:Style TargetType="local:ImageButton" BasedOn="{StaticResource imageButtonStyle}" />-->
+
+
+            <!-- Style never used -->
+            <!--<forms:Style x:Key="LabelStyle" TargetType="forms:Label">
+                <forms:Setter Property="TextColor" Value="{StaticResource AsphaltPrimary}" />
+                <forms:Setter Property="FontSize">
+                    <forms:Setter.Value>
+                        <forms:OnPlatform x:TypeArguments="x:Double" iOS="14" Android="12" />
+                    </forms:Setter.Value>
+                </forms:Setter>
+                <forms:Setter Property="FontFamily" Value="SegoeUI" />
+            </forms:Style>-->
+
+            <!--<forms:Style x:Key="Header" TargetType="forms:Label" BasedOn="{StaticResource LabelStyle}">
+                <forms:Setter Property="FontFamily" Value="SegoeUI" />
+                <forms:Setter Property="TextColor" Value="{StaticResource GrayLight}" />
+            </forms:Style>-->
+
+            <!--<forms:Style x:Key="WhiteLabelStyle" TargetType="forms:Label" BasedOn="{StaticResource LabelStyle}">
+                <forms:Setter Property="TextColor" Value="#FFFFFF" />
+            </forms:Style>
+            <forms:Style x:Key="Sub" TargetType="forms:Label" BasedOn="{StaticResource LabelStyle}">
+                <forms:Setter Property="TextColor" Value="{StaticResource GrayDark}" />
+                <forms:Setter Property="FontSize" Value="Small" />
+            </forms:Style>-->
+
+            
+        </forms:ResourceDictionary>
+    </Application.Resources>
+</Application>

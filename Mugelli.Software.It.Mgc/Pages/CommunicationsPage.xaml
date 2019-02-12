@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:behaviors="clr-namespace:Mugelli.Software.It.Mgc.Behaviors;assembly=Mugelli.Software.It.Mgc"
+             xmlns:userControls="clr-namespace:Mugelli.Software.It.Mgc.UserControls;assembly=Mugelli.Software.It.Mgc"
+             xmlns:fonts="clr-namespace:Mugelli.Software.It.Mgc.Fonts;assembly=Mugelli.Software.It.Mgc"
+             x:Class="Mugelli.Software.It.Mgc.Pages.CommunicationsPage"
+             Title="{Binding Title}"
+             Icon="{Binding Icon}"
+             BindingContext="{Binding ComunicationsViewModel, Source={StaticResource ViewModelLocator}}">
+    <ContentPage.Content>
+        <Grid VerticalOptions="FillAndExpand"
+              HorizontalOptions="FillAndExpand">
+            
+                <Grid HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    IsVisible="{Binding CommunicationsList, Converter={StaticResource IsNullToBoolConverter}}">
+                
+                    <Label Text="Nessun avviso"
+                           Style="{StaticResource BodyLabelPrimary}"></Label>
+                </Grid>
+            
+            <ListView
+                ItemsSource="{Binding CommunicationsList}"
+                BackgroundColor="Transparent"
+                HasUnevenRows="True"
+                SeparatorVisibility="None"
+                IsPullToRefreshEnabled="True"
+                RefreshCommand="{Binding RefreshCommand}"
+                IsRefreshing="{Binding IsRefreshing}"
+                IsVisible="{Binding CommunicationsList, Converter={StaticResource IsNotNullToBoolConverter}}"
+                behaviors:ItemTappedCommandListView.ItemTappedCommand="{Binding ReadCommCommand}">
+
+                <!--<ListView.Behaviors>
+                    <behaviors:EventToCommandBehavior Command="{Binding ReadCommCommand}"
+                                                      EventName="ItemTapped"
+                                                      Converter="{StaticResource SelectedItemEventArgsToSelectedItemConverter}" />
+                </ListView.Behaviors>-->
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+
+                        <ViewCell>
+                            <ViewCell.View>
+
+                                 <Grid BackgroundColor="{StaticResource GrayUltraLight}">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="70" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <ContentView Grid.Column="0"
+                                                 BackgroundColor="{Binding Path=Type, Converter={StaticResource TypeEventColorConverter}}"
+                                                 VerticalOptions="FillAndExpand">
+
+                                        <Grid VerticalOptions="Center">
+                                            <StackLayout HorizontalOptions="Center"
+                                                         Orientation="Vertical"
+                                                         BackgroundColor="{Binding Path=Type, Converter={StaticResource TypeEventColorConverter}}"
+                                                         Padding="15">
+                                                <Label Text="{x:Static fonts:FontAwesomeIcons.EnvelopeO}"
+                                                       FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                                                       HorizontalOptions="Center"
+                                                       VerticalOptions="Center"
+                                                       Style="{StaticResource TitleLabelSecondary}"/>
+                                            </StackLayout>
+                                        </Grid>
+
+                                    </ContentView>
+                                    <ContentView Grid.Column="1"
+                                                 VerticalOptions="FillAndExpand">
+
+                                        <StackLayout Orientation="Vertical"
+                                                     Padding="20">
+                                            <Label Style="{StaticResource ClassNameLabel}" 
+                                                   Text="{Binding Path=Title}"></Label>
+                                            
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                </Grid.ColumnDefinitions>
+                                                
+                                                <Label Text="{x:Static fonts:FontAwesomeIcons.User}"
+                                                       FontFamily="{x:Static fonts:Fonts.FontAwesome}"
+                                                       Grid.Column="0"
+                                                       IsVisible="{Binding Path=Author, Converter={StaticResource IsNotNullToBoolConverter}}"
+                                                       Style="{StaticResource ClassInstructorLabelFont}"/>
+                                                
+                                                <Label Style="{StaticResource ClassInstructorLabel}" 
+                                                       Text="{Binding Path=Author}"
+                                                       FontSize="11"
+                                                       Grid.Column="1"/>
+
+                                            </Grid>
+                                        </StackLayout>
+
+                                    </ContentView>
+
+                                </Grid>
+                                
+                                <!--<Grid Padding="14" 
+                                      VerticalOptions="FillAndExpand"
+                                      BackgroundColor="{StaticResource GrayLight}">
+
+                                    <StackLayout Orientation="Vertical"
+                                                 Spacing="0"
+                                                 VerticalOptions="FillAndExpand">
+
+                                        <StackLayout Padding=".5"
+                                                     Spacing="4"
+                                                     BackgroundColor="{StaticResource GrayPrimary}">
+
+                                            <Grid Padding="16, 10"
+                                                  BackgroundColor="{StaticResource GrayUltraLight}">
+
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                    <RowDefinition Height="Auto" />
+                                                </Grid.RowDefinitions>
+
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                                    <ColumnDefinition Width="*"></ColumnDefinition>
+                                                </Grid.ColumnDefinitions>
+
+                                                <Label Text="{Binding Path=Title}"
+                                                       Style="{StaticResource ClassNameLabel}"
+                                                       VerticalOptions="Fill"
+                                                       LineBreakMode="WordWrap"
+                                                       Grid.Row="0"
+                                                       Grid.ColumnSpan="2"/>
+
+                                                <StackLayout Grid.Column="0"
+                                                             Grid.Row="1"
+                                                             BackgroundColor="{Binding Path=Type, Converter={StaticResource TypeEventColorConverter}}"
+                                                             Margin="-16, 0, 0, 0"
+                                                             Padding="18, 4, 8, 4">
+                                                    <Label Text="{Binding Path=Type, Converter={StaticResource TypeEventTextConverter}}"
+                                                           Style="{StaticResource HandleLabelSecondary}"/>
+                                                </StackLayout>
+
+                                                <StackLayout HorizontalOptions="End"
+                                                             Orientation="Horizontal"
+                                                             VerticalOptions="Fill"
+                                                             Grid.Row="1"
+                                                             Grid.Column="1">
+                                                    <Image Source="Black_Clock_50px.png" />
+                                                    <Label Text="{Binding Path=Date, StringFormat='{}{0: dd MMM yyyy}'}"
+                                                           Style="{StaticResource HandleLabelPrimary}"
+                                                           VerticalTextAlignment="Center"></Label>
+                                                </StackLayout>
+
+                                                <ContentView HeightRequest="50" Grid.Row="2" Grid.ColumnSpan="2">
+                                                    <userControls:HtmlFormatLabel Text="{Binding Path=ShortContent}"
+                                                           Style="{StaticResource ClassInstructorLabel}"
+                                                           VerticalOptions="Fill"
+                                                           LineBreakMode="WordWrap"/>
+                                                </ContentView>
+                                            </Grid>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </Grid>-->
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+            </ListView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
