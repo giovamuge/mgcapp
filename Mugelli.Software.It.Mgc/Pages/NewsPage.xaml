@@ -75,7 +75,9 @@
                                                  IsVisible="{Binding Path=Title, Converter={StaticResource IsNotNullToBoolConverter}}">
 
                                         <forms:CachedImage Source="{Binding Path=HeroImage}" 
-                                                               Aspect="AspectFill"
+                                                           Aspect="AspectFill"
+                                                           LoadingPlaceholder="placeholder.png" 
+                                                           ErrorPlaceholder="placeholder.png"
                                                            HorizontalOptions="Fill"
                                                            DownsampleToViewSize="true"
                                                            HeightRequest="150" />

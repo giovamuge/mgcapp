@@ -292,6 +292,14 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\Purple_Filled_Circle_100px.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\splashscreen.png" />
     <AndroidResource Include="Resources\drawable\LaunchView.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\download_icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\placeholder.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\download_icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\placeholder.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\download_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\placeholder.png" />
+    <AndroidResource Include="Resources\drawable\download_icon.png" />
+    <AndroidResource Include="Resources\drawable\placeholder.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="MessagingCenters\" />
