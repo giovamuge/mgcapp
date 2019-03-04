@@ -17,11 +17,11 @@
                 ItemsSource="{Binding NewsList}"
                 BackgroundColor="Transparent"
                 HasUnevenRows="True"
-                ItemTapped="OnItemTapped"
                 SeparatorVisibility="None"
                 IsPullToRefreshEnabled="True"
                 IsRefreshing="{Binding IsRefreshing}"
-                RefreshCommand="{Binding RefreshCommand}">
+                RefreshCommand="{Binding RefreshCommand}"
+                behaviors:ItemTappedCommandListView.ItemTappedCommand="{Binding ReadArticleCommand}">
 
 
                 <!--<ListView.Behaviors>-->

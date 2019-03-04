@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Threading.Tasks;
 using CarouselView.FormsPlugin.iOS;
 using FFImageLoading;
 using Firebase.CloudMessaging;
 using Foundation;
+using Mugelli.Software.It.Mgc.Helpers;
 using Mugelli.Software.It.Mgc.iOS.MessaggingCenters;
 using UIKit;
 using UserNotifications;
@@ -49,7 +51,7 @@ namespace Mugelli.Software.It.Mgc.iOS
 
             // Code for starting up the Xamarin Test Cloud Agent
 #if DEBUG
-			Xamarin.Calabash.Start();
+            Xamarin.Calabash.Start();
 #endif
             // Photo browser initialize
             Stormlion.PhotoBrowser.iOS.Platform.Init();
@@ -69,7 +71,8 @@ namespace Mugelli.Software.It.Mgc.iOS
                 UNUserNotificationCenter.Current.Delegate = this;
 
                 var authOptions = UNAuthorizationOptions.Alert | UNAuthorizationOptions.Badge | UNAuthorizationOptions.Sound;
-                UNUserNotificationCenter.Current.RequestAuthorization(authOptions, (granted, error) => {
+                UNUserNotificationCenter.Current.RequestAuthorization(authOptions, (granted, error) =>
+                {
                     Console.WriteLine(granted);
                 });
             }
@@ -104,8 +107,18 @@ namespace Mugelli.Software.It.Mgc.iOS
 
             LogInformation(nameof(DidReceiveRegistrationToken), $"Firebase registration token: {fcmToken}");
 
+            if (string.IsNullOrEmpty(fcmToken)) return;
+            Task.Run(SubscribeTopicAsync);
+
             // TODO: If necessary send token to application server.
             // Note: This callback is fired at each app startup and whenever a new token is generated.
+        }
+
+        async Task SubscribeTopicAsync()
+        {
+            await Messaging.SharedInstance.SubscribeAsync("news");
+            await Messaging.SharedInstance.SubscribeAsync("calendars");
+            await Messaging.SharedInstance.SubscribeAsync("advertisings");
         }
 
         // You'll need this method if you set "FirebaseAppDelegateProxyEnabled": NO in GoogleService-Info.plist
@@ -127,6 +140,8 @@ namespace Mugelli.Software.It.Mgc.iOS
             //Messaging.SharedInstance.AppDidReceiveMessage (userInfo);
 
             HandleMessage(userInfo);
+
+            HendleData(userInfo);
 
             // Print full message.
             LogInformation(nameof(DidReceiveRemoteNotification), userInfo);
@@ -158,10 +173,25 @@ namespace Mugelli.Software.It.Mgc.iOS
             MessageReceived(this, e);
         }
 
+        private void HendleData(NSDictionary data)
+        {
+            var nsId = new NSString("id");
+            if (data.ContainsKey(nsId) && data.TryGetValue(nsId, out NSObject payloadId))
+            {
+                Settings.PayloadId = (payloadId is NSString).ToString() ?? string.Empty;
+            }
+
+            var nsType = new NSString("type");
+            if (data.ContainsKey(nsType) && data.TryGetValue(nsType, out NSObject payloadType))
+            {
+                Settings.PayloadType = (payloadType is NSString).ToString() ?? string.Empty;
+            }
+        }
+
         public static void ShowMessage(string title, string message, UIViewController fromViewController, Action actionForOk = null)
         {
             var alert = UIAlertController.Create(title, message, UIAlertControllerStyle.Alert);
-            alert.AddAction(UIAlertAction.Create("Ok", UIAlertActionStyle.Default, (obj) => actionForOk?.Invoke()));
+            //alert.AddAction(UIAlertAction.Create("Ok", UIAlertActionStyle.Default, (obj) => actionForOk?.Invoke()));
             fromViewController.PresentViewController(alert, true, null);
         }
 

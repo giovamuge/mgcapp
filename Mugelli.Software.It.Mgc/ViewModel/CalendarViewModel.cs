@@ -29,7 +29,7 @@ namespace Mugelli.Software.It.Mgc.ViewModel
             _navigationService = navigationService;
 
             ShowAppointmentCommand = new RelayCommand<Appointment>(OnShowAppointment);
-            RefreshCommand = new RelayCommand(async () => await OnRefresh());
+            RefreshCommand = new RelayCommand(() => Task.Run(OnRefresh));
 
             Task.Run(OnRefresh);
         }

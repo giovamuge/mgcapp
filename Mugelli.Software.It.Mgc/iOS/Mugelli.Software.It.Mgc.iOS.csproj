@@ -37,14 +37,16 @@
     <OutputPath>bin\iPhone\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer: Giovanni Mugelli (BCKAAWYWUM)</CodesignKey>
-    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignKey>iPhone Distribution: Giovanni Mugelli (7LJZQLFR75)</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
-    <CodesignProvision>iOS Team Provisioning Profile: *</CodesignProvision>
+    <CodesignProvision>MGC App Distribution Profile</CodesignProvision>
+    <MtouchFloat32>true</MtouchFloat32>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>pdbonly</DebugType>
@@ -52,13 +54,13 @@
     <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Distribution: Giovanni Mugelli (7LJZQLFR75)</CodesignKey>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
     <MtouchLink>None</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
-    <CodesignProvision>iOS Team Provisioning Profile: *</CodesignProvision>
+    <CodesignProvision>MGC App Distribution Profile</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -68,7 +70,7 @@
     <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer: Giovanni Mugelli (BCKAAWYWUM)</CodesignKey>
+    <CodesignKey>iPhone Distribution</CodesignKey>
     <DeviceSpecificBuild>true</DeviceSpecificBuild>
     <MtouchDebug>true</MtouchDebug>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
@@ -79,7 +81,7 @@
     <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
-    <CodesignProvision>Firebase MGC App Development Profile</CodesignProvision>
+    <CodesignProvision>Firebase MGC App Distribution Profile</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -257,13 +259,13 @@
     <BundleResource Include="Resources\splashscreen.png" />
     <BundleResource Include="Resources\splashscreen%402x.png" />
     <BundleResource Include="Resources\splashscreen%403x.png" />
-    <BundleResource Include="GoogleService-Info.plist" />
     <BundleResource Include="Resources\download_icon.png" />
     <BundleResource Include="Resources\download_icon%402x.png" />
     <BundleResource Include="Resources\download_icon%403x.png" />
     <BundleResource Include="Resources\placeholder.png" />
     <BundleResource Include="Resources\placeholder%402x.png" />
     <BundleResource Include="Resources\placeholder%403x.png" />
+    <BundleResource Include="GoogleService-Info.plist" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />

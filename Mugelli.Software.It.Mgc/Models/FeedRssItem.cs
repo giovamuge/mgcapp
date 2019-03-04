@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Text.RegularExpressions;
 using Mugelli.Software.It.Mgc.Commons;
@@ -18,6 +19,8 @@ namespace Mugelli.Software.It.Mgc.Models
         private string _shortTitle;
         private string _title;
         private EventType _type;
+
+        private const string _defaultImage = "placeholder.png";
 
         public string Id { get; set; }
 
@@ -88,10 +91,8 @@ namespace Mugelli.Software.It.Mgc.Models
                 //if (Uri.TryCreate(src, UriKind.RelativeOrAbsolute, out var result))
                 //    return result;
             }
-            //Default value
-            //return new Uri("PiccoloPrincipe.jpg");
-            //return "PiccoloPrincipe.jpg";
-            return string.Empty;
+
+            return _defaultImage;
         }
 
         private static List<string> GetImages(string value)
@@ -114,7 +115,9 @@ namespace Mugelli.Software.It.Mgc.Models
             //    select new Regex(@"(?<=\bsrc="")[^""]*")
             //    into pattern
             //    select RemoveSize(pattern.Match(value).Groups[0].Value)).ToList();
-            return result;
+            return result.Any()
+                ? result
+                : new List<string> { _defaultImage };
         }
 
         private static string RemoveSize(string value)
