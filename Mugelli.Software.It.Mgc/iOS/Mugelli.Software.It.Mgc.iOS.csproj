@@ -20,7 +20,7 @@
     <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
     <MtouchFastDev>true</MtouchFastDev>
@@ -29,6 +29,7 @@
     <MtouchArch>x86_64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
+    <CodesignProvision>Firebase MGC App Development Profile</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>pdbonly</DebugType>
@@ -36,14 +37,16 @@
     <OutputPath>bin\iPhone\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer: mugelli.giovanni@gmail.com (BCKAAWYWUM)</CodesignKey>
-    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignKey>iPhone Distribution: Giovanni Mugelli (7LJZQLFR75)</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>SdkOnly</MtouchLink>
     <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
-    <CodesignProvision>iOS Team Provisioning Profile: com.mugellisoftware.mgc</CodesignProvision>
+    <CodesignProvision>MGC App Distribution Profile</CodesignProvision>
+    <MtouchFloat32>true</MtouchFloat32>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>pdbonly</DebugType>
@@ -51,13 +54,13 @@
     <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Distribution: Giovanni Mugelli (7LJZQLFR75)</CodesignKey>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
     <MtouchLink>None</MtouchLink>
     <MtouchArch>x86_64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
-    <CodesignProvision>iOS Team Provisioning Profile: com.mugellisoftware.mgc</CodesignProvision>
+    <CodesignProvision>MGC App Distribution Profile</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
     <DebugSymbols>true</DebugSymbols>
@@ -67,7 +70,7 @@
     <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer: mugelli.giovanni@gmail.com (BCKAAWYWUM)</CodesignKey>
+    <CodesignKey>iPhone Distribution</CodesignKey>
     <DeviceSpecificBuild>true</DeviceSpecificBuild>
     <MtouchDebug>true</MtouchDebug>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
@@ -78,7 +81,7 @@
     <MtouchArch>ARM64</MtouchArch>
     <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
     <PlatformTarget>x86</PlatformTarget>
-    <CodesignProvision>iOS Team Provisioning Profile: com.mugellisoftware.mgc</CodesignProvision>
+    <CodesignProvision>Firebase MGC App Distribution Profile</CodesignProvision>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -141,6 +144,15 @@
     </Reference>
     <Reference Include="Plugin.Settings">
       <HintPath>..\packages\Xam.Plugins.Settings.3.1.1\lib\Xamarin.iOS10\Plugin.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Core">
+      <HintPath>..\packages\Xamarin.Firebase.iOS.Core.5.1.3\lib\Xamarin.iOS10\Firebase.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.InstanceID">
+      <HintPath>..\packages\Xamarin.Firebase.iOS.InstanceID.3.2.1\lib\Xamarin.iOS10\Firebase.InstanceID.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.CloudMessaging">
+      <HintPath>..\packages\Xamarin.Firebase.iOS.CloudMessaging.3.1.2\lib\Xamarin.iOS10\Firebase.CloudMessaging.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -247,6 +259,13 @@
     <BundleResource Include="Resources\splashscreen.png" />
     <BundleResource Include="Resources\splashscreen%402x.png" />
     <BundleResource Include="Resources\splashscreen%403x.png" />
+    <BundleResource Include="Resources\download_icon.png" />
+    <BundleResource Include="Resources\download_icon%402x.png" />
+    <BundleResource Include="Resources\download_icon%403x.png" />
+    <BundleResource Include="Resources\placeholder.png" />
+    <BundleResource Include="Resources\placeholder%402x.png" />
+    <BundleResource Include="Resources\placeholder%403x.png" />
+    <BundleResource Include="GoogleService-Info.plist" />
   </ItemGroup>
   <ItemGroup>
     <ITunesArtwork Include="iTunesArtwork" />
@@ -255,4 +274,5 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.targets" Condition="Exists('..\packages\Xamarin.Build.Download.0.4.11\build\Xamarin.Build.Download.targets')" />
   <Import Project="..\packages\Xamarin.Forms.3.4.0.1008975\build\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.4.0.1008975\build\Xamarin.Forms.targets')" />
+  <Import Project="..\packages\Xamarin.Firebase.iOS.InstanceID.3.2.1\build\Xamarin.Firebase.iOS.InstanceID.targets" Condition="Exists('..\packages\Xamarin.Firebase.iOS.InstanceID.3.2.1\build\Xamarin.Firebase.iOS.InstanceID.targets')" />
 </Project>

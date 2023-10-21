@@ -53,7 +53,8 @@
                                 <!--<AbsoluteLayout VerticalOptions="FillAndExpand">-->
                                     <forms:CachedImage Source="{Binding Path=.}"
                                            Aspect="AspectFill"
-                                           LoadingPlaceholder="cloud-computing.png"
+                                           LoadingPlaceholder="placeholder.png" 
+                                           ErrorPlaceholder="placeholder.png"
                                            HorizontalOptions="Fill"
                                            VerticalOptions="Center"/>
                                 <!--</AbsoluteLayout>-->

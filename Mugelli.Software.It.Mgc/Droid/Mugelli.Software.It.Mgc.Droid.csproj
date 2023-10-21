@@ -18,6 +18,7 @@
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
+    <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -27,7 +28,6 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -38,6 +38,8 @@
     <WarningLevel>4</WarningLevel>
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+<AndroidSupportedAbis>armeabi-v7a;x86;arm64-v8a;x86_64</AndroidSupportedAbis>
+<AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -292,6 +294,14 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\Purple_Filled_Circle_100px.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\splashscreen.png" />
     <AndroidResource Include="Resources\drawable\LaunchView.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\download_icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\placeholder.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\download_icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\placeholder.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\download_icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\placeholder.png" />
+    <AndroidResource Include="Resources\drawable\download_icon.png" />
+    <AndroidResource Include="Resources\drawable\placeholder.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="MessagingCenters\" />

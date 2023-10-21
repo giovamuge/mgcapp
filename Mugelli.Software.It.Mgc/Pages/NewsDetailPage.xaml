@@ -30,6 +30,8 @@
                 
                     <forms:CachedImage Source="{Binding Article.HeroImage}"
                                        HeightRequest="300"
+                                       LoadingPlaceholder="placeholder.png" 
+                                       ErrorPlaceholder="placeholder.png"
                                        x:Name="HeroImage"
                                        HorizontalOptions="Fill"
                                        Aspect="AspectFill"
@@ -157,6 +159,8 @@
                             <controls:CarouselViewControl.ItemTemplate>
                                 <DataTemplate>
                                     <forms:CachedImage Source="{Binding Path=.}"
+                                       LoadingPlaceholder="placeholder.png" 
+                                       ErrorPlaceholder="placeholder.png"
                                        Aspect="AspectFill"
                                        HeightRequest="300"
                                        HorizontalOptions="Fill">

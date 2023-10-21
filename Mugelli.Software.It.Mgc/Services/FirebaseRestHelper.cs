@@ -57,7 +57,7 @@ namespace Mugelli.Software.It.Mgc.Services
             }
 
             return (await Client.Child("advertising").OnceAsync<object>()).Select(
-                x => JsonConvert.DeserializeObject<Communication>(x.Object.ToString()))/*.Where(x => x.Date >= DateTime.Now)*/.OrderByDescending(x => x.Date).ToList();
+                x => JsonConvert.DeserializeObject<Communication>(x.Object.ToString())).Where(x => x.Date >= DateTime.Now).OrderByDescending(x => x.Date).ToList();
         }
 
         /// <summary>

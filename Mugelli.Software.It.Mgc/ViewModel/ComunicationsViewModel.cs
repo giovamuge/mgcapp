@@ -22,16 +22,10 @@ namespace Mugelli.Software.It.Mgc.ViewModel
         {
             _navigationService = navigationService;
 
-            RefreshCommand = new RelayCommand(async () => await OnRefresh());
+            RefreshCommand = new RelayCommand(() => Task.Run(OnRefresh));
             ReadCommCommand = new RelayCommand<Communication>(OnReadCommCommand);
 
             Task.Run(OnRefresh);
-
-            // TODO: Soluzione brutta per ios perchè quando clicco la prima volta su gli avvisi non naviga
-            //if (Device.RuntimePlatform == Device.iOS)
-            //{
-            //    OnReadCommCommand(new Communication { Content = "", Author = "", Date = DateTime.Now, Title = "", ShortContent = "", Type = EventType.Mgc });
-            //}
         }
 
         public ICommand RefreshCommand { get; set; }
@@ -73,28 +67,6 @@ namespace Mugelli.Software.It.Mgc.ViewModel
 
         private void OnReadCommCommand(Communication communication)
         {
-            //Communication comm = new Communication();
-            //if (data is Communication)
-            //{
-            //    comm = (Communication)data;
-            //}
-            //else if (data is ItemTappedEventArgs item)
-            //{
-            //    if (item.Item is Communication)
-            //    {
-            //        comm = (Communication)item.Item;
-            //    }
-            //}
-
-            //if (comm != null)
-            //{
-            //    Device.BeginInvokeOnMainThread(() =>
-            //    {
-            //        _navigationService.NavigateTo(PageStacks.CommunicationDetailPage, comm);
-            //    });
-
-            //}
-
             if (communication == null)
             {
                 Device.BeginInvokeOnMainThread(async () => await Application.Current.MainPage.DisplayAlert("Errore", "Non è possibile visualizzare l'avviso, contatta Giova per risolvere il bug", "Ok"));
